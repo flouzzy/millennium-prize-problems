@@ -4,7 +4,7 @@ statut: En cours
 lang: "fr"
 attempt: 01
 ---
-# Résolution du Problème du Millénaire : Hypothèse de Riemann via Fibrations Motiviques
+# Résolution de l'hypothèse de Riemann via Fibrations Motiviques
 
 ## 1. Introduction Géométrique & Intuition de l'Axe (Échafaudage Cognitif)
 
