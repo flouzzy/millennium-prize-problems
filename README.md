@@ -1,5 +1,4 @@
-# millennium-prize-problems
-Millennium Prize Problems
+# Millennium Prize Problems
 
 Ce dépôt est dédié aux **Problèmes du prix du millénaire**.
 
