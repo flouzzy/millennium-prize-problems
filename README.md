@@ -2,9 +2,9 @@
 
 Ce dépôt est dédié aux **Problèmes du prix du millénaire**.
 
-Les problèmes du prix du millénaire sont un ensemble de sept défis mathématiques réputés insurmontables, posés par l'Institut de mathématiques Clay en 2000. La résolution de chacun des problèmes est dotée d'un prix d'un million de dollars américains offert par l'institut.
+Les problèmes du prix du millénaire sont un ensemble de sept défis mathématiques réputés insurmontables, posés par l'Institut de mathématiques Clay en 2000.
 
-La liste des 7 problèmes :
+La liste des 7 problèmes est la suivante :
 
 1. L'hypothèse de Riemann
 2. La conjecture de Poincaré (résolue par Grigori Perelman en 2003)
