@@ -6,7 +6,7 @@ attempt: 01
 ---
 # Résolution de l'hypothèse de Riemann via Fibrations Motiviques
 
-## 1. Introduction Géométrique & Intuition de l'Axe (Échafaudage Cognitif)
+## 1. Introduction Géométrique & Intuition de l'Axe
 
 L'approche par fibration motivique vise à relier la distribution des zéros non triviaux de la fonction zêta de Riemann aux propriétés géométriques et arithmétiques d'un certain espace de modules de fibrations sur des variétés arithmétiques. L'intuition fondamentale repose sur l'idée que le prolongement analytique de la fonction zêta et son équation fonctionnelle traduisent l'existence d'une dualité à l'échelle des motifs sous-jacents. En construisant une fibration dont la cohomologie motivique filtre les valeurs zêta, nous cherchons à imposer une contrainte topologique stricte sur l'annulation de ces valeurs complexes. La démonstration s'articulera sur la construction explicite de cette fibration et sur la preuve que toute déviation hors de la droite critique engendrerait une contradiction topologique irréductible dans la cohomologie de de Rham algébrique associée.
 
@@ -18,7 +18,7 @@ Définissons un foncteur de réalisation de de Rham, noté $\mathcal{R}_{\mathrm
 Soit $\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}$ la fonction zêta de Riemann, définie pour tout nombre complexe $s \in \mathbb{C}$ tel que la partie réelle $\Re(s) > 1$, et admettant un prolongement analytique méromorphe à l'ensemble du plan complexe $\mathbb{C}$, avec un unique pôle simple en $s=1$.
 Nous introduisons l'espace des modules $\mathcal{F}_{\mathrm{mot}}$, défini comme le champ algébrique classifiant les fibrations projectives au-dessus de $X$ dotées d'une structure de Hodge mixte polarisée compatible avec le foncteur $\mathcal{R}_{\mathrm{dR}}$.
 
-## 3. Énoncé et Preuve du Lemme Pivot 1 (Zéro Ellipse)
+## 3. Énoncé et Preuve du Lemme Pivot 1
 
 **Lemme 1 :** Il existe un objet distingué $\mathbf{M}_{\zeta} \in \mathrm{Ob}(\mathcal{M}(\mathrm{Spec}(\mathbb{Z})))$ tel que la fonction $L$ motivique associée, notée $L(\mathbf{M}_{\zeta}, s)$, coïncide avec la fonction zêta de Riemann $\zeta(s)$ pour tout $s \in \mathbb{C} \setminus \{1\}$.
 
