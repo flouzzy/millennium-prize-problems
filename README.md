@@ -14,7 +14,8 @@ La liste des 7 problèmes :
 6. Les équations de Navier-Stokes
 7. Les équations de Yang-Mills
 
+Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation actuelle.
+
 ## Historique d'avancement
 
-- [2026-06-17] : Création - Problème: L'hypothèse de Riemann - Tentative 01 (FR & EN). Avancement : Lemme 1 formalisé. Statut : En cours.
-- [2026-06-17] : Enrichissement - Problème: L'hypothèse de Riemann - Tentative 01 (FR & EN) - Ajout de la génération PDF
+- [[2026-06-17]](dashboard.md#investigation-actuelle) : Création - Problème: L'hypothèse de Riemann - Tentative 01 (FR & EN). Avancement : Lemme 1 formalisé. Statut : En cours.
