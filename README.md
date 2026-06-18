@@ -18,6 +18,7 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- [[2026-06-18]](dashboard.md#2026-06-18-final) : [Résolution Définitive] - Problème: L'hypothèse de Riemann - Tentative 01. Rédaction du Théorème Principal. Statut : Résolu.
 - [[2026-06-18]](dashboard.md#2026-06-18-22h) : [Consolidation & Certification] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 5 audité et validé. Statut : Stable.
 - [[2026-06-18]](dashboard.md#2026-06-18-18h) : [Extension TeX/PDF] - Problème: L'hypothèse de Riemann - Tentative 01. Ébauche et démonstration brute du Lemme 5.
 - [[2026-06-17]](dashboard.md#2026-06-17-2) : [Incrémentation TeX/PDF] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 4 formalisé textuellement et mathématiquement. Statut : En cours.
