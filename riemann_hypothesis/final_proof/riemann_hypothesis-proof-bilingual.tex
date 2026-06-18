@@ -1,13 +1,20 @@
-\documentclass[11pt,a4paper,twoside]{article}
+\documentclass[12pt,a4paper,twoside]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english,french]{babel} % French is the main language, English is secondary
+\usepackage[english,main=french]{babel}
 \usepackage{amsmath,amssymb,amsthm}
+\usepackage{setspace}
+\onehalfspacing
 \usepackage{geometry}
-\geometry{margin=1in}
+\geometry{margin=2.5cm}
 \usepackage{xcolor}
 \usepackage{hyperref}
+
+\addto\captionsfrench{
+  \renewcommand{\abstractname}{Résumé}
+  \renewcommand{\proofname}{Démonstration}
+}
 
 \hypersetup{
     colorlinks=true,
