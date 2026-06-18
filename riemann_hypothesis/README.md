@@ -2,7 +2,7 @@
 
 Dossier dédié à la résolution de l'Hypothèse de Riemann.
 
-## La Conjecture (Vulgarisation niveau Bac S / L1 Maths)
+## Présentation
 
 L'Hypothèse de Riemann, formulée par le mathématicien Bernhard Riemann en 1859, est l'un des problèmes ouverts les plus célèbres en mathématiques (il fait partie des problèmes du prix du millénaire). Elle concerne la distribution des nombres premiers.
 
