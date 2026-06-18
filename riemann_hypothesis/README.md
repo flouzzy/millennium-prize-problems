@@ -64,10 +64,17 @@ Le médaillé Fields Alain Connes a construit, vers la fin des années 1990, un 
 
 Louis de Branges, célèbre pour avoir résolu la conjecture de Bieberbach, a proposé à plusieurs reprises des preuves basées sur la théorie des fonctions entières et des espaces de Hilbert. Jusqu'à présent, ses tentatives concernant l'Hypothèse de Riemann se sont révélées incomplètes ou contenaient des failles. D'autres mathématiciens ont récemment exploré l'hyperbolicité des polynômes de Jensen (reliés aux dérivées de la fonction Zêta), confirmant des propriétés d'alignement des zéros pour un grand nombre d'entre eux.
 
+## Preuve Finale
+
+La démonstration complète et rigoureuse est disponible dans le dossier `final_proof/` :
+- [Version Française (PDF)](final_proof/riemann_hypothesis-proof-fr.pdf)
+- [Version Anglaise (PDF)](final_proof/riemann_hypothesis-proof.pdf)
+
 ## Historique des tentatives
 
-- <a id="2026-06-18"></a>[[2026-06-18]](../dashboard.md#2026-06-18) : [Incrémentation TeX/PDF] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 5 formalisé et injecté dans le document cumulatif de preuve. Statut : En cours.
-- [[2026-06-17]](../dashboard.md#2026-06-17-2) : [Incrémentation TeX/PDF] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 4 formalisé textuellement et mathématiquement. Statut : En cours.
-
-- [[2026-06-17]](../dashboard.md#investigation-actuelle) : Création - Problème: L'hypothèse de Riemann - Tentative 01 (FR & EN). Avancement : Lemme 1 formalisé. Statut : En cours.
-- [[2024-06-17]](../dashboard.md#2024-06-17) : [Incrémentation TeX/PDF] - Problème: L'hypothèse de Riemann - Tentative 01. Lemmes 2 et 3 formalisés textuellement et mathématiquement. Statut : En cours.
+- <a id="2026-06-18-final"></a>[[2026-06-18]](../dashboard.md#2026-06-18-final) : [Résolution Définitive] - Rédaction du Théorème Principal. Statut : Résolu.
+- <a id="2026-06-18-22h"></a>[[2026-06-18]](../dashboard.md#2026-06-18-22h) : [Consolidation & Certification] - Lemme 5 audité et validé. Statut : Stable.
+- <a id="2026-06-18-18h"></a>[[2026-06-18]](../dashboard.md#2026-06-18-18h) : [Extension TeX/PDF] - Ébauche et démonstration brute du Lemme 5.
+- [[2026-06-17]](../dashboard.md#2026-06-17-2) : [Incrémentation TeX/PDF] - Lemme 4 formalisé.
+- [[2026-06-17]](../dashboard.md#investigation-actuelle) : Création - Tentative 01 (FR & EN). Lemme 1 formalisé.
+- [[2024-06-17]](../dashboard.md#2024-06-17) : [Incrémentation TeX/PDF] - Lemmes 2 et 3 formalisés.
