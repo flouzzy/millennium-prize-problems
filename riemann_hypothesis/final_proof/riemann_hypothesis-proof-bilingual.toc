@@ -23,3 +23,11 @@
 \contentsline {subsection}{\numberline {2.7}7. Direct arithmetic consequences on the distribution of primes}{18}{subsection.2.7}%
 \contentsline {subsection}{\numberline {2.8}Functorial Extension: Motivic Rigidity and Dirichlet $L$-functions}{20}{subsection.2.8}%
 \contentsline {subsection}{\numberline {2.9}Main Theorem}{21}{subsection.2.9}%
+\contentsline {section}{Acknowledgements / Remerciements}{23}{section*.2}%
+\contentsline {section}{\numberline {3}Partie II : Vérification par la Géométrie Analytique de Berkovich (Version Française)}{24}{section.3}%
+\contentsline {subsection}{\numberline {3.1}1. Espaces de Berkovich et Fonction Zêta $p$-adique}{24}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}2. Contradiction par le Théorème de Monodromie $p$-adique}{24}{subsection.3.2}%
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {4}Part II: Verification via Berkovich Analytic Geometry (English Version)}{25}{section.4}%
+\contentsline {subsection}{\numberline {4.1}1. Berkovich Spaces and the $p$-adic Zeta Function}{25}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}2. Contradiction via the $p$-adic Monodromy Theorem}{25}{subsection.4.2}%

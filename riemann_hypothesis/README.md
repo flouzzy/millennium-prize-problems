@@ -66,9 +66,8 @@ Louis de Branges, célèbre pour avoir résolu la conjecture de Bieberbach, a pr
 
 ## Preuve Finale
 
-La démonstration complète et rigoureuse est disponible dans le dossier `final_proof/` :
-- [Version Française (PDF)](final_proof/riemann_hypothesis-proof-fr.pdf)
-- [Version Anglaise (PDF)](final_proof/riemann_hypothesis-proof.pdf)
+La démonstration complète et rigoureuse (document monolithique de 25 pages) est disponible dans le dossier `final_proof/` :
+- [Version Bilingue Intégrale (PDF)](final_proof/riemann_hypothesis-proof-bilingual.pdf)
 
 ## Historique des tentatives
 

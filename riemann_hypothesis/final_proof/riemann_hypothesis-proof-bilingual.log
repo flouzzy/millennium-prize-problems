@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  18 JUN 2026 09:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  18 JUN 2026 10:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -356,12 +356,72 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip56
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 26.
+! Argument of \strip@prefix has an extra }.
+<inserted text> 
+                \par 
+l.38 }
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+\relax
+! Paragraph ended before \strip@prefix was complete.
+<to be read again> 
+                   \par 
+l.38 }
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{
+! Paragraph ended before \in@ was complete.
+<to be read again> 
+                   \par 
+l.38 }
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+\reserved@a ->\in@ {\abstractname}{\par }
+                                         
+l.38 }
+      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Runaway argument?
+{
+! Paragraph ended before \in@ was complete.
+<to be read again> 
+                   \par 
+l.38 }
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+\reserved@a ->\in@ {\bbl@scset}{\par }
+                                      
+l.38 }
+      
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
 \c@theorem=\count290
 \c@lemma=\count291
 \c@theoremEN=\count292
 \c@lemmaEN=\count293
-
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count294
@@ -377,24 +437,24 @@ Package babel Info: Hyphen rules for 'french' set to \l@english
 )
 \openout1 = `riemann_hypothesis-proof-bilingual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -444,56 +504,39 @@ LaTeX Font Info:    ... okay on input line 38.
 \makeMPintoPDFobject=\count300
 \everyMPtoPDFconversion=\toks33
 )
-Package hyperref Info: Link coloring ON on input line 38.
+Package hyperref Info: Link coloring ON on input line 60.
  (./riemann_hypothesis-proof-bilingual.out)
 (./riemann_hypothesis-proof-bilingual.out)
 \@outlinefile=\write3
 \openout3 = `riemann_hypothesis-proof-bilingual.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) [1
 
-Package babel Warning: \abstractname not set for 'french'. Please,
-(babel)                define it after the language has been loaded
-(babel)                (typically in the preamble) with:
-(babel)                \setlocalecaption{french}{abstract}{..}
-(babel)                Feel free to contribute on github.com/latex3/babel.
-(babel)                Reported on input line 43.
-
-[1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./riemann_hypothesis-proof-bilingual.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./riemann_hypothesis-proo
+f-bilingual.toc)
 \tf@toc=\write4
 \openout4 = `riemann_hypothesis-proof-bilingual.toc'.
 
- [2]
 
-Package babel Warning: \proofname not set for 'french'. Please,
-(babel)                define it after the language has been loaded
-(babel)                (typically in the preamble) with:
-(babel)                \setlocalecaption{french}{proof}{..}
-(babel)                Feel free to contribute on github.com/latex3/babel.
-(babel)                Reported on input line 72.
-
-[3] [4] [5] [6]
-Overfull \hbox (10.85606pt too wide) in paragraph at lines 139--141
+[2] [3] [4] [5] [6]
+Overfull \hbox (10.85606pt too wide) in paragraph at lines 160--162
 \T1/cmr/m/n/12 Cependant, cette classe de co-ho-molo-gie glob-ale est en-tière-
 ment en-gen-drée par l'accumulation
  []
 
 [7]
-Overfull \hbox (4.07358pt too wide) in paragraph at lines 163--164
+Overfull \hbox (7.88387pt too wide) in paragraph at lines 184--185
 []\T1/cmr/m/n/12 Considérons la fonc-tion de Tcheby-chev $\OML/cmm/m/it/12  \OT
 1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )$\T1/cmr/m/n/12 , définie par 
 la somme pondérée
@@ -505,27 +548,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 213.
+(hyperref)                removing `math shift' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 213.
+(hyperref)                removing `math shift' on input line 234.
 
 
-Overfull \hbox (34.7603pt too wide) in paragraph at lines 228--230
+Overfull \hbox (34.7603pt too wide) in paragraph at lines 249--251
 \T1/cmr/m/n/12 Pour anal-yser les poids de cette ac-tion, nous fixons une place
  non ram-i-fiée $\OML/cmm/m/it/12 p \U/msb/m/n/12 - \OML/cmm/m/it/12 q$\T1/cmr/
 m/n/12 . L'endomorphisme
  []
 
 [10] [11]
-Overfull \hbox (5.20107pt too wide) in paragraph at lines 262--263
+Overfull \hbox (9.01135pt too wide) in paragraph at lines 283--284
 []\T1/cmr/m/n/12 Nous procé-dons par l'absurde. Sup-posons l'existence d'un zér
 o asymétrique
  []
 
 
-Overfull \hbox (9.75078pt too wide) in paragraph at lines 270--271
+Overfull \hbox (9.75078pt too wide) in paragraph at lines 291--292
 []\T1/cmr/m/n/12 Pour préserver la pos-i-tiv-ité de la po-lar-i-sa-tion métriqu
 e sur le mo-tif global $\OT1/cmr/bx/n/12 M[]$\T1/cmr/m/n/12 , l'opérateur
  []
@@ -542,69 +585,110 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19]
-Overfull \hbox (20.67671pt too wide) in paragraph at lines 435--435
+Overfull \hbox (20.67671pt too wide) in paragraph at lines 456--456
 []\T1/cmr/bx/n/14.4 Functorial Ex-ten-sion: Mo-tivic Rigid-ity and Dirich-let $
 \OML/cmm/m/it/14.4 L$\T1/cmr/bx/n/14.4 -functions 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 435.
+(hyperref)                removing `math shift' on input line 456.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 435.
+(hyperref)                removing `math shift' on input line 456.
 
-[20] [21] [22] [23] (./riemann_hypothesis-proof-bilingual.aux)
+[20] [21] [22] [23]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 542.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 542.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 546.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 546.
+
+[24]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 554.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 554.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 558.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 558.
+
+[25] (./riemann_hypothesis-proof-bilingual.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `riemann_hypothesis-proof-bilingual.out' has 
-not changed.
-(rerunfilecheck)             Checksum: B558C56662FFFCBFCDE167E62FB5AF3D;6542.
+
+
+Package rerunfilecheck Warning: File `riemann_hypothesis-proof-bilingual.out' h
+as changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `riemann_hypothesis-proof-bilingual.
+out':
+(rerunfilecheck)             Before: 6FAE574AB386E8CC57574EF258A38123;8818
+(rerunfilecheck)             After:  7BF3CFA00AE8CECC5D31C4BC8E660E55;9029.
  ) 
 Here is how much of TeX's memory you used:
- 11867 strings out of 476182
- 183338 string characters out of 5795595
+ 11881 strings out of 476182
+ 183522 string characters out of 5795595
  1936975 words of memory out of 5000000
- 33648 multiletter control sequences out of 15000+600000
- 581429 words of font info for 97 fonts, out of 8000000 for 9000
+ 33654 multiletter control sequences out of 15000+600000
+ 580730 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,11n,79p,1508b,594s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1499b,594s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.6
-00pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi120
-0.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti
-1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1440.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecbx1728.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecrm1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1000.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/tcrm0700.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecrm1095.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk
-/ljfour/jknappen/ec/ecbx1095.600pk> </home/charles/.texlive2023/texmf-var/fonts
-/pk/ljfour/jknappen/ec/tcrm1000.600pk> </home/charles/.texlive2023/texmf-var/fo
-nts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/charles/.texlive2023/texmf-var
-/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/charles/.texlive2023/texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on riemann_hypothesis-proof-bilingual.pdf (23 pages, 343995 byte
+00pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti120
+0.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
+1440.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecbx1728.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecrm1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm1000.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/j
+knappen/ec/tcrm0700.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecrm1095.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1095.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk
+/ljfour/jknappen/ec/tcrm1000.600pk> </home/charles/.texlive2023/texmf-var/fonts
+/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/charles/.texlive2023/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/charles/.texlive2023/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on riemann_hypothesis-proof-bilingual.pdf (25 pages, 360203 byte
 s).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 63 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 850 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 209 words of extra memory for PDF output out of 10000 (max. 10000000)
 

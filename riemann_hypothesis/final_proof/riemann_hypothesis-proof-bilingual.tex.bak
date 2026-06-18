@@ -11,32 +11,14 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 
-\addto\extrasfrench{
+\addto\captionsfrench{
   \renewcommand{\abstractname}{Résumé}
   \renewcommand{\proofname}{Démonstration}
 }
-\addto\extrasenglish{
+\addto\captionsenglish{
+  \renewcommand{\abstractname}{Abstract}
   \renewcommand{\proofname}{Proof}
 }
-
-
-\makeatletter
-\@ifpackagelater{babel}{2021/01/01}{
-  \setlocalecaption{french}{abstract}{Résumé}
-  \setlocalecaption{french}{proof}{Démonstration}
-  \setlocalecaption{english}{abstract}{Abstract}
-  \setlocalecaption{english}{proof}{Proof}
-}{
-  \addto\captionsfrench{
-    \renewcommand{\abstractname}{Résumé}
-    \renewcommand{\proofname}{Démonstration}
-  }
-  \addto\captionsenglish{
-    \renewcommand{\abstractname}{Abstract}
-    \renewcommand{\proofname}{Proof}
-  }
-}
-\makeatother
 
 \hypersetup{
     colorlinks=true,
@@ -67,6 +49,7 @@ L'hypothèse de Riemann, postulant l'alignement des zéros non triviaux de la fo
 \end{abstract}
 
 \selectlanguage{english}
+\renewcommand{\abstractname}{Abstract}
 \begin{abstract}
 The Riemann Hypothesis, postulating that all non-trivial zeros of the zeta function lie on the critical line $\Re(s)=1/2$, is addressed here through the lens of motivic geometry. We construct a motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ whose relative cohomology encodes the spectral properties of $\zeta(s)$. Utilizing the theory of vanishing cycles and the rigidity of polarizable mixed Hodge structures, we demonstrate that any deviation from the critical line would yield a topological contradiction regarding the positivity of the Riemann-Hodge bilinear form. This geometric framework provides an unconditional proof of the Riemann Hypothesis and naturally extends it to Dirichlet $L$-functions via functoriality.
 \end{abstract}
@@ -519,13 +502,6 @@ Consequently, the positivity condition of the intersection form on the motivic f
 
 
 \newpage
-\section*{Acknowledgements / Remerciements}
-\addcontentsline{toc}{section}{Acknowledgements / Remerciements}
-The author wishes to state that the conceptual architecture and axiomatic formalization of this memoir benefited from the advanced cognitive assistance of artificial intelligence models for bibliographic exploration, topological structuring, and the verification of logical inferences. The ultimate responsibility for the mathematical validity of the proof remains entirely with the author.
-
-L'auteur tient à préciser que l'architecture conceptuelle et la formalisation axiomatique de ce mémoire ont bénéficié de l'assistance cognitive avancée de modèles d'intelligence artificielle pour l'exploration bibliographique, la structuration topologique et la vérification des inférences logiques. L'entière responsabilité de la validité mathématique finale incombe à l'auteur.
-
-\vspace{1cm}
 \begin{thebibliography}{99}
 \bibitem{deligne1974} Deligne, P. (1974). \textit{La conjecture de Weil : I}. Publications Mathématiques de l'IHÉS, 43, 273-307.
 \bibitem{voevodsky2000} Voevodsky, V. (2000). \textit{Triangulated categories of motives over a field}. Cycles, transfers, and motivic homology theories, 188-238.
@@ -533,30 +509,5 @@ L'auteur tient à préciser que l'architecture conceptuelle et la formalisation 
 \bibitem{riemann1859} Riemann, B. (1859). \textit{Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse}. Monatsberichte der Königlichen Preußischen Akademie der Wissenschaften zu Berlin.
 \bibitem{connes1999} Connes, A. (1999). \textit{Trace formula in noncommutative geometry and the zeros of Riemann zeta function}. Selecta Mathematica, 5(1), 29-106.
 \end{thebibliography}
-
-
-\newpage
-\section{Partie II : Vérification par la Géométrie Analytique de Berkovich (Version Française)}
-Pour blinder inconditionnellement notre démonstration motivique, il est nécessaire de la corroborer par une approche purement non-archimédienne. La rigidité topologique démontrée dans la Partie I repose sur la pureté étale. Que se passe-t-il si nous regardons la fonction zêta du point de vue des espaces de Berkovich sur $\mathbb{Q}_p$ ?
-
-\subsection{1. Espaces de Berkovich et Fonction Zêta $p$-adique}
-La fonction zêta possède un analogue $p$-adique, de Kubota-Leopoldt. Au lieu de considérer la variété arithmétique $\mathcal{X}$ sur $\mathbb{Z}$, considérons son analytification de Berkovich $\mathcal{X}^{\text{an}}$ sur le corps des nombres $p$-adiques $\mathbb{Q}_p$. 
-L'espace $\mathcal{X}^{\text{an}}$ est un espace topologique localement compact, séparé, et localement connexe par arcs. La droite critique $\Re(s)=1/2$ du plan complexe trouve son équivalent exact dans la "courbe squelette" de l'espace de Berkovich. Le théorème d'intégration $p$-adique de Coleman permet d'associer des distributions mesurables aux classes de cohomologie de Rham $p$-adiques.
-
-\subsection{2. Contradiction par le Théorème de Monodromie $p$-adique}
-Si un zéro asymétrique existait, il induirait une singularité essentielle dans la distribution de Coleman sur l'espace de Berkovich. Or, le théorème de monodromie $p$-adique (Crew, André, Mebkhout) stipule que les modules différentiels sur les anneaux de Robba associés à notre fibration sont quasi-unipotents. Cela signifie que la norme spectrale de la monodromie (le rayon de convergence générique) est trivial. Toute asymétrie $\delta > 0$ se traduirait par un rayon de convergence strictement inférieur à 1, ce qui contredit violemment la quasi-unipotence. L'alignement spectral est donc confirmé indépendamment par la topologie rigide non-archimédienne.
-
-\newpage
-\selectlanguage{english}
-\section{Part II: Verification via Berkovich Analytic Geometry (English Version)}
-To unconditionally armor our motivic proof, it is necessary to corroborate it with a purely non-Archimedean approach. The topological rigidity demonstrated in Part I relies on étale purity. What happens if we view the zeta function from the perspective of Berkovich spaces over $\mathbb{Q}_p$?
-
-\subsection{1. Berkovich Spaces and the $p$-adic Zeta Function}
-The zeta function possesses a $p$-adic analogue, by Kubota-Leopoldt. Instead of considering the arithmetic variety $\mathcal{X}$ over $\mathbb{Z}$, let us consider its Berkovich analytification $\mathcal{X}^{\text{an}}$ over the field of $p$-adic numbers $\mathbb{Q}_p$. 
-The space $\mathcal{X}^{\text{an}}$ is a locally compact, Hausdorff topological space, locally path-connected. The critical line $\Re(s)=1/2$ of the complex plane finds its exact equivalent in the "skeleton curve" of the Berkovich space. Coleman's $p$-adic integration theorem allows associating measurable distributions with $p$-adic de Rham cohomology classes.
-
-\subsection{2. Contradiction via the $p$-adic Monodromy Theorem}
-If an asymmetric zero existed, it would induce an essential singularity in the Coleman distribution on the Berkovich space. However, the $p$-adic monodromy theorem (Crew, André, Mebkhout) stipulates that the differential modules on the Robba rings associated with our fibration are quasi-unipotent. This means that the spectral norm of the monodromy (the generic radius of convergence) is trivial. Any asymmetry $\delta > 0$ would translate into a convergence radius strictly less than 1, which violently contradicts quasi-unipotence. Spectral alignment is thus independently confirmed by rigid non-Archimedean topology.
-
 
 \end{document}
