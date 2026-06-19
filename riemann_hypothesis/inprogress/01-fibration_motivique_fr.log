@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  18 JUN 2026 08:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  18 JUN 2026 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**01-fibration_motivique_fr.tex
-(./01-fibration_motivique_fr.tex
+**riemann_hypothesis/inprogress/01-fibration_motivique_fr.tex
+(./riemann_hypothesis/inprogress/01-fibration_motivique_fr.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -409,7 +409,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box54
 )
-(./01-fibration_motivique_fr.aux)
+(riemann_hypothesis/inprogress//01-fibration_motivique_fr.aux)
 \openout1 = `01-fibration_motivique_fr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -543,20 +543,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 333.
 
-[8] [9] [10] (./01-fibration_motivique_fr.aux)
+[8] [9] [10] [11] (riemann_hypothesis/inprogress//01-fibration_motivique_fr.aux
+)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13871 strings out of 476182
- 220363 string characters out of 5795595
+ 13887 strings out of 476182
+ 220811 string characters out of 5795595
  1936975 words of memory out of 5000000
- 35430 multiletter control sequences out of 15000+600000
- 641158 words of font info for 188 fonts, out of 8000000 for 9000
+ 35431 multiletter control sequences out of 15000+600000
+ 641772 words of font info for 193 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 83i,10n,93p,1273b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,10n,93p,1303b,617s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/p
@@ -566,13 +567,15 @@ m/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr5.p
 fb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/typ
 e1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on 01-fibration_motivique_fr.pdf (10 pages, 314420 bytes).
+r/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msbm7.pfb>
+Output written on riemann_hypothesis/inprogress//01-fibration_motivique_fr.pdf
+(11 pages, 324802 bytes).
 PDF statistics:
- 212 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 45137 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 229 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 45145 words of extra memory for PDF output out of 51595 (max. 10000000)
 
