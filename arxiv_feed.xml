@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/FZ7NGE8UMpdWZrAz5GhOyCHztKQ</id>
+  <title>arXiv Query: search_query=cat:math.NT OR cat:math.AG&amp;id_list=&amp;start=0&amp;max_results=3</title>
+  <updated>2026-06-22T05:11:12Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:math.NT+OR+cat:math.AG&amp;start=0&amp;max_results=3&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <opensearch:totalResults>101355</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20448v1</id>
+    <title>Étale and Quasicoherent Cohomological Dimensions of Subspace Arrangements</title>
+    <updated>2026-06-18T16:25:14Z</updated>
+    <link href="https://arxiv.org/abs/2606.20448v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20448v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We report some work in progress on the relationship between étale and quasicoherent cohomological dimensions.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T16:25:14Z</published>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Manolis C. Tsakiris</name>
+    </author>
+    <author>
+      <name>Matteo Varbaro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20439v1</id>
+    <title>Four-digit Kaprekar dynamics in odd bases</title>
+    <updated>2026-06-18T16:19:45Z</updated>
+    <link href="https://arxiv.org/abs/2606.20439v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20439v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Start with four digits, arrange them in both descending and ascending order, subtract, and repeat. This simple process is known as the Kaprekar routine, famous in base ten for sending every nonconstant four-digit string to $6174$. We show that in every odd base $B&gt;3$, the four-digit Kaprekar map has an unexpectedly rigid structure. After at most three iterations, every nonconstant orbit enters an explicit triangular region $\mathcal{T}_B$, and on this region the map is conjugate to projective doubling: \[ \{[r],[s]\}\longmapsto \{[2r],[2s]\}. \] This gives a complete finite description of all nonconstant terminal cycles, including an explicit formula for their lengths and counts. In particular, the longest terminal cycle has length at most $(B-1)/2$, and equality can occur only when $B$ is prime. For primes $p&gt;5$, equality occurs precisely when the least positive $m$ with $2^m\equiv\pm1\pmod p$ is $m=(p-1)/2$. The results proved here were first formulated by Schwartz and Thakur. As a test case for AI-assisted formal mathematics, AxiomProver produced Lean/mathlib formalizations of these results.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T16:19:45Z</published>
+    <arxiv:comment>A modest note on the Kaprekar-type process in odd bases, with Lean formalizations of the main results</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Evan Chen</name>
+    </author>
+    <author>
+      <name>Ken Ono</name>
+    </author>
+    <author>
+      <name>Richard E. Schwartz</name>
+    </author>
+    <author>
+      <name>Dinesh S. Thakur</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.20432v1</id>
+    <title>Eigenvector Varieties</title>
+    <updated>2026-06-18T16:10:44Z</updated>
+    <link href="https://arxiv.org/abs/2606.20432v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.20432v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Any linear space of square matrices has an associated eigenvector variety. Its points are eigenvectors of matrices from that linear space. We present a systematic study of eigenvector varieties, with focus on Lie algebras and Hamiltonians of quantum systems.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.RA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T16:10:44Z</published>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Sandra Di Rocco</name>
+    </author>
+    <author>
+      <name>Bernd Sturmfels</name>
+    </author>
+    <author>
+      <name>Svala Sverrisdóttir</name>
+    </author>
+  </entry>
+</feed>
