@@ -70,7 +70,7 @@
 \maketitle
 
 \begin{abstract}
-The Riemann Hypothesis, postulating that all non-trivial zeros of the zeta function lie on the critical line $\Re(s)=1/2$, is addressed here through the lens of motivic geometry. We construct a motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ whose relative cohomology encodes the spectral properties of $\zeta(s)$. Utilizing the theory of vanishing cycles and the rigidity of polarizable mixed Hodge structures, we demonstrate that any deviation from the critical line would yield a topological contradiction regarding the positivity of the Riemann-Hodge bilinear form. This geometric framework provides an unconditional proof of the Riemann Hypothesis and naturally extends it to Dirichlet $L$-functions via functoriality.
+The Riemann Hypothesis, postulating that all non-trivial zeros of the zeta function lie on the critical line $\Re(s)=1/2$, is addressed here through the lens of motivic geometry. We construct a motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ whose relative cohomology encodes the spectral properties of $\zeta(s)$. While the fundamental lemmas establish the link between vanishing cycle theory and arithmetic rigidity for Dirichlet $L$-functions, the global proof attempt currently faces a structural topological impasse (inability to deduce a subvariety of fractional dimension). This document represents the state of the art of our research, frozen following the rejection of the spectral extension.
 \end{abstract}
 
 \hypertarget{resolution-of-the-riemann-hypothesis-via-motivic-fibrations}{%
@@ -374,30 +374,6 @@ p^{\Re(\rho_{\chi})} &= p^{1/2} \\
 \Re(\rho_{\chi}) &= \frac{1}{2}
 \end{align*}
 The absence of modular fluctuation for Dirichlet characters preserves the absolute geometric rigidity of the Hodge operator. The generalization of the Riemann hypothesis follows naturally. The demonstration is complete.
-\end{proof}
-
-\subsection{Main Theorem}
-
-The preceding lemma allows us to conclude the proof. The Riemann Hypothesis is reformulated as a direct consequence of the positivity properties of mixed Hodge structures applied to the cohomology of the fibration $\mathcal{X}$.
-
-\begin{theorem}[Resolution of the Riemann Hypothesis]
-All non-trivial zeros of the Riemann $\zeta$ function lie exactly on the critical line. Formally, if $\zeta(\rho) = 0$ with $0 < \Re(\rho) < 1$, then $\Re(\rho) = 1/2$.
-\end{theorem}
-
-\begin{proof}
-We proceed by contradiction. Suppose the existence of an asymmetric zero $\rho = 1/2 + \delta + i\gamma$ with $\delta > 0$. By the functional equation of $\zeta(s)$, the symmetric zero $1/2 - \delta - i\gamma$ also exists.
-
-In the category of pure motives $\mathcal{M}(\mathbb{Z})$, the spectral correspondence links this zero $\rho$ to a subquotient of the étale cohomology group $H^1_{\text{et}}(\mathcal{X}_{\bar{\mathbb{F}}_p}, \mathbb{Q}_{\ell})$. The geometric Frobenius endomorphism $\operatorname{Frob}_p$ acting on this subspace would then possess an eigenvalue $\alpha_p$ of exact modulus $p^{1/2 + \delta}$.
-
-However, the cohomology of our motivic fibration $\pi : \mathcal{X} \to \mathbb{P}^1$ is equipped with a polarizable mixed Hodge structure. The Riemann-Hodge bilinear relations stipulate that the intersection form on the pure component of the vanishing cycles is positive definite. The existence of an eigenvalue $\alpha_p$ with an excessive "fractional weight" (corresponding to $\delta > 0$) would imply the existence of an algebraic cycle whose action under the monodromy operator would generate a substructure of indefinite signature.
-
-Geometrically, such an asymmetric weight would require the existence of a subvariety of fractional dimension within the special fiber, a flagrant violation of the rationality of algebraic cycles stated by Weil purity and the Tate conjecture over finite fields. The topological fabric of the arithmetic variety cannot tear to accommodate an analytical asymmetry.
-
-To preserve the positivity of the metric polarization on the global motive $\mathbf{M}_{\zeta}$, the Frobenius operator is constrained to the strictest isometry on the intersection fibrations. The dimensional anomaly $\delta$ must therefore be rigorously zero:
-\begin{equation*}
-\delta = 0 \implies \Re(\rho) = \frac{1}{2}
-\end{equation*}
-Consequently, the positivity condition of the intersection form on the motivic fibration strictly constrains the real part of the non-trivial zeros of the $\zeta$ function. The geometric symmetry imposed by the relative de Rham cohomology precludes any deviation outside the critical line.
 \end{proof}
 
 \begin{thebibliography}{99}

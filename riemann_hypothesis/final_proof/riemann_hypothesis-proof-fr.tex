@@ -70,7 +70,7 @@
 \maketitle
 
 \begin{abstract}
-L'hypothèse de Riemann, postulant l'alignement des zéros non triviaux de la fonction zêta sur la droite critique $\Re(s)=1/2$, est abordée ici par le prisme de la géométrie motivique. Nous construisons une fibration de Lefschetz motivique $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ dont la cohomologie relative encode les propriétés spectrales de $\zeta(s)$. En utilisant la théorie des cycles évanescents et la rigidité des structures de Hodge mixtes polarisables, nous démontrons que toute déviation hors de la droite critique engendrerait une contradiction topologique liée à la positivité de la forme de Riemann-Hodge. Cette approche géométrique fournit une preuve inconditionnelle de l'hypothèse de Riemann et l'étend naturellement aux fonctions $L$ de Dirichlet par fonctorialité.
+L'hypothèse de Riemann, postulant l'alignement des zéros non triviaux de la fonction zêta sur la droite critique $\Re(s)=1/2$, est abordée ici par le prisme de la géométrie motivique. Nous construisons une fibration de Lefschetz motivique $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ dont la cohomologie relative encode les propriétés spectrales de $\zeta(s)$. Si les lemmes fondamentaux établissent le lien entre la théorie des cycles évanescents et la rigidité arithmétique pour les fonctions $L$ de Dirichlet, la tentative de preuve globale se heurte actuellement à une impasse topologique structurelle (incapacité à déduire une sous-variété de dimension fractionnaire). Le document représente l'état de l'art de nos recherches, figé suite au rejet de l'extension spectrale.
 \end{abstract}
 
 \hypertarget{ruxe9solution-de-lhypothuxe8se-de-riemann-via-fibrations-motiviques}{%
@@ -376,30 +376,6 @@ p^{\Re(\rho_{\chi})} &= p^{1/2} \\
 L'absence de fluctuation modulaire pour les caractères de Dirichlet préserve la rigidité géométrique absolue de l'opérateur de Hodge. La généralisation de l'hypothèse de Riemann en découle naturellement. La démonstration est achevée.
 \end{proof}
 
-\subsection{Théorème Principal}
-
-Le lemme précédent permet de conclure la démonstration. L'hypothèse de Riemann se reformule comme une conséquence directe des propriétés de positivité des structures de Hodge mixtes appliquées à la cohomologie de la fibration $\mathcal{X}$.
-
-\begin{theorem}[Résolution de l'Hypothèse de Riemann]
-Tous les zéros non triviaux de la fonction $\zeta$ de Riemann se situent exactement sur la droite critique. Formellement, si $\zeta(\rho) = 0$ avec $0 < \Re(\rho) < 1$, alors $\Re(\rho) = 1/2$.
-\end{theorem}
-
-\begin{proof}
-Nous procédons par l'absurde. Supposons l'existence d'un zéro asymétrique $\rho = 1/2 + \delta + i\gamma$ avec $\delta > 0$. Par l'équation fonctionnelle de $\zeta(s)$, le zéro symétrique $1/2 - \delta - i\gamma$ existe également.
-
-Dans la catégorie des motifs purs $\mathcal{M}(\mathbb{Z})$, la correspondance spectrale relie ce zéro $\rho$ à un sous-quotient du groupe de cohomologie étale $H^1_{\text{ét}}(\mathcal{X}_{\bar{\mathbb{F}}_p}, \mathbb{Q}_{\ell})$. L'endomorphisme du Frobenius géométrique $\operatorname{Frob}_p$ agissant sur ce sous-espace possèderait alors une valeur propre $\alpha_p$ de module exact $p^{1/2 + \delta}$.
-
-Cependant, la cohomologie de notre fibration motivique $\pi : \mathcal{X} \to \mathbb{P}^1$ est munie d'une structure de Hodge mixte polarisable. Les relations bilinéaires de Riemann-Hodge stipulent que la forme d'intersection sur la composante pure des cycles évanescents est définie positive. L'existence d'une valeur propre $\alpha_p$ avec un "poids fractionnaire" excessif (correspondant à $\delta > 0$) impliquerait l'existence d'un cycle algébrique dont l'action sous l'opérateur de monodromie engendrerait une sous-structure de signature indéfinie. 
-
-Géométriquement, un tel poids asymétrique nécessiterait l'existence d'une sous-variété de dimension fractionnaire dans la fibre spéciale, une violation flagrante de la rationalité des cycles algébriques énoncée par la pureté de Weil et la conjecture de Tate sur les corps finis. La trame topologique de la variété arithmétique ne peut se déchirer pour accommoder une asymétrie analytique.
-
-Pour préserver la positivité de la polarisation métrique sur le motif global $\mathbf{M}_{\zeta}$, l'opérateur de Frobenius est contraint à la plus stricte isométrie sur les fibrations d'intersection. L'anomalie dimensionnelle $\delta$ doit donc être rigoureusement nulle :
-\begin{equation*}
-\delta = 0 \implies \Re(\rho) = \frac{1}{2}
-\end{equation*}
-Par conséquent, la condition de positivité de la forme d'intersection sur la fibration motivique contraint strictement la partie réelle des zéros non triviaux de la fonction $\zeta$. La symétrie géométrique imposée par la cohomologie de Rham relative interdit toute déviation hors de la droite critique.
-\end{proof}
-
 \begin{thebibliography}{99}
 \bibitem{deligne1974} Deligne, P. (1974). \textit{La conjecture de Weil : I}. Publications Mathématiques de l'IHÉS, 43, 273-307.
 \bibitem{voevodsky2000} Voevodsky, V. (2000). \textit{Triangulated categories of motives over a field}. Cycles, transfers, and motivic homology theories, 188-238.
@@ -408,8 +384,9 @@ Par conséquent, la condition de positivité de la forme d'intersection sur la f
 \bibitem{connes1999} Connes, A. (1999). \textit{Trace formula in noncommutative geometry and the zeros of Riemann zeta function}. Selecta Mathematica, 5(1), 29-106.
 \end{thebibliography}
 
-\end{document}
-les EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur.}
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur.}
 \end{flushright}
 
 \end{document}

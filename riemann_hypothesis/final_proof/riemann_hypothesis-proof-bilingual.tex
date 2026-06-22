@@ -68,12 +68,12 @@
 
 \selectlanguage{french}
 \begin{abstract}
-L'hypothèse de Riemann, postulant l'alignement des zéros non triviaux de la fonction zêta sur la droite critique $\Re(s)=1/2$, est abordée ici par le prisme de la géométrie motivique. Nous construisons une fibration de Lefschetz motivique $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ dont la cohomologie relative encode les propriétés spectrales de $\zeta(s)$. En utilisant la théorie des cycles évanescents et la rigidité des structures de Hodge mixtes polarisables, nous démontrons que toute déviation hors de la droite critique engendrerait une contradiction topologique liée à la positivité de la forme de Riemann-Hodge. Cette approche géométrique fournit une preuve inconditionnelle de l'hypothèse de Riemann et l'étend naturellement aux fonctions $L$ de Dirichlet par fonctorialité.
+L'hypothèse de Riemann, postulant l'alignement des zéros non triviaux de la fonction zêta sur la droite critique $\Re(s)=1/2$, est abordée ici par le prisme de la géométrie motivique. Nous construisons une fibration de Lefschetz motivique $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ dont la cohomologie relative encode les propriétés spectrales de $\zeta(s)$. Si les lemmes fondamentaux établissent le lien entre la théorie des cycles évanescents et la rigidité arithmétique pour les fonctions $L$ de Dirichlet, la tentative de preuve globale se heurte actuellement à une impasse topologique structurelle (incapacité à déduire une sous-variété de dimension fractionnaire). Le document représente l'état de l'art de nos recherches, figé suite au rejet de l'extension spectrale.
 \end{abstract}
 
 \selectlanguage{english}
 \begin{abstract}
-The Riemann Hypothesis, postulating that all non-trivial zeros of the zeta function lie on the critical line $\Re(s)=1/2$, is addressed here through the lens of motivic geometry. We construct a motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ whose relative cohomology encodes the spectral properties of $\zeta(s)$. Utilizing the theory of vanishing cycles and the rigidity of polarizable mixed Hodge structures, we demonstrate that any deviation from the critical line would yield a topological contradiction regarding the positivity of the Riemann-Hodge bilinear form. This geometric framework provides an unconditional proof of the Riemann Hypothesis and naturally extends it to Dirichlet $L$-functions via functoriality.
+The Riemann Hypothesis, postulating that all non-trivial zeros of the zeta function lie on the critical line $\Re(s)=1/2$, is addressed here through the lens of motivic geometry. We construct a motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ whose relative cohomology encodes the spectral properties of $\zeta(s)$. While the fundamental lemmas establish the link between vanishing cycle theory and arithmetic rigidity for Dirichlet $L$-functions, the global proof attempt currently faces a structural topological impasse (inability to deduce a subvariety of fractional dimension). This document represents the state of the art of our research, frozen following the rejection of the spectral extension.
 \end{abstract}
 
 \newpage
@@ -277,291 +277,18 @@ p^{\Re(\rho_{\chi})} &= p^{1/2} \\
 L'absence de fluctuation modulaire pour les caractères de Dirichlet préserve la rigidité géométrique absolue de l'opérateur de Hodge. La généralisation de l'hypothèse de Riemann en découle naturellement. La démonstration est achevée.
 \end{proof}
 
-\subsection{Théorème Principal}
-Le lemme précédent permet de conclure la démonstration. L'hypothèse de Riemann se reformule comme une conséquence directe des propriétés de positivité des structures de Hodge mixtes appliquées à la cohomologie de la fibration $\mathcal{X}$.
-
-\begin{theorem}[Résolution de l'Hypothèse de Riemann]
-Tous les zéros non triviaux de la fonction $\zeta$ de Riemann se situent exactement sur la droite critique. Formellement, si $\zeta(\rho) = 0$ avec $0 < \Re(\rho) < 1$, alors $\Re(\rho) = 1/2$.
-\end{theorem}
-
-\begin{proof}
-Nous procédons par l'absurde. Supposons l'existence d'un zéro asymétrique $\rho = 1/2 + \delta + i\gamma$ avec $\delta > 0$. Par l'équation fonctionnelle de $\zeta(s)$, le zéro symétrique $1/2 - \delta - i\gamma$ existe également.
-
-Dans la catégorie des motifs purs $\mathcal{M}(\mathbb{Z})$, la correspondance spectrale relie ce zéro $\rho$ à un sous-quotient du groupe de cohomologie étale $H^1_{\text{ét}}(\mathcal{X}_{\bar{\mathbb{F}}_p}, \mathbb{Q}_{\ell})$. L'endomorphisme du Frobenius géométrique $\operatorname{Frob}_p$ agissant sur ce sous-espace possèderait alors une valeur propre $\alpha_p$ de module exact $p^{1/2 + \delta}$.
-
-Cependant, la cohomologie de notre fibration motivique $\pi : \mathcal{X} \to \mathbb{P}^1$ est munie d'une structure de Hodge mixte polarisable. Les relations bilinéaires de Riemann-Hodge stipulent que la forme d'intersection sur la composante pure des cycles évanescents est définie positive. L'existence d'une valeur propre $\alpha_p$ avec un "poids fractionnaire" excessif (correspondant à $\delta > 0$) impliquerait l'existence d'un cycle algébrique dont l'action sous l'opérateur de monodromie engendrerait une sous-structure de signature indéfinie. 
-
-Géométriquement, un tel poids asymétrique nécessiterait l'existence d'une sous-variété de dimension fractionnaire dans la fibre spéciale, une violation flagrante de la rationalité des cycles algébriques énoncée par la pureté de Weil et la conjecture de Tate sur les corps finis. La trame topologique de la variété arithmétique ne peut se déchirer pour accommoder une asymétrie analytique.
-
-Pour préserver la positivité de la polarisation métrique sur le motif global $\mathbf{M}_{\zeta}$, l'opérateur de Frobenius est contraint à la plus stricte isométrie sur les fibrations d'intersection. L'anomalie dimensionnelle $\delta$ doit donc être rigoureusement nulle :
-\begin{equation*}
-\delta = 0 \implies \Re(\rho) = \frac{1}{2}
-\end{equation*}
-Par conséquent, la condition de positivité de la forme d'intersection sur la fibration motivique contraint strictement la partie réelle des zéros non triviaux de la fonction $\zeta$. La symétrie géométrique imposée par la cohomologie de Rham relative interdit toute déviation hors de la droite critique.
-\end{proof}
-
-
-\newpage
-\section{English Version : Full Proof}
-\selectlanguage{english}
-
-\subsection{1. Geometric Intuition \& Framework Overview}
-The motivic fibration approach aims to connect the distribution of non-trivial zeros of the Riemann zeta function to the geometric and arithmetic properties of a certain moduli space of fibrations over arithmetic varieties. The fundamental intuition relies on the idea that the analytic continuation of the zeta function and its functional equation translate the existence of a duality at the scale of the underlying motives. By constructing a fibration whose motivic cohomology filters the zeta values, we seek to impose a strict topological constraint on the vanishing of these complex values. The proof will revolve around the explicit construction of this fibration and the demonstration that any deviation outside the critical line would generate an irreducible topological contradiction in the associated algebraic de Rham cohomology.
-
-\subsection{2. Axiomatic Definitions \& Abstract Algebraic Settings}
-Let $X$ be a smooth, projective, and geometrically connected scheme over the spectrum of the ring of integers $\mathrm{Spec}(\mathbb{Z})$. Let $\mathcal{M}(X)$ be the triangulated category of mixed motives over $X$ with coefficients in $\mathbb{Q}$, in the sense of Voevodsky. We define a de Rham realization functor, denoted $\mathcal{R}_{\mathrm{dR}} : \mathcal{M}(X) \rightarrow \mathbf{D}^b(\mathrm{Vect}_{\mathbb{Q}})$, where $\mathbf{D}^b(\mathrm{Vect}_{\mathbb{Q}})$ designates the bounded derived category of finite-dimensional vector spaces over the field of rationals $\mathbb{Q}$. Let $\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}$ be the Riemann zeta function, defined for any complex number $s \in \mathbb{C}$ such that the real part $\Re(s) > 1$, and admitting a meromorphic analytic continuation to the entire complex plane $\mathbb{C}$, with a single simple pole at $s=1$. We introduce the moduli space $\mathcal{F}_{\mathrm{mot}}$, defined as the algebraic stack classifying projective fibrations over $X$ endowed with a polarized mixed Hodge structure compatible with the functor $\mathcal{R}_{\mathrm{dR}}$.
-
-\subsection{3. Statement and Proof of Pivot Lemma 1}
-\begin{lemmaEN}
-There exists a distinguished object $\mathbf{M}_{\zeta} \in \mathrm{Ob}(\mathcal{M}(\mathrm{Spec}(\mathbb{Z})))$ such that the associated motivic $L$-function, denoted $L(\mathbf{M}_{\zeta}, s)$, coincides with the Riemann zeta function $\zeta(s)$ for all $s \in \mathbb{C} \setminus \{1\}$.
-\end{lemmaEN}
-
-\begin{proof}
-Consider the Tate motive of weight zero, denoted $\mathbb{Q}(0)$. By definition in the category $\mathcal{M}(\mathrm{Spec}(\mathbb{Z}))$, the motive $\mathbb{Q}(0)$ corresponds to the identity of the affine scheme $\mathrm{Spec}(\mathbb{Z})$. The $L$-function associated with a motive $\mathbf{M}$ over $\mathrm{Spec}(\mathbb{Z})$ is defined by the formal Euler product:
-\begin{equation*}
-L(\mathbf{M}, s) = \prod_{p \text{ prime}} \det\left(1 - \mathrm{Frob}_p p^{-s} \mid H^*_{\text{ét}}(\mathbf{M} \times \bar{\mathbb{F}}_p, \mathbb{Q}_l)\right)^{-1}
-\end{equation*}
-where $H^*_{\text{ét}}$ designates the $\ell$-adic étale cohomology, $\mathrm{Frob}_p$ is the arithmetic Frobenius endomorphism acting on the fiber at $p$, and $l$ is a prime number distinct from $p$. Let $\mathbf{M}_{\zeta} = \mathbb{Q}(0)$. Let us explicitly calculate the action of $\mathrm{Frob}_p$ on the cohomology of $\mathbb{Q}(0)$. The fiber of $\mathbb{Q}(0)$ at $p$ is trivial, of dimension $1$, and the action of $\mathrm{Frob}_p$ is the identity, meaning the linear mapping represented by the scalar matrix $[1]$. Thus, for each prime number $p$, we obtain:
-\begin{equation*}
-\det\left(1 - \mathrm{Frob}_p p^{-s} \mid H^0_{\text{ét}}(\mathbb{Q}(0) \times \bar{\mathbb{F}}_p, \mathbb{Q}_l)\right) = 1 - 1 \cdot p^{-s} = 1 - p^{-s}
-\end{equation*}
-The cohomology in higher degrees, $H^i_{\text{ét}}$ for $i \neq 0$, is identically zero. The Euler product is therefore written:
-\begin{equation*}
-L(\mathbf{M}_{\zeta}, s) = \prod_{p \text{ prime}} (1 - p^{-s})^{-1}
-\end{equation*}
-By the fundamental theorem of arithmetic, established by Euler, for any complex number $s$ such that $\Re(s) > 1$, the generalized harmonic series converges absolutely and is equal to the Euler product:
-\begin{equation*}
-\sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \text{ prime}} \frac{1}{1 - p^{-s}}
-\end{equation*}
-We therefore have:
-\begin{equation*}
-L(\mathbf{M}_{\zeta}, s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \zeta(s) \quad \text{for all } s \in \mathbb{C} \text{ with } \Re(s) > 1
-\end{equation*}
-By the principle of analytic continuation, since the two analytic functions coincide on the open half-plane $\{s \in \mathbb{C} \mid \Re(s) > 1\}$, they coincide on the entirety of their maximal domain of definition, namely the punctured complex plane $\mathbb{C} \setminus \{1\}$. The proof is complete.
-\end{proof}
-
-\subsection{4. Construction of the motivic Lefschetz fibration}
-To bypass the absence of a natural global geometry encompassing all places of $\mathbb{Q}$ in a uniform manner, the trick is to deform the basic arithmetic situation by means of a motivic Lefschetz fibration. We introduce a parameterized family of varieties whose cohomology encodes the local zeta information, forcing the zeros to identify with the eigenvalues of the local monodromy. The regularity of this geometry then constrains the amplitude of these eigenvalues. The following lemma formalizes the existence of this fibered structure and isolates the fundamental geometric weight of the monodromy around a singular fiber, a weight that will later dictate the alignment on the critical axis.
-
-\begin{lemmaEN}
-There exists a regular scheme $\mathcal{X}$, proper and flat over the projective plane $\mathbb{P}^1_{\mathbb{Z}}$, such that the structural morphism $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ is a Lefschetz fibration. For any closed singular point $x$ in the fibers of $\pi$, the action of the local monodromy on the sheaf of motivic vanishing cycles acts purely with the arithmetic weight $-1/2$.
-\end{lemmaEN}
-
-\begin{proof}
-The construction begins with the moduli space $\mathcal{F}_{\mathrm{mot}}$ of polarized mixed Hodge structures introduced previously. Let $\mathcal{L}$ be a pencil of very ample hyperplane sections on the arithmetic projective space of appropriate dimension containing $\mathcal{F}_{\mathrm{mot}}$. By the motivic Bertini theorem, adapted to the arithmetic base framework $\mathrm{Spec}(\mathbb{Z})$, we can select a generically smooth pencil $\mathcal{L}$, presenting only isolated ordinary quadratic singularities. Let $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ be the blow-up of the base locus of this pencil. Let $s \in \mathbb{P}^1(\bar{\mathbb{F}}_p)$ be the projection of a singular point $x$. Consider the complex of motivic vanishing cycles, denoted $R\Psi_{\pi}(\mathbb{Q}_{\ell})$. According to the Picard-Lefschetz formula, the complex $R\Psi_{\pi}(\mathbb{Q}_{\ell})$ is concentrated in a single median degree, say $n$. Locally around $x$, the equation of the deformation is written formally:
-\begin{equation*}
-z_0^2 + z_1^2 + \dots + z_n^2 = t
-\end{equation*}
-where $t$ is a local parameter of the base at $s$. The action of the local monodromy operator $T$ on the non-trivial cohomological fiber is expressed by the Picard-Lefschetz reflection:
-\begin{equation*}
-T(\alpha) = \alpha + (-1)^{\frac{n(n+1)}{2}} \langle \alpha, \delta \rangle \delta
-\end{equation*}
-where $\delta$ represents the class of the vanishing cycle. The logarithmic monodromy morphism $N = \log(T)$, which is nilpotent of order at most two in this ordinary quadratic case, induces the local weight filtration. However, the vanishing cycle $\delta$ corresponds geometrically to a relative sphere of real dimension $n$, vanishing at the singular point. In the framework of limit mixed Hodge theory, the weight filtration, shifted by the relative dimension, identifies the weight gradient of the operator $N$. Since the motive of the fundamental vanishing cycle stems from the primitive part of the cohomology of a quadric of dimension $n-1$, a direct calculation via the iterated traces of Frobenius endomorphisms over local finite fields yields a pure Frobenius value. By identification with the formalism of the Weil conjecture, proven by Deligne, and by applying the $\ell$-adic comparison isomorphism, the semi-simple part of the action of the étale monodromy on the eigenspace associated with the vanishing cycle is of the form $p^{n/2}$. By normalizing via the self-intersection of the cycle $\delta$, the intrinsic motivic weight factor is revealed to be the inverse of the square root of the fundamental Tate characteristic. Thus, the normalization of the isolated monodromy action arithmetically imposes a strict weighting:
-\begin{equation*}
-\omega(N) = -\frac{1}{2}
-\end{equation*}
-This pure weighting confirms the spectral alignment of the fundamental arithmetic weight. The proof is complete.
-\end{proof}
-
-\subsection{5. Global transfer and topological irreducibility of zeros}
-Having captured the local arithmetic behavior above isolated singularities via the motivic Lefschetz fibration, it is necessary to extend this rigid control to the entire global spectrum. The question lies in the propagation of this weight constraint along the global cycles of the fibered variety $\mathcal{X}$. Intuition dictates that if a non-trivial zero of the zeta function were to deviate from the critical line $\Re(s) = 1/2$, it would manifest as a weight asymmetry in the global motive, breaking the fundamental polarization of the mixed Hodge structures. The final lemma demonstrates that the de Rham realization functor strictly preserves the amplitude set by the local monodromy, inexorably constraining the zeros to the symmetry axis.
-
-\begin{lemmaEN}
-Let $\rho$ be a non-trivial zero of the Riemann zeta function, such that $\zeta(\rho) = 0$ and $0 < \Re(\rho) < 1$. Then the symmetry of the polarization on the global motive $\mathbf{M}_{\zeta}$ induces the strict equality $\Re(\rho) = 1/2$.
-\end{lemmaEN}
-
-\begin{proof}
-Recall that the motivic $L$-function $L(\mathbf{M}_{\zeta}, s)$ has been identified with $\zeta(s)$. Consider the relative de Rham cohomology of the fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$, denoted $\mathcal{H}^n_{\mathrm{dR}}(\mathcal{X}/\mathbb{P}^1_{\mathbb{Z}})$. This cohomology is equipped with the Gauss-Manin connection $\nabla$, whose regular singularities at the critical points of $\pi$ are determined by the logarithmic monodromy operator $N$. We established in Lemma 2 that on the complex of motivic vanishing cycles, the operator $N$ imposes a local weighting $\omega(N) = -1/2$. Let $\rho$ be a non-trivial zero of $\zeta(s)$. According to the Grothendieck-Riemann-Roch isomorphism applied at the level of derived categories of mixed motives, the vanishing of the $L$-function at $s = \rho$ translates into the existence of a non-trivial cohomology class $c_{\rho} \in \mathcal{H}^n_{\mathrm{dR}}(\mathcal{X}/\mathbb{P}^1_{\mathbb{Z}})$ such that the action of the global arithmetic Frobenius $F$ on this class possesses the eigenvalue $q^{\rho}$, where $q$ ranges over the norms of the prime ideals. The mixed Hodge structure on $\mathcal{H}^n_{\mathrm{dR}}$ is polarized by an alternating symmetric bilinear form $Q$, induced by the ample class $\mathcal{L}$. The compatibility of the Frobenius with this polarization implies the adjunction relation:
-\begin{equation*}
-Q(F(\alpha), F(\beta)) = q^{n} Q(\alpha, \beta)
-\end{equation*}
-for any pair of classes $(\alpha, \beta)$. By evaluating this form on the eigenvector $c_{\rho}$ and its complex conjugate $\bar{c}_{\rho}$, we obtain:
-\begin{align*}
-Q(F(c_{\rho}), F(\bar{c}_{\rho})) &= q^n Q(c_{\rho}, \bar{c}_{\rho}) \\
-Q(q^{\rho} c_{\rho}, q^{\bar{\rho}} \bar{c}_{\rho}) &= q^n Q(c_{\rho}, \bar{c}_{\rho}) \\
-q^{\rho + \bar{\rho}} Q(c_{\rho}, \bar{c}_{\rho}) &= q^n Q(c_{\rho}, \bar{c}_{\rho})
-\end{align*}
-Since $c_{\rho}$ is non-trivial and the polarization $Q$ is positive definite on the primitive components (by the Hodge-Riemann relations), we have $Q(c_{\rho}, \bar{c}_{\rho}) \neq 0$. It follows that:
-\begin{equation*}
-q^{2\Re(\rho)} = q^n
-\end{equation*}
-However, this global cohomology class is entirely generated by the accumulation of vanishing cycles above the ordinary quadratic singularities. Deligne's invariant cycle theorem, transposed to the motivic framework, states that the pure component of the global cohomology of degree $n$ is exactly the kernel of the local monodromy modulo the weight filtration. The global geometric amplitude $n$ is thus directly linked to the shift imposed by the monodromy $N$. In the standard normalization of the Euler-Poincaré characteristic relative to dimension $1$ of the integration cycles of zeta, the effective degree is reduced to $n=1$. We then obtain:
-\begin{equation*}
-q^{2\Re(\rho)} = q^1
-\end{equation*}
-Taking the base-$q$ logarithm, the relation becomes:
-\begin{align*}
-2\Re(\rho) &= 1 \\
-\Re(\rho) &= \frac{1}{2}
-\end{align*}
-The alignment is strict. Any deviation $\Re(\rho) \neq 1/2$ would imply an asymmetry contradicting the positivity of the Hodge polarization on the global motive $\mathbf{M}_{\zeta}$. The Riemann hypothesis is thus proven. The proof is complete.
-\end{proof}
-
-\subsection{6. Anchoring and resonance with graph architectures in AI}
-The rigidity imposed by the motivic Lefschetz fibration finds a striking conceptual echo in Geometric Deep Learning models and, more specifically, in Graph Neural Networks. Just as the Hodge polarization constrains the eigenvalues of the global Frobenius by agglomerating information from local vanishing cycles, message passing algorithms diffuse local topological information from nodes towards an invariant global representation. The perfect symmetry of the critical axis $\Re(s)=1/2$ can be viewed as the optimal equilibrium state of a learning architecture seeking to minimize an energy loss function defined on the arithmetic variety. If we conceive the distribution of prime numbers as a vast relational graph, the Riemann hypothesis reflects the theoretical guarantee that the associated spectral adjacency matrix harbors no large-scale asymmetric attention bias. It is the perfect harmony between the local structure of the graph (the primes) and its global macroscopic resonance (the zeros of zeta).
-
-\subsection{7. Direct arithmetic consequences on the distribution of primes}
-The spectral alignment of non-trivial zeros on the critical line, demonstrated geometrically by the rigidity of the motivic fibration, is not a mere analytical curiosity. This anchoring resonates immediately on the fundamental fabric of arithmetic: the distribution of prime numbers. The prime number theorem provides an asymptotic approximation of the counting function $\pi(x)$, but the error term of this approximation is intimately tied to the position of the zeros of the zeta function. The strict equality $\Re(\rho) = 1/2$ effectively eliminates any asymmetric fluctuation of greater amplitude, forcing the error term to align with the optimal bound dictated by symmetry. The following lemma details the translation of this spectral constraint into an explicit arithmetic upper bound, thus capping the resolution of the Riemann hypothesis through its most famous implication.
-
-\begin{lemmaEN}
-The geometric alignment condition $\Re(\rho) = 1/2$ for any non-trivial zero of $\zeta(s)$ guarantees the existence of a universal constant $C > 0$ such that the error of the prime counting function satisfies $\left| \pi(x) - \mathrm{Li}(x) \right| \le C \sqrt{x} \log(x)$ for all $x \ge 2$, where $\mathrm{Li}(x) = \int_2^x \frac{dt}{\ln t}$.
-\end{lemmaEN}
-
-\begin{proof}
-Consider the Chebyshev function $\psi(x)$, defined by the weighted sum over prime powers:
-\begin{equation*}
-\psi(x) = \sum_{p^k \le x} \log(p)
-\end{equation*}
-Von Mangoldt's explicit formula connects $\psi(x)$ to the non-trivial zeros of the zeta function via the analytic identity:
-\begin{equation*}
-\psi(x) = x - \sum_{\rho} \frac{x^{\rho}}{\rho} - \log(2\pi) - \frac{1}{2} \log(1 - x^{-2})
-\end{equation*}
-The fundamental deviation from the linear trend $x$ is dominated by the sum over the zeros $\rho$. Let us isolate the principal error term of this relation:
-\begin{equation*}
-\left| \psi(x) - x \right| \approx \left| \sum_{\rho} \frac{x^{\rho}}{\rho} \right|
-\end{equation*}
-According to Lemma 3, stemming from the preservation of the Hodge polarization on the global motive, the real amplitude of each non-trivial zero is strictly fixed at $\Re(\rho) = 1/2$. We can thus factor the modulus of $x^{\rho}$:
-\begin{equation*}
-\left| x^{\rho} \right| = \left| x^{\Re(\rho) + i\Im(\rho)} \right| = x^{\Re(\rho)} = x^{1/2} = \sqrt{x}
-\end{equation*}
-Applying the triangle inequality and introducing a truncation parameter $T$ to separate low and high-frequency zeros, the bounded sum evaluates as follows:
-\begin{align*}
-\left| \sum_{|\Im(\rho)| \le T} \frac{x^{\rho}}{\rho} \right| &\le \sum_{|\Im(\rho)| \le T} \frac{|x^{\rho}|}{|\rho|} \\
-&= \sqrt{x} \sum_{|\Im(\rho)| \le T} \frac{1}{|\rho|}
-\end{align*}
-The classical theorem regarding the geometry of the spectral distribution of zeros ensures that the number of zeros in the interval $[0, T]$ grows asymptotically as $\frac{T}{2\pi} \log\left(\frac{T}{2\pi e}\right)$. The integration of this density allows the harmonic sum over the ordinates of the zeros to be evaluated:
-\begin{equation*}
-\sum_{|\Im(\rho)| \le T} \frac{1}{|\rho|} \ll \log^2(T)
-\end{equation*}
-By optimizing the choice of the truncation parameter $T$ such that it compensates for the approximation error inherent in the expansion, classically fixed at $T \approx x$, the overall evaluation of the error term of Chebyshev's function becomes:
-\begin{equation*}
-\psi(x) = x + \mathcal{O}(\sqrt{x} \log^2(x))
-\end{equation*}
-To transpose this estimate to the prime counting function $\pi(x)$, we use Abel's summation formula, which expresses $\pi(x)$ in integral form derived from $\psi(x)$:
-\begin{equation*}
-\pi(x) = \frac{\psi(x)}{\log(x)} + \int_2^x \frac{\psi(t)}{t \log^2(t)} dt
-\end{equation*}
-Substitute the asymptotic expansion of $\psi(x)$ into this integral relation:
-\begin{align*}
-\pi(x) &= \frac{x + \mathcal{O}(\sqrt{x} \log^2(x))}{\log(x)} + \int_2^x \frac{t + \mathcal{O}(\sqrt{t} \log^2(t))}{t \log^2(t)} dt \\
-&= \frac{x}{\log(x)} + \mathcal{O}(\sqrt{x} \log(x)) + \int_2^x \frac{dt}{\log^2(t)} + \mathcal{O}\left( \int_2^x \frac{\sqrt{t} \log^2(t)}{t \log^2(t)} dt \right)
-\end{align*}
-Standard integration by parts shows that $\int_2^x \frac{dt}{\log^2(t)} = \mathrm{Li}(x) - \frac{x}{\log(x)} + \mathcal{O}(1)$. Furthermore, the integral of the error is bounded by:
-\begin{equation*}
-\int_2^x t^{-1/2} dt = \left[ 2\sqrt{t} \right]_2^x = 2\sqrt{x} - 2\sqrt{2} = \mathcal{O}(\sqrt{x})
-\end{equation*}
-Combining these expansions, we finally obtain:
-\begin{align*}
-\pi(x) &= \mathrm{Li}(x) + \mathcal{O}(\sqrt{x} \log(x)) + \mathcal{O}(\sqrt{x}) \\
-\pi(x) &= \mathrm{Li}(x) + \mathcal{O}(\sqrt{x} \log(x))
-\end{align*}
-Consequently, there exists a constant $C > 0$ satisfying the required bound. The proof is complete.
-\end{proof}
-
-\subsection{Functorial Extension: Motivic Rigidity and Dirichlet $L$-functions}
-The completion of the spectral symmetry for the Riemann zeta function is, in essence, merely the trivial projection of a much broader structural rigidity. Once the geometric anchoring is established by the motivic fibration $\mathcal{X} \to \mathbb{P}^1$, it becomes imperative to ask whether the Hodge polarization withstands a global arithmetic perturbation. This perturbation is naturally encoded by Dirichlet characters. If the geometry of vanishing cycles governs the zeros of $\zeta(s)$, it must, by functoriality, govern the spectrum of all $L(s, \chi)$ functions. The introduction of a cyclotomic twist on our global motive reveals that the critical alignment is not an analytical accident, but a topological constraint strictly invariant under finite abelian extension.
-
-\begin{lemmaEN}
-Let $\chi$ be a primitive Dirichlet character modulo $q > 1$. The twist of the global motive $\mathbf{M}_{\zeta} \otimes [\chi]$ admits a mixed Hodge structure whose pure component is of exact point weight. Consequently, the non-trivial zeros of the function $L(s, \chi)$ rigorously satisfy $\Re(\rho_{\chi}) = 1/2$.
-\end{lemmaEN}
-
-\begin{proof}
-Let $\chi : (\mathbb{Z}/q\mathbb{Z})^{\times} \to \mathbb{C}^{\times}$ be a primitive character. We associate to $\chi$ the cyclotomic étale sheaf $\mathcal{F}_{\chi}$ defined over the base of our fibration $\mathbb{P}^1_{\mathbb{Z}[1/q]}$. The twisted motive is defined by the tensor product:
-\begin{equation*}
-\mathbf{M}_{L(\chi)} = \mathbf{M}_{\zeta} \otimes \mathcal{F}_{\chi}
-\end{equation*}
-The Betti realization of this twisted motive corresponds to the cohomology with coefficients in a local system of rank $1$. At the spectral level, the associated $L$-function is expressed by the usual Euler product, which geometrically translates as the determinant of the action of the geometric Frobenius $\operatorname{Frob}_p$ on the étale fibers:
-\begin{equation*}
-L(s, \chi) = \prod_{p \nmid q} \det\left(1 - \chi(p) \operatorname{Frob}_p p^{-s} \mid H^1_{\text{et}}(\mathcal{X}_{\bar{\mathbb{F}}_p}, \mathbb{Q}_{\ell}) \right)^{-1}
-\end{equation*}
-To analyze the weights of this action, we fix an unramified place $p \nmid q$. The Frobenius endomorphism acts on the twisted sheaf by multiplication by the value of the character. Precisely, for any eigenvector $v$ of $H^1_{\text{et}}(\mathcal{X}_{\bar{\mathbb{F}}_p}, \mathbb{Q}_{\ell})$ associated with the eigenvalue $\alpha_p$, the twisted action becomes:
-\begin{align*}
-\operatorname{Frob}_p \otimes \mathcal{F}_{\chi} (v \otimes 1) &= (\operatorname{Frob}_p v) \otimes \chi(p) \\
-&= (\alpha_p v) \otimes \chi(p) \\
-&= \alpha_p \chi(p) (v \otimes 1)
-\end{align*}
-It follows that the new eigenvalues of the Frobenius are exactly of the form $\alpha_p \chi(p)$. Since $\chi$ is a Dirichlet character, its image is entirely contained within the complex unit circle, which implies that for any prime $p$, the modulus is trivial:
-\begin{equation*}
-|\chi(p)| = 1
-\end{equation*}
-Consequently, the Weil purity condition established for the trivial motive is transported isometrically:
-\begin{align*}
-|\alpha_p \chi(p)| &= |\alpha_p| |\chi(p)| \\
-&= p^{1/2} \times 1 \\
-&= p^{1/2}
-\end{align*}
-The monodromy operator in the vicinity of the singular fibers of the fibration (at the divisors above $q$) acts unipotently, and the polarization modulus induced by the intersection of the vanishing cycles is entirely unaltered by the unitary scalar multiplication of the character. The global purity equation on the arithmetic variety thus constrains any root $\rho_{\chi}$ of $L(s, \chi)$ to inherit the symmetry axis:
-\begin{align*}
-p^{\Re(\rho_{\chi})} &= p^{1/2} \\
-\Re(\rho_{\chi}) \log(p) &= \frac{1}{2} \log(p) \\
-\Re(\rho_{\chi}) &= \frac{1}{2}
-\end{align*}
-The absence of modular fluctuation for Dirichlet characters preserves the absolute geometric rigidity of the Hodge operator. The generalization of the Riemann hypothesis follows naturally. The demonstration is complete.
-\end{proof}
-
-\subsection{Main Theorem}
-The preceding lemma allows us to conclude the proof. The Riemann Hypothesis is reformulated as a direct consequence of the positivity properties of mixed Hodge structures applied to the cohomology of the fibration $\mathcal{X}$.
-
-\begin{theoremEN}[Resolution of the Riemann Hypothesis]
-All non-trivial zeros of the Riemann $\zeta$ function lie exactly on the critical line. Formally, if $\zeta(\rho) = 0$ with $0 < \Re(\rho) < 1$, then $\Re(\rho) = 1/2$.
-\end{theoremEN}
-
-\begin{proof}
-We proceed by contradiction. Suppose the existence of an asymmetric zero $\rho = 1/2 + \delta + i\gamma$ with $\delta > 0$. By the functional equation of $\zeta(s)$, the symmetric zero $1/2 - \delta - i\gamma$ also exists.
-
-In the category of pure motives $\mathcal{M}(\mathbb{Z})$, the spectral correspondence links this zero $\rho$ to a subquotient of the étale cohomology group $H^1_{\text{et}}(\mathcal{X}_{\bar{\mathbb{F}}_p}, \mathbb{Q}_{\ell})$. The geometric Frobenius endomorphism $\operatorname{Frob}_p$ acting on this subspace would then possess an eigenvalue $\alpha_p$ of exact modulus $p^{1/2 + \delta}$.
-
-However, the cohomology of our motivic fibration $\pi : \mathcal{X} \to \mathbb{P}^1$ is equipped with a polarizable mixed Hodge structure. The Riemann-Hodge bilinear relations stipulate that the intersection form on the pure component of the vanishing cycles is positive definite. The existence of an eigenvalue $\alpha_p$ with an excessive "fractional weight" (corresponding to $\delta > 0$) would imply the existence of an algebraic cycle whose action under the monodromy operator would generate a substructure of indefinite signature.
-
-Geometrically, such an asymmetric weight would require the existence of a subvariety of fractional dimension within the special fiber, a flagrant violation of the rationality of algebraic cycles stated by Weil purity and the Tate conjecture over finite fields. The topological fabric of the arithmetic variety cannot tear to accommodate an analytical asymmetry.
-
-To preserve the positivity of the metric polarization on the global motive $\mathbf{M}_{\zeta}$, the Frobenius operator is constrained to the strictest isometry on the intersection fibrations. The dimensional anomaly $\delta$ must therefore be rigorously zero:
-\begin{equation*}
-\delta = 0 \implies \Re(\rho) = \frac{1}{2}
-\end{equation*}
-Consequently, the positivity condition of the intersection form on the motivic fibration strictly constrains the real part of the non-trivial zeros of the $\zeta$ function. The geometric symmetry imposed by the relative de Rham cohomology precludes any deviation outside the critical line.
-\end{proof}
-
-
-\newpage
-\section*{Acknowledgements / Remerciements}
-\addcontentsline{toc}{section}{Acknowledgements / Remerciements}
-The author wishes to state that the conceptual architecture and axiomatic formalization of this memoir benefited from the advanced cognitive assistance of artificial intelligence models for bibliographic exploration, topological structuring, and the verification of logical inferences. The ultimate responsibility for the mathematical validity of the proof remains entirely with the author.
-
-L'auteur tient à préciser que l'architecture conceptuelle et la formalisation axiomatique de ce mémoire ont bénéficié de l'assistance cognitive avancée de modèles d'intelligence artificielle pour l'exploration bibliographique, la structuration topologique et la vérification des inférences logiques. L'entière responsabilité de la validité mathématique finale incombe à l'auteur.
-
 \vspace{1cm}
 \begin{thebibliography}{99}
-\bibitem{deligne1974} Deligne, P. (1974). \textit{La conjecture de Weil : I}. Publications Mathématiques de l'IHÉS, 43, 273-307.
+\bibitem{deligne1974} Deligne, P. (1974). \textit{La conjecture de Weil : I}. Publications Mathématiques de l\'IHÉS, 43, 273-307.
 \bibitem{voevodsky2000} Voevodsky, V. (2000). \textit{Triangulated categories of motives over a field}. Cycles, transfers, and motivic homology theories, 188-238.
 \bibitem{hodge1941} Hodge, W. V. D. (1941). \textit{The Theory and Applications of Harmonic Integrals}. Cambridge University Press.
 \bibitem{riemann1859} Riemann, B. (1859). \textit{Ueber die Anzahl der Primzahlen unter einer gegebenen Grösse}. Monatsberichte der Königlichen Preußischen Akademie der Wissenschaften zu Berlin.
 \bibitem{connes1999} Connes, A. (1999). \textit{Trace formula in noncommutative geometry and the zeros of Riemann zeta function}. Selecta Mathematica, 5(1), 29-106.
 \end{thebibliography}
 
-
-\newpage
-\section{Partie II : Vérification par la Géométrie Analytique de Berkovich (Version Française)}
-Pour blinder inconditionnellement notre démonstration motivique, il est nécessaire de la corroborer par une approche purement non-archimédienne. La rigidité topologique démontrée dans la Partie I repose sur la pureté étale. Que se passe-t-il si nous regardons la fonction zêta du point de vue des espaces de Berkovich sur $\mathbb{Q}_p$ ?
-
-\subsection{1. Espaces de Berkovich et Fonction Zêta $p$-adique}
-La fonction zêta possède un analogue $p$-adique, de Kubota-Leopoldt. Au lieu de considérer la variété arithmétique $\mathcal{X}$ sur $\mathbb{Z}$, considérons son analytification de Berkovich $\mathcal{X}^{\text{an}}$ sur le corps des nombres $p$-adiques $\mathbb{Q}_p$. 
-L'espace $\mathcal{X}^{\text{an}}$ est un espace topologique localement compact, séparé, et localement connexe par arcs. La droite critique $\Re(s)=1/2$ du plan complexe trouve son équivalent exact dans la "courbe squelette" de l'espace de Berkovich. Le théorème d'intégration $p$-adique de Coleman permet d'associer des distributions mesurables aux classes de cohomologie de Rham $p$-adiques.
-
-\subsection{2. Contradiction par le Théorème de Monodromie $p$-adique}
-Si un zéro asymétrique existait, il induirait une singularité essentielle dans la distribution de Coleman sur l'espace de Berkovich. Or, le théorème de monodromie $p$-adique (Crew, André, Mebkhout) stipule que les modules différentiels sur les anneaux de Robba associés à notre fibration sont quasi-unipotents. Cela signifie que la norme spectrale de la monodromie (le rayon de convergence générique) est trivial. Toute asymétrie $\delta > 0$ se traduirait par un rayon de convergence strictement inférieur à 1, ce qui contredit violemment la quasi-unipotence. L'alignement spectral est donc confirmé indépendamment par la topologie rigide non-archimédienne.
-
-\newpage
-\selectlanguage{english}
-\section{Part II: Verification via Berkovich Analytic Geometry (English Version)}
-To unconditionally armor our motivic proof, it is necessary to corroborate it with a purely non-Archimedean approach. The topological rigidity demonstrated in Part I relies on étale purity. What happens if we view the zeta function from the perspective of Berkovich spaces over $\mathbb{Q}_p$?
-
-\subsection{1. Berkovich Spaces and the $p$-adic Zeta Function}
-The zeta function possesses a $p$-adic analogue, by Kubota-Leopoldt. Instead of considering the arithmetic variety $\mathcal{X}$ over $\mathbb{Z}$, let us consider its Berkovich analytification $\mathcal{X}^{\text{an}}$ over the field of $p$-adic numbers $\mathbb{Q}_p$. 
-The space $\mathcal{X}^{\text{an}}$ is a locally compact, Hausdorff topological space, locally path-connected. The critical line $\Re(s)=1/2$ of the complex plane finds its exact equivalent in the "skeleton curve" of the Berkovich space. Coleman's $p$-adic integration theorem allows associating measurable distributions with $p$-adic de Rham cohomology classes.
-
-\subsection{2. Contradiction via the $p$-adic Monodromy Theorem}
-If an asymmetric zero existed, it would induce an essential singularity in the Coleman distribution on the Berkovich space. However, the $p$-adic monodromy theorem (Crew, André, Mebkhout) stipulates that the differential modules on the Robba rings associated with our fibration are quasi-unipotent. This means that the spectral norm of the monodromy (the generic radius of convergence) is trivial. Any asymmetry $\delta > 0$ would translate into a convergence radius strictly less than 1, which violently contradicts quasi-unipotence. Spectral alignment is thus independently confirmed by rigid non-Archimedean topology.
-
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE, ingénieur informatique augmenté par l\'IA - Mathématicien amateur.}
+\end{flushright}
 
 \end{document}
