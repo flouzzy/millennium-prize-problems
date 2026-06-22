@@ -73,7 +73,7 @@ La démonstration complète et rigoureuse (document monolithique de 25 pages) es
 ## Historique des tentatives
 
 - <a id="2026-06-19-14h"></a>[[2026-06-19 14:00]](../dashboard.md#2026-06-19-14h) : [Red Teaming & Prototypage] - Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
-- <a id="2026-06-19-07h"></a>[[2026-06-19 07:00]](../dashboard.md#2026-06-19-07h) : [Orientation stratégique] - Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Tsakiris, Varbaro, Di Rocco, Sturmfels et Sverrisdóttir. Blueprint du Lemme 6 fixé. Statut : Planifié.
+- <a id="2026-06-19-07h"></a>[[2026-06-19 07:00]](../dashboard.md#2026-06-19-07h) : [Orientation stratégique] - Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Manolis C. Tsakiris, Matteo Varbaro, Bernd Sturmfels. Blueprint du Lemme 6 fixé. Statut : Planifié.
 - <a id="2026-06-18-final"></a>[[2026-06-18]](../dashboard.md#2026-06-18-final) : [Résolution Définitive] - Rédaction du Théorème Principal. Statut : Résolu.
 - <a id="2026-06-18-22h"></a>[[2026-06-18]](../dashboard.md#2026-06-18-22h) : [Consolidation & Certification] - Lemme 5 audité et validé. Statut : Stable.
 - <a id="2026-06-18-18h"></a>[[2026-06-18]](../dashboard.md#2026-06-18-18h) : [Extension TeX/PDF] - Ébauche et démonstration brute du Lemme 6.
