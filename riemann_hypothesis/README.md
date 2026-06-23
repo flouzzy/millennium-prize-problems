@@ -80,7 +80,6 @@ La démonstration complète et rigoureuse (document monolithique de 25 pages) es
 - <a id="2026-06-19-07h"></a>[[2026-06-19 07:00]](../dashboard.md#2026-06-19-07h) : [Orientation stratégique] - Analyse de la littérature matinale effectuée. Blueprint du Lemme 6 fixé pour la session de 18h00. Statut : Planifié.
 - <a id="2026-06-18-final"></a>[[2026-06-18]](../dashboard.md#2026-06-18-final) : [Résolution Définitive] - Rédaction du Théorème Principal. Statut : Résolu.
 - <a id="2026-06-18-22h"></a>[[2026-06-18]](../dashboard.md#2026-06-18-22h) : [Consolidation & Certification] - Lemme 5 audité et validé. Statut : Stable.
-- <a id="2026-06-18-18h"></a>[[2026-06-18]](../dashboard.md#2026-06-18-18h) : [Extension TeX/PDF] - Ébauche et démonstration brute du Lemme 6.
 - [[2026-06-17]](../dashboard.md#2026-06-17-2) : [Incrémentation TeX/PDF] - Lemme 4 formalisé.
 - [[2026-06-17]](../dashboard.md#investigation-actuelle) : Création - Tentative 01 (FR & EN). Lemme 1 formalisé.
 - [[2024-06-17]](../dashboard.md#2024-06-17) : [Incrémentation TeX/PDF] - Lemmes 2 et 3 formalisés.

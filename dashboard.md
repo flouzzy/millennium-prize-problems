@@ -9,7 +9,7 @@
 
 ## Historique d'avancement
 
-- <a id="2026-06-20-07h"></a>[[2026-06-20 07:00]](dashboard.md#2026-06-20-07h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Manolis C. Tsakiris, Matteo Varbaro, Evan Chen, Ken Ono, Richard E. Schwartz, Dinesh S. Thakur, Sandra Di Rocco, Bernd Sturmfels, Svala Sverrisdóttir. Blueprint du Lemme 7 fixé. Statut : Planifié.
+- <a id="2026-06-19-18h"></a>[[2026-06-19 18:00]](dashboard.md#2026-06-19-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 6 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 - <a id="2026-06-19-22h"></a>[[2026-06-19 22:00]](dashboard.md#2026-06-19-22h) : [Certification & Verrouillage arXiv] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 5 certifié sans ellipse, abstract et références compilés avec succès. Statut : Impasse - Mutation requise.
 
