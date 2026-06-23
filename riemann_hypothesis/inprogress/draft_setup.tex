@@ -13,8 +13,8 @@
 \newtheorem{definitionfr}{Définition}
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
-\title{Draft Setup: Lemma 6 / Brouillon : Lemme 6}
-\date{June 19, 2026}
+\title{Draft Setup: Lemma 7 / Brouillon : Lemme 7}
+\date{June 20, 2026}
 
 \begin{document}
 
@@ -24,43 +24,45 @@
 
 \subsection{Cadre Français}
 
-Pour prémunir notre approche contre les contre-exemples classiques (espaces non archimédiens, dimensions infinies non bornées, opérateurs singuliers), nous posons le cadre strict suivant :
+Pour prémunir notre approche contre les contre-exemples classiques (espaces non archimédiens, dimensions infinies non bornées, opérateurs singuliers, et pathologies de ramification), nous posons le cadre strict suivant :
 
 \begin{itemize}
     \item L'opérateur motivique $\mathcal{M}$ est restreint à une limite pro-finie de sous-motifs bornés.
-    \item L'espace des phases $\mathcal{X}$ est défini comme une variété algébrique propre et lisse sur le corps à un élément $\mathbb{F}_1$.
+    \item L'espace des phases $\mathcal{X}$ est défini comme une variété algébrique propre (assurant la compacité) et lisse sur le corps à un élément $\mathbb{F}_1$.
     \item Le Hamiltonien de déformation $\mathcal{H}$ est exigé comme un opérateur de Fredholm d'indice zéro, assurant un spectre discret et bien comporté.
+    \item La variété des vecteurs propres $\mathcal{V}_{\mathcal{H}}$ est définie par une intersection strictement transverse avec le lieu de ramification sauvage, évitant les singularités de codimension 1.
     \item La dimension cohomologique étale, notée $\dim_{et}(\mathcal{X})$, suit les bornes strictes de Tsakiris et Varbaro (2026).
 \end{itemize}
 
 \subsection{English Framework}
 
-To immunize our approach against classical counter-examples (non-Archimedean spaces, unbounded infinite dimensions, singular operators), we establish the following strict framework:
+To immunize our approach against classical counter-examples (non-Archimedean spaces, unbounded infinite dimensions, singular operators, and ramification pathologies), we establish the following strict framework:
 
 \begin{itemize}
     \item The motivic operator $\mathcal{M}$ is restricted to a pro-finite limit of bounded sub-motives.
-    \item The phase space $\mathcal{X}$ is defined as a proper, smooth algebraic variety over the field with one element $\mathbb{F}_1$.
+    \item The phase space $\mathcal{X}$ is defined as a proper (ensuring compactness) and smooth algebraic variety over the field with one element $\mathbb{F}_1$.
     \item The deformation Hamiltonian $\mathcal{H}$ is strictly required to be a Fredholm operator of index zero, ensuring a well-behaved discrete spectrum.
+    \item The eigenvector variety $\mathcal{V}_{\mathcal{H}}$ is defined by a strictly transverse intersection with the wild ramification locus, avoiding codimension 1 singularities.
     \item The étale cohomological dimension, denoted $\dim_{et}(\mathcal{X})$, strictly adheres to the bounds established by Tsakiris and Varbaro (2026).
 \end{itemize}
 
-\section{Énoncé définitif du Lemme 6 / Definitive Statement of Lemma 6}
+\section{Énoncé définitif du Lemme 7 / Definitive Statement of Lemma 7}
 
 \subsection{Version Française}
 
-\begin{lemme}[Rigidité spectrale par dimension étale]
-    Soit $\mathcal{X}$ l'espace des phases motivique associé à la fonction Zêta de Riemann sur $\mathbb{F}_1$, et $\mathcal{H}$ le Hamiltonien de déformation, opérateur de Fredholm d'indice zéro sur $\mathcal{X}$. Si la sous-variété des vecteurs propres $\mathcal{V}_{\mathcal{H}} \subset \mathcal{X}$ satisfait $\dim_{et}(\mathcal{V}_{\mathcal{H}} \setminus \mathcal{C}) = 0$, où $\mathcal{C}$ est l'axe critique correspondant à $\Re(s) = 1/2$, alors le spectre des valeurs propres non triviales de $\mathcal{H}$ est strictement confiné à $\mathcal{C}$.
+\begin{lemme}[Rigidité de la Variété des Vecteurs Propres]
+    Soit $\mathcal{X}$ l'espace des phases motivique propre et lisse sur $\mathbb{F}_1$. Soit $\mathcal{H}$ le Hamiltonien de déformation de Fredholm. Si la variété des vecteurs propres $\mathcal{V}_{\mathcal{H}}$ est transverse au lieu de ramification sauvage, alors toute déformation continue de $\mathcal{H}$ préservant l'indice de Fredholm laisse le spectre invariant modulo la droite critique $\mathcal{C}$ ($\Re(s) = 1/2$). En particulier, l'intersection $\mathcal{V}_{\mathcal{H}} \cap (\mathcal{X} \setminus \mathcal{C})$ est vide.
 \end{lemme}
 
-Ce lemme assure que la variance des zéros non triviaux est contrainte : la dimension étale nulle hors de l'axe critique implique une rigidité absolue de la variété des vecteurs propres.
+Ce lemme assure que la symétrie de l'axe critique n'est pas un artefact d'un choix de paramétrage, mais une conséquence rigide de la topologie de la variété des vecteurs propres sous contrainte de compacité et de transversalité.
 
 \subsection{English Version}
 
-\begin{lemma}[Spectral Rigidity via Étale Dimension]
-    Let $\mathcal{X}$ be the motivic phase space associated with the Riemann Zeta function over $\mathbb{F}_1$, and let $\mathcal{H}$ be the deformation Hamiltonian, a Fredholm operator of index zero on $\mathcal{X}$. If the eigenvector subvariety $\mathcal{V}_{\mathcal{H}} \subset \mathcal{X}$ satisfies $\dim_{et}(\mathcal{V}_{\mathcal{H}} \setminus \mathcal{C}) = 0$, where $\mathcal{C}$ is the critical axis corresponding to $\Re(s) = 1/2$, then the spectrum of non-trivial eigenvalues of $\mathcal{H}$ is strictly confined to $\mathcal{C}$.
+\begin{lemma}[Rigidity of the Eigenvector Variety]
+    Let $\mathcal{X}$ be the proper and smooth motivic phase space over $\mathbb{F}_1$. Let $\mathcal{H}$ be the Fredholm deformation Hamiltonian. If the eigenvector variety $\mathcal{V}_{\mathcal{H}}$ is transverse to the wild ramification locus, then any continuous deformation of $\mathcal{H}$ preserving the Fredholm index leaves the spectrum invariant modulo the critical line $\mathcal{C}$ ($\Re(s) = 1/2$). In particular, the intersection $\mathcal{V}_{\mathcal{H}} \cap (\mathcal{X} \setminus \mathcal{C})$ is empty.
 \end{lemma}
 
-This lemma ensures that the variance of the non-trivial zeros is constrained: the vanishing étale dimension outside the critical axis forces absolute rigidity on the eigenvector variety.
+This lemma ensures that the symmetry of the critical axis is not an artifact of parameterization choice, but a rigid consequence of the topology of the eigenvector variety under the constraints of compactness and transversality.
 
 \vspace{1cm}
 \begin{flushright}
