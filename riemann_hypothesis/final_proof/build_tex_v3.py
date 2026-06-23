@@ -45,9 +45,9 @@ with open("/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/fin
 
 \title{
     \vspace{-2cm}
-    \Huge \textbf{Résolution de l'Hypothèse de Riemann via la Théorie des Fibrations Motiviques} \\
+    \Huge \textbf{Sur un Programme Cohomologique pour l'Hypothèse de Riemann via les Fibrations Motiviques} \\
     \vspace{0.8cm}
-    \LARGE \textbf{Resolution of the Riemann Hypothesis via Motivic Fibrations Theory}
+    \LARGE \textbf{On a Cohomological Program for the Riemann Hypothesis via Motivic Fibrations}
     \vspace{0.5cm}
 }
 \author{\Large Charles EDOU NZE\thanks{Chercheur indépendant / Independent Researcher. Contact : charles@edounze.com}}
@@ -58,14 +58,14 @@ with open("/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/fin
 
 \selectlanguage{french}
 \begin{abstract}
-\noindent L'hypothèse de Riemann, formulée en 1859, stipule que les zéros non triviaux de la fonction zêta $\zeta(s)$ sont localisés sur la droite critique $\Re(s)=1/2$. Ce mémoire expose une démonstration inconditionnelle de cette conjecture en la transposant dans le cadre de la géométrie algébrique abstraite et de la théorie des motifs. En s'inspirant des travaux de Grothendieck et Deligne sur les conjectures de Weil, nous construisons une fibration de Lefschetz motivique $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ dont la cohomologie de de Rham relative encode fidèlement les propriétés spectrales de $\zeta(s)$. La symétrie spectrale, habituellement perçue comme un artefact analytique, se révèle être une manifestation d'une contrainte topologique profonde : la positivité des structures de Hodge mixtes polarisables. En analysant l'action de la monodromie locale sur le complexe des cycles évanescents, nous prouvons que le poids arithmétique fondamental est rigidement fixé. Toute déviation asymétrique d'un zéro hors de la droite critique impliquerait l'existence d'une classe de cohomologie globale violant les relations bilinéaires de Riemann-Hodge, une impossibilité structurelle démontrant ainsi que $\Re(s)=1/2$ est une loi de conservation topologique inévitable. La méthode s'étend par fonctorialité aux fonctions $L$ de Dirichlet.
+\noindent Ce mémoire propose un programme cohomologique et motivique visant à aborder l'Hypothèse de Riemann par la géométrie algébrique arithmétique. En introduisant deux axiomes conjecturaux clés --- l'existence d'un modèle fibré de Lefschetz motivique $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ pour la fonction zêta et une correspondance spectrale reliant ses zéros aux Frobenius locaux --- nous démontrons rigoureusement que l'hypothèse de Riemann découle de la positivité des structures de Hodge mixtes polarisables. Nous identifions précisément les verrous géométriques et formalisons ce cadre sous forme d'axiomes explicites, unifiant ainsi l'approche spectrale de Hilbert-Pólya avec la rigidité topologique des motifs. La méthode s'étend par fonctorialité aux fonctions $L$ de Dirichlet.
 \end{abstract}
 
 \vspace{1cm}
 \selectlanguage{english}
 \renewcommand{\abstractname}{Abstract}
 \begin{abstract}
-\noindent The Riemann Hypothesis, formulated in 1859, posits that the non-trivial zeros of the zeta function $\zeta(s)$ lie on the critical line $\Re(s)=1/2$. This memoir presents an unconditional proof of this conjecture by transposing it into the framework of abstract algebraic geometry and the theory of motives. Drawing on the works of Grothendieck and Deligne on the Weil conjectures, we construct a motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ whose relative de Rham cohomology faithfully encodes the spectral properties of $\zeta(s)$. Spectral symmetry, typically perceived as an analytical artifact, reveals itself to be a manifestation of a profound topological constraint: the positivity of polarizable mixed Hodge structures. By analyzing the action of the local monodromy on the complex of vanishing cycles, we prove that the fundamental arithmetic weight is rigidly fixed. Any asymmetric deviation of a zero outside the critical line would imply the existence of a global cohomology class violating the Riemann-Hodge bilinear relations, a structural impossibility thus demonstrating that $\Re(s)=1/2$ is an inevitable topological conservation law. The method naturally extends via functoriality to Dirichlet $L$-functions.
+\noindent This memoir outlines a motivic and cohomological program aimed at addressing the Riemann Hypothesis through arithmetic algebraic geometry. By introducing two key conjectural axioms --- the existence of a motivic Lefschetz fibration model $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ for the zeta function and a spectral correspondence linking its zeros to local Frobenius eigenvalues --- we demonstrate rigorously that the Riemann Hypothesis is a direct consequence of the positivity of polarizable mixed Hodge structures. We precisely locate the geometric bottlenecks and formalize the framework via explicit axioms, thereby unifying the spectral Hilbert-Pólya approach with the topological rigidity of motives. The method naturally extends via functoriality to Dirichlet $L$-functions.
 \end{abstract}
 
 \newpage
@@ -89,7 +89,7 @@ La preuve de Deligne repose sur la machinerie colossale de la cohomologie étale
 
 La tragédie de la fonction zêta de Riemann classique réside dans son corps de base. Elle n'est pas définie sur un corps fini, mais sur l'anneau des entiers $\mathbb{Z}$. Il n'existe pas, à ce jour, de "cohomologie de Weil" classique et satisfaisante pour les schémas arithmétiques de dimension absolue $1$ qui permettrait d'y définir un opérateur de Frobenius global dont la trace reproduirait $\zeta(s)$. Les tentatives en géométrie non-commutative (Connes) ou sur le corps à un élément $\mathbb{F}_1$ (Soulé, Connes, Consani) ont produit des architectures magnifiques, mais peinent à finaliser la forme d'intersection à l'infini.
 
-Notre approche consiste à contourner cette absence de cohomologie globale en augmentant la dimension relative. Plutôt que de chercher une cohomologie exotique sur $\mathrm{Spec}(\mathbb{Z})$, nous plongeons le motif trivial $\mathbb{Q}(0)$ au sein d'une fibration de Lefschetz motivique $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$. Nous transférons le fardeau de la symétrie depuis la base (inaccessible) vers la cohomologie relative des fibres (contrôlable par la théorie de Hodge).
+Notre programme propose de contourner cette absence de cohomologie globale en augmentant la dimension relative. Plutôt que de chercher une cohomologie exotique sur $\mathrm{Spec}(\mathbb{Z})$, nous étudions les implications du plongement du motif trivial $\mathbb{Q}(0)$ au sein d'une fibration de Lefschetz motivique conjecturale $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$. Sous réserve de la validité de cette modélisation, nous transférons le fardeau de la symétrie depuis la base (inaccessible) vers la cohomologie relative des fibres (contrôlable par la théorie de Hodge).
 
 \subsection{3. Construction Axiomatique de la Catégorie des Motifs Mixtes}
 Pour manipuler rigoureusement ces entités sans succomber aux mirages analytiques, nous nous plaçons dans la catégorie triangulée des motifs mixtes sur $\mathrm{Spec}(\mathbb{Z})$, notée $\mathcal{M}(\mathbb{Z})$.
@@ -116,16 +116,14 @@ $$ L(\mathbb{Q}(0), s) = \prod_p \frac{1}{1 - p^{-s}} = \zeta(s) $$
 Ceci est rigoureusement valide pour $\Re(s) > 1$ et s'étend par prolongement analytique, reflétant l'équation fonctionnelle du motif global incluant le facteur archimédien Gamma.
 \end{proof}
 
-\subsection{4. Ingénierie de la Fibration de Lefschetz Arithmétique}
-Nous souhaitons analyser les déformations du motif $\mathbb{Q}(0)$. Au lieu d'étudier la fonction $\zeta(s)$ de manière statique, ce qui conduit à l'impasse analytique, nous construisons une famille dynamique de variétés algébriques.
+\subsection{4. Hypothèse de Modélisation par Fibration de Lefschetz}
+Afin de fonder notre programme, nous formulons sous forme d'axiome l'existence d'une fibration arithmétique universelle codant l'arithmétique de $\zeta$.
 
-Soit $\mathcal{A}_{g,1,n}$ l'espace des modules des variétés abéliennes de dimension $g$ ($g \ge 3$) principalement polarisées, avec une structure de niveau $n \ge 3$. Ce schéma, défini sur $\mathbb{Z}[1/n]$, est lisse. Pour englober l'ensemble des places (notamment la place sauvage $p=2$ ou les diviseurs de $n$), nous opérons sur sa compactification toroïdale de Faltings-Chai, notée $\bar{\mathcal{A}}_{g,1,n}$. Cet espace porte de manière inhérente un système local universel $\mathbb{V} = R^1 \pi_* \mathbb{Q}$, qui est une Variation de Structure de Hodge Mixte (VMHS).
-
-L'acte géométrique fondamental consiste à plonger une courbe rationnelle arithmétique $\mathbb{P}^1_{\mathbb{Z}}$ au sein de cette compactification. Cette courbe doit traverser génériquement le lieu lisse et croiser transversalement le diviseur frontière (le lieu des variétés abéliennes dégénérées). Cette courbe agit comme une \textit{droite projective d'observation}. 
-
-\begin{definition}
-Soit $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ la fibration induite par le tiré en arrière (pullback) de la famille universelle le long de notre courbe d'observation. En perturbant le plongement (théorème de Bertini arithmétique), on s'assure que $\pi$ est une fibration de Lefschetz : elle est lisse partout sauf en un nombre fini de fibres, lesquelles ne présentent que des singularités quadratiques ordinaires isolées (des points doubles).
+\begin{definition}[Axiome A : Modélisation Fibrative Motivique]
+Il existe un schéma arithmétique régulier $\mathcal{X}$, propre et plat sur $\mathbb{P}^1_{\mathbb{Z}}$, tel que le morphisme structural $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ soit une fibration de Lefschetz codant la fonction zêta. Pour tout point singulier fermé $x$ dans les fibres de $\pi$, l'action de la monodromie locale sur le faisceau des cycles évanescents motiviques agit purement avec le poids arithmétique $-1/2$.
 \end{definition}
+
+Cette conjecture constitue le premier grand verrou de notre approche. En l'absence d'une construction explicite de ce schéma $\mathcal{X}$, nous l'adoptons comme postulat de départ pour notre étude conditionnelle.
 
 L'intérêt majeur de cette construction réside dans la topologie des voisinages tubulaires singuliers, et plus précisément dans l'apparition des \textit{cycles évanescents}. Lorsqu'on s'approche d'une fibre singulière au-dessus d'un point fini $s \in \mathbb{P}^1(\bar{\mathbb{F}}_p)$, une classe d'homologie de la fibre lisse générique, homéomorphe à une sphère de dimension médiane, s'effondre ("évanouit") sur le point double. C'est le cycle de Lefschetz, noté $\delta$.
 
@@ -149,17 +147,14 @@ L'action du Frobenius géométrique $\mathrm{Frob}_p$ sur le faisceau pervers de
 En vertu du théorème fondamental de Deligne sur le poids de la cohomologie des variétés sur les corps finis (Weil II), la partie primitive de la cohomologie médiane d'une telle fibre est pure. Le cycle évanescent $\delta$, provenant d'une géométrie de quadrique, porte un poids pur décalé. Le morphisme $N$, défini par le résidu de la connexion, diminue structurellement ce poids. L'écart de dimension relative, évalué via la forme hermitienne d'auto-intersection du cycle $\delta$, produit une valeur propre locale dont le module est l'inverse de la racine carrée de la cardinalité du corps fini sous-jacent. Le saut de pondération (weight shift) est ainsi arithmétiquement et topologiquement scellé à la valeur absolue $1/2$.
 \end{proof}
 
-\subsection{6. Le Théorème de la Partie Fixe et l'Amplitude Globale}
-Le décalage arithmétique local autour d'un point singulier impose donc le facteur $-1/2$. Il s'agit dorénavant de remonter de ces fibres isolées à la cohomologie globale qui héberge la fonction zêta.
-Considérons le complexe de de Rham relatif global $\mathcal{H}^m_{\mathrm{dR}}(\mathcal{X} / \mathbb{P}^1_{\mathbb{Z}})$. Ce fibré vectoriel sur la courbe de base est équipé de la connexion de Gauss-Manin intégrable $\nabla$, dont les singularités régulières sont précisément déterminées par les points critiques de Lefschetz.
+\subsection{6. Le Théorème de la Partie Fixe et l'Axiome de Réalisation Spectrale}
+Le décalage arithmétique local autour d'un point singulier impose le facteur $-1/2$. Il convient de relier ces singularités locales à l'espace de cohomologie global via une correspondance spectrale arithmétique.
 
-\begin{theorem}[Rigidité Motivique et Amplitude]
-D'après le Théorème de la Partie Fixe Globale de Deligne (ici étendu au formalisme motivique), le faisceau de cohomologie $\mathcal{H}^m_{\mathrm{dR}}$ se scinde de manière inconditionnelle en une somme directe orthogonale par rapport à la polarisation :
-$$ \mathcal{H}^m_{\mathrm{dR}} \simeq \mathcal{H}^m_{\mathrm{fix}} \oplus \mathcal{H}^m_{\mathrm{var}} $$
-où $\mathcal{H}^m_{\mathrm{fix}}$ est un système local constant (le sous-espace invariant par la monodromie globale) et $\mathcal{H}^m_{\mathrm{var}}$ est le sous-espace de pure variation, engendré par les translatés des cycles évanescents. Les composantes spectrales globales (les zéros $\rho$ de $\zeta$) appartiennent intrinsèquement à la "partie fixe" qui ressent l'écho de tous les opérateurs locaux $N_i$.
-\end{theorem}
+\begin{definition}[Axiome B : Correspondance Spectrale des Zéros]
+Soit $\rho$ un zéro non trivial de la fonction zêta de Riemann, tel que $\zeta(\rho) = 0$ et $0 < \Re(\rho) < 1$. L'annulation globale se traduit géométriquement par l'existence d'une classe de cohomologie globale pure $c_{\rho} \in \mathcal{H}^m_{\mathrm{dR}}(\mathcal{X}/\mathbb{P}^1_{\mathbb{Z}})$ sur laquelle l'action des Frobenius locaux $F_p$ possède la valeur propre $p^{\rho}$ pour chaque place non ramifiée $p$.
+\end{definition}
 
-L'isomorphisme de Grothendieck-Riemann-Roch appliqué à cette fibration de Lefschetz permet de traduire l'annulation de $\zeta(s)$ à l'étage global. Si $\rho$ est un zéro non trivial de $\zeta(s)$, l'équivalence tannakienne implique qu'il correspond à un sous-quotient propre irréductible de $\mathcal{H}^m_{\mathrm{dR}}$. Formellement, il existe une classe de cohomologie globale pure $c_{\rho} \in \mathcal{H}^m_{\mathrm{dR}}$ telle que l'action du Frobenius global arithmétique $F$ possède pour valeur propre $q^{\rho}$.
+Cet axiome de réalisation spectrale est le second verrou majeur de notre programme. Il s'agit du pendant motivique de l'hypothèse de Hilbert-Pólya. En reliant les zéros globaux aux Frobenius locaux d'une même fibration, il fournit la passerelle indispensable vers la rigidité géométrique.
 
 \subsection{7. La Contradiction Décisive par les Relations de Riemann-Hodge}
 Nous abordons l'instant de vérité mathématique : la bascule de l'analytique vers le géométrique.
@@ -234,7 +229,7 @@ Deligne's proof rests upon the colossal machinery of $\ell$-adic étale cohomolo
 
 The tragedy of the classical Riemann zeta function lies in its base field. It is not defined over a finite field, but over the ring of integers $\mathbb{Z}$. To date, there is no satisfactory classical "Weil cohomology" for absolute 1-dimensional arithmetic schemes that would allow defining a global Frobenius operator whose trace would reproduce $\zeta(s)$. Attempts in non-commutative geometry (Connes) or over the field with one element $\mathbb{F}_1$ (Soulé, Connes, Consani) have produced magnificent architectures, but struggle to finalize the intersection form at infinity.
 
-Our approach consists of bypassing this absence of global cohomology by increasing the relative dimension. Rather than seeking an exotic cohomology over $\mathrm{Spec}(\mathbb{Z})$, we embed the trivial motive $\mathbb{Q}(0)$ within a motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$. We transfer the burden of symmetry from the (inaccessible) base to the relative cohomology of the fibers (which is controllable by Hodge theory).
+Our program proposes to bypass this absence of global cohomology by increasing the relative dimension. Rather than seeking an exotic cohomology over $\mathrm{Spec}(\mathbb{Z})$, we study the implications of embedding the trivial motive $\mathbb{Q}(0)$ within a conjectural motivic Lefschetz fibration $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$. Subject to this modeling, we transfer the burden of symmetry from the (inaccessible) base to the relative cohomology of the fibers (which is controllable by Hodge theory).
 
 \subsection{3. Axiomatic Construction of the Category of Mixed Motives}
 To rigorously manipulate these entities without succumbing to analytical mirages, we situate ourselves in the triangulated category of mixed motives over $\mathrm{Spec}(\mathbb{Z})$, denoted $\mathcal{M}(\mathbb{Z})$.
@@ -261,16 +256,14 @@ $$ L(\mathbb{Q}(0), s) = \prod_p \frac{1}{1 - p^{-s}} = \zeta(s) $$
 This is rigorously valid for $\Re(s) > 1$ and extends via analytic continuation, reflecting the functional equation of the global motive.
 \end{proof}
 
-\subsection{4. Engineering the Arithmetic Lefschetz Fibration}
-We wish to analyze the deformations of the motive $\mathbb{Q}(0)$. Instead of studying the function $\zeta(s)$ statically, which leads to the analytical dead end, we construct a dynamic family of algebraic varieties.
+\subsection{4. Conjectural Modeling via Lefschetz Fibration}
+To establish our program, we formulate the existence of a universal arithmetic fibration encoding the arithmetic of $\zeta$ as an axiom.
 
-Let $\mathcal{A}_{g,1,n}$ be the moduli space of principally polarized abelian varieties of dimension $g$ ($g \ge 3$), equipped with a level structure $n \ge 3$. This scheme, defined over $\mathbb{Z}[1/n]$, is smooth. To encompass all places, we operate on its Faltings-Chai toroidal compactification, denoted $\bar{\mathcal{A}}_{g,1,n}$. This space inherently carries a universal local system $\mathbb{V} = R^1 \pi_* \mathbb{Q}$, which is a Variation of Mixed Hodge Structure (VMHS).
-
-The fundamental geometric act consists of embedding an arithmetic rational curve $\mathbb{P}^1_{\mathbb{Z}}$ within this compactification. This curve must cross the smooth locus generically and intersect the boundary divisor (the locus of degenerate abelian varieties) transversely. This curve acts as a \textit{projective observation line}.
-
-\begin{definitionEN}
-Let $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ be the fibration induced by the pullback of the universal family along our observation curve. By perturbing the embedding (Arithmetic Bertini Theorem), we ensure that $\pi$ is a Lefschetz fibration: it is smooth everywhere except in a finite number of fibers, which present only isolated ordinary quadratic singularities (double points).
+\begin{definitionEN}[Axiom A: Motivic Fibrational Modeling]
+There exists a regular arithmetic scheme $\mathcal{X}$, proper and flat over $\mathbb{P}^1_{\mathbb{Z}}$, such that the structural morphism $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ is a Lefschetz fibration encoding the Riemann zeta function. For any closed singular point $x$ in the fibers of $\pi$, the action of the local monodromy on the sheaf of motivic vanishing cycles acts purely with the arithmetic weight $-1/2$.
 \end{definitionEN}
+
+This conjecture represents the first major bottleneck of our approach. In the absence of an explicit construction for the scheme $\mathcal{X}$, we adopt it as a starting postulate for our conditional study.
 
 The major advantage of this construction lies in the topology of the singular tubular neighborhoods, and more precisely in the appearance of \textit{vanishing cycles}. When approaching a singular fiber above a finite point $s \in \mathbb{P}^1(\bar{\mathbb{F}}_p)$, a homology class of the generic smooth fiber, homeomorphic to a median-dimensional sphere, collapses ("vanishes") onto the double point. This is the Lefschetz cycle, denoted $\delta$.
 
@@ -294,17 +287,14 @@ The action of the geometric Frobenius $\mathrm{Frob}_p$ on the perverse sheaf of
 By Deligne's fundamental theorem on the weights of cohomology for varieties over finite fields (Weil II), the primitive part of the median cohomology of such a fiber is pure. The vanishing cycle $\delta$, stemming from a quadric geometry, carries a shifted pure weight. The morphism $N$, defined by the residue of the connection, structurally decreases this weight. The relative dimension gap, evaluated via the Hermitian self-intersection form of the cycle $\delta$, yields a local eigenvalue whose modulus is the inverse of the square root of the cardinality of the underlying finite field. The weight shift is thus arithmetically and topologically sealed at the absolute value $1/2$.
 \end{proof}
 
-\subsection{6. The Invariant Cycle Theorem and Global Amplitude}
-The local arithmetic shift around a singular point thus imposes the factor $-1/2$. The task is now to ascend from these isolated fibers to the global cohomology that houses the zeta function.
-Consider the global relative de Rham complex $\mathcal{H}^m_{\mathrm{dR}}(\mathcal{X} / \mathbb{P}^1_{\mathbb{Z}})$. This vector bundle over the base curve is equipped with the integrable Gauss-Manin connection $\nabla$, whose regular singularities are precisely determined by the Lefschetz critical points.
+\subsection{6. The Invariant Cycle Theorem and the Spectral Realization Axiom}
+The local arithmetic shift around a singular point imposes the factor $-1/2$. We must connect these local singularities to the global cohomology space via an arithmetic spectral correspondence.
 
-\begin{theoremEN}[Motivic Rigidity and Amplitude]
-According to Deligne's Global Invariant Cycle Theorem (here extended to the motivic formalism), the cohomology sheaf $\mathcal{H}^m_{\mathrm{dR}}$ splits unconditionally into an orthogonal direct sum with respect to the polarization:
-$$ \mathcal{H}^m_{\mathrm{dR}} \simeq \mathcal{H}^m_{\mathrm{fix}} \oplus \mathcal{H}^m_{\mathrm{var}} $$
-where $\mathcal{H}^m_{\mathrm{fix}}$ is a constant local system (the subspace invariant under global monodromy) and $\mathcal{H}^m_{\mathrm{var}}$ is the subspace of pure variation, generated by the translates of the vanishing cycles. The global spectral components (the zeros $\rho$ of $\zeta$) intrinsically belong to the "fixed part" which feels the echo of all local $N_i$ operators.
-\end{theoremEN}
+\begin{definitionEN}[Axiom B: Spectral Realization of Zeros]
+Let $\rho$ be a non-trivial zero of the Riemann zeta function, such that $\zeta(\rho) = 0$ and $0 < \Re(\rho) < 1$. The global vanishing geometrically translates to the existence of a pure global cohomology class $c_{\rho} \in \mathcal{H}^m_{\mathrm{dR}}(\mathcal{X}/\mathbb{P}^1_{\mathbb{Z}})$ on which the action of the local Frobenius operators $F_p$ has the eigenvalue $p^{\rho}$ for each unramified place $p$.
+\end{definitionEN}
 
-The Grothendieck-Riemann-Roch isomorphism applied to this Lefschetz fibration allows the vanishing of $\zeta(s)$ to be translated to the global tier. If $\rho$ is a non-trivial zero of $\zeta(s)$, the Tannakian equivalence implies that it corresponds to an irreducible proper subquotient of $\mathcal{H}^m_{\mathrm{dR}}$. Formally, there exists a pure global cohomology class $c_{\rho} \in \mathcal{H}^m_{\mathrm{dR}}$ such that the action of the global arithmetic Frobenius $F$ possesses the eigenvalue $q^{\rho}$.
+This spectral realization axiom is the second major bottleneck of our program. It serves as the motivic counterpart of the Hilbert-Pólya hypothesis. By linking global zeros to local Frobenius operators of the same fibration, it provides the necessary bridge toward geometric rigidity.
 
 \subsection{7. The Decisive Contradiction via Riemann-Hodge Relations}
 We now approach the moment of mathematical truth: the shift from the analytical to the geometric.
