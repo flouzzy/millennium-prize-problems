@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  23 JUN 2026 08:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  23 JUN 2026 08:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -423,24 +423,24 @@ Package babel Info: Hyphen rules for 'french' set to \l@english
 )
 \openout1 = `riemann_hypothesis-proof-bilingual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
@@ -515,26 +515,26 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 53.
+Package hyperref Info: Link coloring ON on input line 55.
 
 (./riemann_hypothesis-proof-bilingual.out)
 (./riemann_hypothesis-proof-bilingual.out)
 \@outlinefile=\write3
 \openout3 = `riemann_hypothesis-proof-bilingual.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 55.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 55
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 57
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -546,7 +546,7 @@ Package babel Warning: \abstractname not set for 'french'. Please,
 (babel)                (typically in the preamble) with:
 (babel)                \setlocalecaption{french}{abstract}{..}
 (babel)                Feel free to contribute on github.com/latex3/babel.
-(babel)                Reported on input line 57.
+(babel)                Reported on input line 59.
 
 [1
 
@@ -559,7 +559,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2] (./riemann_hypothesis-proof-bilingual.toc)
+[2] (./riemann_hypothesis-proof-bilingual.toc
+Overfull \hbox (25.31462pt too wide) in paragraph at lines 22--22
+ [] [][][]\T1/cmr/bx/n/12 Partie III : Véri-fi-ca-tion par l'Analytification No
+n-Archimédienne (Géométrie 
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `riemann_hypothesis-proof-bilingual.toc'.
 
@@ -573,22 +579,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-Overfull \hbox (4.34695pt too wide) in paragraph at lines 73--73
-[]\T1/cmr/bx/n/17.28 Partie I : Dé-mon-stra-tion In-té-grale (Ver-sion Français
-e) 
+Overfull \hbox (50.59314pt too wide) in paragraph at lines 75--75
+[]\T1/cmr/bx/n/17.28 Partie I : Dé-mon-stra-tion Con-di-tion-nelle (Ver-sion Fr
+ançaise) 
  []
 
 
-Overfull \hbox (4.55617pt too wide) in paragraph at lines 76--77
-\T1/cmr/m/n/12 L'histoire des math-é-ma-tiques nous en-seigne que les prob-lème
-s ré-cal-ci-trants cè-dent rarement
+Overfull \hbox (32.16586pt too wide) in paragraph at lines 80--82
+[]\T1/cmr/m/n/12 Pour sur-mon-ter cette im-passe topologique (dé-tail-lée dans 
+[][]im-passe_fibration_motivique.md[][]),
  []
 
 
-Overfull \hbox (0.70972pt too wide) in paragraph at lines 78--79
-[]\T1/cmr/m/n/12 Pendant plus d'un siè-cle, l'approche dom-i-nante fut an-a-ly-
-tique : ma-jo-ra-tions de sommes
- []
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 94.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 94.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 94.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -599,6 +611,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 103.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 103.
+
+
+Overfull \hbox (21.64595pt too wide) in paragraph at lines 107--108
+[][]\T1/cmr/bx/n/12 Axiome 1.3 \T1/cmr/m/n/12 (Ax-iome B : Cor-re-spon-dance Sp
+ec-trale de Con-nes--Soulé)\T1/cmr/bx/n/12 . []\T1/cmr/m/it/12 Soit $\OMS/cmsy/
+m/n/12 H[] ^^Z \OML/cmm/m/it/12 L[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X[]; d[]^^
+V\OT1/cmr/m/n/12 )$
+ []
+
+
+Overfull \hbox (3.48344pt too wide) in paragraph at lines 112--113
+\T1/cmr/m/n/12 rec-tion $\OT1/cmr/m/n/12 +1\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2$
+ \T1/cmr/m/n/12 (qui cor-re-spond au shift de Weyl) com-pense pré-cisé-ment le 
+dé-faut d'invariance
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Re' on input line 121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 121.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -614,14 +661,7 @@ Package babel Warning: \proofname not set for 'french'. Please,
 (babel)                (typically in the preamble) with:
 (babel)                \setlocalecaption{french}{proof}{..}
 (babel)                Feel free to contribute on github.com/latex3/babel.
-(babel)                Reported on input line 111.
-
-
-Overfull \hbox (6.89578pt too wide) in paragraph at lines 125--126
-\T1/cmr/m/n/12 s'approche d'une fi-bre sin-gulière au-dessus d'un point fini $\
-OML/cmm/m/it/12 s \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 P[]\OT1/cmr/m/n/12 ([])$\T1/
-cmr/m/n/12 , une classe d'homologie
- []
+(babel)                Reported on input line 129.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -632,6 +672,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6]
+Overfull \hbox (1.65863pt too wide) in paragraph at lines 155--155
+[]\T1/cmr/bx/n/14.4 7. Ex-ten-sion Fonc-to-rielle : L'Hypothèse de Rie-mann Gén
+éral-
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -642,6 +687,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [7]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 189.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 189.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -651,6 +708,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Re' on input line 216.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 216.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -659,11 +736,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-Overfull \hbox (10.68745pt too wide) in paragraph at lines 203--204
-[]\T1/cmr/m/n/12 Pour parachever ce texte, rap-pelons que l'alignement sur $\OM
-S/cmsy/m/n/12 <\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s\OT1/cmr/m/n/12 ) = 1\OML/cmm
-/m/it/12 =\OT1/cmr/m/n/12 2$ \T1/cmr/m/n/12 jus-ti-fie géométrique-
- []
+Underfull \vbox (badness 1490) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -691,105 +765,56 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15]
-Underfull \vbox (badness 1635) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17] (./riemann_hypothesis-proof-bilingual.aux)
+[12] (./riemann_hypothesis-proof-bilingual.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `riemann_hypothesis-proof-bilingual.out' has 
 not changed.
-(rerunfilecheck)             Checksum: E854077EDFD2086D6379FD5A80B1F6D0;7071.
+(rerunfilecheck)             Checksum: 48B7EF09F283C828ECCE5CE4C3199418;6215.
  ) 
 Here is how much of TeX's memory you used:
- 13138 strings out of 476182
- 205390 string characters out of 5795595
- 1935975 words of memory out of 5000000
- 34861 multiletter control sequences out of 15000+600000
- 585860 words of font info for 112 fonts, out of 8000000 for 9000
+ 13120 strings out of 476182
+ 205171 string characters out of 5795595
+ 1937975 words of memory out of 5000000
+ 34872 multiletter control sequences out of 15000+600000
+ 586824 words of font info for 121 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,12n,79p,888b,608s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1099b,604s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.6
-00pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm080
+00pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx144
 0.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
-1440.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-cbx1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/e
-c/ecbx1728.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecti1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
-ppen/ec/ecrm1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/j
-knappen/ec/ecrm1000.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfou
-r/jknappen/ec/tcrm0700.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/lj
-four/jknappen/ec/ecrm1095.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk
-/ljfour/jknappen/ec/ecbx1095.600pk> </home/charles/.texlive2023/texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/charles/.texlive2023/texmf-var/fo
-nts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/charles/.texlive2023/texmf-var
-/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/charles/.texlive2023/texmf-
-var/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/charles/.texlive2023/tex
-mf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on riemann_hypothesis-proof-bilingual.pdf (17 pages, 331430 byte
+1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cbx1728.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/e
+c/ecti1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecrm1200.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jkna
+ppen/ec/ecrm1000.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/j
+knappen/ec/tcrm0700.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfou
+r/jknappen/ec/ecrm1095.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/lj
+four/jknappen/ec/ecbx1095.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk
+/ljfour/jknappen/ec/ecrm1440.600pk> </home/charles/.texlive2023/texmf-var/fonts
+/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/charles/.texlive2023/texmf-var/fo
+nts/pk/ljfour/jknappen/ec/ecrm1728.600pk> </home/charles/.texlive2023/texmf-var
+/fonts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/charles/.texlive2023/texmf-
+var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on riemann_hypothesis-proof-bilingual.pdf (12 pages, 310717 byte
 s).
 PDF statistics:
- 819 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 776 PDF objects out of 1000 (max. 8388607)
+ 272 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
