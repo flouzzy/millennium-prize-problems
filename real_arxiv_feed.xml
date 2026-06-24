@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/FZ7NGE8UMpdWZrAz5GhOyCHztKQ</id>
+  <title>arXiv Query: search_query=cat:math.NT OR cat:math.AG&amp;id_list=&amp;start=0&amp;max_results=3</title>
+  <updated>2026-06-24T05:49:22Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:math.NT+OR+cat:math.AG&amp;start=0&amp;max_results=3&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>3</opensearch:itemsPerPage>
+  <opensearch:totalResults>101447</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.24872v1</id>
+    <title>The Sylow Divisor Condition: a Resolution of Erdős Problem 768</title>
+    <updated>2026-06-23T17:51:30Z</updated>
+    <link href="https://arxiv.org/abs/2606.24872v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.24872v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We resolve Erdős Problem 768. Let $A(x)$ count the positive integers $n\le x$ such that, for every prime $p\mid n$, there is a divisor $d&gt;1$ of $n$ with $d\equiv 1 \pmod p$. Erdős asked whether $A(x)/x=\exp(-(c+o(1))\sqrt{\log x}\log\log x)$ for some constant $c&gt;0$. We prove that this holds with $c=1/(2\sqrt{\log 2})$; equivalently, $\log(x/A(x))/(\sqrt{\log x}\log\log x)$ tends to $1/(2\sqrt{\log 2})$. The lower bound is obtained from primes in disjoint logarithmic intervals using a fourth-moment argument based on the multiplicative large sieve and a subset-product second moment. The upper bound uses canonical witness divisors, a deterministic compression map, an injective reconstruction theorem for its fibers, and growing divisor moments. Thus the paper determines the exact leading constant in Erdős Problem 768.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T17:51:30Z</published>
+    <arxiv:comment>20 pages</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Eric Li</name>
+      <arxiv:affiliation>Trinity College, University of Cambridge</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.24838v1</id>
+    <title>Amitsur groups of primitive Fano threefolds</title>
+    <updated>2026-06-23T17:18:22Z</updated>
+    <link href="https://arxiv.org/abs/2606.24838v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.24838v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We classify possible Amitsur groups of smooth primitive Fano threefolds defined over complex numbers that admit a faithful action of a finite group. We also classify the Amitsur groups for toric Fano threefolds.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T17:18:22Z</published>
+    <arxiv:comment>21 pages, comments welcome</arxiv:comment>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Shreya Sharma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.24717v1</id>
+    <title>A new attack to RSA with small private exponent and partial information</title>
+    <updated>2026-06-23T15:39:30Z</updated>
+    <link href="https://arxiv.org/abs/2606.24717v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.24717v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We give a new algorithm to attack RSA with small private exponent, when some partial information of $p+q$ is given.The algorithm is a very simple modification of original Wiener's attack with continued fractions, and allows to factor $n$ whenever $d&lt;n^{(1+δ)/2}$ if we know a $δ$-fraction of the most significant bits of $n$. The algorithm is unconditional, which is not the case in previous improvements that use Coppersmith method. As an example, ouir algorithm can be applied to break any criptosystem with modulus of $512$ bits and $d&lt;n^{0.3}$, giving an improvement in the original attack of Wiener.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-23T15:39:30Z</published>
+    <arxiv:comment>14 pages</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Jorge Urroz</name>
+    </author>
+  </entry>
+</feed>
