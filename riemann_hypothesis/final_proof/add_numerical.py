@@ -1,5 +1,3 @@
-import re
-
 with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'r', encoding='utf-8') as f:
     content = f.read()
 
