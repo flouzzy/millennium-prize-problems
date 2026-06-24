@@ -8,7 +8,7 @@
 
 ## 🏛️ 1. Le Changement de Paradigme : Résoudre l'Impasse Topologique
 
-L'analyse post-mortem dans [impasse_fibration_motivique.md](file:///var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/impasses/impasse_fibration_motivique.md) a mis en évidence le blocage de l'approche par schéma classique $\mathcal{X}$ sur $\mathbb{Z}$ : tenter d'imposer des poids fractionnaires dans la cohomologie d'une variété algébrique ordinaire conduit à une contradiction avec la pureté de Weil et la nature discrète de l'anneau de Chow.
+L'analyse post-mortem dans [impasse_fibration_motivique.md](../impasses/impasse_fibration_motivique.md) a mis en évidence le blocage de l'approche par schéma classique $\mathcal{X}$ sur $\mathbb{Z}$ : tenter d'imposer des poids fractionnaires dans la cohomologie d'une variété algébrique ordinaire conduit à une contradiction avec la pureté de Weil et la nature discrète de l'anneau de Chow.
 
 Pour lever cette impasse, ce programme propose d'unifier la **Géométrie Non Commutative (NCG)** d'Alain Connes avec la théorie des **schémas sur le corps à un élément ($\mathbb{F}_1$)** de Soulé-Connes-Consani.
 
@@ -93,7 +93,7 @@ Pour la session de ce soir, nous allons :
 
 ## 🏛️ 1. Paradigm Shift: Resolving the Topological Impasse
 
-The post-mortem analysis in [impasse_fibration_motivique.md](file:///var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/impasses/impasse_fibration_motivique.md) highlighted the bottleneck of the classical scheme approach $\mathcal{X}$ over $\mathbb{Z}$: attempting to impose fractional weights in the cohomology of an ordinary algebraic variety leads to a contradiction with Weil purity and the discrete nature of the Chow ring.
+The post-mortem analysis in [impasse_fibration_motivique.md](../impasses/impasse_fibration_motivique.md) highlighted the bottleneck of the classical scheme approach $\mathcal{X}$ over $\mathbb{Z}$: attempting to impose fractional weights in the cohomology of an ordinary algebraic variety leads to a contradiction with Weil purity and the discrete nature of the Chow ring.
 
 To resolve this impasse, this program proposes to unify Alain Connes' **Noncommutative Geometry (NCG)** with the theory of **schemes over the field with one element ($\mathbb{F}_1$)** by Soulé-Connes-Consani.
 

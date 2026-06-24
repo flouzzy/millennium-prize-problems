@@ -384,6 +384,6 @@ The Riemann Hypothesis is closed.
 \end{document}
 """
 
-with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'w', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'w', encoding='utf-8') as f:
     f.write(preamble + french_content)
 

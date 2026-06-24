@@ -1,6 +1,6 @@
 import os
 
-with open("/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex", "w", encoding="utf-8") as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), "w", encoding="utf-8") as f:
     f.write(r"""\documentclass[12pt,a4paper,twoside]{article}
 \usepackage{setspace}
 \onehalfspacing
@@ -80,7 +80,7 @@ with open("/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/fin
 \subsection{1. Introduction et Changement de Paradigme}
 L'histoire de l'Hypothèse de Riemann (HR) est marquée par une tension entre l'analyse complexe et la géométrie algébrique. La preuve des conjectures de Weil par Pierre Deligne en 1974 a montré que, sur un corps fini $\mathbb{F}_q$, l'alignement des zéros découle de la pureté de la cohomologie étale et du théorème de Lefschetz difficile. Cependant, sur le corps de base $\mathbb{Q}$, la recherche d'une « cohomologie de Weil » classique pour $\mathrm{Spec}(\mathbb{Z})$ s'est heurtée à un obstacle fondamental : l'absence d'un corps de base sous-jacent à $\mathbb{Z}$ permettant de définir un produit cartésien $\mathrm{Spec}(\mathbb{Z}) \times \mathrm{Spec}(\mathbb{Z})$ tracé par un Frobenius global.
 
-Pour surmonter cette impasse topologique (détaillée dans \href{file:///var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/impasses/impasse_fibration_motivique.md}{impasse\_fibration\_motivique.md}), nous adoptons le cadre de la \textbf{Géométrie Non Commutative (NCG)} d'Alain Connes couplé à la théorie du \textbf{corps à un élément} $\mathbb{F}_1$ initiée par Christophe Soulé. 
+Pour surmonter cette impasse topologique (détaillée dans \href{../impasses/impasse_fibration_motivique.md}{impasse\_fibration\_motivique.md}), nous adoptons le cadre de la \textbf{Géométrie Non Commutative (NCG)} d'Alain Connes couplé à la théorie du \textbf{corps à un élément} $\mathbb{F}_1$ initiée par Christophe Soulé.
 Dans ce cadre, $\mathrm{Spec}(\mathbb{Z})$ est pensé comme une courbe arithmétique sur le point absolu $\mathrm{Spec}(\mathbb{F}_1)$. La surface double $\mathrm{Spec}(\mathbb{Z}) \times_{\mathbb{F}_1} \mathrm{Spec}(\mathbb{Z})$ trouve sa réalisation analytique rigoureuse dans l'espace non commutatif des classes d'adèles $X_{\mathbb{Q}} = \mathbb{A}_{\mathbb{Q}} / \mathbb{Q}^{\times}$. L'hypothèse de Riemann se reformule alors comme un problème de théorie spectrale : démontrer l'auto-adjonction d'un opérateur différentiel sur cet espace géométrique.
 
 \subsection{2. L'Espace Non Commutatif des Classes d'Adèles}
@@ -175,7 +175,7 @@ Puisque le caractère est unitaire ($|\chi(p)| = 1$ pour tout premier $p$), la m
 \subsection{1. Introduction and Paradigm Shift}
 The history of the Riemann Hypothesis (RH) is marked by a tension between complex analysis and algebraic geometry. The proof of the Weil conjectures by Pierre Deligne in 1974 showed that, over a finite field $\mathbb{F}_q$, the alignment of zeros stems from the purity of étale cohomology and the Hard Lefschetz theorem. However, over the base field $\mathbb{Q}$, the search for a classical "Weil cohomology" for $\mathrm{Spec}(\mathbb{Z})$ has run into a fundamental obstacle: the absence of a base field underlying $\mathbb{Z}$ that would allow defining a cartesian product $\mathrm{Spec}(\mathbb{Z}) \times \mathrm{Spec}(\mathbb{Z})$ traced by a global Frobenius.
 
-To overcome this topological impasse (detailed in \href{file:///var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/impasses/impasse_fibration_motivique.md}{impasse\_fibration\_motivique.md}), we adopt the framework of Alain Connes' \textbf{Noncommutative Geometry (NCG)} coupled with the theory of the \textbf{field with one element} $\mathbb{F}_1$ initiated by Christophe Soulé.
+To overcome this topological impasse (detailed in \href{../impasses/impasse_fibration_motivique.md}{impasse\_fibration\_motivique.md}), we adopt the framework of Alain Connes' \textbf{Noncommutative Geometry (NCG)} coupled with the theory of the \textbf{field with one element} $\mathbb{F}_1$ initiated by Christophe Soulé.
 In this framework, $\mathrm{Spec}(\mathbb{Z})$ is conceived as an arithmetic curve over the absolute point $\mathrm{Spec}(\mathbb{F}_1)$. The double surface $\mathrm{Spec}(\mathbb{Z}) \times_{\mathbb{F}_1} \mathrm{Spec}(\mathbb{Z})$ finds its rigorous analytical realization in the noncommutative space of adele classes $X_{\mathbb{Q}} = \mathbb{A}_{\mathbb{Q}} / \mathbb{Q}^{\times}$. The Riemann Hypothesis is then reformulated as a problem in spectral theory: proving the self-adjointness of a differential operator on this geometric space.
 
 \subsection{2. The Noncommutative Space of Adele Classes}
