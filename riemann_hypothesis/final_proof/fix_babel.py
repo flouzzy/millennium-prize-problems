@@ -1,6 +1,7 @@
+import os
 import re
 
-with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'r', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'r', encoding='utf-8') as f:
     content = f.read()
 
 # Remove old addto block
@@ -30,5 +31,5 @@ new_babel_fixes = r"""
 
 content = content.replace(r"\hypersetup{", new_babel_fixes + "\n" + r"\hypersetup{")
 
-with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'w', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'w', encoding='utf-8') as f:
     f.write(content)
