@@ -1,7 +1,4 @@
-import os
-
-filepath = os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex')
-with open(filepath, 'r', encoding='utf-8') as f:
+with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'r', encoding='utf-8') as f:
     content = f.read()
 
 french_expansion = r"""
