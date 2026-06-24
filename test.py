@@ -1,5 +1,3 @@
-import re
-
 with open('dashboard.md', 'r') as f:
     text = f.read()
 
