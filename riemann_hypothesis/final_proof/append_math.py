@@ -85,5 +85,5 @@ content = content.replace(r"\documentclass[11pt,a4paper,twoside]{article}", r"""
 \usepackage{setspace}
 \onehalfspacing""")
 
-with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'w', encoding='utf-8') as f:
+with open(filepath, 'w', encoding='utf-8') as f:
     f.write(content)

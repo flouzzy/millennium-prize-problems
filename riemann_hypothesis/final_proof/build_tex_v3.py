@@ -1,5 +1,3 @@
-import os
-
 with open("/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex", "w", encoding="utf-8") as f:
     f.write(r"""\documentclass[12pt,a4paper,twoside]{article}
 \usepackage{setspace}
