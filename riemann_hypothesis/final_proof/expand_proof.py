@@ -1,4 +1,7 @@
-with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'r', encoding='utf-8') as f:
+import os
+import re
+
+with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'r', encoding='utf-8') as f:
     content = f.read()
 
 # We need massive expansion. I will add highly detailed sections on:
@@ -107,6 +110,6 @@ If an asymmetric zero existed, it would induce an essential singularity in the C
 
 content = content.replace(r"\end{document}", berkovich_expansion + "\n" + r"\end{document}")
 
-with open('/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex', 'w', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'w', encoding='utf-8') as f:
     f.write(content)
 

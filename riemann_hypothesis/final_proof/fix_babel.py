@@ -1,10 +1,9 @@
+import os
 import re
 import sys
 
-def fix_babel_content(content: str) -> str:
-    # Remove old addto block, handling one level of nested braces
-    # e.g. \addto\captionsfrench{\renewcommand{\abstractname}{Résumé} ...}
-    nested_braces_pattern = r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}'
+with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'r', encoding='utf-8') as f:
+    content = f.read()
 
     content = re.sub(r'\\addto\\captionsfrench' + nested_braces_pattern, '', content, flags=re.DOTALL)
     content = re.sub(r'\\addto\\captionsenglish' + nested_braces_pattern, '', content, flags=re.DOTALL)
@@ -33,20 +32,5 @@ def fix_babel_content(content: str) -> str:
     if r"\hypersetup{" in content:
         content = content.replace(r"\hypersetup{", new_babel_fixes + "\n" + r"\hypersetup{")
 
-    return content
-
-def main():
-    file_path = '/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex'
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = f.read()
-
-        content = fix_babel_content(content)
-
-        with open(file_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-    except FileNotFoundError:
-        print(f"File not found: {file_path}", file=sys.stderr)
-
-if __name__ == "__main__":
-    main()
+with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'w', encoding='utf-8') as f:
+    f.write(content)
