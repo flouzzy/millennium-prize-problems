@@ -2,7 +2,7 @@ import os
 import re
 import sys
 
-with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'r', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'r', encoding='utf-8') as f:
     content = f.read()
 
     content = re.sub(r'\\addto\\captionsfrench' + nested_braces_pattern, '', content, flags=re.DOTALL)
@@ -32,5 +32,5 @@ with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bili
     if r"\hypersetup{" in content:
         content = content.replace(r"\hypersetup{", new_babel_fixes + "\n" + r"\hypersetup{")
 
-with open(os.path.join(os.path.dirname(__file__), 'riemann_hypothesis-proof-bilingual.tex'), 'w', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'w', encoding='utf-8') as f:
     f.write(content)

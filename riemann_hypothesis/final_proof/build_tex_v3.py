@@ -1,6 +1,6 @@
 import os
 
-with open(os.path.join(os.path.dirname(__file__), "riemann_hypothesis-proof-bilingual.tex"), "w", encoding="utf-8") as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), "w", encoding="utf-8") as f:
     f.write(r"""\documentclass[12pt,a4paper,twoside]{article}
 \usepackage{setspace}
 \onehalfspacing
