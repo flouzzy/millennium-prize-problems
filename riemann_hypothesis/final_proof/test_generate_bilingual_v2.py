@@ -19,7 +19,7 @@ class TestGenerateBilingualV2(unittest.TestCase):
 
         # Verify open was called with correct arguments
         mock_file.assert_called_once_with(
-            '/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex',
+            os.path.join(os.path.dirname(os.path.abspath(__file__)), 'riemann_hypothesis-proof-bilingual.tex'),
             'w',
             encoding='utf-8'
         )

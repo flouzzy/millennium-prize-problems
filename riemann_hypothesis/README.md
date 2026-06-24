@@ -72,6 +72,8 @@ La démonstration complète et rigoureuse (document monolithique de 25 pages) es
 
 ## Historique des tentatives
 
+- <a id="2026-06-20-18h"></a>[[2026-06-20 18:00]](../dashboard.md#2026-06-20-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 7 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-06-20-14h"></a>[[2026-06-20 14:00]](../dashboard.md#2026-06-20-14h) : [Red Teaming & Prototypage] - Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-06-19-07h"></a>[[2026-06-19 07:00]](../dashboard.md#2026-06-19-07h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Eric Li, Shreya Sharma. Blueprint du Lemme 7 fixé. Statut : Planifié.
