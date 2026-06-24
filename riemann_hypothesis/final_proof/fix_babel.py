@@ -1,15 +1,15 @@
 import os
 import re
+import sys
 
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'r', encoding='utf-8') as f:
     content = f.read()
 
-# Remove old addto block
-content = re.sub(r'\\addto\\captionsfrench\{.*?\}', '', content, flags=re.DOTALL)
-content = re.sub(r'\\addto\\captionsenglish\{.*?\}', '', content, flags=re.DOTALL)
+    content = re.sub(r'\\addto\\captionsfrench' + nested_braces_pattern, '', content, flags=re.DOTALL)
+    content = re.sub(r'\\addto\\captionsenglish' + nested_braces_pattern, '', content, flags=re.DOTALL)
 
-# Add correct setlocalecaption
-new_babel_fixes = r"""
+    # Add correct setlocalecaption
+    new_babel_fixes = r"""
 \makeatletter
 \@ifpackagelater{babel}{2021/01/01}{
   \setlocalecaption{french}{abstract}{Résumé}
@@ -29,7 +29,8 @@ new_babel_fixes = r"""
 \makeatother
 """
 
-content = content.replace(r"\hypersetup{", new_babel_fixes + "\n" + r"\hypersetup{")
+    if r"\hypersetup{" in content:
+        content = content.replace(r"\hypersetup{", new_babel_fixes + "\n" + r"\hypersetup{")
 
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'w', encoding='utf-8') as f:
     f.write(content)
