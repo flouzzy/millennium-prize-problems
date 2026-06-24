@@ -1,5 +1,3 @@
-import os
-
 preamble = r"""\documentclass[11pt,a4paper,twoside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
