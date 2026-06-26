@@ -2,111 +2,98 @@
 <feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
   <id>https://arxiv.org/api/qFMCXSpUjMnVFYGMlqDXvm5MSN4</id>
   <title>arXiv Query: search_query=cat:math.NT OR cat:math.AG&amp;id_list=&amp;start=0&amp;max_results=5</title>
-  <updated>2026-06-20T05:02:10Z</updated>
+  <updated>2026-06-26T05:24:28Z</updated>
   <link href="https://arxiv.org/api/query?search_query=cat:math.NT+OR+cat:math.AG&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
   <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
-  <opensearch:totalResults>101355</opensearch:totalResults>
+  <opensearch:totalResults>101514</opensearch:totalResults>
   <opensearch:startIndex>0</opensearch:startIndex>
   <entry>
-    <id>http://arxiv.org/abs/2606.20448v1</id>
-    <title>Étale and Quasicoherent Cohomological Dimensions of Subspace Arrangements</title>
-    <updated>2026-06-18T16:25:14Z</updated>
-    <link href="https://arxiv.org/abs/2606.20448v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2606.20448v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>We report some work in progress on the relationship between étale and quasicoherent cohomological dimensions.</summary>
+    <id>http://arxiv.org/abs/2606.27362v1</id>
+    <title>Hall Geometry and Auslander-Reiten Quiver</title>
+    <updated>2026-06-25T17:58:26Z</updated>
+    <link href="https://arxiv.org/abs/2606.27362v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27362v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show how the geometric information in the motivic Hall algebra and the correspondence of the moduli stack recovers the Auslander-Reiten sequences and the Auslander-Reiten quiver.</summary>
     <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-06-18T16:25:14Z</published>
+    <category term="math.RT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:58:26Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
     <arxiv:primary_category term="math.AG"/>
     <author>
-      <name>Manolis C. Tsakiris</name>
-    </author>
-    <author>
-      <name>Matteo Varbaro</name>
+      <name>Aayush Verma</name>
     </author>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2606.20439v1</id>
-    <title>Four-digit Kaprekar dynamics in odd bases</title>
-    <updated>2026-06-18T16:19:45Z</updated>
-    <link href="https://arxiv.org/abs/2606.20439v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2606.20439v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>Start with four digits, arrange them in both descending and ascending order, subtract, and repeat. This simple process is known as the Kaprekar routine, famous in base ten for sending every nonconstant four-digit string to $6174$. We show that in every odd base $B&gt;3$, the four-digit Kaprekar map has an unexpectedly rigid structure. After at most three iterations, every nonconstant orbit enters an explicit triangular region $\mathcal{T}_B$, and on this region the map is conjugate to projective doubling: \[ \{[r],[s]\}\longmapsto \{[2r],[2s]\}. \] This gives a complete finite description of all nonconstant terminal cycles, including an explicit formula for their lengths and counts. In particular, the longest terminal cycle has length at most $(B-1)/2$, and equality can occur only when $B$ is prime. For primes $p&gt;5$, equality occurs precisely when the least positive $m$ with $2^m\equiv\pm1\pmod p$ is $m=(p-1)/2$. The results proved here were first formulated by Schwartz and Thakur. As a test case for AI-assisted formal mathematics, AxiomProver produced Lean/mathlib formalizations of these results.</summary>
+    <id>http://arxiv.org/abs/2606.27341v1</id>
+    <title>On the deformation theory of chiral quantizations</title>
+    <updated>2026-06-25T17:49:44Z</updated>
+    <link href="https://arxiv.org/abs/2606.27341v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27341v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We give an operadic approach to deformation quantization of vertex Poisson algebras, a chiral analogue of the traditional problem of deformation quantization of Poisson algebras. Our main result is an order-by-order deformation-obstruction theory for such quantizations, controlled by the chiral analogue of Poisson cohomology. In the special case of chiral quantizations of affine symplectic varieties, quantizations of the vertex Poisson algebras of functions on their arc spaces, we prove that this deformation-obstruction theory is controlled by their de Rham cohomology. As another application, we prove that the boundary Virasoro minimal models are rigid under deformations.</summary>
+    <category term="math.QA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.RT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:49:44Z</published>
+    <arxiv:comment>91 pages, comments welcome</arxiv:comment>
+    <arxiv:primary_category term="math.QA"/>
+    <author>
+      <name>Dylan Butson</name>
+    </author>
+    <author>
+      <name>Sujay Nair</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27323v1</id>
+    <title>Amplified moments of the Riemann zeta function</title>
+    <updated>2026-06-25T17:36:12Z</updated>
+    <link href="https://arxiv.org/abs/2606.27323v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27323v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We establish asymptotic formulae for two-piece amplified second and fourth moments of the Riemann zeta function. As applications, we obtain unconditional effective lower bounds for several joint moments of zeta which are in strong agreement with the conjectures of Keating--Wei and Keating--Snaith. In particular, we prove an unconditional lower bound for the sixth moment of zeta $M_3(T)\geq(34.1+o(1))c_3T(\log T)^9$. We further improve some of the lower bounds obtained by Soundararajan, removing the assumption of the Lindelőf Hypothesis, and we obtain effective lower bounds for all joint integer moments of zeta consistent with the predictions of random matrix theory.</summary>
     <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-06-18T16:19:45Z</published>
-    <arxiv:comment>A modest note on the Kaprekar-type process in odd bases, with Lean formalizations of the main results</arxiv:comment>
+    <published>2026-06-25T17:36:12Z</published>
+    <arxiv:comment>53 pages, comments welcome</arxiv:comment>
     <arxiv:primary_category term="math.NT"/>
     <author>
-      <name>Evan Chen</name>
+      <name>Benjamin Durkan</name>
     </author>
     <author>
-      <name>Ken Ono</name>
-    </author>
-    <author>
-      <name>Richard E. Schwartz</name>
-    </author>
-    <author>
-      <name>Dinesh S. Thakur</name>
+      <name>Timothy Page</name>
     </author>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2606.20432v1</id>
-    <title>Eigenvector Varieties</title>
-    <updated>2026-06-18T16:10:44Z</updated>
-    <link href="https://arxiv.org/abs/2606.20432v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2606.20432v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>Any linear space of square matrices has an associated eigenvector variety. Its points are eigenvectors of matrices from that linear space. We present a systematic study of eigenvector varieties, with focus on Lie algebras and Hamiltonians of quantum systems.</summary>
-    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.RA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-06-18T16:10:44Z</published>
-    <arxiv:primary_category term="math.AG"/>
+    <id>http://arxiv.org/abs/2606.27322v1</id>
+    <title>Weighted Fruit Diophantine Equations and Hyperelliptic Curves</title>
+    <updated>2026-06-25T17:35:33Z</updated>
+    <link href="https://arxiv.org/abs/2606.27322v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27322v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the weighted fruit Diophantine equation $ax^{d} - c\bigl(m^{2}y^{2}+n^{2}z^{2}\bigr) + xyz - b = 0$, generalising previous work by Majumdar--Sury, Vaishya--Sharma, and Prakash--Chakraborty. Subject to specific hypotheses on the parameters, our main result shows that for any prime $l \equiv 3 \pmod 4$ and $b = a (2 c m n)^{d} - l\, c^{s}t^{2q}$, the above equation has no integer solutions except for certain residue classes of $x$ modulo $4l$. An analogous result also holds when $l$ is replaced by an odd power of $l$ in the definition of $b$. We prove some insolvability results for $l=-1$. By applying the main result to the small values of $l$, such as $l \in \{3, 7, 11, 19\}$, we explicitly determine the exceptional residue classes outside of which the equation has no solutions. In particular, for $l = 3$, this yields complete insolvability, and weakening these hypotheses still yields non-existence results, though with specific coprimality restrictions on any possible solutions. We also consider a more general variant of the above Diophantine equation and provide some insolvability results. Subsequently, we establish bounds for the positive solutions of the aforementioned equation. Finally, by associating a family of hyperelliptic curves with the equation under consideration and applying Grant's analogue of the Nagell--Lutz theorem, we translate these insolvability results into results about their rational torsion points.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:35:33Z</published>
+    <arxiv:primary_category term="math.NT"/>
     <author>
-      <name>Sandra Di Rocco</name>
+      <name>Jewel Mahajan</name>
     </author>
     <author>
-      <name>Bernd Sturmfels</name>
-    </author>
-    <author>
-      <name>Svala Sverrisdóttir</name>
+      <name>Apeksha Sanghi</name>
     </author>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2606.20421v1</id>
-    <title>On Ziegler pairs of line arrangements: from non-existence to abundance</title>
-    <updated>2026-06-18T16:05:35Z</updated>
-    <link href="https://arxiv.org/abs/2606.20421v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2606.20421v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>We study Ziegler pairs of line arrangements from both numerical and homological perspectives. First, we show that for arrangements of $d&lt;9$ lines the intersection lattice determines the exponent data considered here. Then we list six distinct Ziegler pair with $d=10$. In particular, we construct higher-degree examples with the same intersection lattice, the same minimal degree of a Jacobian relation, and the same Hilbert function of the Milnor algebra, but with different minimal graded free resolutions.</summary>
+    <id>http://arxiv.org/abs/2606.27303v1</id>
+    <title>Curves contained in a quartic determinantal surface containing a line</title>
+    <updated>2026-06-25T17:24:46Z</updated>
+    <link href="https://arxiv.org/abs/2606.27303v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27303v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $X\subseteq \mathbb{P}^{3}$ be a very general element of the Noether-Lefschetz divisor that parametrizing smooth quartic surfaces containing a line. Let $L\subseteq X$ denote the corresponding line. We study the curves contained in $X$ and analyze their behavior in the Hilbert scheme. We first determine which linear systems contain smooth irreducible curves. For most classes, we verify that the general member is a smooth point of the expected Hilbert scheme. Finally we compute the Rao function of any curve on $X$.</summary>
     <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.AC" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-06-18T16:05:35Z</published>
-    <arxiv:comment>25 pages, one appendix, comments welcome!</arxiv:comment>
+    <published>2026-06-25T17:24:46Z</published>
     <arxiv:primary_category term="math.AG"/>
     <author>
-      <name>Alexandru Dimca</name>
+      <name>Abel Castorena</name>
     </author>
     <author>
-      <name>Piotr Pokora</name>
-    </author>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2606.20343v1</id>
-    <title>Plane curve singularities and Fitting ideals</title>
-    <updated>2026-06-18T15:13:11Z</updated>
-    <link href="https://arxiv.org/abs/2606.20343v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2606.20343v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>In this note we investigate the Fitting ideals associated to the Tjurina ideal of a non quasi-homogeneous plane curve singularity. Special properties occur when the difference between Milnor number and Tjurina number is at most 2.</summary>
-    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.AC" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-06-18T15:13:11Z</published>
-    <arxiv:primary_category term="math.AG"/>
-    <author>
-      <name>Alexandru Dimca</name>
-    </author>
-    <author>
-      <name>Gabriel Sticlaru</name>
+      <name>Montserrat Vite</name>
     </author>
   </entry>
 </feed>
