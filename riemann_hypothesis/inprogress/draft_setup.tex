@@ -14,7 +14,7 @@
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
 \title{Draft Setup: Lemma 8 / Brouillon : Lemme 8}
-\date{June 25, 2026}
+\date{June 26, 2026}
 
 \begin{document}
 
@@ -24,46 +24,44 @@
 
 \subsection{Cadre Français}
 
-Pour prémunir notre approche contre les contre-exemples classiques (espaces non archimédiens avec mauvaise réduction, singularités sauvages à la frontière, et explosion non polynomiale des degrés sur le lieu instable), nous posons le cadre strict suivant :
+Pour prémunir notre approche contre les contre-exemples classiques des espaces de Hilbert de dimension infinie, où une mesure spectrale pathologique pourrait occulter une valeur propre isolée ou un spectre continu interférer avec les bornes de moments moyens, nous imposons le cadre strict suivant :
 
 \begin{itemize}
-    \item L'espace des phases $\mathcal{X}^{ad}$ est défini comme un espace adique lisse sur $\mathrm{Spa}(\mathbb{Z}_p, \mathbb{Z}_p)$ admettant une réduction strictement semi-stable, garantissant l'applicabilité de la théorie des $F$-cristaux prismatiques analytiques de Mondal.
-    \item L'anomalie analytique $\delta > 0$ se traduit par un système local étale $\mathbb{Z}_p$, noté $\mathbb{L}_\delta$, sur $\mathcal{X}^{ad}$.
-    \item L'espace des modules des fibrés vectoriels sous-jacent, $\mathcal{M}_{\mathcal{X}}$, est compactifié au sens de Deligne-Mumford, et notre analyse est strictement restreinte à son lieu stable $\mathcal{M}_{\mathcal{X}}^{st}$, imposant la compacité structurelle.
-    \item L'action de l'opérateur de Frobenius, via le tiré en arrière $\mathrm{Frob}_p^*$, est évaluée exclusivement sur ce lieu stable $\mathcal{M}_{\mathcal{X}}^{st}$, ce qui sécurise les bornes strictement polynomiales du degré de Verschiebung établies par Zhang.
-    \item La fibration motivique $\pi: \mathcal{E} \to \mathcal{X}$ est munie d'une filtration par le poids dont les gradués sont purs, neutralisant les fantômes cohomologiques.
+    \item L'opérateur de monodromie agit sur un espace de Hilbert gréé (triplet de Gelfand) $\Phi \subset \mathcal{H} \subset \Phi^\times$, garantissant que les fonctions tests sont strictement localisées.
+    \item La résolvante de l'opérateur est strictement de classe trace, assurant un spectre purement discret sans spectre continu ni résiduel.
+    \item La mesure spectrale associée est contrainte par les asymptotiques inconditionnelles des moments amplifiés de Durkan et Page, ce qui interdit toute décroissance exponentielle artificielle du poids d'un vecteur propre.
+    \item La fibration motivique $\pi: \mathcal{E} \to \mathcal{X}$ est restreinte à ce cadre de compacité spectrale, neutralisant les fuites d'information asymptotique vers l'infini géométrique.
 \end{itemize}
 
 \subsection{English Framework}
 
-To immunize our approach against classical counter-examples (non-Archimedean spaces with bad reduction, wild singularities at the boundary, and non-polynomial explosion of degrees on the unstable locus), we establish the following strict framework:
+To immunize our approach against classical counter-examples in infinite-dimensional Hilbert spaces, where a pathological spectral measure might conceal an isolated eigenvalue or a continuous spectrum might interfere with average moment bounds, we enforce the following strict framework:
 
 \begin{itemize}
-    \item The phase space $\mathcal{X}^{ad}$ is defined as a smooth adic space over $\mathrm{Spa}(\mathbb{Z}_p, \mathbb{Z}_p)$ admitting strictly semistable reduction, guaranteeing the applicability of Mondal's analytic prismatic $F$-crystal theory.
-    \item The analytic anomaly $\delta > 0$ translates to an étale $\mathbb{Z}_p$-local system, denoted $\mathbb{L}_\delta$, on $\mathcal{X}^{ad}$.
-    \item The underlying moduli space of vector bundles, $\mathcal{M}_{\mathcal{X}}$, is Deligne-Mumford compactified, and our analysis is strictly restricted to its stable locus $\mathcal{M}_{\mathcal{X}}^{st}$, enforcing structural compactness.
-    \item The action of the Frobenius operator, via the pullback $\mathrm{Frob}_p^*$, is evaluated exclusively on this stable locus $\mathcal{M}_{\mathcal{X}}^{st}$, which secures the strictly polynomial bounds of the Verschiebung degree established by Zhang.
-    \item The motivic fibration $\pi: \mathcal{E} \to \mathcal{X}$ is equipped with a weight filtration whose graded pieces are pure, neutralizing cohomological ghosts.
+    \item The monodromy operator acts on a rigged Hilbert space (Gelfand triple) $\Phi \subset \mathcal{H} \subset \Phi^\times$, ensuring test functions are strictly localized.
+    \item The resolvent of the operator is strictly trace-class, ensuring a purely discrete spectrum with no continuous or residual spectrum.
+    \item The associated spectral measure is constrained by the unconditional asymptotics of the amplified moments from Durkan and Page, prohibiting any artificial exponential decay of an eigenvector's weight.
+    \item The motivic fibration $\pi: \mathcal{E} \to \mathcal{X}$ is restricted to this spectral compactness framework, neutralizing asymptotic information leaks toward geometric infinity.
 \end{itemize}
 
 \section{Énoncé définitif du Lemme 8 / Definitive Statement of Lemma 8}
 
 \subsection{Version Française}
 
-\begin{lemme}[Cristallisation spectrale par rigidité prismatique et polynomiale]
-    Soit $\mathcal{X}^{ad}$ un espace adique lisse sur $\mathbb{Z}_p$ à réduction strictement semi-stable, et $\mathcal{M}_{\mathcal{X}}^{st}$ le lieu stable de son espace de modules compactifié. Supposons qu'une asymétrie analytique $\delta > 0$ induise un système local étale $\mathbb{Z}_p$, $\mathbb{L}_\delta$, de hauteur a priori infinie. Alors, sous l'action de tiré en arrière du Frobenius $\mathrm{Frob}_p^*$ restreinte à $\mathcal{M}_{\mathcal{X}}^{st}$ :
-    1. Le degré de l'application rationnelle de Verschiebung est strictement borné par un polynôme (Zhang, 2026), forçant la hauteur de $\mathbb{L}_\delta$ à se stabiliser à une valeur finie.
-    2. Par la théorie des $F$-cristaux prismatiques analytiques (Mondal, 2026), cette hauteur finie implique la semi-stabilité potentielle de $\mathbb{L}_\delta$.
-    Par conséquent, toute perturbation non triviale $\delta > 0$ est supprimée par ces contraintes galoisiennes et arithmétiques, imposant une symétrie parfaite. La partie réelle de tous les zéros induits est uniformément rigidifiée à $\sigma = 1/2$.
-\end{lemme}
+\begin{lemma}[Cristallisation spectrale par amplification des moments et compacité trace]
+    Soit un opérateur de monodromie agissant sur un espace de Hilbert gréé associé à la fibration motivique, dont la résolvante est de classe trace. Supposons qu'il existe un zéro de la fonction zêta en dehors de la droite critique ($\beta > 1/2$).
+    1. L'anomalie spectrale induite par ce zéro génère une déviation exponentielle locale dans la mesure spectrale.
+    2. En vertu de l'évaluation sur l'espace des fonctions tests localisées, cette déviation viole strictement les bornes inférieures inconditionnelles effectives des moments amplifiés $M_k(T)$ de la fonction zêta établies par Durkan et Page (2026).
+    Par conséquent, l'opérateur ne peut admettre aucune valeur propre correspondant à un zéro avec $\beta > 1/2$. La restriction de classe trace et l'amplification des moments forcent la distribution spectrale à s'aligner de manière rigide, impliquant que tous les zéros non triviaux satisfont $\beta = 1/2$.
+\end{lemma}
 
 \subsection{English Version}
 
-\begin{lemma}[Spectral Crystallization via Prismatic and Polynomial Rigidity]
-    Let $\mathcal{X}^{ad}$ be a smooth adic space over $\mathbb{Z}_p$ with strictly semistable reduction, and $\mathcal{M}_{\mathcal{X}}^{st}$ the stable locus of its compactified moduli space. Suppose an analytic asymmetry $\delta > 0$ induces an étale $\mathbb{Z}_p$-local system, $\mathbb{L}_\delta$, of a priori infinite height. Then, under the Frobenius pullback action $\mathrm{Frob}_p^*$ restricted to $\mathcal{M}_{\mathcal{X}}^{st}$:
-    1. The degree of the rational Verschiebung map is strictly bounded by a polynomial (Zhang, 2026), forcing the height of $\mathbb{L}_\delta$ to stabilize at a finite value.
-    2. By the theory of analytic prismatic $F$-crystals (Mondal, 2026), this finite height implies the potential semistability of $\mathbb{L}_\delta$.
-    Consequently, any non-trivial perturbation $\delta > 0$ is suppressed by these Galois and arithmetic constraints, imposing perfect symmetry. The real part of all induced zeros is uniformly rigidified at $\sigma = 1/2$.
+\begin{lemma}[Spectral Crystallization via Moment Amplification and Trace Compactness]
+    Let a monodromy operator act on a rigged Hilbert space associated with the motivic fibration, such that its resolvent is trace-class. Suppose there exists a zero of the zeta function off the critical line ($\beta > 1/2$).
+    1. The spectral anomaly induced by this zero generates a local exponential deviation in the spectral measure.
+    2. By evaluation on the space of localized test functions, this deviation strictly violates the effective unconditional lower bounds of the amplified moments $M_k(T)$ of the zeta function established by Durkan and Page (2026).
+    Consequently, the operator cannot admit any eigenvalue corresponding to a zero with $\beta > 1/2$. The trace-class restriction and moment amplification force the spectral distribution into rigid alignment, implying all non-trivial zeros satisfy $\beta = 1/2$.
 \end{lemma}
 
 \vspace{1cm}
