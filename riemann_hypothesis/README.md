@@ -72,7 +72,7 @@ La démonstration complète et rigoureuse (document monolithique de 25 pages) es
 
 ## Historique des tentatives
 
-- <a id="2026-06-29-07h"></a>[[2026-06-29 07:00]](../dashboard.md#2026-06-29-07h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 9 fixé. Statut : Planifié.
+- <a id="2026-06-27-07h"></a>[[2026-06-27 07:00]](../dashboard.md#2026-06-27-07h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Aayush Verma. Blueprint du Lemme 9 fixé. Statut : Planifié.
 
 - <a id="2026-06-26-14h"></a>[[2026-06-26 14:00]](../dashboard.md#2026-06-26-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 

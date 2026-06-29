@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/qFMCXSpUjMnVFYGMlqDXvm5MSN4</id>
+  <title>arXiv Query: search_query=cat:math.NT OR cat:math.AG&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-06-27T05:21:49Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:math.NT+OR+cat:math.AG&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>101514</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27362v1</id>
+    <title>Hall Geometry and Auslander-Reiten Quiver</title>
+    <updated>2026-06-25T17:58:26Z</updated>
+    <link href="https://arxiv.org/abs/2606.27362v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27362v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show how the geometric information in the motivic Hall algebra and the correspondence of the moduli stack recovers the Auslander-Reiten sequences and the Auslander-Reiten quiver.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.RT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:58:26Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Aayush Verma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27341v1</id>
+    <title>On the deformation theory of chiral quantizations</title>
+    <updated>2026-06-25T17:49:44Z</updated>
+    <link href="https://arxiv.org/abs/2606.27341v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27341v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We give an operadic approach to deformation quantization of vertex Poisson algebras, a chiral analogue of the traditional problem of deformation quantization of Poisson algebras. Our main result is an order-by-order deformation-obstruction theory for such quantizations, controlled by the chiral analogue of Poisson cohomology. In the special case of chiral quantizations of affine symplectic varieties, quantizations of the vertex Poisson algebras of functions on their arc spaces, we prove that this deformation-obstruction theory is controlled by their de Rham cohomology. As another application, we prove that the boundary Virasoro minimal models are rigid under deformations.</summary>
+    <category term="math.QA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.RT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:49:44Z</published>
+    <arxiv:comment>91 pages, comments welcome</arxiv:comment>
+    <arxiv:primary_category term="math.QA"/>
+    <author>
+      <name>Dylan Butson</name>
+    </author>
+    <author>
+      <name>Sujay Nair</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27323v1</id>
+    <title>Amplified moments of the Riemann zeta function</title>
+    <updated>2026-06-25T17:36:12Z</updated>
+    <link href="https://arxiv.org/abs/2606.27323v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27323v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We establish asymptotic formulae for two-piece amplified second and fourth moments of the Riemann zeta function. As applications, we obtain unconditional effective lower bounds for several joint moments of zeta which are in strong agreement with the conjectures of Keating--Wei and Keating--Snaith. In particular, we prove an unconditional lower bound for the sixth moment of zeta $M_3(T)\geq(34.1+o(1))c_3T(\log T)^9$. We further improve some of the lower bounds obtained by Soundararajan, removing the assumption of the Lindelőf Hypothesis, and we obtain effective lower bounds for all joint integer moments of zeta consistent with the predictions of random matrix theory.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:36:12Z</published>
+    <arxiv:comment>53 pages, comments welcome</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Benjamin Durkan</name>
+    </author>
+    <author>
+      <name>Timothy Page</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27322v1</id>
+    <title>Weighted Fruit Diophantine Equations and Hyperelliptic Curves</title>
+    <updated>2026-06-25T17:35:33Z</updated>
+    <link href="https://arxiv.org/abs/2606.27322v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27322v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the weighted fruit Diophantine equation $ax^{d} - c\bigl(m^{2}y^{2}+n^{2}z^{2}\bigr) + xyz - b = 0$, generalising previous work by Majumdar--Sury, Vaishya--Sharma, and Prakash--Chakraborty. Subject to specific hypotheses on the parameters, our main result shows that for any prime $l \equiv 3 \pmod 4$ and $b = a (2 c m n)^{d} - l\, c^{s}t^{2q}$, the above equation has no integer solutions except for certain residue classes of $x$ modulo $4l$. An analogous result also holds when $l$ is replaced by an odd power of $l$ in the definition of $b$. We prove some insolvability results for $l=-1$. By applying the main result to the small values of $l$, such as $l \in \{3, 7, 11, 19\}$, we explicitly determine the exceptional residue classes outside of which the equation has no solutions. In particular, for $l = 3$, this yields complete insolvability, and weakening these hypotheses still yields non-existence results, though with specific coprimality restrictions on any possible solutions. We also consider a more general variant of the above Diophantine equation and provide some insolvability results. Subsequently, we establish bounds for the positive solutions of the aforementioned equation. Finally, by associating a family of hyperelliptic curves with the equation under consideration and applying Grant's analogue of the Nagell--Lutz theorem, we translate these insolvability results into results about their rational torsion points.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:35:33Z</published>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Jewel Mahajan</name>
+    </author>
+    <author>
+      <name>Apeksha Sanghi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.27303v1</id>
+    <title>Curves contained in a quartic determinantal surface containing a line</title>
+    <updated>2026-06-25T17:24:46Z</updated>
+    <link href="https://arxiv.org/abs/2606.27303v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.27303v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $X\subseteq \mathbb{P}^{3}$ be a very general element of the Noether-Lefschetz divisor that parametrizing smooth quartic surfaces containing a line. Let $L\subseteq X$ denote the corresponding line. We study the curves contained in $X$ and analyze their behavior in the Hilbert scheme. We first determine which linear systems contain smooth irreducible curves. For most classes, we verify that the general member is a smooth point of the expected Hilbert scheme. Finally we compute the Rao function of any curve on $X$.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-25T17:24:46Z</published>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Abel Castorena</name>
+    </author>
+    <author>
+      <name>Montserrat Vite</name>
+    </author>
+  </entry>
+</feed>
