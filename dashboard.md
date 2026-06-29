@@ -9,7 +9,7 @@
 
 ## Historique d'avancement
 
-- <a id="2026-06-27-07h"></a>[[2026-06-27 07:00]](dashboard.md#2026-06-27-07h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Aayush Verma. Blueprint du Lemme 9 fixé. Statut : Planifié.
+- <a id="2026-06-28-14h"></a>[[2026-06-28 14:00]](dashboard.md#2026-06-28-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-06-26-18h"></a>[[2026-06-26 18:00]](dashboard.md#2026-06-26-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 8 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
