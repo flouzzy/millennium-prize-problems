@@ -72,7 +72,7 @@ La démonstration complète et rigoureuse (document monolithique de 25 pages) es
 
 ## Historique des tentatives
 
-- <a id="2026-06-30-07h"></a>[[2026-06-30 07:00]](../dashboard.md#2026-06-30-07h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dylan Butson, Sujay Nair, Aayush Verma. Blueprint du Lemme 9 fixé. Statut : Planifié.
+- <a id="2026-06-29-18h"></a>[[2026-06-29 18:00]](../dashboard.md#2026-06-29-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 9 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 - <a id="2026-06-29-14h"></a>[[2026-06-29 14:00]](../dashboard.md#2026-06-29-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
