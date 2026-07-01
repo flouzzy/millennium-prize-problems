@@ -9,6 +9,8 @@
 
 ## Historique d'avancement
 
+- <a id="2026-06-30-18h"></a>[[#2026-06-30-18h|2026-06-30 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 9 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-06-30-14h"></a>[[2026-06-30 14:00]](dashboard.md#2026-06-30-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-06-29-18h"></a>[[2026-06-29 18:00]](dashboard.md#2026-06-29-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 9 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.

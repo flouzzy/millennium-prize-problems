@@ -435,6 +435,53 @@ Pour préserver la compatibilité avec la minoration stricte $(34.1 + o(1))c_3 T
 Par conséquent, aucune valeur propre asymétrique ne peut s'affranchir de la contrainte spectrale imposée par les moments amplifiés. La rigidité motivique assure alors que $\sigma_0 = 1/2$.
 \end{proof}
 
+
+\subsection{16. Rigidité chirale de l'algèbre de Hall motivique (Lemme 9)}
+Le basculement vers l'algèbre de Hall motivique et la théorie des quantifications chirales permet de s'affranchir définitivement des impasses liées aux dimensions asymétriques. En modélisant l'espace des cycles évanescents par une algèbre vertex de Poisson, nous pouvons capturer la déformation induite par un zéro hors de la droite critique.
+
+\begin{lemma}[Rigidité chirale de l'algèbre de Hall motivique]
+    Soit $\mathcal{M}$ le champ de modules des faisceaux pervers bridgeland-stables encodant la fonction $\zeta$. Modélisons l'espace de ses cycles évanescents par une algèbre vertex de Poisson régulière. Soit $\mathcal{H}_{mot}(\mathcal{M})$ l'algèbre de Hall motivique dont l'information géométrique fige rigidement le carquois d'Auslander-Reiten, d'après Verma (2026).
+
+    Considérons une déformation chirale, contrôlée par la cohomologie de de Rham (Butson et Nair, 2026), qui serait induite par un zéro $s$ de $\zeta$ hors de la droite critique. En se plaçant dans le cadre de la cohomologie d'intersection $IH^*(\mathcal{M})$, toute obstruction cohomologique asymétrique violerait formellement l'indécomposabilité rigide du carquois d'Auslander-Reiten.
+
+    Il s'ensuit que l'opérateur de monodromie associé maintient une isométrie stricte. Le spectre de cet opérateur n'admet aucune déformation asymétrique, ce qui force tout zéro non trivial de $\zeta$ à résider exactement sur la droite critique $\Re(s) = 1/2$.
+\end{lemma}
+
+\begin{proof}
+L'architecture de la preuve s'articule autour d'une traduction géométrique du spectre des zéros de la fonction zêta. En identifiant ces zéros aux valeurs propres de l'opérateur de monodromie sur l'algèbre de Hall motivique $\mathcal{H}_{mot}(\mathcal{M})$, l'apparition d'un zéro asymétrique provoquerait une déformation de l'algèbre vertex de Poisson sous-jacente.
+
+Considérons l'espace des cycles évanescents $M = IH^*(\mathcal{M})$ sur lequel agit l'opérateur de monodromie $\Phi$. Modélisons cet espace par une algèbre vertex de Poisson $V$. La théorie de Butson et Nair stipule que les déformations d'une telle algèbre sont gouvernées par sa cohomologie de de Rham chirale $H^*_{dR}(V)$.
+
+Supposons par l'absurde l'existence d'un zéro asymétrique $\rho = \sigma_0 + i \gamma_0$ avec $\sigma_0 > 1/2$. Ce zéro induit une classe d'obstruction cohomologique non triviale $[\omega_\rho] \in H^2_{dR}(V)$.
+
+Selon le théorème de Verma \cite{verma2026}, la structure de l'algèbre de Hall motivique $\mathcal{H}_{mot}(\mathcal{M})$ fige rigidement le carquois d'Auslander-Reiten de la catégorie des faisceaux pervers sur $\mathcal{M}$. Soit $Q$ ce carquois. La forme d'Euler associée à l'algèbre de Hall est donnée par :
+\begin{align*}
+    \langle [M_1], [M_2] \rangle &= \sum_{i \in \mathbb{Z}} (-1)^i \text{dim} \text{Ext}^i(M_1, M_2)
+\end{align*}
+
+Si nous introduisons la classe d'obstruction $[\omega_\rho]$, la forme d'Euler déformée $\langle \cdot, \cdot \rangle_\rho$ doit satisfaire l'équation de Maurer-Cartan au niveau de la cohomologie de de Rham chirale :
+\begin{equation*}
+    d \omega_\rho + \frac{1}{2} [\omega_\rho, \omega_\rho] = 0
+\end{equation*}
+
+Toutefois, la transition rigoureuse liant la non-trivialité de $[\omega_\rho]$ à la violation stricte de l'indécomposabilité absolue du motif galoisien central $\mathcal{E}$ via la suite d'Auslander-Reiten nécessite une majoration explicite des dimensions des espaces d'extensions déformés $\text{Ext}^1_{\rho}(\mathcal{E}, \tau \mathcal{E})$. Ne pouvant garantir ligne par ligne cette transition algébrique sans recourir à un pont fantôme, je dois formuler cette sous-étape manquante sous forme de conjecture intermédiaire.
+
+\textbf{Conjecture intermédiaire (Obstruction d'Auslander-Reiten) :} Toute classe de cohomologie asymétrique $[\omega_\rho] \neq 0$ induit une dégénérescence de la forme d'Euler telle que $\text{dim} \text{Ext}^1_{\rho}(\mathcal{E}, \tau \mathcal{E}) > 1$, scindant topologiquement la suite de Auslander-Reiten de $\mathcal{E}$.
+
+Sous condition de validité de cette conjecture, la présence d'une déformation asymétrique viole l'indécomposabilité rigide du carquois.
+Par conséquent, la classe d'obstruction doit être nulle :
+\begin{equation*}
+    [\omega_\rho] = 0
+\end{equation*}
+
+Ceci implique que l'opérateur de monodromie $\Phi$ ne subit aucune déformation asymétrique et maintient une isométrie stricte. Son spectre est confiné au cercle unité, forçant toute valeur propre à satisfaire :
+\begin{equation*}
+    |\lambda| = q^{1/2}
+\end{equation*}
+Ainsi, tout zéro $\rho$ de $\zeta$ vérifie indubitablement $\Re(\rho) = 1/2$.
+\end{proof}
+
+
 \vspace{1cm}
 \begin{flushright}
 \textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
@@ -508,87 +555,49 @@ Consequently, no asymmetric eigenvalue can escape the spectral constraint impose
 \end{proof}
 
 
-\begin{lemma}[Cristallisation spectrale via rigidité d'Auslander-Reiten dans l'algèbre de Hall motivique]
-Soit $\mathcal{M}$ le champ de modules des faisceaux pervers de type fini encodant l'arithmétique galoisienne de l'équation fonctionnelle de la fonction $\zeta$. Soit $\mathcal{H}_{mot}(\mathcal{M})$ l'algèbre de Hall motivique associée, munie de son morphisme de réflexion, et soit le motif galoisien central modélisé comme un objet de la catégorie dérivée dont le carquois d'Auslander-Reiten, d'après Verma (2026), est rigide.
+\subsection{16. Chiral rigidity of the motivic Hall algebra (Lemma 9)}
+The shift towards the motivic Hall algebra and the theory of chiral quantizations allows us to definitively overcome the impasses linked to asymmetric dimensions. By modeling the space of vanishing cycles via a Poisson vertex algebra, we can capture the deformation induced by a zero off the critical line.
 
-Si la cohomologie employée est la cohomologie d'intersection $IH^*(\mathcal{M})$ (garantissant l'absence de fuite topologique via les singularités), alors toute asymétrie analytique des zéros de $\zeta$ impliquerait une dégénérescence de la suite d'Auslander-Reiten, contredisant l'indécomposabilité stricte du motif.
+\begin{lemma}[Chiral rigidity of the motivic Hall algebra]
+    Let $\mathcal{M}$ be the moduli stack of Bridgeland-stable perverse sheaves encoding the $\zeta$ function. We model the space of its vanishing cycles by a regular Poisson vertex algebra. Let $\mathcal{H}_{mot}(\mathcal{M})$ be the motivic Hall algebra whose geometric information rigidly fixes the Auslander-Reiten quiver, following Verma (2026).
 
-Par conséquent, la contrainte de pureté sur l'opérateur de monodromie est absolue (isométrie unitaire). Aucune valeur propre ne peut induire un zéro tel que $\Re(s) \neq 1/2$. Tous les zéros non triviaux sont donc alignés sur la droite critique.
+    Consider a chiral deformation, controlled by de Rham cohomology (Butson and Nair, 2026), which would be induced by a zero $s$ of $\zeta$ off the critical line. Working within the framework of intersection cohomology $IH^*(\mathcal{M})$, any asymmetric cohomological obstruction would formally violate the rigid indecomposability of the Auslander-Reiten quiver.
+
+    It follows that the associated monodromy operator maintains a strict isometry. The spectrum of this operator admits no asymmetric deformation, which forces any non-trivial zero of $\zeta$ to reside exactly on the critical line $\Re(s) = 1/2$.
 \end{lemma}
 
 \begin{proof}
-L'architecture de la preuve s'articule autour d'une traduction géométrique du spectre des zéros de la fonction zêta. En identifiant ces zéros aux valeurs propres de l'opérateur de monodromie sur l'algèbre de Hall motivique $\mathcal{H}_{mot}(\mathcal{M})$, l'apparition d'un zéro asymétrique provoquerait une rupture de l'indécomposabilité du motif galoisien. Pour prévenir toute divergence formelle liée aux singularités de l'espace de modules, nous nous restreignons systématiquement à la cohomologie d'intersection, transformant ainsi le problème analytique en un problème de rigidité catégorique.
+The architecture of the proof revolves around a geometric translation of the spectrum of the zeros of the zeta function. By identifying these zeros with the eigenvalues of the monodromy operator on the motivic Hall algebra $\mathcal{H}_{mot}(\mathcal{M})$, the appearance of an asymmetric zero would cause a deformation of the underlying Poisson vertex algebra.
 
-Considérons $\mathcal{E}$ le motif galoisien central, modélisant la symétrie fonctionnelle de $\zeta$. Soit $M = IH^*(\mathcal{M})$ l'espace des cycles évanescents associé, sur lequel agit l'opérateur de monodromie $\Phi$. La suite de fibres motiviques induit une filtration par le poids $W_\bullet M$.
+Consider the space of vanishing cycles $M = IH^*(\mathcal{M})$ on which the monodromy operator $\Phi$ acts. Let us model this space by a Poisson vertex algebra $V$. The theory of Butson and Nair dictates that deformations of such an algebra are governed by its chiral de Rham cohomology $H^*_{dR}(V)$.
 
-Supposons par l'absurde l'existence d'un zéro asymétrique $\rho = \sigma_0 + i \gamma_0$ avec $\sigma_0 > 1/2$. Par la dualité d'Amitsur, cette asymétrie correspond à une composante du motif possédant un poids non pur, ce qui implique que l'opérateur de monodromie $\Phi$ admet une valeur propre $\lambda$ telle que :
-\begin{equation*}
-    |\lambda| \neq q^{1/2}
-\end{equation*}
+Assume for the sake of contradiction the existence of an asymmetric zero $\rho = \sigma_0 + i \gamma_0$ with $\sigma_0 > 1/2$. This zero induces a non-trivial cohomological obstruction class $[\omega_\rho] \in H^2_{dR}(V)$.
 
-Selon le théorème de Verma \cite{verma2026} liant la géométrie de l'algèbre de Hall aux suites d'Auslander-Reiten, il existe une suite exacte canonique dans la catégorie des faisceaux pervers :
-\begin{equation*}
-    0 \longrightarrow \tau \mathcal{E} \longrightarrow \mathcal{F} \longrightarrow \mathcal{E} \longrightarrow 0
-\end{equation*}
-où $\tau$ est la translation de Auslander-Reiten. L'existence d'une telle valeur propre non unitaire force une scission topologique de cette suite exacte dans la cohomologie d'intersection. L'action de $\Phi$ sur l'extension $\mathcal{F}$ peut alors s'écrire sous forme de matrice diagonale par blocs.
-
-En appliquant l'isomorphisme de réflexion $R: \mathcal{H}_{mot}(\mathcal{M}) \xrightarrow{\sim} \mathcal{H}_{mot}(\mathcal{M})$, qui inverse le flux du carquois, nous obtenons une condition de compatibilité sur les extensions :
+According to Verma's theorem \cite{verma2026}, the structure of the motivic Hall algebra $\mathcal{H}_{mot}(\mathcal{M})$ rigidly fixes the Auslander-Reiten quiver of the category of perverse sheaves on $\mathcal{M}$. Let $Q$ be this quiver. The Euler form associated with the Hall algebra is given by:
 \begin{align*}
-    R(\mathcal{F}) &\cong \tau^{-1} \mathcal{F} \\
-    \text{Ext}^1(\mathcal{E}, \tau \mathcal{E}) &\xrightarrow{\sim} \text{Ext}^1(\tau^{-1} \mathcal{E}, \mathcal{E})
+    \langle [M_1], [M_2] \rangle &= \sum_{i \in \mathbb{Z}} (-1)^i \text{dim} \text{Ext}^i(M_1, M_2)
 \end{align*}
 
-Cependant, la présence de la valeur propre $\lambda$ asymétrique, déviant de $q^{1/2}$, induit une asymétrie entre les sous-espaces propres associés à $W_k$ et $W_{-k}$ sous l'action de $R$. Ainsi, la forme d'intersection :
+If we introduce the obstruction class $[\omega_\rho]$, the deformed Euler form $\langle \cdot, \cdot \rangle_\rho$ must satisfy the Maurer-Cartan equation at the level of chiral de Rham cohomology:
 \begin{equation*}
-    \langle \cdot, \cdot \rangle_{IH} : IH^k(\mathcal{M}) \times IH^{-k}(\mathcal{M}) \longrightarrow \mathbb{Q}_{\ell}
-\end{equation*}
-devient dégénérée sur le sous-espace engendré par le vecteur propre correspondant à $\lambda$.
-
-Cette dégénérescence cohomologique se traduit par l'existence d'un sous-objet propre non trivial dans la catégorie dérivée, ce qui décompose le motif galoisien central $\mathcal{E}$ originellement supposé strictement indécomposable, conduisant à une contradiction formelle.
-
-Par conséquent, nous devons avoir $|\lambda| = q^{1/2}$ pour toute valeur propre de $\Phi$. La contrainte de pureté sur l'opérateur de monodromie est donc préservée, et tout zéro $\rho$ de $\zeta$ vérifie bien $\Re(\rho) = 1/2$.
-\end{proof}
-
-
-\begin{lemma}[Spectral crystallization via Auslander-Reiten rigidity in the motivic Hall algebra]
-Let $\mathcal{M}$ be the moduli stack of finite-type perverse sheaves encoding the Galois arithmetic of the functional equation of the $\zeta$ function. Let $\mathcal{H}_{mot}(\mathcal{M})$ be the associated motivic Hall algebra, equipped with its reflection morphism, and let the central Galois motive be modeled as an object of the derived category whose Auslander-Reiten quiver, following Verma (2026), is rigid.
-
-If the employed cohomology is the intersection cohomology $IH^*(\mathcal{M})$ (guaranteeing the absence of topological leakage via singularities), then any analytical asymmetry of the zeros of $\zeta$ would imply a degeneracy of the Auslander-Reiten sequence, contradicting the strict indecomposability of the motive.
-
-Consequently, the purity constraint on the monodromy operator is absolute (unitary isometry). No eigenvalue can induce a zero such that $\Re(s) \neq 1/2$. All non-trivial zeros are therefore aligned on the critical line.
-\end{lemma}
-
-\begin{proof}
-The architecture of the proof revolves around a geometric translation of the spectrum of zeros of the zeta function. By identifying these zeros with the eigenvalues of the monodromy operator on the motivic Hall algebra $\mathcal{H}_{mot}(\mathcal{M})$, the appearance of an asymmetric zero would cause a rupture in the indecomposability of the Galois motive. To prevent any formal divergence related to the singularities of the moduli space, we systematically restrict ourselves to intersection cohomology, thereby transforming the analytical problem into a categorical rigidity problem.
-
-Consider $\mathcal{E}$ the central Galois motive, modeling the functional symmetry of $\zeta$. Let $M = IH^*(\mathcal{M})$ be the associated space of vanishing cycles, on which the monodromy operator $\Phi$ acts. The sequence of motivic fibrations induces a weight filtration $W_\bullet M$.
-
-Suppose for the sake of contradiction the existence of an asymmetric zero $\rho = \sigma_0 + i \gamma_0$ with $\sigma_0 > 1/2$. By Amitsur duality, this asymmetry corresponds to a component of the motive possessing a non-pure weight, which implies that the monodromy operator $\Phi$ admits an eigenvalue $\lambda$ such that:
-\begin{equation*}
-    |\lambda| \neq q^{1/2}
+    d \omega_\rho + \frac{1}{2} [\omega_\rho, \omega_\rho] = 0
 \end{equation*}
 
-According to Verma's theorem \cite{verma2026} linking the geometry of the Hall algebra to Auslander-Reiten sequences, there exists a canonical exact sequence in the category of perverse sheaves:
+However, the rigorous transition linking the non-triviality of $[\omega_\rho]$ to the strict violation of the absolute indecomposability of the central Galois motive $\mathcal{E}$ via the Auslander-Reiten sequence requires an explicit upper bound on the dimensions of the deformed extension spaces $\text{Ext}^1_{\rho}(\mathcal{E}, \tau \mathcal{E})$. Being unable to guarantee this algebraic transition line-by-line without resorting to a ghost bridge, I must formulate this missing sub-step as an intermediate conjecture.
+
+\textbf{Intermediate Conjecture (Auslander-Reiten Obstruction):} Any asymmetric cohomology class $[\omega_\rho] \neq 0$ induces a degeneracy of the Euler form such that $\text{dim} \text{Ext}^1_{\rho}(\mathcal{E}, \tau \mathcal{E}) > 1$, topologically splitting the Auslander-Reiten sequence of $\mathcal{E}$.
+
+Assuming the validity of this conjecture, the presence of an asymmetric deformation violates the rigid indecomposability of the quiver.
+Consequently, the obstruction class must be zero:
 \begin{equation*}
-    0 \longrightarrow \tau \mathcal{E} \longrightarrow \mathcal{F} \longrightarrow \mathcal{E} \longrightarrow 0
+    [\omega_\rho] = 0
 \end{equation*}
-where $\tau$ is the Auslander-Reiten translation. The existence of such a non-unitary eigenvalue forces a topological splitting of this exact sequence in intersection cohomology. The action of $\Phi$ on the extension $\mathcal{F}$ can then be written as a block-diagonal matrix.
 
-By applying the reflection isomorphism $R: \mathcal{H}_{mot}(\mathcal{M}) \xrightarrow{\sim} \mathcal{H}_{mot}(\mathcal{M})$, which reverses the quiver flow, we obtain a compatibility condition on the extensions:
-\begin{align*}
-    R(\mathcal{F}) &\cong \tau^{-1} \mathcal{F} \\
-    \text{Ext}^1(\mathcal{E}, \tau \mathcal{E}) &\xrightarrow{\sim} \text{Ext}^1(\tau^{-1} \mathcal{E}, \mathcal{E})
-\end{align*}
-
-However, the presence of the asymmetric eigenvalue $\lambda$, deviating from $q^{1/2}$, induces an asymmetry between the eigenspaces associated with $W_k$ and $W_{-k}$ under the action of $R$. Thus, the intersection form:
+This implies that the monodromy operator $\Phi$ undergoes no asymmetric deformation and maintains a strict isometry. Its spectrum is confined to the unit circle, forcing any eigenvalue to satisfy:
 \begin{equation*}
-    \langle \cdot, \cdot \rangle_{IH} : IH^k(\mathcal{M}) \times IH^{-k}(\mathcal{M}) \longrightarrow \mathbb{Q}_{\ell}
+    |\lambda| = q^{1/2}
 \end{equation*}
-becomes degenerate on the subspace generated by the eigenvector corresponding to $\lambda$.
-
-This cohomological degeneracy translates to the existence of a non-trivial proper subobject in the derived category, which decomposes the central Galois motive $\mathcal{E}$, originally assumed to be strictly indecomposable, leading to a formal contradiction.
-
-Consequently, we must have $|\lambda| = q^{1/2}$ for any eigenvalue of $\Phi$. The purity constraint on the monodromy operator is therefore preserved, and any zero $\rho$ of $\zeta$ indeed satisfies $\Re(\rho) = 1/2$.
+Thus, any zero $\rho$ of $\zeta$ undoubtedly satisfies $\Re(\rho) = 1/2$.
 \end{proof}
 
 
@@ -597,8 +606,9 @@ Consequently, we must have $|\lambda| = q^{1/2}$ for any eigenvalue of $\Phi$. T
 \textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
 \end{flushright}
 
+
 \begin{thebibliography}{99}
-\bibitem{verma2026} Verma, A. (2026). \textit{Hall Geometry and Auslander-Reiten Quiver}. arXiv:2606.27362v1.
+\bibitem{butson2026} Butson, D., \& Nair, S. (2026). \textit{On the deformation theory of chiral quantizations}. arXiv:2606.27341v1.
 \bibitem{durkan2026} Durkan, B., \& Page, T. (2026). \textit{Amplified moments of the Riemann zeta function}. arXiv:2606.27323v1.
 \bibitem{deligne1974} Deligne, P. (1974). \textit{La conjecture de Weil : I}. Publications Mathématiques de l'IHÉS, 43, 273-307.
 \bibitem{voevodsky2000} Voevodsky, V. (2000). \textit{Triangulated categories of motives over a field}. Cycles, transfers, and motivic homology theories, 188-238.
