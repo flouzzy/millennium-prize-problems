@@ -9,6 +9,8 @@
 
 ## Historique d'avancement
 
+- [[#2026-07-05-07h|2026-07-05 07:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Samir Canning, Hannah Larson, Johannes Schmitt, Michael A. Daas. Blueprint du Lemme 10 fixé. Statut : Planifié.
+
 - <a id="2026-06-30-18h"></a>[[#2026-06-30-18h|2026-06-30 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 9 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 - <a id="2026-06-30-14h"></a>[[2026-06-30 14:00]](dashboard.md#2026-06-30-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
