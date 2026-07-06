@@ -72,7 +72,7 @@ La démonstration complète et rigoureuse (document monolithique de 25 pages) es
 
 ## Historique des tentatives
 
-- <a id="2026-07-05-07h"></a>[[2026-07-05 07:00]](../dashboard.md#2026-07-05-07h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Samir Canning, Hannah Larson, Johannes Schmitt, Michael A. Daas. Blueprint du Lemme 10 fixé. Statut : Planifié.
+- <a id="2026-07-01-03h"></a>[[2026-07-01 03:00]](../dashboard.md#2026-07-01-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Abel Castorena, Montserrat Vite, Jewel Mahajan, Apeksha Sanghi. Blueprint du Lemme 10 fixé. Statut : Planifié.
 
 - <a id="2026-06-30-18h"></a>[[2026-06-30 18:00]](../dashboard.md#2026-06-30-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 9 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
