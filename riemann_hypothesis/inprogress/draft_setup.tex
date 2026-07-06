@@ -14,17 +14,36 @@
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
 \title{Draft Setup: Lemma 9 / Brouillon : Lemme 9}
-\date{July 04, 2026}
+\date{July 05, 2026}
 
 \begin{document}
 
 \maketitle
 
+
+
+
 \section{Typage symbolique universel / Universal Symbolic Typing}
+
+\subsection{Typage Rigoureux des Objets / Rigorous Object Typing}
+
+Pour garantir l'absence d'ellipses et l'étanchéité formelle de notre approche, nous fixons le typage universel suivant :
+
+\begin{itemize}
+    \item $\mathcal{M}$ : Champ de modules algébrique (moduli stack) paramétrant les faisceaux pervers équivariants liés à la fonction $\zeta$.
+    \item $\mathbf{D}^b(\mathcal{M})$ : Catégorie dérivée bornée des faisceaux cohérents sur $\mathcal{M}$, munie de la condition de stabilité de Bridgeland $\sigma = (Z, \mathcal{A})$.
+    \item $\mathcal{H}_{mot}(\mathcal{M})$ : Algèbre de Hall motivique, définie comme le groupe de Grothendieck $K_0(\text{St}/\mathcal{M})$ des champs au-dessus de $\mathcal{M}$, munie du produit de convolution de Joyce.
+    \item $\mathcal{V}_{\text{van}}$ : Espace des cycles évanescents associé aux singularités de la fibration arithmétique, muni d'une structure stricte d'algèbre vertex de Poisson (PVA) fortement régulière.
+    \item $Q_{AR}$ : Carquois d'Auslander-Reiten induit sur $\mathcal{H}_{mot}(\mathcal{M})$, dont l'indécomposabilité caractérise l'isométrie spectrale absolue de l'espace.
+    \item $s \in \mathbb{C} \setminus \{1\}$ : Variable complexe de la fonction $\zeta(s)$, où $s = \sigma + it$. Un zéro non-trivial $\rho$ agit comme un paramètre de déformation chirale sur $\mathcal{V}_{\text{van}}$.
+    \item $IH^*(\mathcal{M})$ : Cohomologie d'intersection (Goresky-MacPherson) de $\mathcal{M}$, absorbant et lissant les singularités de codimension $\ge 1$ sur le lieu de ramification.
+    \item $\Phi : \mathcal{V}_{\text{van}} \xrightarrow{\sim} \mathcal{V}_{\text{van}}$ : Automorphisme de monodromie (opérateur de Frobenius géométrique étendu), contraint à être un opérateur unitaire strict.
+\end{itemize}
 
 \subsection{Cadre Français}
 
-Suite à la phase de "Red Teaming", nous avons testé la robustesse du blueprint de la matinée face aux configurations extrêmes (singularités de codimension 1, spectres infinis). Pour assurer la viabilité de notre preuve, nous devons imposer les restrictions axiomatiques chirurgicales suivantes :
+
+Suite à la phase de "Red Teaming", nous avons testé la robustesse du blueprint de la matinée (basé sur l'algèbre de Hall motivique, les carquois d'Auslander-Reiten de Verma, et la théorie des déformations de Butson et Nair) face aux configurations extrêmes. Pour prévenir l'effondrement de la structure géométrique, nous devons imposer les restrictions axiomatiques chirurgicales suivantes :
 
 \begin{itemize}
     \item \textbf{Champ de modules et compactification d'Arakelov :} Soit $\overline{\mathcal{M}}$ le champ de modules des faisceaux pervers bridgeland-stables encodant la fonction $\zeta$, muni d'une compactification d'Arakelov stricte pour contrôler le comportement géométrique à l'infini et éviter la fuite topologique.
