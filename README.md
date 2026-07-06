@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-06-14h"></a>[[2026-07-06 14:00]](dashboard.md#2026-07-06-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+
 - <a id="2026-07-05-14h"></a>[[2026-07-05 14:00]](dashboard.md#2026-07-05-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-06-30-14h"></a>[[2026-06-30 14:00]](dashboard.md#2026-06-30-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
