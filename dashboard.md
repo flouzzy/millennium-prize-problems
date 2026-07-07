@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-07-06-18h
+### 2026-07-07-03h
 
-- [[#2026-07-06-18h|2026-07-06 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 10 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- [[#2026-07-07-03h|2026-07-07 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel, Taiwang Deng, Dongming She. Blueprint du Lemme 10 fixé. Statut : Planifié.
 
 ### 2026-06-30-18h
 
