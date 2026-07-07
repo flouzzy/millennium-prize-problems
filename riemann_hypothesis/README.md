@@ -72,6 +72,8 @@ La démonstration complète et rigoureuse (document monolithique de 25 pages) es
 
 ## Historique des tentatives
 
+- <a id="2026-07-06-18h"></a>[[#2026-07-06-18h|2026-07-06 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 10 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-06-30-18h"></a>[[#2026-06-30-18h|2026-06-30 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 9 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 - <a id="2026-06-30-18h"></a>[[2026-06-30 18:00]](../dashboard.md#2026-06-30-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 9 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
