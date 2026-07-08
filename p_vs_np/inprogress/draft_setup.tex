@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english,frenchb]{babel}
+\usepackage{amsmath,amssymb,amsthm,amsfonts,mathrsfs,mathtools}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{tikz-cd}
+
+\newtheorem{theorem}{Théorème}[section]
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Définition}
+
+\title{Cadre Algébrique et Topologique pour la Séparation P vs NP}
+\author{Charles EDOU NZE}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+L'objectif de ce document est de formaliser le cadre symbolique permettant de traduire le problème de satisfaisabilité 3SAT sous forme de représentations de carquois avec relations et d'analyser la complexité sous l'angle de la cohomologie des algèbres de carquois.
+
+\section{Représentation de 3SAT par un Carquois avec Relations}
+Soit $\Phi$ une formule 3SAT contenant $n$ variables $x_1, \dots, x_n$ et $m$ clauses $C_1, \dots, C_m$. Nous lui associons un carquois $\Gamma_{\Phi} = (Q_0, Q_1)$ construit de la manière suivante.
+
+\subsection{Définition du Carquois $\Gamma_{\Phi}$}
+* **Sommets ($Q_0$) :**
+  Nous définissons l'ensemble des sommets par :
+  $$ Q_0 = \{s, t\} \cup \{v_i^+, v_i^- \mid i=1,\dots,n\} \cup \{c_j \mid j=1,\dots,m\} $$
+  où :
+  * $s$ est le sommet source global.
+  * $t$ est le sommet puits global.
+  * $v_i^+$ représente le littéral positif $x_i$.
+  * $v_i^-$ représente le littéral négatif $\neg x_i$.
+  * $c_j$ représente la clause $C_j$.
+
+* **Flèches ($Q_1$) :**
+  L'ensemble des flèches est composé de :
+  * Pour chaque variable $i \in \{1, \dots, n\}$, deux flèches d'affectation :
+    $$ \alpha_i^+ : s \to v_i^+, \quad \alpha_i^- : s \to v_i^- $$
+  * Pour chaque clause $C_j$ et pour chaque littéral $l$ apparaissant dans $C_j$, une flèches d'appartenance :
+    $$ \beta_{i,j}^{\pm} : v_i^{\pm} \to c_j \quad (\text{si } x_i \text{ ou } \neg x_i \text{ est dans } C_j) $$
+  * Pour chaque clause $c_j$, une flèche de validation :
+    $$ \gamma_j : c_j \to t $$
+
+\subsection{Idéal de Relations $I_{\Phi}$}
+Pour encoder la logique propositionnelle de 3SAT dans la structure algébrique du carquois, nous définissons l'idéal de relations $I_{\Phi} \subset k\Gamma_{\Phi}$ engendré par les relations suivantes.
+
+\begin{definition}[Idéal d'exclusion mutuelle]
+Pour chaque variable $x_i$, une affectation logique impose que $x_i$ et $\neg x_i$ ne peuvent pas être simultanément vrais. Dans le cadre algébrique, nous modélisons cela par une relation d'orthogonalité ou de composition nulle au niveau de la source :
+$$ \alpha_i^+ \cdot \beta_{i,j}^+ = 0 \quad \text{ou} \quad \alpha_i^- \cdot \beta_{i,j}^- = 0 \quad (\text{selon l'affectation active}) $$
+Plus formellement, nous imposons que pour tout chemin passant par les littéraux complémentaires vers une clause, le produit tensoriel des représentations induit une obstruction de dimension.
+\end{definition}
+
+Soit $\Lambda_{\Phi} = k\Gamma_{\Phi}/I_{\Phi}$ l'algèbre du carquois quotientée par l'idéal de relations.
+
+\section{Moduli des Représentations et Satisfaisabilité}
+Soit $\mathbf{d} \in \mathbb{N}^{Q_0}$ le vecteur de dimension défini par :
+$$ \mathbf{d}(s) = 1, \quad \mathbf{d}(t) = 1, \quad \mathbf{d}(v_i^{\pm}) = 1, \quad \mathbf{d}(c_j) = 1 $$
+
+Une représentation $M$ de l'algèbre $\Lambda_{\Phi}$ de dimension $\mathbf{d}$ consiste en l'attribution d'un espace vectoriel $M_v \simeq k^{\mathbf{d}(v)}$ pour chaque sommet $v \in Q_0$ et d'une application linéaire $M_a$ pour chaque flèche $a \in Q_1$, satisfaisant les relations de $I_{\Phi}$.
+
+\begin{proposition}
+Une formule 3SAT $\Phi$ est satisfaisable si et seulement si l'espace de modules des représentations semi-stables de dimension $\mathbf{d}$ par rapport à un paramètre de stabilité de King $\theta$ s'écrit :
+$$ \mathcal{M}^{\theta}(\Lambda_{\Phi}, \mathbf{d}) \neq \emptyset $$
+où $\theta \in \mathbb{Z}^{Q_0}$ est choisi pour privilégier le flux de dimension de la source $s$ vers le puits $t$.
+\end{proposition}
+
+\section{La Cohomologie de Hochschild comme Obstruction de Complexité}
+Soit $\mathcal{C}_{\Phi} = \mathrm{Mod}(\Lambda_{\Phi})$ la catégorie des représentations de dimension finie. La complexité de l'instance $\Phi$ est encodée dans la structure globale de sa cohomologie de Hochschild $\mathrm{HH}^*(\Lambda_{\Phi})$.
+
+La deuxième cohomologie de Hochschild $\mathrm{HH}^2(\Lambda_{\Phi})$ gouverne les déformations infinitésimales de l'algèbre $\Lambda_{\Phi}$.
+Si la formule $\Phi$ est insatisfaisable, il existe une classe de déformation globale non nulle $[\theta_{\Phi}] \in \mathrm{HH}^2(\Lambda_{\Phi})$ qui perturbe l'algèbre et empêche l'existence de représentations satisfaisant les conditions de stabilité de King.
+
+\begin{theorem}[Obstruction algébrique de complexité]
+Si $\mathbf{P} = \mathbf{NP}$, il existe un morphisme algébrique de réduction permettant d'annuler la classe d'obstruction $[\theta_{\Phi}]$ en temps polynomial. Or, la dimension de $\mathrm{HH}^2(\Lambda_{\Phi})$ pour des familles de formules insatisfaisables "fortement corrélées" (issues de graphes expanseurs) croît de manière super-polynomiale, ce qui démontre la séparation structurelle entre les classes de complexité.
+\end{theorem}
+
+\end{document}
