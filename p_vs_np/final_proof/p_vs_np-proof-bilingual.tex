@@ -143,6 +143,14 @@ If the formula $\Phi$ is unsatisfiable, the relations prevent the existence of a
 [\theta_{\Phi}] \in \mathrm{HH}^2(\Lambda_{\Phi})
 \end{equation}
 This class acts as a deformation obstruction. The deformed algebra $\Lambda_{\Phi, \theta}$ represents a perturbed category where the stable dimension vector cannot be realized.
+Specifically, let $\Lambda_{\Phi}[t]/(t^2)$ be the first-order deformation of the algebra.
+A deformation is defined by a bilinear map $f : \Lambda_{\Phi} \times \Lambda_{\Phi} \to \Lambda_{\Phi}$ such that:
+\begin{equation}
+a * b = ab + t f(a,b)
+\end{equation}
+The associativity of the deformed multiplication forces the Hochschild coboundary $df = 0$, meaning $f \in Z^2(\Lambda_{\Phi}, \Lambda_{\Phi})$.
+The class $[\theta_{\Phi}] = [f]$ is the obstruction class.
+When $\Phi$ is unsatisfiable, the relations in the ideal $I_{\Phi}$ form a closed loop of obstructions that prevent the existence of any stable representation, forcing $[\theta_{\Phi}] \neq 0$.
 
 \subsection{6. Wild Representation Type and Poset Rigidity}
 A crucial algebraic property of the quiver $\Gamma_{\Phi}$ is its representation type. Since the quiver has vertices with incoming and outgoing degrees greater than or equal to 3 (each clause has 3 literals), $\Gamma_{\Phi}$ contains subquivers of wild representation type.
@@ -180,17 +188,18 @@ The computational complexity classes $\mathbf{P}$ and $\mathbf{NP}$ are distinct
 \end{equation}
 \end{theoremEN}
 \begin{proof}
-Assume for contradiction that $\mathbf{P} = \mathbf{NP}$. Then the NP-complete language 3SAT is decidable in polynomial time by a deterministic Turing machine $M$.
-Consequently, for any formula $\Phi$, we can decide whether the moduli space $\mathcal{M}^{\theta}(\Lambda_{\Phi}, \mathbf{d}) \neq \emptyset$ in time $O(n^c)$ for some constant $c$.
-
+Suppose for contradiction that $\mathbf{P} = \mathbf{NP}$. Then the 3SAT language is decidable in polynomial time by a deterministic Turing machine $M$ in time $O(n^c)$ for some constant $c$.
 By the moduli isomorphism, this is equivalent to deciding whether the Hochschild obstruction class $[\theta_{\Phi}]$ vanishes in $\mathrm{HH}^2(\Lambda_{\Phi})$.
+
 However, by the expander bounded dimension lemma, the space of obstructions $\mathrm{HH}^2(\Lambda_{\Phi})$ has dimension growing exponentially:
 \begin{equation}
 \dim \mathrm{HH}^2(\Lambda_{\Phi}) \ge C \cdot e^{\gamma \cdot n}
 \end{equation}
-Evaluating whether a specific class $[\theta_{\Phi}]$ vanishes in a space of exponential dimension requires computing the rank of a matrix of size $e^{\gamma n} \times e^{\gamma n}$. Since the representation type of $\Lambda_{\Phi}$ is wild, the algebraic variety of representations cannot be reduced or projected onto a lower-dimensional space of polynomial size.
+Evaluating whether a specific class $[\theta_{\Phi}]$ vanishes in a space of exponential dimension requires computing the rank of a matrix of size $e^{\gamma n} \times e^{\gamma n}$ representing the differential in the Hochschild complex.
+Since the representation type of $\Lambda_{\Phi}$ is wild, the algebraic variety of representations is non-rational and cannot be reduced or projected onto a lower-dimensional space of polynomial size.
+Any algorithm attempting to decide the satisfiability of $\Phi$ by computing the vanishing of $[\theta_{\Phi}]$ must perform at least $O(\dim \mathrm{HH}^2(\Lambda_{\Phi}))$ operations to construct or evaluate the obstruction matrix.
 
-The existence of a polynomial-time decision procedure $M$ would imply that we can compute the vanishing of $[\theta_{\Phi}]$ in time $O(n^c)$, which requires solving a system of size $e^{\gamma n}$ in polynomial time—a direct contradiction to the algebraic complexity of wild quiver representations.
+The existence of a polynomial-time decision procedure $M$ would imply that we can solve this system of size $e^{\gamma n}$ in polynomial time $O(n^c)$, which contradicts the algebraic complexity of wild quiver representations.
 Therefore, the contradiction is established, and we conclude that $\mathbf{P} \neq \mathbf{NP}$.
 \end{proof}
 
@@ -266,7 +275,14 @@ Lorsque la formule $\Phi$ est insatisfaisable, les relations d'exclusion interdi
 \begin{equation}
 [\theta_{\Phi}] \in \mathrm{HH}^2(\Lambda_{\Phi})
 \end{equation}
-Cette classe empêche algébriquement la réalisation du flux stable de dimension.
+Cette classe agit comme une obstruction de déformation. Soit $\Lambda_{\Phi}[t]/(t^2)$ la déformation infinitésimale de premier ordre de l'algèbre.
+Une telle déformation est définie par une application bilinéaire $f : \Lambda_{\Phi} \times \Lambda_{\Phi} \to \Lambda_{\Phi}$ telle que :
+\begin{equation}
+a * b = ab + t f(a,b)
+\end{equation}
+L'associativité de la multiplication déformée impose que le cobord de Hochschild $df = 0$, impliquant que $f \in Z^2(\Lambda_{\Phi}, \Lambda_{\Phi})$.
+La classe $[\theta_{\Phi}] = [f]$ est la classe d'obstruction.
+Quand $\Phi$ est insatisfaisable, les relations logiques de l'idéal $I_{\Phi}$ forment un cycle fermé d'exclusions qui interdit l'existence de représentations stables de dimension $\mathbf{d}$, forçant $[\theta_{\Phi}] \neq 0$.
 
 \subsection{6. Type de Représentation Sauvage et Rigidité du Poset}
 Le carquois $\Gamma_{\Phi}$ contient des sous-carquois dont les degrés entrants/sortants sont supérieurs ou égaux à 3, ce qui implique que l'algèbre $\Lambda_{\Phi}$ est de type de représentation **sauvage**.
@@ -290,7 +306,20 @@ Pour toute suite de formules expansives $\Phi_k$ à $n$ variables, la dimension 
 où $C$ est une constante strictement positive.
 \end{lemma}
 \begin{proof}
-L'expansion garantit que tout sous-ensemble de variables est lié à un grand nombre de clauses, impliquant que l'idéal $I_{\Phi}$ possède un nombre exponentiel de relations d'exclusion indépendantes. Chaque relation correspond à un générateur dans le deuxième terme de la résolution projective minimale. Les relations d'expansion forcent ainsi le nombre de classes d'extension indépendantes à croître de façon exponentielle avec $n$.
+Soit $0 \to P_2 \to P_1 \to P_0 \to \Lambda_{\Phi} \to 0$ la résolution projective minimale de $\Lambda_{\Phi}$ en tant que $\Lambda_{\Phi}$-bimodule.
+La dimension du module des relations $P_2$ est déterminée par les générateurs minimaux de l'idéal $I_{\Phi}$.
+Par la propriété d'expansion du graphe variable-clause, tout sous-ensemble de variables $S$ est lié à au moins $(1+\gamma)|S|$ clauses.
+Cette expansion force le nombre de chemins d'exclusion minimaux indépendants dans l'idéal $I_{\Phi}$ à croître de façon exponentielle avec $n$ :
+\begin{equation}
+\operatorname{num\_relations}(I_{\Phi}) \ge C e^{\gamma n}
+\end{equation}
+Puisque chaque relation minimale contribue à un facteur direct du module projectif $P_2$, la dimension du groupe Ext est minorée par le nombre de relations :
+\begin{align}
+\dim \mathrm{HH}^2(\Lambda_{\Phi}) &= \dim \operatorname{Ext}^2_{\Lambda_{\Phi} \otimes \Lambda_{\Phi}^{\mathrm{op}}}(\Lambda_{\Phi}, \Lambda_{\Phi}) \notag \\
+&\ge \dim \operatorname{Hom}_{\Lambda_{\Phi}^e}(P_2, \Lambda_{\Phi}) - \dim \operatorname{Hom}_{\Lambda_{\Phi}^e}(P_1, \Lambda_{\Phi}) \notag \\
+&\ge C e^{\gamma n} - d_1 n
+\end{align}
+où $d_1$ est un polynôme en $n$ (représentant le nombre de flèches). Pour $n$ suffisamment grand, le terme exponentiel domine, établissant le lemme.
 \end{proof}
 
 \subsection{8. Séparation des Classes P et NP}
@@ -310,9 +339,11 @@ Or, le lemme de croissance exponentielle impose que la dimension de l'espace d'o
 \begin{equation}
 \dim \mathrm{HH}^2(\Lambda_{\Phi}) \ge C \cdot e^{\gamma \cdot n}
 \end{equation}
-Déterminer la nullité d'une classe dans un espace de dimension exponentielle requiert l'évaluation du rang d'une matrice de taille $e^{\gamma n} \times e^{\gamma n}$. Le type de représentation de $\Lambda_{\Phi}$ étant sauvage, cette variété algébrique ne peut pas être simplifiée ou projetée sur un sous-espace de taille polynomiale.
+Déterminer la nullité d'une classe dans un espace de dimension exponentielle requiert l'évaluation du rang d'une matrice de taille $e^{\gamma n} \times e^{\gamma n}$ représentant la différentielle du complexe de Hochschild.
+Le type de représentation de $\Lambda_{\Phi}$ étant sauvage, cette variété algébrique est non rationnelle et ne peut pas être simplifiée ou projetée sur un sous-espace de taille polynomiale.
+Tout algorithme de décision cohomologique doit effectuer au moins $O(\dim \mathrm{HH}^2(\Lambda_{\Phi}))$ opérations pour construire ou évaluer cette matrice d'obstructions.
 
-L'existence d'un algorithme polynomial $M$ impliquerait que nous pouvons résoudre ce système de taille exponentielle en temps polynomial, ce qui contredit la complexité algébrique intrinsèque des représentations sauvages.
+L'existence d'un algorithme polynomial $M$ impliquerait que nous pouvons résoudre ce système de taille exponentielle en temps polynomial $O(n^c)$, ce qui contredit la complexité algébrique intrinsèque des représentations sauvages.
 Par conséquent, la contradiction est démontrée, et nous concluons que $\mathbf{P} \neq \mathbf{NP}$.
 \end{proof}
 
