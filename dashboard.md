@@ -2,14 +2,16 @@
 
 ## Investigation actuelle
 
-- **Problème du Millénaire :** Les équations de Yang-Mills
-- **Axe de recherche actif :** flot_renormalisation
+- **Problème du Millénaire :** La conjecture de Hodge
+- **Axe de recherche actif :** categorie_derivee
 - **Tentative :** 01
-- **Dossier cible :** `yang_mills/`
+- **Dossier cible :** `hodge_conjecture/`
 
 ## Historique d'avancement
 
 ### 2026-07-08-10h
+
+- [[#2026-07-08-10h|2026-07-08 10:15]] : [Initialisation] - Problème: La conjecture de Hodge. Définition du cadre d'étude, analyse des barrières (Lefschetz, Atiyah-Hirzebruch, transcendance) et création du plan stratégique. Statut : Planifié.
 
 - [[#2026-07-08-10h|2026-07-08 10:10]] : [Résolution & Publication] - Problème: Équations de Yang-Mills. Rédaction de la preuve finale de l'existence globale quantique et du gap de masse $\Delta > 0$ par localisation de Gribov-Zwanziger. Génération du manuscrit bilingue et compilation PDF. Statut : Résolu & Publié.
 
