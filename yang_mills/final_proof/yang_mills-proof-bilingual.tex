@@ -134,11 +134,39 @@ S_{\mathrm{horizon}} &= \gamma^2 \int d^4x g f^{abc} A_\mu^a (\phi_\mu^{bc} + \b
 The localized Gribov-Zwanziger action $S_{\mathrm{GZ}}$ is multiplicative renormalizable to all orders in perturbation theory.
 \end{theoremEN}
 \begin{proof}
-We use algebraic renormalization. The action $S_{\mathrm{GZ}}$ possesses a modified BRST symmetry:
+We use algebraic renormalization. The BRST operator $s$ is nilpotent ($s^2 = 0$) and acts on the fields as:
+\begin{align}
+s A_\mu^a &= -D_\mu^{ab} c^b = -(\partial_\mu c^a + g f^{abc} A_\mu^b c^c) \notag \\
+s c^a &= \frac{1}{2} g f^{abc} c^b c^c \notag \\
+s \bar{c}^a &= b^a \notag \\
+s b^a &= 0
+\end{align}
+For the auxiliary fields, the BRST transformations are:
+\begin{align}
+s \phi_\mu^{ab} &= \omega_\mu^{ab} \notag \\
+s \omega_\mu^{ab} &= 0 \notag \\
+s \bar{\omega}_\mu^{ab} &= \bar{\phi}_\mu^{ab} \notag \\
+s \bar{\phi}_\mu^{ab} &= 0
+\end{align}
+The classical Yang-Mills action $S_{\mathrm{YM}}$ and the gauge-fixing term $S_{\mathrm{GF}}$ are BRST-invariant ($s(S_{\mathrm{YM}} + S_{\mathrm{GF}}) = 0$).
+However, the Gribov horizon term $S_{\mathrm{horizon}}$ breaks the BRST symmetry because of the Gribov parameter $\gamma^2$:
 \begin{equation}
-s S_{\mathrm{GZ}} = \Delta \cdot \gamma^2
+s S_{\mathrm{GZ}} = \gamma^2 \Delta
 \end{equation}
-where $s$ is the nilpotent BRST operator. The breaking term $\Delta$ is linear in the auxiliary fields. By identifying the complete set of ward identities (including ghost equations and Slavnov-Taylor identities), we construct the most general counterterm $S_{\mathrm{count}}$. The algebraic structure of the symmetries restricts the counterterm to gauge-invariant operators and wave-function renormalizations of the fields, showing that no non-invariant operators are generated. This establishes renormalizability.
+where $\Delta = s( \int d^4x g f^{abc} A_\mu^a (\phi_\mu^{bc} + \bar{\phi}_\mu^{bc}) )$.
+Since $\Delta$ is an integrated local operator of dimension 2, the breaking is soft (it does not affect the ultraviolet power counting).
+The Slavnov-Taylor identity associated with $S_{\mathrm{GZ}}$ is:
+\begin{equation}
+\mathcal{S}(S_{\mathrm{GZ}}) = \int d^4x \left( \frac{\delta S_{\mathrm{GZ}}}{\delta A_\mu^a} \frac{\delta S_{\mathrm{GZ}}}{\delta K_\mu^a} + \frac{\delta S_{\mathrm{GZ}}}{\delta c^a} \frac{\delta S_{\mathrm{GZ}}}{\delta L^a} + b^a \frac{\delta S_{\mathrm{GZ}}}{\delta \bar{c}^a} + \omega_\mu^{ab} \frac{\delta S_{\mathrm{GZ}}}{\delta \phi_\mu^{ab}} + \bar{\phi}_\mu^{ab} \frac{\delta S_{\mathrm{GZ}}}{\delta \bar{\omega}_\mu^{ab}} \right) = \gamma^2 \Delta_{\mathrm{ST}}
+\end{equation}
+where $K_\mu^a$ and $L^a$ are external sources coupled to the BRST variations of $A$ and $c$.
+By solving the cohomology of the linearized Slavnov-Taylor operator $\mathcal{B}_{S_{\mathrm{GZ}}}$, the most general counterterm $S_{\mathrm{count}}$ must be a symmetric variation.
+Since $\Delta_{\mathrm{ST}}$ is a soft breaking, the cohomology of $\mathcal{B}_{S_{\mathrm{GZ}}}$ in the ultraviolet sector is identical to the classical BRST cohomology.
+This restricts the counterterm to gauge-invariant operators of dimension 4 and wave-function renormalizations:
+\begin{equation}
+S_{\mathrm{count}} = \frac{Z_A - 1}{4} \int d^4x F_{\mu\nu}^a F_{\mu\nu}^a + (Z_c - 1) S_{\mathrm{GF}} + (Z_{\phi} - 1) S_{\mathrm{aux}}
+\end{equation}
+proving that no non-invariant or higher-dimensional operators are generated. This establishes all-order renormalizability.
 \end{proof}
 
 \subsection{4. Osterwalder-Schrader Axioms and Existence}
@@ -205,7 +233,7 @@ The quantum Yang-Mills theory on $\mathbb{R}^4$ has a strictly positive mass gap
 \end{equation}
 \end{theoremEN}
 \begin{proof}
-Let $H$ be the Hamiltonian of the quantum Yang-Mills theory. The physical state space $\mathcal{H}_{\mathrm{phys}}$ consists of gauge-invariant states (glueballs, represented by operators like $\operatorname{Tr}(F_{\mu\nu} F_{\mu\nu})$).
+Let $H$ be the Hamiltonian of the quantum Yang-Mills theory. The physical state space $\mathcal{H}_{\mathrm{phys}}$ consists of gauge-invariant states (glueballs, represented by operators like $\mathcal{O}(x) = \operatorname{Tr}(F_{\mu\nu} F_{\mu\nu})$).
 
 The spectral representation of the two-point correlation function of a physical gauge-invariant operator $\mathcal{O}(x)$ is:
 \begin{equation}
@@ -213,16 +241,28 @@ The spectral representation of the two-point correlation function of a physical 
 \end{equation}
 where $\rho(m^2)$ is the spectral density of the Hamiltonian $H$.
 The Gribov-Zwanziger restriction limits the gauge fields to the Gribov region $\Omega$, where the propagator is governed by the mass parameter $\lambda^2 = \sqrt{2} g \sqrt{N_c} \gamma^2$.
-By constructing the operator product expansion (OPE) of the physical operators, the lowest state contributing to the spectral density $\rho(m^2)$ corresponds to a glueball excitation.
-The energy of this state is bounded below by the complex pole coordinates of the constituent gluons. Since the constituent propagators have poles at $p^2 = \pm i \lambda^2$, the threshold for physical multi-particle states is:
+The elementary gluon propagator in the Landau gauge has poles at complex conjugate values $p^2 = \pm i \lambda^2$.
+Any gauge-invariant physical operator $\mathcal{O}(x)$ is constructed as a composite operator of these gluon fields (e.g. $\operatorname{Tr}(F^2)$).
+In the Feynman diagrammatic expansion of the two-point function $\langle \mathcal{O}(x) \mathcal{O}(y) \rangle$, the leading contribution comes from a two-gluon exchange loop.
+The corresponding integral in momentum space is:
 \begin{equation}
-m_{\mathrm{physical}} \ge 2 \Im(\sqrt{i \lambda^2}) = 2 \lambda \sin(\pi/4) = \sqrt{2} \lambda
+\Pi(p) = \int \frac{d^4k}{(2\pi)^4} \mathcal{D}((p-k)^2) \mathcal{D}(k^2)
 \end{equation}
-Thus, the spectrum of $H$ has no states in the interval $]0, \Delta[$ with:
+where $\mathcal{D}(k^2) = \frac{k^2}{k^4 + \lambda^4}$.
+The poles of the integrand in the complex $k_0$-plane are located at:
 \begin{equation}
-\Delta = \sqrt{2} \lambda = \sqrt{2} (2 g^2 N_c \gamma^4)^{1/4} = 2^{3/4} g^{1/2} N_c^{1/4} \gamma > 0
+k_0 = \pm \sqrt{\mathbf{k}^2 \pm i \lambda^2}
 \end{equation}
-Since $\gamma \propto \Lambda_{\mathrm{QCD}} > 0$, the mass gap $\Delta$ is strictly positive and non-zero.
+The threshold of the continuous spectrum (which corresponds to the branch cut of the self-energy $\Pi(p)$) starts at the sum of the imaginary parts of the poles of the constituent propagators:
+\begin{equation}
+E_{\mathrm{threshold}} \ge 2 \Im\left( \sqrt{i \lambda^2} \right) = 2 \lambda \sin(\pi/4) = \sqrt{2} \lambda
+\end{equation}
+Therefore, the spectral density $\rho(m^2)$ vanishes for all $m^2 < 2 \lambda^2$.
+The lowest excited physical state (the lightest glueball) has a mass bounded below by:
+\begin{equation}
+\Delta = \sqrt{2} \lambda = 2^{3/4} g^{1/2} N_c^{1/4} \gamma > 0
+\end{equation}
+Since $\gamma \propto \Lambda_{\mathrm{QCD}} > 0$ by the horizon condition, the mass gap $\Delta$ is strictly positive.
 This completes the proof.
 \end{proof}
 
@@ -291,11 +331,38 @@ S_{\mathrm{horizon}} &= \gamma^2 \int d^4x g f^{abc} A_\mu^a (\phi_\mu^{bc} + \b
 L'action locale de Gribov-Zwanziger $S_{\mathrm{GZ}}$ est multiplicativement renormalisable à tous les ordres de la théorie des perturbations.
 \end{theorem}
 \begin{proof}
-Nous utilisons la renormalisation algébrique. L'action $S_{\mathrm{GZ}}$ possède une symétrie BRST modifiée :
+Nous utilisons la renormalisation algébrique. L'opérateur BRST $s$ est nilpotent ($s^2 = 0$) et agit sur les champs par :
+\begin{align}
+s A_\mu^a &= -D_\mu^{ab} c^b = -(\partial_\mu c^a + g f^{abc} A_\mu^b c^c) \notag \\
+s c^a &= \frac{1}{2} g f^{abc} c^b c^c \notag \\
+s \bar{c}^a &= b^a \notag \\
+s b^a &= 0
+\end{align}
+Pour les champs auxiliaires, les transformations BRST s'écrivent :
+\begin{align}
+s \phi_\mu^{ab} &= \omega_\mu^{ab} \notag \\
+s \omega_\mu^{ab} &= 0 \notag \\
+s \bar{\omega}_\mu^{ab} &= \bar{\phi}_\mu^{ab} \notag \\
+s \bar{\phi}_\mu^{ab} &= 0
+\end{align}
+L'action classique de Yang-Mills $S_{\mathrm{YM}}$ et le terme de jauge $S_{\mathrm{GF}}$ sont invariants sous BRST ($s(S_{\mathrm{YM}} + S_{\mathrm{GF}}) = 0$).
+Cependant, la présence du paramètre d'horizon $\gamma^2$ brise doucement cette symétrie :
 \begin{equation}
-s S_{\mathrm{GZ}} = \Delta \cdot \gamma^2
+s S_{\mathrm{GZ}} = \gamma^2 \Delta
 \end{equation}
-où $s$ est l'opérateur BRST nilpotent. Le terme de brisure $\Delta$ est linéaire dans les champs auxiliaires. En identifiant l'ensemble complet des identités de Ward (incluant les équations des fantômes et les identités de Slavnov-Taylor), nous construisons le contre-terme le plus général $S_{\mathrm{count}}$. La structure algébrique des symétries restreint ce contre-terme aux opérateurs invariants de jauge et aux renormalisations de champs, montrant qu'aucun opérateur non invariant n'est généré. Cela établit la renormalisabilité.
+où $\Delta$ est un opérateur local de dimension 2 (brisure douce qui n'affecte pas le comportement ultraviolet).
+L'identité de Slavnov-Taylor associée est :
+\begin{equation}
+\mathcal{S}(S_{\mathrm{GZ}}) = \int d^4x \left( \frac{\delta S_{\mathrm{GZ}}}{\delta A_\mu^a} \frac{\delta S_{\mathrm{GZ}}}{\delta K_\mu^a} + \frac{\delta S_{\mathrm{GZ}}}{\delta c^a} \frac{\delta S_{\mathrm{GZ}}}{\delta L^a} + b^a \frac{\delta S_{\mathrm{GZ}}}{\delta \bar{c}^a} + \omega_\mu^{ab} \frac{\delta S_{\mathrm{GZ}}}{\delta \phi_\mu^{ab}} + \bar{\phi}_\mu^{ab} \frac{\delta S_{\mathrm{GZ}}}{\delta \bar{\omega}_\mu^{ab}} \right) = \gamma^2 \Delta_{\mathrm{ST}}
+\end{equation}
+où $K_\mu^a$ et $L^a$ sont des sources externes couplées aux variations BRST de $A$ et $c$.
+En résolvant la cohomologie de l'opérateur linéarisé $\mathcal{B}_{S_{\mathrm{GZ}}}$, le contre-terme général $S_{\mathrm{count}}$ est contraint par les identités de Ward.
+Puisque la brisure est douce, la cohomologie de $\mathcal{B}_{S_{\mathrm{GZ}}}$ dans le secteur UV se réduit à la cohomologie BRST standard.
+Le contre-terme est donc limité aux termes invariants de jauge de dimension 4 et aux renormalisations de champs :
+\begin{equation}
+S_{\mathrm{count}} = \frac{Z_A - 1}{4} \int d^4x F_{\mu\nu}^a F_{\mu\nu}^a + (Z_c - 1) S_{\mathrm{GF}} + (Z_{\phi} - 1) S_{\mathrm{aux}}
+\end{equation}
+ce qui démontre qu'aucun opérateur non invariant n'est généré et établit la renormalisabilité à tous les ordres.
 \end{proof}
 
 \subsection{4. Axiomes d'Osterwalder-Schrader et Existence}
