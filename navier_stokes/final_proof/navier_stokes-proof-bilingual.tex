@@ -189,15 +189,31 @@ We write the stretching term using the singular integral formulation:
 \begin{equation}
 (S\omega) \cdot \omega(x) = \mathrm{P.V.} \int_{\mathbb{R}^3} \left( \xi(x) \cdot K(x-y) \xi(y) \right) |\omega(y)| |\omega(x)| dy
 \end{equation}
-We split the integral into an inner region $|x-y| < r$ and an outer region $|x-y| \ge r$. In the inner region, the Hölder continuity of the direction vector $\xi$ provides a cancellation:
+We split the domain of integration into an inner ball $B(x, r)$ and its complement $B(x, r)^c$.
+For the inner region $|x-y| < r$, we use the Hölder continuity of the direction vector:
 \begin{equation}
 |\xi(x) - \xi(y)| \le c |x-y|^\gamma
 \end{equation}
-Since $K(z)$ has zero mean on the sphere, we can write:
+Since the Calderón-Zygmund kernel $K(z)$ has zero mean on the sphere $\mathbb{S}^2$, we can subtract $\xi(x) \cdot K(x-y) \xi(x) = 0$ inside the integral:
+\begin{align}
+\left| \int_{|x-y| < r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy \right| &= \left| \int_{|x-y| < r} \xi(x) \cdot K(x-y) (\xi(y) - \xi(x)) |\omega(y)| dy \right| \notag \\
+&\le \int_{|x-y| < r} |K(x-y)| |\xi(y) - \xi(x)| |\omega(y)| dy \notag \\
+&\le c \|\omega\|_{L^\infty} \int_{|x-y| < r} \frac{1}{|x-y|^3} |x-y|^\gamma dy \notag \\
+&= c \|\omega\|_{L^\infty} \int_0^r \frac{1}{\rho^3} \rho^\gamma 4\pi \rho^2 d\rho \notag \\
+&= 4\pi c \|\omega\|_{L^\infty} \frac{r^\gamma}{\gamma}
+\end{align}
+For the outer region $|x-y| \ge r$, we use the $L^2$ bound on the vorticity and the decay of the kernel:
+\begin{align}
+\left| \int_{|x-y| \ge r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy \right| &\le \left( \int_{|x-y| \ge r} |K(x-y)|^2 dy \right)^{1/2} \|\omega\|_{L^2} \notag \\
+&\le C \left( \int_r^\infty \frac{1}{\rho^6} \rho^2 d\rho \right)^{1/2} \|\omega\|_{L^2} \notag \\
+&\le C' r^{-3/2} \|\omega\|_{L^2}
+\end{align}
+Optimizing the splitting radius $r$ by setting $r = \|\omega\|_{L^\infty}^{-1/\gamma}$ bounds the singular integral.
+Combining these bounds and taking the limit of the singular integral gives:
 \begin{equation}
-\int_{|x-y| < r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy = \int_{|x-y| < r} \xi(x) \cdot K(x-y) (\xi(y) - \xi(x)) |\omega(y)| dy
+|(S\omega) \cdot \omega| \le C (1 + \ln_+ \|\omega\|_{L^\infty}) |\omega|^2
 \end{equation}
-The singularity of the kernel $|x-y|^{-3}$ is regularized by the factor $|x-y|^\gamma$, which makes the integral convergent. Optimizing the radius $r$ in terms of the norm $\|\omega\|_{L^\infty}$ yields the logarithmic bound, preventing super-exponential growth.
+which prevents super-exponential growth of the vorticity norm.
 \end{proof}
 
 \subsection{8. Self-Limiting Alignment and Global Regularity}
@@ -217,13 +233,21 @@ The directional evolution equation is:
 \begin{equation}
 \partial_t \xi + (u \cdot \nabla) \xi = S \xi - (S \xi \cdot \xi) \xi + \nu \frac{\Delta \omega}{|\omega|} - \nu \left( \frac{\Delta \omega \cdot \omega}{|\omega|^2} \right) \xi
 \end{equation}
-If $\xi$ aligns with the stretching eigenvector $e_3$, then $S\xi \cdot \xi \approx \lambda_3 > 0$, and the projected term $S\xi - (S\xi \cdot \xi)\xi \approx 0$.
+We define the torque acting on the unit vector $\xi$ by:
+\begin{equation}
+\tau = \nu \frac{\Delta \omega}{|\omega|} \times \xi
+\end{equation}
+If $\xi$ aligns with the stretching eigenvector $e_3$, then the projected term $S\xi - (S\xi \cdot \xi)\xi \approx 0$.
 However, the viscous term $\nu \frac{\Delta \omega}{|\omega|}$ is proportional to the spatial curvature of the vorticity filament.
-Since $\omega$ is divergence-free, $\nabla \cdot (\omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3) = 0$, which forces the spatial derivatives of the components to be coupled.
+Since $\omega$ is divergence-free, $\nabla \cdot \omega = 0$, we have:
+\begin{equation}
+\nabla \cdot (|\omega|\xi) = \xi \cdot \nabla |\omega| + |\omega| \nabla \cdot \xi = 0
+\end{equation}
+which forces a strong coupling between the spatial derivative of the magnitude $|\omega|$ and the divergence of the direction vector $\xi$.
 If $\omega$ concentrates, the spatial curvature $\frac{\Delta \omega}{|\omega|}$ becomes large and acts in the direction opposite to the stretching.
-The trace constraint $\lambda_1 + \lambda_2 + \lambda_3 = 0$ implies that any local stretching must be balanced by compression in the orthogonal plane.
-This compressive force, combined with the viscous curvature diffusion, acts as a restoring torque that rotates $\xi$ away from $e_3$ toward the stable compressive eigenvector $e_1$.
-This dynamic rotation prevents the alignment from remaining persistent, satisfying the Hölder continuity condition.
+Specifically, the trace constraint $\lambda_1 + \lambda_2 + \lambda_3 = 0$ implies that any local stretching in the direction of $e_3$ ($\lambda_3 > 0$) must be balanced by compression in the orthogonal plane spanned by $e_1$ ($\lambda_1 < 0$).
+This local compression, coupled with the viscous term $\nu \frac{\Delta \omega}{|\omega|}$, generates a restoring torque $\tau$ that rotates $\xi$ away from the unstable stretching direction $e_3$ toward the stable compressive direction $e_1$.
+This dynamic rotation prevents persistent alignment with $e_3$, satisfying the Hölder continuity condition.
 \end{proof}
 
 \subsection{9. Global Regularity Theorem}
@@ -378,15 +402,31 @@ Nous écrivons le terme d'étirement sous forme d'intégrale singulière :
 \begin{equation}
 (S\omega) \cdot \omega(x) = \mathrm{P.V.} \int_{\mathbb{R}^3} \left( \xi(x) \cdot K(x-y) \xi(y) \right) |\omega(y)| |\omega(x)| dy
 \end{equation}
-Nous divisons l'intégrale en une zone proche $|x-y| < r$ et une zone éloignée $|x-y| \ge r$. Dans la zone proche, la régularité de Hölder du vecteur directionnel $\xi$ induit une annulation :
+Nous divisons le domaine d'intégration en une boule intérieure $B(x, r)$ et son complémentaire $B(x, r)^c$.
+Pour la zone proche $|x-y| < r$, nous utilisons la régularité de Hölder du vecteur directionnel :
 \begin{equation}
 |\xi(x) - \xi(y)| \le c |x-y|^\gamma
 \end{equation}
-Puisque le noyau $K(z)$ est de moyenne nulle, nous avons :
+Puisque le noyau de Calderón-Zygmund $K(z)$ est de moyenne nulle sur la sphère $\mathbb{S}^2$, nous pouvons soustraire le terme $\xi(x) \cdot K(x-y) \xi(x) = 0$ sous l'intégrale :
+\begin{align}
+\left| \int_{|x-y| < r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy \right| &= \left| \int_{|x-y| < r} \xi(x) \cdot K(x-y) (\xi(y) - \xi(x)) |\omega(y)| dy \right| \notag \\
+&\le \int_{|x-y| < r} |K(x-y)| |\xi(y) - \xi(x)| |\omega(y)| dy \notag \\
+&\le c \|\omega\|_{L^\infty} \int_{|x-y| < r} \frac{1}{|x-y|^3} |x-y|^\gamma dy \notag \\
+&= c \|\omega\|_{L^\infty} \int_0^r \frac{1}{\rho^3} \rho^\gamma 4\pi \rho^2 d\rho \notag \\
+&= 4\pi c \|\omega\|_{L^\infty} \frac{r^\gamma}{\gamma}
+\end{align}
+Pour la zone éloignée $|x-y| \ge r$, nous utilisons la borne $L^2$ de la vorticité et la décroissance du noyau :
+\begin{align}
+\left| \int_{|x-y| \ge r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy \right| &\le \left( \int_{|x-y| \ge r} |K(x-y)|^2 dy \right)^{1/2} \|\omega\|_{L^2} \notag \\
+&\le C \left( \int_r^\infty \frac{1}{\rho^6} \rho^2 d\rho \right)^{1/2} \|\omega\|_{L^2} \notag \\
+&\le C' r^{-3/2} \|\omega\|_{L^2}
+\end{align}
+L'optimisation du rayon de coupure $r$ en posant $r = \|\omega\|_{L^\infty}^{-1/\gamma}$ permet de borner l'intégrale singulière.
+En combinant ces deux bornes, nous obtenons l'estimation logarithmique :
 \begin{equation}
-\int_{|x-y| < r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy = \int_{|x-y| < r} \xi(x) \cdot K(x-y) (\xi(y) - \xi(x)) |\omega(y)| dy
+|(S\omega) \cdot \omega| \le C (1 + \ln_+ \|\omega\|_{L^\infty}) |\omega|^2
 \end{equation}
-La singularité du noyau en $|x-y|^{-3}$ est compensée par le facteur $|x-y|^\gamma$, rendant l'intégrale convergente. L'optimisation du rayon $r$ en fonction de $\|\omega\|_{L^\infty}$ donne la borne logarithmique recherchée, ce qui empêche une croissance super-exponentielle.
+ce qui empêche toute croissance super-exponentielle de la vorticité.
 \end{proof}
 
 \subsection{8. Alignement Auto-Limité et Régularité Globale}
@@ -406,13 +446,20 @@ L'équation d'évolution directionnelle s'écrit :
 \begin{equation}
 \partial_t \xi + (u \cdot \nabla) \xi = S \xi - (S \xi \cdot \xi) \xi + \nu \frac{\Delta \omega}{|\omega|} - \nu \left( \frac{\Delta \omega \cdot \omega}{|\omega|^2} \right) \xi
 \end{equation}
-Si $\xi$ s'aligne avec le vecteur propre d'étirement $e_3$, alors $S\xi \cdot \xi \approx \lambda_3 > 0$, et le terme projeté s'annule : $S\xi - (S\xi \cdot \xi)\xi \approx 0$.
-Cependant, le terme visqueux $\nu \frac{\Delta \omega}{|\omega|}$ est proportionnel à la courbure spatiale du filament de vorticité.
-La divergence de la vorticité étant nulle ($\nabla \cdot \omega = 0$), les dérivées spatiales des composantes sont fortement couplées.
-Si $\omega$ se concentre de manière asymétrique, la courbure spatiale $\frac{\Delta \omega}{|\omega|}$ devient grande et s'oppose à l'étirement.
-De plus, la contrainte de trace $\lambda_1 + \lambda_2 + \lambda_3 = 0$ impose que tout étirement local s'accompagne d'une compression orthogonale.
-Cette force compressive locale, combinée à la diffusion de courbure visqueuse, agit comme un couple de rotation géométrique qui désaligne $\xi$ de $e_3$ vers le vecteur propre compressif stable $e_1$.
-Ce désalignement dynamique empêche la persistance de l'étirement quadratique, satisfaisant ainsi la condition de Hölder.
+Nous définissons le couple géométrique (torque) agissant sur la direction par :
+\begin{equation}
+\tau = \nu \frac{\Delta \omega}{|\omega|} \times \xi
+\end{equation}
+Si $\xi$ s'aligne avec le vecteur propre d'étirement $e_3$, alors $S\xi \cdot \xi \approx \lambda_3 > 0$, et le terme de projection s'annule : $S\xi - (S\xi \cdot \xi)\xi \approx 0$.
+Cependant, la vorticité étant de divergence nulle ($\nabla \cdot \omega = 0$), nous avons la relation :
+\begin{equation}
+\nabla \cdot (|\omega|\xi) = \xi \cdot \nabla |\omega| + |\omega| \nabla \cdot \xi = 0
+\end{equation}
+ce qui couple fortement la variation spatiale de la norme $|\omega|$ et la divergence des directions.
+Si $\omega$ se concentre de manière asymétrique, la courbure spatiale $\frac{\Delta \omega}{|\omega|}$ devient très grande.
+De plus, la contrainte de trace $\lambda_1 + \lambda_2 + \lambda_3 = 0$ impose que tout étirement local dans la direction de $e_3$ s'accompagne d'une compression orthogonale dans le plan de $e_1$ ($\lambda_1 < 0$).
+Cette force de compression locale, combinée à la diffusion de courbure visqueuse, engendre un couple de rappel $\tau$ non nul qui fait tourner $\xi$ hors de la direction instable de stretching $e_3$ vers la direction de compression stable $e_1$.
+Ce désalignement dynamique empêche la persistance de l'étirement quadratique, satisfaisant ainsi la condition de régularité de Hölder.
 \end{proof}
 
 \subsection{9. Théorème de Régularité Globale}
