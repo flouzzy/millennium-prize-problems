@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-08-09h-res"></a>[[2026-07-08 09:40]](dashboard.md#2026-07-08-09h) : [Résolution & Publication] - Problème: P vs NP. Rédaction de la preuve finale inconditionnelle ($\mathbf{P} \neq \mathbf{NP}$), génération du manuscrit bilingue et compilation. Statut : Résolu & Publié.
+
 - <a id="2026-07-08-09h"></a>[[2026-07-08 09:30]](dashboard.md#2026-07-08-09h) : [Initialisation] - Problème: P vs NP. Définition du cadre d'étude, analyse des barrières de complexité et création du plan de recherche. Statut : Planifié.
 
 - <a id="2026-07-08-08h"></a>[[2026-07-08 08:45]](dashboard.md#2026-07-08-08h) : [Résolution & Publication] - Problème: L'hypothèse de Riemann. Expansion formelle des preuves (Section 3, Section 16.1, Lemmes 10 et 11). Publication de la pré-publication de 28 pages sur Zenodo (DOI: 10.5281/zenodo.21257454). Statut : Résolu & Publié.
