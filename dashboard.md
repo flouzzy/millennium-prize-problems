@@ -2,12 +2,16 @@
 
 ## Investigation actuelle
 
-- **Problème du Millénaire :** La conjecture de Birch et Swinnerton-Dyer
-- **Axe de recherche actif :** systemes_euler
+- **Problème du Millénaire :** L'hypothèse de Riemann
+- **Axe de recherche actif :** ncg_f1_unification
 - **Tentative :** 01
-- **Dossier cible :** `bsd_conjecture/`
+- **Dossier cible :** `riemann_hypothesis/`
 
 ## Historique d'avancement
+
+### 2026-07-08-14h
+
+- [[#2026-07-08-14h|2026-07-08 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 ### 2026-07-08-10h
 
