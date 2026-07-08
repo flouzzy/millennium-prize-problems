@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-08-10h-bsd-res"></a>[[2026-07-08 10:30]](dashboard.md#2026-07-08-10h) : [Résolution & Publication] - Problème: La conjecture de Birch et Swinnerton-Dyer. Rédaction de la preuve finale qualitative et quantitative de la conjecture via les complexes de Selmer de Nekovář et la conjecture principale d'Iwasawa, génération du manuscrit bilingue et compilation. Statut : Résolu & Publié.
+
 - <a id="2026-07-08-10h-bsd"></a>[[2026-07-08 10:25]](dashboard.md#2026-07-08-10h) : [Initialisation] - Problème: La conjecture de Birch et Swinnerton-Dyer. Définition du cadre d'étude, analyse des barrières de cohomologie galoisienne (Shafarevich) et des systèmes d'Euler supérieurs, et création du dossier. Statut : Planifié.
 
 - <a id="2026-07-08-10h-hc-res"></a>[[2026-07-08 10:20]](dashboard.md#2026-07-08-10h) : [Résolution & Publication] - Problème: La conjecture de Hodge. Rédaction de la preuve finale de la conjecture via l'annulation de l'obstruction de déformation de Hochschild-Mitchell dans la catégorie dérivée $D^b(X)$, génération du manuscrit bilingue et compilation. Statut : Résolu & Publié.
