@@ -47,7 +47,7 @@ preamble = r"""\documentclass[11pt,a4paper,twoside]{article}
     \LARGE \textbf{Resolution of the Riemann Hypothesis via Motivic Fibrations Theory}
     \vspace{0.5cm}
 }
-\author{\Large Charles EDOU NZE\thanks{Chercheur indépendant / Independent Researcher. Contact : charles@edounze.com}}
+\author{\Large Charles EDOU NZE\thanks{Chercheur indépendant / Independent Researcher. Contact : charles@edounze.com. Preprint on Zenodo: \href{https://zenodo.org/records/21257454}{https://zenodo.org/records/21257454}}}
 \date{\today}
 
 \begin{document}

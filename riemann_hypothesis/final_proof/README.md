@@ -54,8 +54,9 @@ L'article inclut une section expérimentale corroborant la théorie par le calcu
 
 | Document | Description |
 | :--- | :--- |
-| [**Preuve Intégrale (PDF)**](https://github.com/flouzzy/millennium-prize-problems/blob/main/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.pdf) | Manuscrit monolithique de 25 pages (Bilingue FR/EN). |
-| [**Code Source TeX**](https://github.com/flouzzy/millennium-prize-problems/blob/main/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex) | Sources LaTeX prêtes pour compilation arXiv. |
+| [**Preuve Intégrale (PDF)**](https://github.com/flouzzy/millennium-prize-problems/blob/main/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.pdf) | Manuscrit monolithique bilingue FR/EN. |
+| [**Pré-publication (Zenodo)**](https://zenodo.org/records/21257454) | Version officielle publiée avec DOI (Alternative à arXiv). |
+| [**Code Source TeX**](https://github.com/flouzzy/millennium-prize-problems/blob/main/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex) | Sources LaTeX prêtes pour compilation. |
 | [**Dépôt GitHub**](https://github.com/flouzzy/millennium-prize-problems) | Répertoire complet incluant les scripts de génération et les graphiques. |
 
 ---
