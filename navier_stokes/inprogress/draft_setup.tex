@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\babelprovide[import]{french}
+\usepackage{amsmath,amssymb,amsthm,amsfonts,mathrsfs,mathtools}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\newtheorem{theorem}{Théorème}[section]
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Définition}
+
+\title{Cadre Géométrique et Analyse de Régularité Globale pour les Équations de Navier-Stokes en 3D}
+\author{Charles EDOU NZE}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+Ce document formalise le cadre fonctionnel et géométrique pour l'analyse globale de la régularité des équations de Navier-Stokes en 3D. Nous mettons l'accent sur les contraintes d'incompressibilité, la décomposition du gradient de vitesse et le transport non local du vecteur directionnel de la vorticité.
+
+\section{Espaces Fonctionnels et Échelles Critiques}
+Pour étudier Navier-Stokes sous l'angle de la régularité critique, nous introduisons les espaces de Sobolev et de Besov homogènes.
+L'équation possède une symétrie d'échelle : si $u(x,t)$ est solution, alors pour tout $\lambda > 0$,
+$$ u_\lambda(x,t) = \lambda u(\lambda x, \lambda^2 t), \quad p_\lambda(x,t) = \lambda^2 p(\lambda x, \lambda^2 t) $$
+est également solution. Un espace fonctionnel $X$ est dit critique si sa norme est invariante par cette transformation.
+
+* **Espace de Lebesgue Critique :** $L^3(\mathbb{R}^3)$
+  $$ \|u_\lambda(\cdot, t)\|_{L^3} = \|u(\cdot, \lambda^2 t)\|_{L^3} $$
+* **Espace de Sobolev Critique :** $\dot{H}^{1/2}(\mathbb{R}^3)$
+* **Espaces de Besov Critiques :** $\dot{B}^{s}_{p,q}(\mathbb{R}^3)$ avec $s = -1 + 3/p$. En particulier, $\dot{B}^{-1+3/p}_{p,\infty}$ joue un rôle central pour les critères d'explosion.
+
+\section{Analyse Spectrale du Tenseur de Déformation $S$}
+Soit $S = \frac{1}{2}(\nabla u + \nabla u^T)$ le tenseur de déformation symétrique.
+La divergence nulle $\nabla \cdot u = 0$ impose $\operatorname{Tr}(S) = 0$.
+Soient $\lambda_1(x,t) \le \lambda_2(x,t) \le \lambda_3(x,t)$ ses valeurs propres. Nous avons la relation :
+$$ \lambda_1 + \lambda_2 + \lambda_3 = 0 $$
+Le terme d'étirement du vortex (*vortex stretching*) dans l'équation de la vorticité $\omega$ s'écrit :
+$$ (S \omega) \cdot \omega = \sum_{i=1}^3 \lambda_i \omega_i^2 $$
+où $\omega_i = \omega \cdot e_i$ désigne la projection de la vorticité sur les vecteurs propres orthonormés de $S$.
+
+\section{Loi de Biot-Savart Non Locale et Transformées de Riesz}
+Le gradient de vitesse $\nabla u$ est relié à la vorticité $\omega$ par la formule de Biot-Savart.
+Plus précisément, en termes d'opérateurs pseudo-différentiels, les composantes de $\nabla u$ s'expriment à l'aide des transformées de Riesz $R_i = \partial_i (-\Delta)^{-1/2}$ :
+$$ \partial_i u_j = \sum_{k=1}^3 R_i R_k \epsilon_{jkl} \omega_l $$
+où $\epsilon_{jkl}$ est le tenseur totalement antisymétrique de Levi-Civita.
+Cette relation montre que $S(x,t)$ est un opérateur d'intégrale singulière de Calderón-Zygmund appliqué à $\omega$ :
+$$ S(x,t) = \text{P.V.} \int_{\mathbb{R}^3} K(x-y) \omega(y,t) dy $$
+Le noyau $K(z)$ est homogène de degré $-3$ et de moyenne nulle sur la sphère unité, ce qui induit le couplage non local entre l'intensité de la vorticité globale et le taux de déformation local.
+
+\section{Dynamique Géométrique du Vecteur Directionnel de la Vorticité}
+Pour analyser le réalignement automatique, nous introduisons le vecteur unitaire directionnel de la vorticité $\xi(x,t) = \omega(x,t)/|\omega(x,t)|$, défini là où $\omega \neq 0$.
+
+\begin{proposition}
+Le vecteur unitaire $\xi$ satisfait l'équation d'évolution géométrique suivante sur la sphère unité $\mathbb{S}^2$ :
+$$ \partial_t \xi + (u \cdot \nabla) \xi = S \xi - (S \xi \cdot \xi) \xi + \nu \left( \frac{\Delta \omega}{|\omega|} - \left( \frac{\Delta \omega \cdot \omega}{|\omega|^2} \right) \xi \right) $$
+\end{proposition}
+\begin{proof}
+En dérivant $\xi = \omega / |\omega|$, nous avons :
+$$ \partial_t \xi = \frac{\partial_t \omega}{|\omega|} - \frac{\omega}{|\omega|^2} \partial_t |\omega| $$
+En utilisant l'équation de la vorticité $\partial_t \omega + (u \cdot \nabla) \omega = S \omega + \nu \Delta \omega$, et le fait que $\partial_t |\omega| = \frac{\partial_t \omega \cdot \omega}{|\omega|}$, nous obtenons :
+$$ \partial_t \xi + (u \cdot \nabla) \xi = \frac{S\omega + \nu\Delta\omega}{|\omega|} - \xi \left( \frac{(S\omega + \nu\Delta\omega) \cdot \omega}{|\omega|^2} \right) $$
+Puisque $\omega = |\omega|\xi$, le premier terme non linéaire s'écrit $\frac{S\omega}{|\omega|} = S\xi$ et son produit scalaire avec $\xi$ s'écrit $\frac{S\omega \cdot \omega}{|\omega|^2} = S\xi \cdot \xi$. Par substitution, nous obtenons la formule annoncée.
+\end{proof}
+
+Le terme $S \xi - (S \xi \cdot \xi) \xi$ représente la projection orthogonale de $S\xi$ sur le plan tangent à $\mathbb{S}^2$ au point $\xi$. Ce terme tend à aligner $\xi$ avec le vecteur propre $e_3$ associé à $\lambda_3 > 0$. Cependant, le terme dissipatif visqueux $\nu \left( \frac{\Delta \omega}{|\omega|} - \dots \right)$ agit comme une force de rappel géométrique non locale qui perturbe cet alignement dans les zones de forte courbure des filaments de vortex.
+
+\end{document}
