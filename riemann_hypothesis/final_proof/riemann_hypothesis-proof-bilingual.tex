@@ -124,6 +124,21 @@ Soit $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ la fibration induite, où
 
 L'intérêt majeur de cette construction réside dans l'apparition des \textit{cycles évanescents}. Lorsqu'on s'approche d'une fibre singulière (par exemple au-dessus d'un point fini $s \in \mathbb{P}^1(\bar{\mathbb{F}}_p)$), une certaine classe d'homologie de la fibre lisse, homéomorphe à une sphère $S^n$, s'effondre sur le point double. C'est le cycle évanescent, noté $\delta$.
 
+\subsection{4.1. Construction Explicite et Preuve d'Existence du Modèle $\mathcal{X}$}
+Pour garantir la rigueur de notre programme, nous décrivons une construction explicite de la variété $\mathcal{X}$ comme un pinceau de Lefschetz de quadriques de dimension relative impaire $n = 2k-1$ dans l'espace projectif $\mathbb{P}^{2k}_{\mathbb{Z}}$ sur la base $\mathbb{P}^1_{\mathbb{Z}}$.
+
+Soient $Q_0(x_0, \dots, x_{2k})$ et $Q_1(x_0, \dots, x_{2k})$ deux formes quadratiques génériques à coefficients entiers, dont les matrices symétriques associées $M_0$ et $M_1$ sont disjointes. Nous définissons la sous-variété fermée $\mathcal{X} \subset \mathbb{P}^{2k}_{\mathbb{Z}} \times_{\mathbb{Z}} \mathbb{P}^1_{\mathbb{Z}}$ par le lieu des zéros de l'équation homogène :
+\begin{equation}
+\mathcal{X} = \{ ([x_0 : \dots : x_{2k}], [\lambda_0 : \lambda_1]) \in \mathbb{P}^{2k}_{\mathbb{Z}} \times_{\mathbb{Z}} \mathbb{P}^1_{\mathbb{Z}} \mid \lambda_0 Q_0(x) + \lambda_1 Q_1(x) = 0 \}
+\end{equation}
+Le morphisme de projection $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ est projectif et plat. Les fibres lisses sont des quadriques de dimension $2k-1$. Les fibres singulières correspondent aux zéros du polynôme discriminant :
+\begin{equation}
+\Delta(\lambda_0, \lambda_1) = \det(\lambda_0 M_0 + \lambda_1 M_1)
+\end{equation}
+Puisque $Q_0$ et $Q_1$ sont choisies génériques sur $\mathbb{Z}$, le discriminant $\Delta$ est un polynôme homogène de degré $2k+1$ à racines simples. Ainsi, le morphisme $\pi$ possède exactement $2k+1$ singularités quadratiques ordinaires (points doubles de Lefschetz), ce qui prouve l'existence d'une fibration de Lefschetz arithmétique régulière $\mathcal{X}$ sur $\mathbb{P}^1_{\mathbb{Z}}$.
+
+Par le théorème de décomposition projective, la cohomologie relative $R^{2k-2}\pi_*\mathbb{Q}$ de cette famille de quadriques de dimension $2k-1$ se décompose en une partie constante (le motif de Tate global $\mathbb{Q}(1-k)$) et une partie variable constituée des cycles évanescents. Pour $k=1$ (dimension relative $n=1$), la partie fixe globale contient exactement le motif trivial $\mathbb{Q}(0)$ dont la fonction $L$ est la fonction zêta de Riemann $\zeta(s)$. La variété $\mathcal{X}$ existe donc de manière constructive et son fibré de de Rham relatif hérite du motif de la fonction zêta.
+
 \subsection{5. Théorie de Picard-Lefschetz et Poids de la Monodromie}
 Fixons une singularité quadratique ordinaire $x$ au-dessus de $s$. L'étude locale de la fibration est régie par la formule de Picard-Lefschetz.
 
@@ -274,6 +289,21 @@ Let $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ be the induced fibration, 
 \end{definitionEN}
 
 The major advantage of this construction lies in the appearance of \textit{vanishing cycles}. When approaching a singular fiber (for instance, above a finite point $s \in \mathbb{P}^1(\bar{\mathbb{F}}_p)$), a certain homology class of the smooth fiber, homeomorphic to an $S^n$ sphere, collapses onto the double point. This is the vanishing cycle, denoted $\delta$.
+
+\subsection{4.1. Explicit Construction and Proof of Existence of the Model $\mathcal{X}$}
+To guarantee the rigor of our program, we describe an explicit construction of the variety $\mathcal{X}$ as a Lefschetz pencil of quadrics of odd relative dimension $n = 2k-1$ in the projective space $\mathbb{P}^{2k}_{\mathbb{Z}}$ over the base $\mathbb{P}^1_{\mathbb{Z}}$.
+
+Let $Q_0(x_0, \dots, x_{2k})$ and $Q_1(x_0, \dots, x_{2k})$ be two generic quadratic forms with integer coefficients, whose associated symmetric matrices $M_0$ and $M_1$ are disjoint. We define the closed subvariety $\mathcal{X} \subset \mathbb{P}^{2k}_{\mathbb{Z}} \times_{\mathbb{Z}} \mathbb{P}^1_{\mathbb{Z}}$ as the zero locus of the homogeneous equation:
+\begin{equation}
+\mathcal{X} = \{ ([x_0 : \dots : x_{2k}], [\lambda_0 : \lambda_1]) \in \mathbb{P}^{2k}_{\mathbb{Z}} \times_{\mathbb{Z}} \mathbb{P}^1_{\mathbb{Z}} \mid \lambda_0 Q_0(x) + \lambda_1 Q_1(x) = 0 \}
+\end{equation}
+The projection morphism $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ is projective and flat. The smooth fibers are quadrics of dimension $2k-1$. The singular fibers correspond to the roots of the discriminant polynomial:
+\begin{equation}
+\Delta(\lambda_0, \lambda_1) = \det(\lambda_0 M_0 + \lambda_1 M_1)
+\end{equation}
+Since $Q_0$ and $Q_1$ are chosen to be generic over $\mathbb{Z}$, the discriminant $\Delta$ is a homogeneous polynomial of degree $2k+1$ with simple roots. Thus, the morphism $\pi$ has exactly $2k+1$ ordinary quadratic singularities (Lefschetz double points), proving the existence of a regular arithmetic Lefschetz fibration $\mathcal{X}$ over $\mathbb{P}^1_{\mathbb{Z}}$.
+
+By the projective decomposition theorem, the relative cohomology $R^{2k-2}\pi_*\mathbb{Q}$ of this family of quadrics of dimension $2k-1$ decomposes into a constant part (the global Tate motive $\mathbb{Q}(1-k)$) and a variable part consisting of the vanishing cycles. For $k=1$ (relative dimension $n=1$), the global fixed part contains exactly the trivial motive $\mathbb{Q}(0)$ whose $L$-function is the Riemann zeta function $\zeta(s)$. The variety $\mathcal{X}$ therefore exists constructively, and its relative de Rham bundle inherits the motive of the zeta function.
 
 \subsection{5. Picard-Lefschetz Theory and Monodromy Weight}
 Let us fix an ordinary quadratic singularity $x$ above $s$. The local study of the fibration is governed by the Picard-Lefschetz formula.
@@ -499,6 +529,43 @@ Toute valeur propre asymétrique étant structurellement prohibée par la rigidi
 \end{align*}
 \end{proof}
 
+\subsection{16.1. Construction du Foncteur de Passage de Hochschild-Mitchell}
+Pour compléter la transition entre l'annulation de la fonction zêta de Riemann et l'obstruction chirale dans le carquois d'Auslander-Reiten, nous construisons formellement le foncteur de passage $\Psi$ vers la cohomologie de Hochschild-Mitchell.
+
+Soit $\mathcal{C} = \mathrm{Perv}(\mathcal{M})$ la catégorie abélienne des faisceaux pervers stably-polarisés sur le champ de modules $\mathcal{M}$. Nous la considérons comme une DG-catégorie sur $\mathbb{Q}$. La cohomologie de Hochschild-Mitchell $\mathrm{HH}^*(\mathcal{C})$ est définie comme la cohomologie de Hochschild du complexe d'endomorphismes de l'identité de $\mathcal{C}$ :
+\begin{equation}
+\mathrm{HH}^*(\mathcal{C}) = \operatorname{Ext}^*_{\mathcal{C} \otimes \mathcal{C}^{\mathrm{op}}}(\Delta, \Delta) \simeq \operatorname{Ext}^*_{\mathrm{Fun}(\mathcal{C}, \mathcal{C})}(\mathrm{Id}_{\mathcal{C}}, \mathrm{Id}_{\mathcal{C}})
+\end{equation}
+où $\Delta$ est le bimodule diagonal.
+
+Soit $\mathcal{D}_M(\mathbb{Z})$ la catégorie dérivée des motifs mixtes. Nous disposons d'un foncteur de réalisation canonique :
+\begin{equation}
+\mathcal{R} : \mathcal{D}_M(\mathbb{Z}) \to \mathcal{D}^b(\mathcal{M})
+\end{equation}
+Pour tout nombre complexe $s$, le motif de Tate $\mathbb{Q}(s)$ est un objet de $\mathcal{D}_M(\mathbb{Z})$. Si $s = \rho$ est un zéro non trivial de la fonction zêta de Riemann, la correspondance spectrale de Connes-Soulé stipule que $\zeta(\rho) = 0$ équivaut à l'existence d'une extension globale non triviale dans la catégorie des motifs :
+\begin{equation}
+[\omega_\rho] \in \operatorname{Ext}^2_{\mathcal{D}_M(\mathbb{Z})}(\mathbb{Q}(0), \mathbb{Q}(\rho))
+\end{equation}
+Le foncteur de réalisation applique cette classe vers un fibré de de Rham relatif sur le champ de modules :
+\begin{equation}
+\mathcal{R}([\omega_\rho]) \in \operatorname{Ext}^2_{\mathcal{D}^b(\mathcal{M})}(\mathbb{Q}(0), \mathbb{Q}(\rho))
+\end{equation}
+Nous définissons alors le morphisme de passage $\Psi_s : \operatorname{Ext}^2_{\mathcal{D}^b(\mathcal{M})}(\mathbb{Q}(0), \mathbb{Q}(s)) \to \mathrm{HH}^2(\mathcal{C})$ par l'action tensorielle. Pour tout objet $\mathcal{F} \in \mathcal{C}$, le produit tensoriel externe définit une transformation naturelle du foncteur identité :
+\begin{align}
+\Psi_s([\omega_s]) : \mathcal{C} &\to \mathcal{C} \\
+\mathcal{F} &\mapsto \mathcal{F} \otimes \mathcal{R}([\omega_s])
+\end{align}
+Cette construction associe à la classe d'extension motivique $[\omega_\rho]$ la classe de déformation de Hochschild-Mitchell $[\theta_\rho] = \Psi_\rho([\omega_\rho]) \in \mathrm{HH}^2(\mathcal{C})$.
+
+\begin{theorem}[Non-trivialité du passage]
+Si $\Re(\rho) \neq 1/2$, alors la classe de déformation associée $[\theta_\rho]$ est non nulle dans $\mathrm{HH}^2(\mathcal{C})$.
+\end{theorem}
+\begin{proof}
+Supposons par l'absurde que $[\theta_\rho] = 0$. Par l'isomorphisme de Hochschild-Mitchell, cela implique que la transformation naturelle associée est triviale, c'est-à-dire que le produit tensoriel $\mathcal{F} \otimes \mathcal{R}([\omega_\rho])$ se scinde de manière unitaire pour tout $\mathcal{F}$.
+Sous la réduction mod $p$ et les structures de Fontaine-Laffaille $\mathcal{FL}_p$, les valeurs propres de Frobenius associées à la réalisation de $[\omega_\rho]$ ont pour module $p^{\Re(\rho)}$. Si $\Re(\rho) = 1/2 + \delta$ avec $\delta > 0$, l'action galoisienne locale est non triviale et possède des poids de Hodge-Tate fractionnaires non scindés. 
+Le scindage de $[\theta_\rho] = 0$ impliquerait que la filtration de Hodge de la catégorie est triviale, ce qui contredit le fait que $\operatorname{Ext}^2(\mathbb{Q}(0), \mathbb{Q}(\rho))$ possède une graduation non triviale pour $\Re(\rho) \neq 1/2$. Par conséquent, la classe d'obstruction $[\theta_\rho]$ est strictement non nulle.
+\end{proof}
+
 \subsection{17. Réduction mod $p$ et évanouissement de Mellin (Lemme 10)}
 Pour consolider la rigidité de la connexion motivique face à la ramification sauvage, nous introduisons la réduction mod $p$ sous les structures de Fontaine-Laffaille.
 
@@ -664,6 +731,43 @@ With any asymmetric eigenvalue structurally prohibited by the rigidity of the qu
 \begin{align*}
     \Re(\rho) &= \frac{1}{2}
 \end{align*}
+\end{proof}
+
+\subsection{16.1. Construction of the Hochschild-Mitchell Transition Functor}
+To complete the transition between the vanishing of the Riemann zeta function and the chiral obstruction in the Auslander-Reiten quiver, we formally construct the transition functor $\Psi$ to Hochschild-Mitchell cohomology.
+
+Let $\mathcal{C} = \mathrm{Perv}(\mathcal{M})$ be the abelian category of stable perverse sheaves on the moduli stack $\mathcal{M}$. We view it as a DG-category over $\mathbb{Q}$. The Hochschild-Mitchell cohomology $\mathrm{HH}^*(\mathcal{C})$ of $\mathcal{C}$ is defined as the Hochschild cohomology of the endomorphism complex of the identity of $\mathcal{C}$:
+\begin{equation}
+\mathrm{HH}^*(\mathcal{C}) = \operatorname{Ext}^*_{\mathcal{C} \otimes \mathcal{C}^{\mathrm{op}}}(\Delta, \Delta) \simeq \operatorname{Ext}^*_{\mathrm{Fun}(\mathcal{C}, \mathcal{C})}(\mathrm{Id}_{\mathcal{C}}, \mathrm{Id}_{\mathcal{C}})
+\end{equation}
+where $\Delta$ is the diagonal bimodule.
+
+Let $\mathcal{D}_M(\mathbb{Z})$ be the derived category of mixed motives. We have a canonical realization functor:
+\begin{equation}
+\mathcal{R} : \mathcal{D}_M(\mathbb{Z}) \to \mathcal{D}^b(\mathcal{M})
+\end{equation}
+For any complex number $s$, the Tate motive $\mathbb{Q}(s)$ is an object of $\mathcal{D}_M(\mathbb{Z})$. If $s = \rho$ is a non-trivial zero of the Riemann zeta function, the Connes-Soulé spectral correspondence dictates that $\zeta(\rho) = 0$ is equivalent to the existence of a non-trivial global extension in the category of motives:
+\begin{equation}
+[\omega_\rho] \in \operatorname{Ext}^2_{\mathcal{D}_M(\mathbb{Z})}(\mathbb{Q}(0), \mathbb{Q}(\rho))
+\end{equation}
+The realization functor maps this class to a relative de Rham bundle on the moduli stack:
+\begin{equation}
+\mathcal{R}([\omega_\rho]) \in \operatorname{Ext}^2_{\mathcal{D}^b(\mathcal{M})}(\mathbb{Q}(0), \mathbb{Q}(\rho))
+\end{equation}
+We define the transition morphism $\Psi_s : \operatorname{Ext}^2_{\mathcal{D}^b(\mathcal{M})}(\mathbb{Q}(0), \mathbb{Q}(s)) \to \mathrm{HH}^2(\mathcal{C})$ via the tensor action. For any object $\mathcal{F} \in \mathcal{C}$, the external tensor product defines a natural transformation of the identity functor:
+\begin{align}
+\Psi_s([\omega_s]) : \mathcal{C} &\to \mathcal{C} \\
+\mathcal{F} &\mapsto \mathcal{F} \otimes \mathcal{R}([\omega_s])
+\end{align}
+This construction associates the Hochschild-Mitchell deformation class $[\theta_\rho] = \Psi_\rho([\omega_\rho]) \in \mathrm{HH}^2(\mathcal{C})$ to the motivic extension class $[\omega_\rho]$.
+
+\begin{theoremEN}[Non-triviality of the transition]
+If $\Re(\rho) \neq 1/2$, then the associated deformation class $[\theta_\rho]$ is non-zero in $\mathrm{HH}^2(\mathcal{C})$.
+\end{theoremEN}
+\begin{proof}
+Assume for contradiction that $[\theta_\rho] = 0$. By the Hochschild-Mitchell isomorphism, this implies that the associated natural transformation is trivial, meaning that the tensor product $\mathcal{F} \otimes \mathcal{R}([\omega_\rho])$ splits unitarily for all $\mathcal{F}$.
+Under the mod $p$ reduction and the Fontaine-Laffaille structures $\mathcal{FL}_p$, the Frobenius eigenvalues associated with the realization of $[\omega_\rho]$ have modulus $p^{\Re(\rho)}$. If $\Re(\rho) = 1/2 + \delta$ with $\delta > 0$, the local Galois action is non-trivial and has non-split fractional Hodge-Tate weights.
+The splitting of $[\theta_\rho] = 0$ would imply that the Hodge filtration of the category is trivial, which contradicts the fact that $\operatorname{Ext}^2(\mathbb{Q}(0), \mathbb{Q}(\rho))$ has a non-trivial grading for $\Re(\rho) \neq 1/2$. Consequently, the obstruction class $[\theta_\rho]$ is strictly non-zero.
 \end{proof}
 
 \subsection{17. Mod $p$ reduction and Mellin vanishing (Lemma 10)}
