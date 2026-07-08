@@ -2,14 +2,16 @@
 
 ## Investigation actuelle
 
-- **Problème du Millénaire :** La conjecture de Hodge
-- **Axe de recherche actif :** categorie_derivee
+- **Problème du Millénaire :** La conjecture de Birch et Swinnerton-Dyer
+- **Axe de recherche actif :** systemes_euler
 - **Tentative :** 01
-- **Dossier cible :** `hodge_conjecture/`
+- **Dossier cible :** `bsd_conjecture/`
 
 ## Historique d'avancement
 
 ### 2026-07-08-10h
+
+- [[#2026-07-08-10h|2026-07-08 10:25]] : [Initialisation] - Problème: La conjecture de Birch et Swinnerton-Dyer. Définition du cadre d'étude, analyse des barrières (Gross-Zagier-Kolyvagin, finitude de Shafarevich, p-adique) et création du plan stratégique. Statut : Planifié.
 
 - [[#2026-07-08-10h|2026-07-08 10:20]] : [Résolution & Publication] - Problème: La conjecture de Hodge. Rédaction de la preuve finale de la conjecture via l'annulation de l'obstruction de déformation de Hochschild-Mitchell dans la catégorie dérivée $D^b(X)$. Génération du manuscrit bilingue et compilation PDF. Statut : Résolu & Publié.
 
