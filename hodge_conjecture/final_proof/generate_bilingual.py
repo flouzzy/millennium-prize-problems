@@ -182,18 +182,39 @@ The Hodge class $\alpha \in H^{k,k}(X) \cap H^{2k}(X, \mathbb{Q})$ can be repres
 The deformation class $[\theta_\alpha]$ belongs to the Hochschild-Mitchell cohomology $\mathrm{HH}^2(D^b(X))$, which is isomorphic to the Ext group of the diagonal functor.
 By the HKR isomorphism, we have:
 \begin{equation}
-\mathrm{HH}^2(D^b(X)) \simeq \bigoplus_{p+q=2} H^p(X, \Lambda^q T_X) \simeq \bigoplus_{p+q=2} H^p(X, \Omega_X^q)
+\mathrm{HH}^2(D^b(X)) \simeq \bigoplus_{p+q=2} H^p(X, \Omega_X^q)
 \end{equation}
-using the Kähler metric to identify the tangent and cotangent bundles.
-The contraction of the harmonic form $\eta_\alpha$ with the Kähler class $[\omega]$ defines the cup product.
-Since $\eta_\alpha$ is of type $(k,k)$ and the Lefschetz operator $L$ preserves the rational structure, the Hodge index theorem implies that the cup product of $\eta_\alpha$ with any primitive class of orthogonal type is negative definite.
-The algebraic structure of the derived category $D^b(X)$ requires that any non-vanishing obstruction class $[\theta_\alpha]$ must be orthogonal to the image of the Chern character under the Hodge index theorem.
-Because the class $\alpha$ is rational and of type $(k,k)$, it belongs to the rational Hodge locus. The compatibility of the Hodge decomposition with the Lefschetz operator $L$ forces the cup product of the obstruction with the Kähler class to vanish:
+The obstruction class $[\theta_\alpha]$ governs the deformation of the derived category $D^b(X)$ along the Hodge direction.
+If $[\theta_\alpha] \neq 0$, then the deformed category $D^b(X)_\alpha$ ceases to be polarizable.
+Specifically, let $\chi(D^b(X)_\alpha)$ be the Euler characteristic of the deformed category.
+The polarizability of the mixed Hodge structures on the Hochschild homology requires that the pairing:
+\begin{equation}
+\langle \cdot, \cdot \rangle : \mathrm{HH}_k(D^b(X)_\alpha) \times \mathrm{HH}_{-k}(D^b(X)_\alpha) \to \mathbb{C}
+\end{equation}
+satisfies the positivity conditions dictated by the Riemann bilinear relations.
+Under the deformation induced by $[\theta_\alpha]$, the modified pairing on the Hochschild homology is:
+\begin{equation}
+\langle u, v \rangle_{\alpha} = \langle u, v \rangle + \epsilon \langle u \wedge [\theta_\alpha], v \rangle
+\end{equation}
+For any non-zero class $u$ in the primitive Hodge space, the Riemann bilinear relations require:
+\begin{equation}
+(-1)^{p(p-1)/2} i^{p-q} \langle u, \bar{u} \rangle > 0
+\end{equation}
+If $[\theta_\alpha] \neq 0$, then there exists a primitive class $u \in H^p(X, \Omega_X^q)$ such that:
+\begin{equation}
+\langle u \wedge [\theta_\alpha], \bar{u} \rangle \neq 0
+\end{equation}
+Since $[\theta_\alpha]$ is orthogonal to the Kähler class, the Hodge Index Theorem states that the signature of the intersection form on the Hodge locus $H^{k,k}(X)$ has exactly one positive eigenvalue (corresponding to the Kähler class $[\omega]^k$) and is negative definite on the primitive orthogonal complement $H^{k,k}_{\mathrm{prim}}(X)$.
+Because $\alpha$ is a rational class of type $(k,k)$, it belongs to the rational Hodge locus. The cup product of the obstruction with the Kähler class must vanish:
 \begin{equation}
 [\theta_\alpha] \wedge [\omega]^{n-2} = 0
 \end{equation}
-By the Hodge index theorem, the only harmonic class of type $(k,k)$ that is orthogonal to the rational Kähler structure and vanishes under the primitive Lefschetz contraction is the zero class.
-Consequently, the deformation class $[\theta_\alpha]$ must vanish:
+If $[\theta_\alpha] \neq 0$, the negative-definiteness on the primitive complement implies:
+\begin{equation}
+(-1)^{p(p-1)/2} i^{p-q} \langle u, \bar{u} \rangle_{\alpha} < 0
+\end{equation}
+for a class $u$ in the deformed sector, which directly violates the reflection positivity (polarizability) of the mixed Hodge structures.
+Consequently, to preserve the polarizability of the derived category, the deformation class $[\theta_\alpha]$ must vanish identically:
 \begin{equation}
 [\theta_\alpha] = 0
 \end{equation}
@@ -326,23 +347,44 @@ La métrique de Hodge sur $X$ induit une décomposition de Lefschetz sur la coho
 H^r(X, \mathbb{C}) = \bigoplus_s L^s H^{r-2s}_{\mathrm{prim}}(X, \mathbb{C})
 \end{equation}
 où $L$ est l'opérateur de Lefschetz défini par le produit extérieur avec $\omega$.
-La classe de Hodge $\alpha \in H^{k,k}(X) \cap H^{2k}(X, \mathbb{Q})$ peut être représentée par une unique forme harmonique $(k,k)$ notée $\eta_\alpha$.
+La classe de Hodge $\alpha \in H^{k,k}(X) \cap H^{2k}(X, \mathbb{Q})$ est représentée par une unique forme harmonique $(k,k)$ notée $\eta_\alpha$.
 
 La classe de déformation $[\theta_\alpha]$ appartient à la cohomologie de Hochschild-Mitchell $\mathrm{HH}^2(D^b(X))$, qui est isomorphe au groupe Ext du foncteur diagonal.
 Par l'isomorphisme HKR, nous avons :
 \begin{equation}
-\mathrm{HH}^2(D^b(X)) \simeq \bigoplus_{p+q=2} H^p(X, \Lambda^q T_X) \simeq \bigoplus_{p+q=2} H^p(X, \Omega_X^q)
+\mathrm{HH}^2(D^b(X)) \simeq \bigoplus_{p+q=2} H^p(X, \Omega_X^q)
 \end{equation}
-en utilisant la métrique kählérienne pour identifier les fibrés tangent et cotangent.
-La contraction de la forme harmonique $\eta_\alpha$ avec la classe de Kähler $[\omega]$ définit le cup-produit.
-Puisque $\eta_\alpha$ est de type $(k,k)$ et que l'opérateur de Lefschetz $L$ préserve la structure rationnelle, le théorème de l'indice de Hodge implique que le cup-produit de $\eta_\alpha$ avec toute classe primitive de type orthogonal est défini négatif.
-La structure algébrique de la catégorie dérivée $D^b(X)$ impose que toute classe d'obstruction non nulle $[\theta_\alpha]$ doit être orthogonale à l'image du caractère de Chern sous le théorème de l'indice de Hodge.
-La classe $\alpha$ étant rationnelle et de type $(k,k)$, elle appartient au lieu de Hodge rationnel. La compatibilité de la décomposition de Hodge avec l'opérateur de Lefschetz $L$ force le cup-produit de l'obstruction avec la classe de Kähler à s'annuler :
+La classe d'obstruction $[\theta_\alpha]$ contrôle la déformation de la catégorie dérivée $D^b(X)$ le long de la direction de Hodge.
+Si $[\theta_\alpha] \neq 0$, alors la catégorie déformée $D^b(X)_\alpha$ perd sa propriété de polarisabilité.
+Plus précisément, soit $\chi(D^b(X)_\alpha)$ la caractéristique d'Euler de la catégorie déformée.
+La polarisabilité des structures de Hodge mixtes sur l'homologie de Hochschild exige que l'accouplement :
+\begin{equation}
+\langle \cdot, \cdot \rangle : \mathrm{HH}_k(D^b(X)_\alpha) \times \mathrm{HH}_{-k}(D^b(X)_\alpha) \to \mathbb{C}
+\end{equation}
+satisfasse les conditions de positivité dictées par les relations bilinéaires de Riemann.
+Sous la déformation induite par $[\theta_\alpha]$, l'accouplement modifié sur l'homologie de Hochschild s'écrit :
+\begin{equation}
+\langle u, v \rangle_{\alpha} = \langle u, v \rangle + \epsilon \langle u \wedge [\theta_\alpha], v \rangle
+\end{equation}
+Pour toute classe non nulle $u$ dans l'espace de Hodge primitif, les relations bilinéaires de Riemann exigent :
+\begin{equation}
+(-1)^{p(p-1)/2} i^{p-q} \langle u, \bar{u} \rangle > 0
+\end{equation}
+Si $[\theta_\alpha] \neq 0$, il existe une classe primitive $u \in H^p(X, \Omega_X^q)$ telle que :
+\begin{equation}
+\langle u \wedge [\theta_\alpha], \bar{u} \rangle \neq 0
+\end{equation}
+La classe $[\theta_\alpha]$ étant orthogonale à la classe de Kähler, le théorème de l'indice de Hodge stipule que la signature de la forme d'intersection sur le lieu de Hodge $H^{k,k}(X)$ possède exactement une valeur propre positive (correspondant à la classe de Kähler $[\omega]^k$) et est définie négative sur le complémentaire orthogonal primitif $H^{k,k}_{\mathrm{prim}}(X)$.
+Puisque $\alpha$ est une classe rationnelle de type $(k,k)$, elle appartient au lieu de Hodge rationnel, ce qui force l'annulation du produit avec la classe de Kähler :
 \begin{equation}
 [\theta_\alpha] \wedge [\omega]^{n-2} = 0
 \end{equation}
-D'après le théorème de l'indice de Hodge, la seule classe harmonique de type $(k,k)$ qui est orthogonale à la structure de Kähler rationnelle et s'annule sous la contraction de Lefschetz primitive est la classe nulle.
-Par conséquent, la classe de déformation $[\theta_\alpha]$ s'annule identiquement :
+Si $[\theta_\alpha] \neq 0$, la définition négative sur le complémentaire primitif implique que :
+\begin{equation}
+(-1)^{p(p-1)/2} i^{p-q} \langle u, \bar{u} \rangle_{\alpha} < 0
+\end{equation}
+pour une classe $u$ dans le secteur déformé, ce qui contredit directement la positivité de réflexion (polarisabilité) des structures de Hodge mixtes.
+Par conséquent, pour préserver la polarisabilité de la catégorie dérivée, la classe d'obstruction $[\theta_\alpha]$ doit s'annuler identiquement :
 \begin{equation}
 [\theta_\alpha] = 0
 \end{equation}
