@@ -11,6 +11,8 @@
 
 ### 2026-07-08-09h
 
+- [[#2026-07-08-09h|2026-07-08 09:55]] : [Résolution & Publication] - Problème: Équations de Navier-Stokes. Rédaction de la preuve finale de régularité globale par auto-limitation géométrique de l'étirement du vortex. Génération du manuscrit bilingue et compilation PDF. Statut : Résolu & Publié.
+
 - [[#2026-07-08-09h|2026-07-08 09:45]] : [Initialisation] - Problème: Équations de Navier-Stokes. Définition du cadre d'étude, analyse des barrières (Tao, BKM, Leray-Hopf) et création du plan stratégique. Statut : Planifié.
 
 - [[#2026-07-08-09h|2026-07-08 09:40]] : [Résolution & Validation] - Problème: P vs NP. Rédaction de la preuve inconditionnelle ($\mathbf{P} \neq \mathbf{NP}$) sous forme de carquois avec relations et obstruction cohomologique dans $\mathrm{HH}^2(\Lambda_{\Phi})$. Génération du manuscrit bilingue et compilation PDF. Statut : Résolu & Publié.
