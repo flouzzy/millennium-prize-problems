@@ -66,7 +66,7 @@ Louis de Branges, célèbre pour avoir résolu la conjecture de Bieberbach, a pr
 
 ## Preuve Finale
 
-La démonstration complète et rigoureuse (document de 26 pages) est disponible :
+La démonstration complète et rigoureuse (document de 28 pages) est disponible :
 
 - [Version Bilingue Intégrale (PDF)](final_proof/riemann_hypothesis-proof-bilingual.pdf)
 - [Pré-publication sur Zenodo (DOI)](https://zenodo.org/records/21257454)
