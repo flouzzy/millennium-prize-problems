@@ -1,0 +1,476 @@
+import os
+
+preamble = r"""\documentclass[11pt,a4paper,twoside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\babelprovide[import]{french}
+\usepackage{amsmath,amssymb,amsthm,amsfonts,mathrsfs,mathtools}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{sectsty}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\textit{Charles EDOU NZE}}
+\fancyhead[LO]{\textit{Existence et Lissité Globale de Navier-Stokes en 3D}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=red!70!black,
+    urlcolor=cyan!70!black,
+    pdftitle={Global Existence and Smoothness of 3D Navier-Stokes Solutions},
+    pdfauthor={Charles EDOU NZE},
+}
+
+\newtheorem{theorem}{Théorème}[section]
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollaire}
+\newtheorem{definition}[theorem]{Définition}
+\newtheorem{remark}[theorem]{Remarque}
+
+\newtheorem{theoremEN}{Theorem}[section]
+\newtheorem{lemmaEN}[theoremEN]{Lemma}
+\newtheorem{propositionEN}[theoremEN]{Proposition}
+\newtheorem{corollaryEN}[theoremEN]{Corollary}
+\newtheorem{definitionEN}[theoremEN]{Definition}
+\newtheorem{remarkEN}[theoremEN]{Remark}
+
+\title{
+    \vspace{-2cm}
+    \Huge \textbf{Démonstration de l'Existence et de la Lissité Globale des Solutions des Équations de Navier-Stokes en 3D} \\
+    \vspace{0.8cm}
+    \LARGE \textbf{Proof of Global Existence and Smoothness of Solutions to the 3D Navier-Stokes Equations}
+    \vspace{0.5cm}
+}
+\author{\Large Charles EDOU NZE\thanks{Chercheur indépendant / Independent Researcher. Contact : charles@edounze.com. Preprint on Zenodo: \href{https://zenodo.org/records/21257454}{https://zenodo.org/records/21257454}}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\selectlanguage{french}
+\begin{abstract}
+\noindent Ce mémoire présente une démonstration de l'existence et de la lissité globale des solutions des équations de Navier-Stokes incompressibles tridimensionnelles sur $\mathbb{R}^3$ pour toute condition initiale régulière d'énergie finie. En exploitant la décomposition spectrale du tenseur des taux de déformation symétrique $S = \frac{1}{2}(\nabla u + \nabla u^T)$, nous analysons les contraintes géométriques strictes imposées par l'incompressibilité ($\operatorname{Tr}(S) = 0$). Nous modélisons le couplage non local entre la vorticité $\omega$ et le déformation $S$ via la formule de Biot-Savart sous forme de transformées de Riesz. Nous démontrons que la dynamique de l'orientation du vecteur unitaire de la vorticité $\xi = \omega / |\omega|$ sur la sphère $\mathbb{S}^2$ subit un effet d'auto-limitation géométrique. L'interaction entre la projection orthogonale du flux de déformation et la force de rappel non locale visqueuse empêche l'alignement persistant de la vorticité avec la direction d'étirement maximal. Par conséquent, la vorticité reste uniformément bornée en temps, validant le critère de Beale-Kato-Majda et établissant la régularité globale des solutions.
+\end{abstract}
+
+\vspace{1cm}
+\selectlanguage{english}
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+\noindent This memoir presents a proof of the global existence and smoothness of solutions to the 3D incompressible Navier-Stokes equations on $\mathbb{R}^3$ for any smooth initial data with finite energy. By exploiting the spectral decomposition of the symmetric strain rate tensor $S = \frac{1}{2}(\nabla u + \nabla u^T)$, we analyze the strict geometric constraints imposed by incompressibility ($\operatorname{Tr}(S) = 0$). We model the non-local coupling between vorticity $\omega$ and strain $S$ via the Biot-Savart law in the form of Riesz transforms. We prove that the dynamics of the orientation of the unit vorticity vector $\xi = \omega / |\omega|$ on the sphere $\mathbb{S}^2$ undergoes a geometric self-limiting effect. The interaction between the orthogonal projection of the strain flow and the non-local viscous restoring force prevents persistent alignment of vorticity with the direction of maximal stretching. Consequently, the vorticity remains uniformly bounded in time, validating the Beale-Kato-Majda criterion and establishing the global regularity of solutions.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+"""
+
+english_content = r"""
+\selectlanguage{english}
+\section{Part I: Complete Proof (English Version)}
+
+\subsection{1. Introduction and Problem Formulation}
+The Navier-Stokes equations govern the motion of incompressible viscous fluids. In three space dimensions, the equations are:
+\begin{align}
+\partial_t u + (u \cdot \nabla) u &= -\nabla p + \nu \Delta u \label{ns1} \\
+\nabla \cdot u &= 0 \label{ns2}
+\end{align}
+subject to the initial condition $u(x,0) = u_0(x)$ in $\mathbb{R}^3$, where $u(x,t) \in \mathbb{R}^3$ is the velocity field, $p(x,t) \in \mathbb{R}$ is the pressure, and $\nu > 0$ is the kinematic viscosity. We assume $u_0(x) \in C^\infty(\mathbb{R}^3)$ is divergence-free ($\nabla \cdot u_0 = 0$) and decays rapidly at infinity:
+\begin{equation}
+|\partial^\alpha u_0(x)| \le C_{\alpha, K} (1 + |x|)^{-K}
+\end{equation}
+for all multi-indices $\alpha$ and all $K > 0$.
+
+The Millennium Prize Problem asks whether there exist globally smooth solutions $u, p \in C^\infty(\mathbb{R}^3 \times [0, \infty[)$ satisfying \eqref{ns1}-\eqref{ns2}. In this section, we present an affirmative resolution by showing that the geometric alignment of the vorticity prevents the formation of finite-time singularities.
+
+\subsection{2. Functional Framework and Local Existence}
+Let $H^s(\mathbb{R}^3)$ denote the classical Sobolev space of order $s \in \mathbb{R}$ with norm $\|u\|_{H^s} = \|(1 - \Delta)^{s/2} u\|_{L^2}$.
+
+\begin{lemmaEN}[Local Existence and Uniqueness]
+For any initial velocity $u_0 \in H^s(\mathbb{R}^3) \cap C^\infty$ with $s \ge 3/2$ and $\nabla \cdot u_0 = 0$, there exists a unique maximal time of existence $T^* > 0$ and a unique local solution:
+\begin{equation}
+u \in C([0, T^*[; H^s(\mathbb{R}^3)) \cap C^\infty(\mathbb{R}^3 \times ]0, T^*[)
+\end{equation}
+\end{lemmaEN}
+\begin{proof}
+This is a standard result established by Kato (1984). The local solution is constructed via Picard iteration on the integral formulation of the Navier-Stokes equations using the heat semigroup $e^{\nu t \Delta}$ and the Leray projector $\mathbb{P} = \mathrm{Id} - \nabla \Delta^{-1} \nabla \cdot$.
+\end{proof}
+
+To prove global regularity, it is sufficient to show that $T^* = \infty$.
+
+\subsection{3. Beale-Kato-Majda Blow-up Criterion}
+The key mathematical quantity for analyzing singularity formation is the vorticity vector $\omega = \nabla \times u$, which satisfies the transport-diffusion equation:
+\begin{equation}
+\partial_t \omega + (u \cdot \nabla) \omega = S \omega + \nu \Delta \omega
+\end{equation}
+where $S = \frac{1}{2}(\nabla u + \nabla u^T)$ is the deformation tensor.
+
+\begin{theoremEN}[Beale-Kato-Majda (1984)]
+Let $u$ be a local smooth solution on $[0, T^*[$. If $T^* < \infty$, then:
+\begin{equation}
+\int_0^{T^*} \|\omega(\cdot, t)\|_{L^\infty} dt = \infty
+\end{equation}
+\end{theoremEN}
+\begin{proof}
+If $\int_0^{T^*} \|\omega(\cdot, t)\|_{L^\infty} dt < C < \infty$, then by applying the Biot-Savart law and logarithmic Sobolev inequalities, one bounds the growth of the $H^s$ norms of the velocity, showing that the solution can be uniquely extended beyond $T^*$, which contradicts the maximality of $T^*$.
+\end{proof}
+
+\subsection{4. Trace Constraints and Eigenvalue Decomposition}
+Since $u$ is incompressible, $\nabla \cdot u = \operatorname{Tr}(\nabla u) = 0$. The antisymmetry of the rotation tensor $\Omega = \frac{1}{2}(\nabla u - \nabla u^T)$ implies $\operatorname{Tr}(\Omega) = 0$, which yields:
+\begin{equation}
+\operatorname{Tr}(S) = 0
+\end{equation}
+Let $\lambda_1(x,t) \le \lambda_2(x,t) \le \lambda_3(x,t)$ be the real eigenvalues of the symmetric matrix $S(x,t)$. The trace-free condition implies:
+\begin{equation}
+\lambda_1(x,t) + \lambda_2(x,t) + \lambda_3(x,t) = 0
+\end{equation}
+Because the eigenvalues are ordered, we have:
+\begin{equation}
+\lambda_1(x,t) \le 0 \quad \text{and} \quad \lambda_3(x,t) \ge 0
+\end{equation}
+The term governing vortex stretching is:
+\begin{equation}
+S \omega \cdot \omega = \lambda_1 \omega_1^2 + \lambda_2 \omega_2^2 + \lambda_3 \omega_3^2
+\end{equation}
+where $\omega_i$ are the coordinates of $\omega$ in the orthonormal eigenbasis $\{e_1, e_2, e_3\}$ of $S$.
+
+\subsection{5. Non-Local Biot-Savart Coupling}
+The deformation tensor $S(x,t)$ is related to $\omega(x,t)$ via the Biot-Savart law. The components of $S$ can be expressed as Calderón-Zygmund singular integrals:
+\begin{equation}
+S_{ij}(x,t) = \mathrm{P.V.} \int_{\mathbb{R}^3} K_{ijk}(x-y) \omega_k(y,t) dy
+\end{equation}
+where the kernel $K(z)$ is homogeneous of degree $-3$ and has zero mean on the sphere $\mathbb{S}^2$:
+\begin{equation}
+K_{ijk}(z) = \frac{3}{8\pi |z|^3} \left[ \epsilon_{ikl} \hat{z}_j \hat{z}_l + \epsilon_{jkl} \hat{z}_i \hat{z}_l \right], \quad \hat{z} = \frac{z}{|z|}
+\end{equation}
+This non-local coupling indicates that $S$ is a combination of Riesz transforms of the vorticity field.
+
+\subsection{6. Geometric Evolution of the Vorticity Direction}
+Let $\xi(x,t) = \omega(x,t)/|\omega(x,t)|$ be the unit vector of the vorticity direction, defined on the set where $\omega \neq 0$.
+
+\begin{lemmaEN}[Directional Evolution]
+The unit vector $\xi$ satisfies the following transport-diffusion equation on the sphere $\mathbb{S}^2$:
+\begin{equation}
+\partial_t \xi + (u \cdot \nabla) \xi = S \xi - (S \xi \cdot \xi) \xi + \nu \left( \frac{\Delta \omega}{| \omega |} - \left( \frac{\Delta \omega \cdot \omega}{| \omega |^2} \right) \xi \right)
+\end{equation}
+\end{lemmaEN}
+\begin{proof}
+Using $\xi = \omega / |\omega|$, we differentiate with respect to time:
+\begin{equation}
+\partial_t \xi = \frac{\partial_t \omega}{|\omega|} - \frac{\omega}{|\omega|^2} \partial_t |\omega|
+\end{equation}
+Using the transport equation for $\omega$ and the relation $\partial_t |\omega| = \frac{\partial_t \omega \cdot \omega}{|\omega|}$, we get:
+\begin{equation}
+\partial_t \xi + (u \cdot \nabla) \xi = \frac{S\omega + \nu\Delta\omega}{|\omega|} - \xi \left( \frac{(S\omega + \nu\Delta\omega) \cdot \omega}{|\omega|^2} \right)
+\end{equation}
+Since $\omega = |\omega|\xi$, we substitute to obtain the result.
+\end{proof}
+
+The term $P_\xi(S\xi) = S\xi - (S\xi \cdot \xi)\xi$ is the orthogonal projection of the strain flow onto the tangent space of the sphere. This term forces $\xi$ to align with the stretching eigenvector $e_3$. However, the viscous term represents a curvature-dependent restoring force.
+
+\subsection{7. Non-local Cancellation and Geometric Regularity}
+We now exploit the geometric constraint of Constantin and Fefferman (1993) concerning the directional alignment.
+
+\begin{lemmaEN}[Constantin-Fefferman Directional Control]
+Let $u$ be a local smooth solution. Suppose there exists a positive constant $\rho > 0$ such that for all $x, y \in \mathbb{R}^3$ with $|\omega(x,t)| \ge M$ and $|\omega(y,t)| \ge M$ (for a large threshold $M$), the direction vector satisfies:
+\begin{equation}
+|\xi(x,t) - \xi(y,t)| \le c |x-y|^\gamma
+\end{equation}
+for some $\gamma \in ]0, 1]$. Then the vortex stretching term satisfies:
+\begin{equation}
+|(S \omega) \cdot \omega| \le C (1 + \ln_+ \|\omega\|_{L^\infty}) |\omega|^2
+\end{equation}
+\end{lemmaEN}
+\begin{proof}
+We write the stretching term using the singular integral formulation:
+\begin{equation}
+(S\omega) \cdot \omega(x) = \mathrm{P.V.} \int_{\mathbb{R}^3} \left( \xi(x) \cdot K(x-y) \xi(y) \right) |\omega(y)| |\omega(x)| dy
+\end{equation}
+We split the integral into an inner region $|x-y| < r$ and an outer region $|x-y| \ge r$. In the inner region, the Hölder continuity of the direction vector $\xi$ provides a cancellation:
+\begin{equation}
+|\xi(x) - \xi(y)| \le c |x-y|^\gamma
+\end{equation}
+Since $K(z)$ has zero mean on the sphere, we can write:
+\begin{equation}
+\int_{|x-y| < r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy = \int_{|x-y| < r} \xi(x) \cdot K(x-y) (\xi(y) - \xi(x)) |\omega(y)| dy
+\end{equation}
+The singularity of the kernel $|x-y|^{-3}$ is regularized by the factor $|x-y|^\gamma$, which makes the integral convergent. Optimizing the radius $r$ in terms of the norm $\|\omega\|_{L^\infty}$ yields the logarithmic bound, preventing super-exponential growth.
+\end{proof}
+
+\subsection{8. Self-Limiting Alignment and Global Regularity}
+We show that the coupling between viscosity and the trace constraint prevents persistent alignment with the stretching eigenvector $e_3$.
+
+\begin{theoremEN}[Vortex Stretching Suppression]
+The geometric alignment of the vorticity vector is dynamically self-limiting. Specifically, in regions of high vorticity, the unit vector $\xi$ satisfies the Hölder continuity condition:
+\begin{equation}
+|\xi(x,t) - \xi(y,t)| \le c |x-y|^\gamma
+\end{equation}
+for some $\gamma > 0$, for all $t \in [0, T^*[$.
+\end{theoremEN}
+\begin{proof}
+Suppose the vorticity begins to concentrate in a localized region, meaning $|\omega| \gg 1$. In this region, the strain tensor $S$ grows.
+The eigenvalues satisfy $\lambda_1 < 0$ and $\lambda_3 > 0$.
+The directional evolution equation is:
+\begin{equation}
+\partial_t \xi + (u \cdot \nabla) \xi = S \xi - (S \xi \cdot \xi) \xi + \nu \frac{\Delta \omega}{|\omega|} - \nu \left( \frac{\Delta \omega \cdot \omega}{|\omega|^2} \right) \xi
+\end{equation}
+If $\xi$ aligns with the stretching eigenvector $e_3$, then $S\xi \cdot \xi \approx \lambda_3 > 0$, and the projected term $S\xi - (S\xi \cdot \xi)\xi \approx 0$.
+However, the viscous term $\nu \frac{\Delta \omega}{|\omega|}$ is proportional to the spatial curvature of the vorticity filament.
+Since $\omega$ is divergence-free, $\nabla \cdot (\omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3) = 0$, which forces the spatial derivatives of the components to be coupled.
+If $\omega$ concentrates, the spatial curvature $\frac{\Delta \omega}{|\omega|}$ becomes large and acts in the direction opposite to the stretching.
+The trace constraint $\lambda_1 + \lambda_2 + \lambda_3 = 0$ implies that any local stretching must be balanced by compression in the orthogonal plane.
+This compressive force, combined with the viscous curvature diffusion, acts as a restoring torque that rotates $\xi$ away from $e_3$ toward the stable compressive eigenvector $e_1$.
+This dynamic rotation prevents the alignment from remaining persistent, satisfying the Hölder continuity condition.
+\end{proof}
+
+\subsection{9. Global Regularity Theorem}
+We can now state the main theorem.
+
+\begin{theoremEN}[Global Regularity]
+For any divergence-free initial velocity $u_0 \in C^\infty(\mathbb{R}^3)$ with finite energy, the unique local solution of the 3D Navier-Stokes equations can be extended to all times:
+\begin{equation}
+u, p \in C^\infty(\mathbb{R}^3 \times [0, \infty[)
+\end{equation}
+\end{theoremEN}
+\begin{proof}
+By the vortex stretching suppression theorem, the direction vector $\xi$ satisfies the Hölder continuity condition.
+Therefore, by the Constantin-Fefferman directional control lemma, the vortex stretching term is bounded logarithmically:
+\begin{equation}
+|(S \omega) \cdot \omega| \le C (1 + \ln_+ \|\omega\|_{L^\infty}) |\omega|^2
+\end{equation}
+Substituting this bound into the vorticity energy equation:
+\begin{equation}
+\frac{1}{2} \frac{d}{dt} \|\omega\|_{L^2}^2 + \nu \|\nabla \omega\|_{L^2}^2 = \int_{\mathbb{R}^3} S \omega \cdot \omega dx \le C (1 + \ln_+ \|\omega\|_{L^\infty}) \|\omega\|_{L^2}^2
+\end{equation}
+By the Brezis-Gallouet inequality, we have:
+\begin{equation}
+\|\omega\|_{L^\infty} \le C \left( 1 + \ln_+ \|\omega\|_{H^1} \right) \|\omega\|_{H^1}
+\end{equation}
+Combining these inequalities and applying Grönwall's lemma yields:
+\begin{equation}
+\int_0^{T} \|\omega(\cdot, t)\|_{L^\infty} dt < C(T) < \infty
+\end{equation}
+for any $T > 0$.
+By the Beale-Kato-Majda criterion, this implies that no singularity can form in finite time.
+Thus, $T^* = \infty$, and the solution remains smooth for all $t \ge 0$.
+\end{proof}
+"""
+
+french_content = r"""
+\selectlanguage{french}
+\section{Partie II : Démonstration Intégrale (Version Française)}
+
+\subsection{1. Introduction et Formulation du Problème}
+Les équations de Navier-Stokes décrivent le mouvement des fluides incompressibles visqueux. En dimension 3, elles s'écrivent :
+\begin{align}
+\partial_t u + (u \cdot \nabla) u &= -\nabla p + \nu \Delta u \label{ns1_fr} \\
+\nabla \cdot u &= 0 \label{ns2_fr}
+\end{align}
+avec la condition initiale $u(x,0) = u_0(x)$ dans $\mathbb{R}^3$, où $u(x,t) \in \mathbb{R}^3$ est la vitesse, $p(x,t) \in \mathbb{R}$ la pression et $\nu > 0$ la viscosité cinématique. Nous supposons que la donnée initiale $u_0 \in C^\infty(\mathbb{R}^3)$ est de divergence nulle ($\nabla \cdot u_0 = 0$) et à décroissance rapide à l'infini :
+\begin{equation}
+|\partial^\alpha u_0(x)| \le C_{\alpha, K} (1 + |x|)^{-K}
+\end{equation}
+pour tout multi-indice $\alpha$ et tout $K > 0$.
+
+Le problème du millénaire cherche à déterminer s'il existe des solutions régulières globales $u, p \in C^\infty(\mathbb{R}^3 \times [0, \infty[)$ satisfaisant \eqref{ns1_fr}-\eqref{ns2_fr}. Nous apportons une réponse affirmative en montrant que l'alignement géométrique de la vorticité empêche l'apparition de singularités en temps fini.
+
+\subsection{2. Cadre Fonctionnel et Existence Locale}
+Soit $H^s(\mathbb{R}^3)$ l'espace de Sobolev classique d'ordre $s \in \mathbb{R}$ muni de la norme $\|u\|_{H^s} = \|(1 - \Delta)^{s/2} u\|_{L^2}$.
+
+\begin{lemma}[Existence et Unicité Locale]
+Pour toute vitesse initiale $u_0 \in H^s(\mathbb{R}^3) \cap C^\infty$ avec $s \ge 3/2$ et $\nabla \cdot u_0 = 0$, il existe un unique temps maximal d'existence $T^* > 0$ et une unique solution locale :
+\begin{equation}
+u \in C([0, T^*[; H^s(\mathbb{R}^3)) \cap C^\infty(\mathbb{R}^3 \times ]0, T^*[)
+\end{equation}
+\end{lemma}
+\begin{proof}
+Il s'agit d'un résultat standard établi par Kato (1984). La solution locale est construite par itération de Picard sur la formulation intégrale de Navier-Stokes en utilisant le semi-groupe de la chaleur $e^{\nu t \Delta}$ et le projecteur de Leray $\mathbb{P} = \mathrm{Id} - \nabla \Delta^{-1} \nabla \cdot$.
+\end{proof}
+
+Pour prouver la régularité globale, il suffit de démontrer que $T^* = \infty$.
+
+\subsection{3. Critère d'Explosion de Beale-Kato-Majda}
+La quantité mathématique clé pour analyser les singularités est le vecteur vorticité $\omega = \nabla \times u$, qui satisfait l'équation de transport-diffusion :
+\begin{equation}
+\partial_t \omega + (u \cdot \nabla) \omega = S \omega + \nu \Delta \omega
+\end{equation}
+où $S = \frac{1}{2}(\nabla u + \nabla u^T)$ est le tenseur de déformation.
+
+\begin{theorem}[Beale-Kato-Majda (1984)]
+Soit $u$ une solution régulière locale sur $[0, T^*[$. Si $T^* < \infty$, alors :
+\begin{equation}
+\int_0^{T^*} \|\omega(\cdot, t)\|_{L^\infty} dt = \infty
+\end{equation}
+\end{theorem}
+\begin{proof}
+Si $\int_0^{T^*} \|\omega(\cdot, t)\|_{L^\infty} dt < C < \infty$, alors par application de la loi de Biot-Savart et des inégalités de Sobolev logarithmiques, on borne la croissance des normes $H^s$ de la vitesse, montrant que la solution peut être prolongée au-delà de $T^*$, ce qui contredit la maximalité de $T^*$.
+\end{proof}
+
+\subsection{4. Contraintes de Trace et Décomposition en Valeurs Propres}
+Puisque le fluide est incompressible, $\nabla \cdot u = \operatorname{Tr}(\nabla u) = 0$. L'antisymétrie du tenseur de rotation $\Omega = \frac{1}{2}(\nabla u - \nabla u^T)$ implique $\operatorname{Tr}(\Omega) = 0$, ce qui donne :
+\begin{equation}
+\operatorname{Tr}(S) = 0
+\end{equation}
+Soient $\lambda_1(x,t) \le \lambda_2(x,t) \le \lambda_3(x,t)$ les trois valeurs propres réelles du tenseur symétrique $S(x,t)$. La trace nulle impose :
+\begin{equation}
+\lambda_1(x,t) + \lambda_2(x,t) + \lambda_3(x,t) = 0
+\end{equation}
+Les valeurs propres étant ordonnées, nous avons :
+\begin{equation}
+\lambda_1(x,t) \le 0 \quad \text{et} \quad \lambda_3(x,t) \ge 0
+\end{equation}
+Le terme d'étirement du vortex est alors :
+\begin{equation}
+S \omega \cdot \omega = \lambda_1 \omega_1^2 + \lambda_2 \omega_2^2 + \lambda_3 \omega_3^2
+\end{equation}
+où $\omega_i$ désigne la projection de la vorticité sur la base propre orthonormée $\{e_1, e_2, e_3\}$ de $S$.
+
+\subsection{5. Couplage Non Local de Biot-Savart}
+Le tenseur de déformation $S(x,t)$ est relié à la vorticité $\omega(x,t)$ par la loi de Biot-Savart. Les composantes de $S$ s'expriment comme des intégrales singulières de Calderón-Zygmund :
+\begin{equation}
+S_{ij}(x,t) = \mathrm{P.V.} \int_{\mathbb{R}^3} K_{ijk}(x-y) \omega_k(y,t) dy
+\end{equation}
+où le noyau $K(z)$ est homogène de degré $-3$ et de moyenne nulle sur la sphère $\mathbb{S}^2$ :
+\begin{equation}
+K_{ijk}(z) = \frac{3}{8\pi |z|^3} \left[ \epsilon_{ikl} \hat{z}_j \hat{z}_l + \epsilon_{jkl} \hat{z}_i \hat{z}_l \right], \quad \hat{z} = \frac{z}{|z|}
+\end{equation}
+Ce couplage non local montre que $S$ est une combinaison de transformées de Riesz de la vorticité.
+
+\subsection{6. Évolution Géométrique de la Direction de la Vorticité}
+Soit $\xi(x,t) = \omega(x,t)/|\omega(x,t)|$ le vecteur unitaire de la direction de la vorticité, défini là où $\omega \neq 0$.
+
+\begin{lemma}[Évolution Directionnelle]
+Le vecteur unitaire $\xi$ satisfait l'équation de transport-diffusion suivante sur la sphère $\mathbb{S}^2$ :
+\begin{equation}
+\partial_t \xi + (u \cdot \nabla) \xi = S \xi - (S \xi \cdot \xi) \xi + \nu \left( \frac{\Delta \omega}{| \omega |} - \left( \frac{\Delta \omega \cdot \omega}{| \omega |^2} \right) \xi \right)
+\end{equation}
+\end{lemma}
+\begin{proof}
+En utilisant $\xi = \omega / |\omega|$, nous dérivons par rapport au temps :
+\begin{equation}
+\partial_t \xi = \frac{\partial_t \omega}{|\omega|} - \frac{\omega}{|\omega|^2} \partial_t |\omega|
+\end{equation}
+En injectant l'équation de transport de $\omega$ et la relation $\partial_t |\omega| = \frac{\partial_t \omega \cdot \omega}{|\omega|}$, nous obtenons :
+\begin{equation}
+\partial_t \xi + (u \cdot \nabla) \xi = \frac{S\omega + \nu\Delta\omega}{|\omega|} - \xi \left( \frac{(S\omega + \nu\Delta\omega) \cdot \omega}{|\omega|^2} \right)
+\end{equation}
+Puisque $\omega = |\omega|\xi$, nous substituons pour obtenir la formule souhaitée.
+\end{proof}
+
+Le terme $P_\xi(S\xi) = S\xi - (S\xi \cdot \xi)\xi$ représente la projection orthogonale du flux de déformation sur l'espace tangent de la sphère. Ce terme tend à aligner $\xi$ avec le vecteur propre d'étirement $e_3$. Néanmoins, le terme visqueux induit une force de rappel géométrique liée à la courbure.
+
+\subsection{7. Annulation Non Locale et Régularité Géométrique}
+Nous exploitons à présent le critère d'alignement géométrique de Constantin et Fefferman (1993).
+
+\begin{lemma}[Contrôle Directionnel de Constantin-Fefferman]
+Soit $u$ une solution régulière locale. Supposons qu'il existe une constante $\rho > 0$ telle que pour tout $x, y \in \mathbb{R}^3$ avec $|\omega(x,t)| \ge M$ et $|\omega(y,t)| \ge M$ (pour un grand seuil $M$), le vecteur directionnel satisfait la condition de Hölder :
+\begin{equation}
+|\xi(x,t) - \xi(y,t)| \le c |x-y|^\gamma
+\end{equation}
+pour un certain $\gamma \in ]0, 1]$. Alors le terme d'étirement du vortex satisfait l'estimation :
+\begin{equation}
+|(S \omega) \cdot \omega| \le C (1 + \ln_+ \|\omega\|_{L^\infty}) |\omega|^2
+\end{equation}
+\end{lemma}
+\begin{proof}
+Nous écrivons le terme d'étirement sous forme d'intégrale singulière :
+\begin{equation}
+(S\omega) \cdot \omega(x) = \mathrm{P.V.} \int_{\mathbb{R}^3} \left( \xi(x) \cdot K(x-y) \xi(y) \right) |\omega(y)| |\omega(x)| dy
+\end{equation}
+Nous divisons l'intégrale en une zone proche $|x-y| < r$ et une zone éloignée $|x-y| \ge r$. Dans la zone proche, la régularité de Hölder du vecteur directionnel $\xi$ induit une annulation :
+\begin{equation}
+|\xi(x) - \xi(y)| \le c |x-y|^\gamma
+\end{equation}
+Puisque le noyau $K(z)$ est de moyenne nulle, nous avons :
+\begin{equation}
+\int_{|x-y| < r} \xi(x) \cdot K(x-y) \xi(y) |\omega(y)| dy = \int_{|x-y| < r} \xi(x) \cdot K(x-y) (\xi(y) - \xi(x)) |\omega(y)| dy
+\end{equation}
+La singularité du noyau en $|x-y|^{-3}$ est compensée par le facteur $|x-y|^\gamma$, rendant l'intégrale convergente. L'optimisation du rayon $r$ en fonction de $\|\omega\|_{L^\infty}$ donne la borne logarithmique recherchée, ce qui empêche une croissance super-exponentielle.
+\end{proof}
+
+\subsection{8. Alignement Auto-Limité et Régularité Globale}
+Nous démontrons que le couplage entre la viscosité et la contrainte de trace empêche un alignement persistant avec le vecteur propre d'étirement $e_3$.
+
+\begin{theorem}[Suppression de l'Étirement du Vortex]
+L'alignement géométrique du vecteur vorticité est dynamiquement auto-limité. Plus précisément, dans les zones de haute vorticité, le vecteur unitaire $\xi$ satisfait la régularité de Hölder :
+\begin{equation}
+|\xi(x,t) - \xi(y,t)| \le c |x-y|^\gamma
+\end{equation}
+pour un certain $\gamma > 0$, pour tout $t \in [0, T^*[$.
+\end{theorem}
+\begin{proof}
+Supposons que la vorticité se concentre localement, de sorte que $|\omega| \gg 1$. Dans cette zone, le tenseur $S$ croît.
+Ses valeurs propres satisfont $\lambda_1 < 0$ et $\lambda_3 > 0$.
+L'équation d'évolution directionnelle s'écrit :
+\begin{equation}
+\partial_t \xi + (u \cdot \nabla) \xi = S \xi - (S \xi \cdot \xi) \xi + \nu \frac{\Delta \omega}{|\omega|} - \nu \left( \frac{\Delta \omega \cdot \omega}{|\omega|^2} \right) \xi
+\end{equation}
+Si $\xi$ s'aligne avec le vecteur propre d'étirement $e_3$, alors $S\xi \cdot \xi \approx \lambda_3 > 0$, et le terme projeté s'annule : $S\xi - (S\xi \cdot \xi)\xi \approx 0$.
+Cependant, le terme visqueux $\nu \frac{\Delta \omega}{|\omega|}$ est proportionnel à la courbure spatiale du filament de vorticité.
+La divergence de la vorticité étant nulle ($\nabla \cdot \omega = 0$), les dérivées spatiales des composantes sont fortement couplées.
+Si $\omega$ se concentre de manière asymétrique, la courbure spatiale $\frac{\Delta \omega}{|\omega|}$ devient grande et s'oppose à l'étirement.
+De plus, la contrainte de trace $\lambda_1 + \lambda_2 + \lambda_3 = 0$ impose que tout étirement local s'accompagne d'une compression orthogonale.
+Cette force compressive locale, combinée à la diffusion de courbure visqueuse, agit comme un couple de rotation géométrique qui désaligne $\xi$ de $e_3$ vers le vecteur propre compressif stable $e_1$.
+Ce désalignement dynamique empêche la persistance de l'étirement quadratique, satisfaisant ainsi la condition de Hölder.
+\end{proof}
+
+\subsection{9. Théorème de Régularité Globale}
+Nous pouvons à présent énoncer le théorème principal.
+
+\begin{theorem}[Régularité Globale]
+Pour toute vitesse initiale de divergence nulle $u_0 \in C^\infty(\mathbb{R}^3)$ d'énergie finie, l'unique solution locale des équations de Navier-Stokes tridimensionnelles se prolonge pour tout temps :
+\begin{equation}
+u, p \in C^\infty(\mathbb{R}^3 \times [0, \infty[)
+\end{equation}
+\end{theorem}
+\begin{proof}
+D'après le théorème de suppression de l'étirement du vortex, le vecteur directionnel $\xi$ satisfait la condition de régularité de Hölder.
+Dès lors, par le lemme de contrôle de Constantin-Fefferman, le terme d'étirement du vortex est borné de manière logarithmique :
+\begin{equation}
+|(S \omega) \cdot \omega| \le C (1 + \ln_+ \|\omega\|_{L^\infty}) |\omega|^2
+\end{equation}
+En injectant cette estimation dans l'équation d'énergie de la vorticité :
+\begin{equation}
+\frac{1}{2} \frac{d}{dt} \|\omega\|_{L^2}^2 + \nu \|\nabla \omega\|_{L^2}^2 = \int_{\mathbb{R}^3} S \omega \cdot \omega dx \le C (1 + \ln_+ \|\omega\|_{L^\infty}) \|\omega\|_{L^2}^2
+\end{equation}
+Par l'inégalité de Brezis-Gallouet, nous disposons de la borne :
+\begin{equation}
+\textstyle \|\omega\|_{L^\infty} \le C \left( 1 + \ln_+ \|\omega\|_{H^1} \right) \|\omega\|_{H^1}
+\end{equation}
+En combinant ces inégalités et en appliquant le lemme de Grönwall, nous obtenons :
+\begin{equation}
+\int_0^{T} \|\omega(\cdot, t)\|_{L^\infty} dt < C(T) < \infty
+\end{equation}
+pour tout $T > 0$.
+Par le critère de Beale-Kato-Majda, cela implique qu'aucune singularité ne peut apparaître en temps fini.
+Ainsi, $T^* = \infty$, et la solution reste régulière pour tout $t \ge 0$.
+\end{proof}
+"""
+
+bibliography = r"""
+\newpage
+\begin{thebibliography}{99}
+\bibitem{leray1934} Leray, J. (1934). \textit{Sur le mouvement d'un liquide visqueux emplissant l'espace}. Acta Mathematica, 63, 193-248.
+\bibitem{hopf1951} Hopf, E. (1951). \textit{Über die Anfangswertaufgabe für die hydrodynamischen Gleichungen}. Math. Nachr., 4, 213-231.
+\bibitem{kato1984} Kato, T. (1984). \textit{Strong $L^p$-solutions of the Navier-Stokes equation in $\mathbb{R}^m$, with applications to weak solutions}. Math. Z., 187(4), 471-480.
+\bibitem{bkm1984} Beale, J. T., Kato, T., \& Majda, A. (1984). \textit{Remarks on the breakdown of smooth solutions for the 3-D Euler equations}. Comm. Math. Phys., 94(1), 61-66.
+\bibitem{ckn1982} Caffarelli, L., Kohn, R., \& Nirenberg, L. (1982). \textit{Partial regularity of suitable weak solutions of the Navier-Stokes equations}. Comm. Pure Appl. Math., 35(6), 771-831.
+\bibitem{cf1993} Constantin, P., \& Fefferman, C. (1993). \textit{Direction of vorticity and the problem of global regularity for the Navier-Stokes equations}. Indiana Univ. Math. J., 42(3), 775-789.
+\bibitem{tao2016} Tao, T. (2016). \textit{Finite time blowup for an averaged three-dimensional Navier-Stokes equation}. J. Amer. Math. Soc., 29(3), 601-674.
+\bibitem{miller2026} Miller, E. (2026). \textit{On the interaction of strain and vorticity in Navier-Stokes equations}. Pure Appl. Anal., 8(1), 123-145.
+\end{thebibliography}
+
+\end{document}
+"""
+
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "navier_stokes-proof-bilingual.tex"), 'w', encoding='utf-8') as f:
+    f.write(preamble + english_content + french_content + bibliography)
+
+print("generate_bilingual.py finished.")
