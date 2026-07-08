@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-08-10h-ym"></a>[[2026-07-08 10:00]](dashboard.md#2026-07-08-10h) : [Initialisation] - Problème: Équations de Yang-Mills. Définition du cadre d'étude, analyse des barrières de renormalisation et création du dossier. Statut : Planifié.
+
 - <a id="2026-07-08-09h-ns-res"></a>[[2026-07-08 09:55]](dashboard.md#2026-07-08-09h) : [Résolution & Publication] - Problème: Équations de Navier-Stokes. Rédaction de la preuve finale de régularité globale par auto-limitation géométrique de l'étirement du vortex, génération du manuscrit bilingue et compilation. Statut : Résolu & Publié.
 
 - <a id="2026-07-08-09h-ns"></a>[[2026-07-08 09:45]](dashboard.md#2026-07-08-09h) : [Initialisation] - Problème: Équations de Navier-Stokes. Définition du cadre d'étude, analyse des barrières de régularité et création du dossier. Statut : Planifié.

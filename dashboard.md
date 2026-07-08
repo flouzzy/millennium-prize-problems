@@ -2,12 +2,16 @@
 
 ## Investigation actuelle
 
-- **Problème du Millénaire :** Les équations de Navier-Stokes
-- **Axe de recherche actif :** vortex_stretching
+- **Problème du Millénaire :** Les équations de Yang-Mills
+- **Axe de recherche actif :** flot_renormalisation
 - **Tentative :** 01
-- **Dossier cible :** `navier_stokes/`
+- **Dossier cible :** `yang_mills/`
 
 ## Historique d'avancement
+
+### 2026-07-08-10h
+
+- [[#2026-07-08-10h|2026-07-08 10:00]] : [Initialisation] - Problème: Équations de Yang-Mills. Définition du cadre d'étude, analyse des barrières (renormalisation, copies de Gribov, limite continue) et création du plan stratégique. Statut : Planifié.
 
 ### 2026-07-08-09h
 
