@@ -2,12 +2,16 @@
 
 ## Investigation actuelle
 
-- **Problème du Millénaire :** L'hypothèse de Riemann
-- **Axe de recherche actif :** fibration_motivique
+- **Problème du Millénaire :** P vs NP
+- **Axe de recherche actif :** complexite_descriptive
 - **Tentative :** 01
-- **Dossier cible :** `riemann_hypothesis/`
+- **Dossier cible :** `p_vs_np/`
 
 ## Historique d'avancement
+
+### 2026-07-08-09h
+
+- [[#2026-07-08-09h|2026-07-08 09:30]] : [Initialisation] - Problème: P vs NP. Définition du cadre d'étude, analyse préliminaire des trois barrières fondamentales (Relativisation, Preuves Naturelles, Algébrisation) et création du plan stratégique. Statut : Planifié.
 
 ### 2026-07-08-08h
 
