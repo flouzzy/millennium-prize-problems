@@ -2,14 +2,16 @@
 
 ## Investigation actuelle
 
-- **Problème du Millénaire :** P vs NP
-- **Axe de recherche actif :** complexite_descriptive
+- **Problème du Millénaire :** Les équations de Navier-Stokes
+- **Axe de recherche actif :** vortex_stretching
 - **Tentative :** 01
-- **Dossier cible :** `p_vs_np/`
+- **Dossier cible :** `navier_stokes/`
 
 ## Historique d'avancement
 
 ### 2026-07-08-09h
+
+- [[#2026-07-08-09h|2026-07-08 09:45]] : [Initialisation] - Problème: Équations de Navier-Stokes. Définition du cadre d'étude, analyse des barrières (Tao, BKM, Leray-Hopf) et création du plan stratégique. Statut : Planifié.
 
 - [[#2026-07-08-09h|2026-07-08 09:40]] : [Résolution & Validation] - Problème: P vs NP. Rédaction de la preuve inconditionnelle ($\mathbf{P} \neq \mathbf{NP}$) sous forme de carquois avec relations et obstruction cohomologique dans $\mathrm{HH}^2(\Lambda_{\Phi})$. Génération du manuscrit bilingue et compilation PDF. Statut : Résolu & Publié.
 

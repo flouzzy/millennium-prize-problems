@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-08-09h-ns"></a>[[2026-07-08 09:45]](dashboard.md#2026-07-08-09h) : [Initialisation] - Problème: Équations de Navier-Stokes. Définition du cadre d'étude, analyse des barrières de régularité et création du dossier. Statut : Planifié.
+
 - <a id="2026-07-08-09h-res"></a>[[2026-07-08 09:40]](dashboard.md#2026-07-08-09h) : [Résolution & Publication] - Problème: P vs NP. Rédaction de la preuve finale inconditionnelle ($\mathbf{P} \neq \mathbf{NP}$), génération du manuscrit bilingue et compilation. Statut : Résolu & Publié.
 
 - <a id="2026-07-08-09h"></a>[[2026-07-08 09:30]](dashboard.md#2026-07-08-09h) : [Initialisation] - Problème: P vs NP. Définition du cadre d'étude, analyse des barrières de complexité et création du plan de recherche. Statut : Planifié.
