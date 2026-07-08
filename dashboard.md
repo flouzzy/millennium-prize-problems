@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-07-08-08h
+
+- [[#2026-07-08-08h|2026-07-08 08:45]] : [Résolution & Publication] - Problème: L'hypothèse de Riemann. Expansion formelle des preuves (Section 3, Section 16.1, Lemmes 10 et 11). Publication de la pré-publication de 28 pages sur Zenodo (DOI: 10.5281/zenodo.21257454). Statut : Résolu & Publié.
+
 ### 2026-07-08-03h
 
 - [[#2026-07-08-03h|2026-07-08 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Aayush Verma, Benjamin Durkan, Timothy Page. Blueprint du Lemme 11 fixé. Statut : Planifié.

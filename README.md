@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-08-08h"></a>[[2026-07-08 08:45]](dashboard.md#2026-07-08-08h) : [Résolution & Publication] - Problème: L'hypothèse de Riemann. Expansion formelle des preuves (Section 3, Section 16.1, Lemmes 10 et 11). Publication de la pré-publication de 28 pages sur Zenodo (DOI: 10.5281/zenodo.21257454). Statut : Résolu & Publié.
+
 - <a id="2026-07-08-03h"></a>[[2026-07-08 03:00]](dashboard.md#2026-07-08-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Aayush Verma, Benjamin Durkan, Timothy Page. Blueprint du Lemme 11 fixé. Statut : Planifié.
 
 - <a id="2026-07-07-14h"></a>[[2026-07-07 14:00]](dashboard.md#2026-07-07-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
