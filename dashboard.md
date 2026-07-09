@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-07-09-03h
+
+- [[#2026-07-09-03h|2026-07-09 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Patrick Letendre, André Contiero, Letterio Gatto, Parham Salehyan. Blueprint du Lemme 11 fixé. Statut : Planifié.
+
 ### 2026-07-08-14h
 
 - [[#2026-07-08-14h|2026-07-08 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
