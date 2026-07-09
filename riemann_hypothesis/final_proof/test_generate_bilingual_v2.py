@@ -32,7 +32,7 @@ class TestGenerateBilingualV2(unittest.TestCase):
         args, kwargs = handle.write.call_args
         content_written = args[0]
         self.assertTrue(content_written.startswith(r"\documentclass[11pt,a4paper,twoside]{article}"))
-        self.assertIn(r"\selectlanguage{frenchb}", content_written)
+        self.assertIn(r"\selectlanguage{french}", content_written)
         self.assertIn(r"\selectlanguage{english}", content_written)
         self.assertIn(r"\end{document}", content_written)
 
