@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-07-10-03h
+
+- [[#2026-07-10-03h|2026-07-10 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Anjelo Gabriel R. Cruz, Manuel Joseph C. Loquias. Blueprint du Lemme 12 fixé. Statut : Planifié.
+
 ### 2026-07-09-14h
 
 - [[#2026-07-09-14h|2026-07-09 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.

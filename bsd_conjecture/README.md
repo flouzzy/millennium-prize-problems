@@ -5,6 +5,7 @@ Dossier dédié à l'investigation et à la résolution de la **Conjecture de Bi
 ---
 
 ## 🔗 Ressources et Documents
+
 | Document | Description |
 | :--- | :--- |
 | [**Tableau de Bord**](../dashboard.md) | Suivi général de l'avancement des problèmes du millénaire. |
@@ -24,6 +25,7 @@ où $r \ge 0$ est le **rang** de la courbe elliptique, et $E(\mathbb{Q})_{\mathr
 Soit $L(E, s)$ la fonction $L$ de Hasse-Weil associée à $E$, définie pour $\Re(s) > 3/2$ par un produit d'Euler sur les nombres premiers. Grâce au théorème de modularité (démontré par Wiles, Taylor, Breuil, Conrad, Diamond), $L(E, s)$ admet un prolongement analytique sur tout le plan complexe $\mathbb{C}$ et satisfait une équation fonctionnelle reliant $s$ et $2-s$.
 
 La conjecture de Birch et Swinnerton-Dyer s'énonce en deux parties :
+
 1. **La Conjecture de BSD Qualitative :** Le rang $r$ de $E(\mathbb{Q})$ est égal à l'ordre d'annulation de la fonction $L(E, s)$ au point central $s=1$ :
    $$\operatorname{ord}_{s=1} L(E, s) = r$$
 2. **La Conjecture de BSD Quantitative :** Le premier coefficient non nul de la série de Taylor de $L(E, s)$ en $s=1$ est donné par :
@@ -35,17 +37,23 @@ La conjecture de Birch et Swinnerton-Dyer s'énonce en deux parties :
 ## 2. Obstacles et Résultats Fondamentaux (Les Barrières)
 
 ### A. Le Théorème de Gross-Zagier et Kolyvagin
+
 La conjecture est démontrée pour les courbes elliptiques d'ordre d'annulation $\le 1$ :
+
 * Si $\operatorname{ord}_{s=1} L(E, s) = 0$, alors le rang de $E(\mathbb{Q})$ est 0 et le groupe de Tate-Shafarevich ${\text{Ш}}(E/\mathbb{Q})$ est fini.
 * Si $\operatorname{ord}_{s=1} L(E, s) = 1$, alors le rang de $E(\mathbb{Q})$ est 1 et ${\text{Ш}}(E/\mathbb{Q})$ est fini.
 * **Le verrou :** Pour les rangs supérieurs ($r \ge 2$), les systèmes d'Euler d'Heegner utilisés par Kolyvagin s'effondrent car il n'existe pas de théorie systématique pour construire des points d'Heegner de rang supérieur.
 
 ### B. La Finitude du Groupe de Tate-Shafarevich ${\text{Ш}}(E/\mathbb{Q})$
+
 Le groupe de Tate-Shafarevich mesure l'obstruction au principe de Hasse (local-global) pour les espaces homogènes sous $E$.
+
 * **Le verrou :** La finitude de ${\text{Ш}}(E/\mathbb{Q})$ est elle-même une conjecture majeure et non démontrée pour $r \ge 2$. La présence éventuelle d'éléments de torsion infinie ou de structures non finies empêche le contrôle du terme de droite de la formule quantitative.
 
 ### C. La Barrière p-adique
+
 La plupart des outils modernes (théorie d'Iwasawa, fonctions L p-adiques) dépendent du choix d'un nombre premier $p$.
+
 * **Le verrou :** Le passage des résultats p-adiques locaux au résultat rationnel global global requiert de faire varier $p$ et de contrôler les obstructions de Selmer de manière uniforme, ce qui se heurte aux sauts de rang.
 
 ---
@@ -56,9 +64,9 @@ Pour surmonter ces verrous, nous allons suivre les axes de recherche suivants :
 
 1. **Axe 1 : Théorie d'Iwasawa de K-théorie et Conjecture de BSD p-adique**
    Formuler la conjecture de BSD à l'aide de la K-théorie et de l'homologie cyclique des algèbres d'Iwasawa. Relier le groupe de Selmer aux invariants de Fitting des modules d'Iwasawa.
-   
+
 2. **Axe 2 : Systèmes d'Euler Supérieurs et Cycles Motiviques**
    Généraliser les systèmes d'Euler classiques à des familles de cycles motiviques de codimension supérieure dans des produits de variétés modulaires (cycles de Beilinson-Kato-Flach).
-   
+
 3. **Axe 3 : Finitude de ${\text{Ш}}(E/\mathbb{Q})$ via Cohomologie Galoisienne Non-Abélienne**
    Démontrer la finitude de ${\text{Ш}}(E/\mathbb{Q})$ pour toute courbe elliptique régulière en formulant une suite spectrale reliant la cohomologie galoisienne à l'algèbre des opérateurs de Hecke de poids 2.

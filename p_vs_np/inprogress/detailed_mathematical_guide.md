@@ -24,7 +24,9 @@ graph TD
 ## 2. Analyse Détaillée des Étapes et Équations Clés
 
 ### Étape A : Modélisation Algébrique de 3SAT
+
 Soit $\Phi$ une formule 3SAT contenant $n$ variables $\{x_1, \dots, x_n\}$ et $m$ clauses $\{C_1, \dots, C_m\}$.
+
 1. Nous associons à $\Phi$ un carquois $\Gamma_{\Phi} = (Q_0, Q_1)$ :
    * Les sommets $Q_0$ correspondent aux variables, à leurs négations, et aux clauses.
    * Les flèches $Q_1$ modélisent les dépendances logiques entre littéraux et clauses.
@@ -34,7 +36,9 @@ Soit $\Phi$ une formule 3SAT contenant $n$ variables $\{x_1, \dots, x_n\}$ et $m
    Une instance $\Phi$ est satisfiable si et seulement s'il existe une représentation semi-stable non triviale de $\Lambda_{\Phi}$ de dimension $\mathbf{d} = (1, \dots, 1)$.
 
 ### Étape B : L'Espace de Modules des Représentations $\mathcal{M}^\theta(\Lambda_{\Phi}, \mathbf{d})$
+
 L'espace des représentations de dimension $\mathbf{d}$ est le schéma affine des représentations de carquois respectant les relations de l'idéal $I_{\Phi}$.
+
 * L'espace des modules de représentations $\theta$-semistables est le quotient géométrique :
   $$\mathcal{M}^\theta(\Lambda_{\Phi}, \mathbf{d}) = \operatorname{Rep}(\Lambda_{\Phi}, \mathbf{d}) /\!/_\theta \operatorname{GL}(\mathbf{d})$$
   où $\theta$ est le paramètre de stabilité de King.
@@ -42,12 +46,16 @@ L'espace des représentations de dimension $\mathbf{d}$ est le schéma affine de
 * Les singularités de ce schéma correspondent aux représentations décomposables (qui traduisent les choix multiples et les conflits logiques dans les clauses).
 
 ### Étape C : Le Caractère Sauvage (Wild) de $\Lambda_{\Phi}$
+
 Une algèbre de carquois est de type de représentation sauvage (wild) si sa catégorie de représentations contient la catégorie des représentations de l'algèbre libre à deux générateurs $k\langle x, y \rangle$.
+
 * **Lemme clé :** Puisque les clauses de 3SAT lient 3 variables entre elles, le carquois $\Gamma_{\Phi}$ contient des sous-carquois à 3 sommets connectés par des flèches multiples, ce qui est la définition structurelle d'un type de représentation sauvage.
 * Classifier les représentations de $\Lambda_{\Phi}$ (et donc décider de la non-vacuité de l'espace de modules) est une tâche dont la complexité est au moins aussi difficile que la classification des modules sur n'importe quelle algèbre de dimension finie.
 
 ### Étape D : Croissance Exponentielle de l'Espace d'Obstruction de Hochschild
+
 La possibilité de lisser ou de résoudre les singularités de $\mathcal{M}^\theta(\Lambda_{\Phi}, \mathbf{d})$ de manière polynomiale dépend de la dimension de l'espace d'obstruction à la déformation.
+
 * L'espace d'obstruction est régi par le second groupe de cohomologie de Hochschild de l'algèbre :
   $$\mathrm{HH}^2(\Lambda_{\Phi})$$
 * **Théorème de croissance d'obstruction (Démonstration pas à pas) :**
@@ -57,6 +65,7 @@ La possibilité de lisser ou de résoudre les singularités de $\mathcal{M}^\the
   $$\dim \mathrm{HH}^2(\Lambda_{\Phi}) \ge C e^{\gamma n}$$
 
 ### Étape E : Séparation Algorithmique et Impossibilité de $\mathbf{P} = \mathbf{NP}$
+
 1. Supposons qu'il existe un algorithme en temps polynomial (c'est-à-dire $\mathbf{P} = \mathbf{NP}$) capable de décider de la satisfiabilité de $\Phi$.
 2. Cet algorithme se traduirait géométriquement par la capacité à décider si l'espace de modules $\mathcal{M}^\theta(\Lambda_{\Phi}, \mathbf{d})$ est vide en calculant une résolution des singularités projective globale de degré polynomial.
 3. Une telle résolution implique d'évaluer ou d'annuler les classes d'obstruction dans $\mathrm{HH}^2(\Lambda_{\Phi})$ étape par étape.
