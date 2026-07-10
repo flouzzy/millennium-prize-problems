@@ -5,6 +5,7 @@ Dossier dédié à l'investigation et à la résolution de la **Conjecture de Ho
 ---
 
 ## 🔗 Ressources et Documents
+
 | Document | Description |
 | :--- | :--- |
 | [**Tableau de Bord**](../dashboard.md) | Suivi général de l'avancement des problèmes du millénaire. |
@@ -34,14 +35,19 @@ La conjecture de Hodge s'énonce ainsi :
 ## 2. Obstacles et Résultats Fondamentaux (Les Barrières)
 
 ### A. Le Théorème de Lefschetz (1,1)
+
 Démontré par Solomon Lefschetz, la conjecture est vraie pour $k=1$ (codimension 1, c'est-à-dire les diviseurs).
+
 * **Le verrou :** Pour $k > 1$, la correspondance entre les faisceaux analytiques cohérents et les diviseurs algébriques s'estompe, et il n'y a plus de relation directe simple via l'exponentielle de faisceaux ($0 \to \mathbb{Z} \to \mathcal{O}_X \to \mathcal{O}_X^* \to 0$).
 
 ### B. Le Contre-exemple d'Atiyah-Hirzebruch (Barrière Entière)
+
 La conjecture de Hodge est fausse si l'on remplace les coefficients rationnels $\mathbb{Q}$ par des coefficients entiers $\mathbb{Z}$. Atiyah et Hirzebruch (1961) ont construit des variétés projectives lisses possédant des classes de cohomologie entière de type $(k,k)$ qui ne peuvent pas être représentées par des cycles algébriques entiers en raison d'obstructions de torsion topologiques (opérations de Steenrod).
+
 * **Conséquence :** Toute preuve doit fondamentalement exploiter la structure rationnelle $\mathbb{Q}$ et annuler ou contourner la torsion.
 
 ### C. La Barrière Transcendante (Analytique vs Algébrique)
+
 Les classes de Hodge sont définies par des formes différentielles (qui dépendent de la structure complexe analytique de $X$), tandis que les cycles de Hodge doivent être construits algébriquement (via des équations polynomiales). Le passage du transcendant à l'algébrique requiert le contrôle des équations de Picard-Fuchs et de la locus de Hodge.
 
 ---
@@ -52,9 +58,9 @@ Pour démontrer la conjecture, nous suivrons les axes de recherche suivants :
 
 1. **Axe 1 : Faisceaux Cohérents et Complexes de Hochschild-Mitchell**
    Transposer les cycles algébriques en termes de complexes d'objets dans la catégorie dérivée des faisceaux cohérents $D^b(X)$. Les classes de Hodge seront identifiées à des classes de Chern d'objets parfaits, traduisant le problème topologique en un problème d'existence d'objets dans la catégorie dérivée.
-   
+
 2. **Axe 2 : Les Courants de Hodge et Analyse Kählérienne**
    Utiliser la théorie des courants de Lelong et l'équation de Monge-Ampère complexe pour régulariser les formes de Hodge et reconstruire des sous-variétés algébriques singulières à partir de courants fermés positifs.
-   
+
 3. **Axe 3 : La Dualité d'Amitsur et Invariants de Grothendieck**
    Formuler la conjecture de Hodge comme l'évanouissement d'une classe d'obstruction de Hochschild-Mitchell pour des foncteurs de réalisation motiviques.
