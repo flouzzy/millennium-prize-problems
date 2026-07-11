@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-11-18h"></a>[[2026-07-11 18:00]](dashboard.md#2026-07-11-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 13 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-07-11-14h"></a>[[2026-07-11 14:00]](dashboard.md#2026-07-11-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-07-10-14h"></a>[[2026-07-10 14:00]](dashboard.md#2026-07-10-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
