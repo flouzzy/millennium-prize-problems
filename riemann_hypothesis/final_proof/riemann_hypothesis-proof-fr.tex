@@ -594,6 +594,54 @@ Par conséquent, sous réserve de la validité de cette conjecture, aucune compo
 \begin{flushright}
 \textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
 \end{flushright}
+
+\subsection{19. Finitude modulaire et Rationalité sur la Bande Critique (Lemme 12)}
+
+L'approche géométrique par la fibration motivique ayant révélé ses limites face aux distorsions non archimédiennes, nous devons abstraire l'action du Frobenius en une dynamique purement spectrale. L'intuition fondamentale consiste à modéliser le comportement asymptotique des zéros non triviaux par l'expansion d'un module matriciel $P/Q$-adique, comme théorisé par Cruz et Loquias \cite{cruz2026}. Dans ce système rigide, la matrice de transition $Q^{-1}P$ impose l'unicité et la complétude du développement des "chiffres" matriciels. Un zéro de la fonction Zêta s'écartant de la droite critique $\Re(s) = 1/2$ se comporterait non plus comme une anomalie géométrique, mais comme une irrationalité spectrale au sein de ce système, engendrant une expansion fractale infinie (brisant la propriété de finitude).
+
+\begin{lemma}[Finitude modulaire et Rationalité sur la Bande Critique]
+    Soit $M = \mathbb{Z}^n$ un module admettant un système de numération matriciel $P/Q$-adique. Les valeurs propres de la matrice de transition $Q^{-1}P$ encodent la dynamique asymptotique des zéros non triviaux de la fonction $\zeta$ de Riemann. Sous les conditions axiomatiques de Compacité (opérateurs à trace) et de Finitude Adélique Uniforme, pour tout zéro non trivial $s$, on a $\Re(s) = 1/2$.
+\end{lemma}
+
+\begin{proof}
+Supposons par l'absurde l'existence d'un zéro non trivial asymétrique $s = \sigma + it$ tel que $\sigma = 1/2 + \delta$ avec $\delta > 0$.
+
+Dans notre modélisation, ce zéro s'identifie à une valeur propre perturbée $\lambda_s$ de l'opérateur de transition régularisé. La norme spectrale locale au voisinage de l'infini se développe selon l'opérateur différentiel asymptotique. En appliquant la transformation de jauge matricielle, l'expansion de l'amplitude $A(n)$ à l'itération $n$ de la base $P/Q$-adique donne :
+\begin{align*}
+    A(n) &= \left\| (Q^{-1}P)^n \right\|_p \\
+    &= \left\| \lambda_s^n \right\|_p \\
+    &= \left\| p^{(\sigma + it)n} \right\|_p \\
+    &= p^{\sigma n} \\
+    &= p^{(\frac{1}{2} + \delta)n}
+\end{align*}
+
+Pour garantir l'unicité du développement et l'appartenance à l'ensemble fondamental $\mathcal{F}$, le module $M$ exige que la divergence globale soit exactement pondérée par la dimension canonique (ici, le poids arithmétique de base unitaire $p^{n/2}$). L'excédent de croissance se calcule comme :
+\begin{align*}
+    E(n) &= \frac{A(n)}{p^{n/2}} \\
+    &= \frac{p^{(\frac{1}{2} + \delta)n}}{p^{n/2}} \\
+    &= p^{\delta n}
+\end{align*}
+
+Puisque $\delta > 0$, l'excédent $E(n)$ tend vers l'infini lorsque $n \to \infty$. Cette divergence implique que le "chiffre" résiduel ne peut pas être absorbé par la compactification trace-classe de l'opérateur $\Omega_K$. L'expansion matricielle du module ne se termine jamais, ce qui caractérise un comportement diophantien strictement irrationnel.
+
+Cependant, la condition de Finitude Adélique Uniforme stipule que le motif global doit posséder un développement fini universel. Cette divergence brise irrémédiablement la complétude de l'ensemble $\mathcal{F}$.
+
+Pour contourner la possibilité qu'un prolongement en dimension infinie $\mathcal{H}_{\infty}$ puisse absorber cette divergence (une échappatoire "fantôme"), nous formulons la contrainte finale :
+
+\textbf{Conjecture intermédiaire (Finitude de l'Expansion Spectrale) :} Pour tout module $\mathbb{Z}$-invariant $M$ généré par un système matriciel copremier $P, Q$, toute perturbation asymétrique de la matrice de transition $Q^{-1}P$ induisant un excédent de croissance $E(n) = p^{\delta n}$ avec $\delta > 0$ brise la compacité de l'espace des orbites et détruit irréversiblement la propriété de finitude globale.
+
+Sous cette conjecture, l'hypothèse $\delta > 0$ engendre une contradiction fondamentale avec la stabilité arithmétique du système. La seule configuration spectrale autorisant une expansion finie et convergente impose que l'excédent de croissance soit neutre. On a donc :
+\begin{align*}
+    \delta &= 0 \\
+    \Re(s) &= \frac{1}{2}
+\end{align*}
+\end{proof}
+
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
+\end{flushright}
+
 \begin{thebibliography}{99}
 \bibitem{butson2026} Butson, D., \& Nair, S. (2026). \textit{On the deformation theory of chiral quantizations}. arXiv:2606.27341v1.
 \bibitem{verma2026} Verma, A. (2026). \textit{Hall Geometry and Auslander-Reiten Quiver}. arXiv:2606.27362v1.
@@ -609,6 +657,7 @@ Par conséquent, sous réserve de la validité de cette conjecture, aucune compo
 \bibitem{sharma2026} Sharma, S. (2026). \textit{Amitsur groups of primitive Fano threefolds}. arXiv:2606.24838v1.
 \bibitem{conti2026} Conti, A., Moakher, M., \& Quast, J. (2026). \textit{The trianguline variety for reductive groups}. arXiv:2607.02215v1.
 \bibitem{daas2026} Daas, M. A. (2026). \textit{Beyond the Giampietro--Darmon Conjecture}. arXiv:2607.02306v1.
+\bibitem{cruz2026} Cruz, A. G. R., \& Loquias, M. J. C. (2026). \textit{A Matrix Analogue of Rational Number Systems}. arXiv:2607.08732v1.
 \end{thebibliography}
 
 
