@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-10-18h"></a>[[2026-07-10 18:00]](dashboard.md#2026-07-10-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 12 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-07-10-14h"></a>[[2026-07-10 14:00]](dashboard.md#2026-07-10-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-07-10-03h"></a>[[2026-07-10 03:00]](dashboard.md#2026-07-10-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Anjelo Gabriel R. Cruz, Manuel Joseph C. Loquias. Blueprint du Lemme 12 fixé. Statut : Planifié.
