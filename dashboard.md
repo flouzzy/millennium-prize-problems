@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-07-10-18h
+### 2026-07-11-03h
 
-- [[#2026-07-10-18h|2026-07-10 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 12 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- [[#2026-07-11-03h|2026-07-11 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Anjelo Gabriel R. Cruz, Manuel Joseph C. Loquias. Blueprint du Lemme 13 fixé. Statut : Planifié.
 
 ### 2026-07-10-14h
 
