@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-07-12-03h
+### 2026-07-11-18h
 
-- [[#2026-07-12-03h|2026-07-12 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yorick Fuhrmann, Kaustabh Mondal. Blueprint du Lemme 14 fixé. Statut : Planifié.
+- [[#2026-07-11-18h|2026-07-11 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 13 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 ### 2026-07-11-14h
 
