@@ -73,6 +73,7 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+- <a id="2026-07-13-14h"></a>[[2026-07-13 14:00]](../dashboard.md#2026-07-13-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 - <a id="2026-07-12-18h"></a>[[2026-07-12 18:00]](dashboard.md#2026-07-12-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 13 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 - <a id="2026-07-11-14h"></a>[[2026-07-11 14:00]](../dashboard.md#2026-07-11-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.

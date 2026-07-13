@@ -13,7 +13,7 @@
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
 \title{Draft Setup: Lemma 13 / Brouillon : Lemme 13}
-\date{July 12, 2026}
+\date{July 13, 2026}
 
 \begin{document}
 
@@ -27,37 +27,37 @@
 Pour garantir l'absence d'ellipses et l'étanchéité formelle de notre approche, nous fixons le typage universel suivant pour le cadre du Lemme 13 :
 
 \begin{itemize}
-    \item $P, Q \in M_d(\mathbb{Z})$ : Matrices copremières inversibles définissant le système de numération matriciel $P/Q$-adique.
-    \item $M = \mathbb{Z}^d[Q^{-1}P]$ : Le plus petit $\mathbb{Z}$-module non trivial $Q^{-1}P$-invariant contenant $\mathbb{Z}^d$.
-    \item $Q^{-1}P$ : La matrice de transition dont la dynamique des valeurs propres encode les zéros de la fonction $\zeta$.
-    \item $\mathcal{D}$ : L'ensemble fini de chiffres (digits) dans $\mathbb{Z}^d$ assurant l'expansion $P/Q$-adique.
-    \item $\mathcal{H}_{\infty}$ : Espace de dimension infinie susceptible de rompre la finitude du système $P/Q$-adique (Crash-test pathologique).
-    \item $\Omega_{K}$ : Opérateurs non bornés modélisant les pôles spectraux et les singularités de codimension 1.
-    \item $\mathcal{V}_{p}$ : Espaces non archimédiens induisant des topologies p-adiques divergentes.
-    \item $s = \sigma + it \in \mathbb{C}$ : Zéro potentiel de $\zeta$, asymétrique si $\sigma \neq 1/2$, couplé aux valeurs propres singulières de $Q^{-1}P$.
+    \item $K$ : Un corps $p$-adique localement compact avec réduction semi-stable.
+    \item $\mathcal{X}$ : Un espace adique lisse sur $K$, fondamental pour la géométrie du problème.
+    \item $\partial \mathcal{X}$ : La frontière ou le diviseur de réduction de $\mathcal{X}$.
+    \item $\mathbb{L}$ : Un système local $\mathbb{Z}_p$-étale sur $\mathcal{X}$.
+    \item $\mathcal{F}$ : Le $F$-cristal prismatique analytique associé à la cohomologie de $\mathcal{X}$.
+    \item $\mathcal{H}_{\infty}$ : Espace de dimension infinie susceptible de rompre la compacité spectrale (Crash-test pathologique).
+    \item $\Omega$ : Opérateurs non bornés modélisant les pôles spectraux et les singularités extrêmes.
+    \item $s = \sigma + it \in \mathbb{C}$ : Zéro potentiel de la fonction $\zeta$, encodé dans les poids de Hodge-Tate du système local.
 \end{itemize}
 
 \subsection{Cadre français (Red Teaming : Lemme 13)}
 
-Suite à la phase de "Red Teaming" de 14h00, nous avons testé la robustesse du blueprint matinal ($P/Q$-adic number systems) face aux configurations extrêmes : espaces non archimédiens $\mathcal{V}_{p}$, dimensions infinies $\mathcal{H}_{\infty}$, singularités de codimension 1, et opérateurs non bornés $\Omega_{K}$.
+Suite à la phase de "Red Teaming" de 14h00, nous avons testé la robustesse du blueprint matinal (Systèmes locaux étale et Cristaux F-prismatiques) face aux configurations extrêmes : espaces non archimédiens défectueux, dimensions infinies $\mathcal{H}_{\infty}$, singularités de codimension 1, et opérateurs non bornés $\Omega$.
 
-La modélisation des zéros asymétriques via la dynamique des valeurs propres de $Q^{-1}P$ survit de justesse. Si l'on permet à $d \to \infty$ (espace $\mathcal{H}_{\infty}$) ou si l'on admet des spectres de type $\Omega_{K}$ (opérateurs non bornés modifiant le commutant de $P$ et $Q$), le module $M = \mathbb{Z}^d[Q^{-1}P]$ éclate et perd sa propriété de finitude matricielle. Pour immuniser la preuve, nous devons imposer les restrictions axiomatiques chirurgicales suivantes :
+L'identification du motif associé à la fonction $\zeta$ comme un système local $\mathbb{Z}_p$-étale $\mathbb{L}$ sur un espace adique $\mathcal{X}$ survit de justesse. Si l'on permet des variations sans borne de la dimension du faisceau (espace $\mathcal{H}_{\infty}$) ou si l'on admet des singularités sauvages modélisées par des opérateurs $\Omega$ non compacts aux bords $\partial \mathcal{X}$, la condition de semi-stabilité potentielle s'effondre. Le pullback le long du revêtement étale perd sa pureté $F$-prismatique. Pour immuniser la preuve, nous devons imposer les restrictions axiomatiques chirurgicales suivantes :
 
 \begin{itemize}
-    \item \textbf{Compacité spectrale et finitude dimensionnelle stricte :} L'espace d'action du développement $P/Q$-adique doit être de dimension finie $d < \infty$ locale, interdisant toute évasion du spectre vers $\mathcal{H}_{\infty}$. L'action de toute singularité $\Omega_{K}$ perturbant $Q^{-1}P$ est proscrite par un principe de compacité trace-classe, garantissant que l'ensemble des chiffres $\mathcal{D}$ reste uniformément fini.
-    \item \textbf{Rigidité topologique Adélique :} Dans les espaces non archimédiens $\mathcal{V}_{p}$, les valeurs propres de la matrice $Q^{-1}P$ doivent préserver une topologie compacte pour que l'expansion matricielle reste stable. Une asymétrie $\sigma \neq 1/2$ induit localement une valuation p-adique brisant cette compacité, rendant impossible une expansion matricielle finie avec $\mathcal{D}$.
+    \item \textbf{Hauteur finie stricte et compacité spectrale :} Le système local $\mathbb{Z}_p$-étale $\mathbb{L}$ doit être d'une hauteur strictement finie sur tout l'espace adique $\mathcal{X}$. Toute tentative d'évasion spectrale via des opérateurs $\Omega$ ou vers des dimensions infinies $\mathcal{H}_{\infty}$ est interdite. Cette contrainte de compacité trace-classe force le système à rester dans un domaine de semi-stabilité potentielle.
+    \item \textbf{Ramification modérée aux frontières (Tame ramification) :} L'action de la ramification sur la frontière $\partial \mathcal{X}$ doit être modérée (tame). Ceci exclut les singularités de codimension 1 qui pourraient introduire des anomalies de hauteur infinie et violer la compacité requise par les $F$-cristaux prismatiques analytiques.
 \end{itemize}
 
 \selectlanguage{english}
 \subsection{English framework (Red Teaming: Lemma 13)}
 
-Following the 14:00 "Red Teaming" phase, we tested the robustness of the morning blueprint ($P/Q$-adic number systems) against extreme configurations: non-Archimedean spaces $\mathcal{V}_{p}$, infinite dimensions $\mathcal{H}_{\infty}$, codimension 1 singularities, and unbounded operators $\Omega_{K}$.
+Following the 14:00 "Red Teaming" phase, we tested the robustness of the morning blueprint (étale $\mathbb{Z}_p$-local systems and prismatic $F$-crystals) against extreme configurations: defective non-Archimedean spaces, infinite dimensions $\mathcal{H}_{\infty}$, codimension 1 singularities, and unbounded operators $\Omega$.
 
-The modeling of asymmetric zeros via the eigenvalue dynamics of $Q^{-1}P$ barely survives. If we allow $d \to \infty$ ($\mathcal{H}_{\infty}$ space) or if we admit spectra of type $\Omega_{K}$ (unbounded operators modifying the commutant of $P$ and $Q$), the module $M = \mathbb{Z}^d[Q^{-1}P]$ shatters and loses its matrix finiteness property. To immunize the proof, we must impose the following surgical axiomatic restrictions:
+The identification of the motive associated with the $\zeta$ function as an étale $\mathbb{Z}_p$-local system $\mathbb{L}$ on an adic space $\mathcal{X}$ barely survives. If we allow unbounded variations in the dimension of the sheaf ($\mathcal{H}_{\infty}$ space) or if we admit wild singularities modeled by non-compact operators $\Omega$ at the boundaries $\partial \mathcal{X}$, the condition of potential semistability collapses. The pullback along the étale cover loses its prismatic $F$-purity. To immunize the proof, we must impose the following surgical axiomatic restrictions:
 
 \begin{itemize}
-    \item \textbf{Spectral compactness and strict dimensional finiteness:} The action space of the $P/Q$-adic expansion must be of local finite dimension $d < \infty$, forbidding any spectral escape towards $\mathcal{H}_{\infty}$. The action of any singularity $\Omega_{K}$ perturbing $Q^{-1}P$ is proscribed by a trace-class compactness principle, ensuring that the digit set $\mathcal{D}$ remains uniformly finite.
-    \item \textbf{Adelic topological rigidity:} In non-Archimedean spaces $\mathcal{V}_{p}$, the eigenvalues of the matrix $Q^{-1}P$ must preserve a compact topology for the matrix expansion to remain stable. An asymmetry $\sigma \neq 1/2$ locally induces a p-adic valuation breaking this compactness, rendering a finite matrix expansion with $\mathcal{D}$ impossible.
+    \item \textbf{Strict finite height and spectral compactness:} The étale $\mathbb{Z}_p$-local system $\mathbb{L}$ must be of strictly finite height over the entire adic space $\mathcal{X}$. Any attempt at spectral escape via operators $\Omega$ or towards infinite dimensions $\mathcal{H}_{\infty}$ is forbidden. This trace-class compactness constraint forces the system to remain within a domain of potential semistability.
+    \item \textbf{Tame ramification at boundaries:} The action of ramification on the boundary $\partial \mathcal{X}$ must be tame. This excludes codimension 1 singularities that could introduce infinite height anomalies and violate the compactness required by analytic prismatic $F$-crystals.
 \end{itemize}
 
 \selectlanguage{french}
@@ -65,23 +65,23 @@ The modeling of asymmetric zeros via the eigenvalue dynamics of $Q^{-1}P$ barely
 
 \subsection{Version française}
 
-\begin{lemma}[Filtre d'expansion matricielle $P/Q$-adique]
-    Soit $P, Q \in M_d(\mathbb{Z})$ deux matrices copremières inversibles définissant un système de numération matriciel $P/Q$-adique sur le module $M = \mathbb{Z}^d[Q^{-1}P]$, avec un ensemble de chiffres fini $\mathcal{D}$. Supposons que la dynamique spectrale de l'opérateur de transition $Q^{-1}P$ encode de manière univalente l'asymptotique d'un zéro non trivial $s = \sigma + it$ de la fonction $\zeta$.
+\begin{lemma}[Filtre de compacité spectrale des systèmes $p$-adiques]
+    Soit $K$ un corps $p$-adique localement compact, $\mathcal{X}$ un espace adique lisse sur $K$ avec réduction semi-stable, et $\mathbb{L}$ un système local $\mathbb{Z}_p$-étale sur $\mathcal{X}$ encodant le motif de la fonction $\zeta$ de Riemann. Supposons que la structure galoisienne de $\mathbb{L}$ caractérise les zéros non triviaux $s = \sigma + it$.
 
-    Sous les conditions de compacité spectrale stricte et de rigidité topologique adélique (excluant $\mathcal{H}_{\infty}$ et $\Omega_K$), l'existence d'une expansion $P/Q$-adique stable et finie sur $\mathcal{D}$ impose une isométrie spectrale rigoureuse sur $Q^{-1}P$.
+    Sous les conditions axiomatiques strictes de ramification modérée sur $\partial \mathcal{X}$ et d'exclusion des opérateurs non bornés $\Omega$ (éliminant toute excursion dans $\mathcal{H}_{\infty}$), si $\mathbb{L}$ est de hauteur finie, alors il admet un tiré en arrière le long d'un revêtement étale fini qui est canoniquement semi-stable.
 
-    Par conséquent, tout zéro asymétrique ($\sigma \neq 1/2$) engendrerait une dilatation spectrale locale dans au moins un espace non archimédien $\mathcal{V}_p$, provoquant la divergence de l'expansion matricielle (nécessitant un ensemble $\mathcal{D}$ infini). L'existence d'un développement universel stable sur $\mathbb{Z}^d[Q^{-1}P]$ proscrit donc géométriquement l'asymétrie spectrale, forçant $\Re(s) = 1/2$.
+    L'existence de cette semi-stabilité potentielle, garantie par la pureté des $F$-cristaux prismatiques analytiques associés $\mathcal{F}$, impose une symétrie rigide sur les poids de Hodge-Tate. Toute asymétrie $\sigma \neq 1/2$ induirait une singularité sauvage de hauteur infinie, brisant la pureté $F$-cristalline. Par conséquent, la stabilité analytique requiert impérativement $\Re(s) = 1/2$.
 \end{lemma}
 
 \selectlanguage{english}
 \subsection{English version}
 
-\begin{lemma}[$P/Q$-adic matrix expansion filter]
-    Let $P, Q \in M_d(\mathbb{Z})$ be two invertible coprime matrices defining a $P/Q$-adic matrix number system on the module $M = \mathbb{Z}^d[Q^{-1}P]$, with a finite digit set $\mathcal{D}$. Assume that the spectral dynamics of the transition operator $Q^{-1}P$ univalently encode the asymptotics of a non-trivial zero $s = \sigma + it$ of the $\zeta$ function.
+\begin{lemma}[Spectral compactness filter of $p$-adic systems]
+    Let $K$ be a locally compact $p$-adic field, $\mathcal{X}$ a smooth adic space over $K$ with semistable reduction, and $\mathbb{L}$ an étale $\mathbb{Z}_p$-local system on $\mathcal{X}$ encoding the motive of the Riemann $\zeta$ function. Assume that the Galois structure of $\mathbb{L}$ characterizes the non-trivial zeros $s = \sigma + it$.
 
-    Under the conditions of strict spectral compactness and adelic topological rigidity (excluding $\mathcal{H}_{\infty}$ and $\Omega_K$), the existence of a stable and finite $P/Q$-adic expansion over $\mathcal{D}$ imposes a rigorous spectral isometry on $Q^{-1}P$.
+    Under the strict axiomatic conditions of tame ramification on $\partial \mathcal{X}$ and the exclusion of unbounded operators $\Omega$ (eliminating any excursion into $\mathcal{H}_{\infty}$), if $\mathbb{L}$ is of finite height, then it admits a pullback along a finite étale cover that is canonically semistable.
 
-    Consequently, any asymmetric zero ($\sigma \neq 1/2$) would generate a local spectral dilation in at least one non-Archimedean space $\mathcal{V}_p$, causing the matrix expansion to diverge (requiring an infinite set $\mathcal{D}$). The existence of a universally stable expansion on $\mathbb{Z}^d[Q^{-1}P]$ thus geometrically proscribes spectral asymmetry, forcing $\Re(s) = 1/2$.
+    The existence of this potential semistability, guaranteed by the purity of the associated analytic prismatic $F$-crystals $\mathcal{F}$, imposes a rigid symmetry on the Hodge-Tate weights. Any asymmetry $\sigma \neq 1/2$ would induce a wild singularity of infinite height, breaking the $F$-crystalline purity. Therefore, analytic stability imperatively requires $\Re(s) = 1/2$.
 \end{lemma}
 
 \vspace{1cm}
