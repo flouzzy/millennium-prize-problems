@@ -18,7 +18,7 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
-- <a id="2026-07-14-18h"></a>[[2026-07-14 18:00]](dashboard.md#2026-07-14-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 14 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- <a id="2026-07-15-03h"></a>[[2026-07-15 03:00]](dashboard.md#2026-07-15-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Benjamin Durkan, Timothy Page. Blueprint du Lemme 15 fixé. Statut : Planifié.
 
 - <a id="2026-07-14-03h"></a>[[2026-07-14 03:00]](dashboard.md#2026-07-14-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yorick Fuhrmann. Blueprint du Lemme 14 fixé. Statut : Planifié.
 
