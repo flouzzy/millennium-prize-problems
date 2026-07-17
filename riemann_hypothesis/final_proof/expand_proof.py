@@ -77,6 +77,8 @@ content = content.replace(r"\subsection{8. Fonctorialité, Caractères de Dirich
 content = content.replace(r"\subsection{8. Functoriality, Dirichlet Characters and Explicit Formulas}", english_deep_expansion + "\n" + r"\subsection{8. Functoriality, Dirichlet Characters and Explicit Formulas}")
 
 # Fix babel tags again in case
+content = content.replace(r"\addto\extrasfrench{", r"\addto\captionsfrench{")
+content = content.replace(r"\addto\extrasenglish{", r"\addto\captionsenglish{")
 content = fix_babel_content(content)
 content = content.replace(r"\addto\captionsfrench{", r"\addto\extrasfrench{")
 content = content.replace(r"\addto\captionsenglish{", r"\addto\extrasenglish{")
