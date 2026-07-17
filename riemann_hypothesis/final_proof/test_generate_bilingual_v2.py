@@ -15,7 +15,7 @@ class TestGenerateBilingualV2(unittest.TestCase):
         if 'generate_bilingual_v2' in sys.modules:
             importlib.reload(sys.modules['generate_bilingual_v2'])
         else:
-            import generate_bilingual_v2
+            importlib.import_module('generate_bilingual_v2')
 
         # Verify open was called with correct arguments
         mock_file.assert_called_once_with(

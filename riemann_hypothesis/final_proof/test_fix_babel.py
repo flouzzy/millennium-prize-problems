@@ -1,4 +1,3 @@
-import pytest
 from fix_babel import fix_babel_content
 
 def test_fix_babel_happy_path():
