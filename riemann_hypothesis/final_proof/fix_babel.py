@@ -1,5 +1,4 @@
 import os
-import re
 import sys
 
 def fix_babel_content(content):
