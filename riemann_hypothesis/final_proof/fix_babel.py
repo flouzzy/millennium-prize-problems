@@ -1,5 +1,5 @@
-import re
 import os
+import sys
 
 def fix_babel_content(content):
     # Regex needs to match the \addto\captions... and its following curly brace block
