@@ -1,5 +1,4 @@
 import os
-import re
 from fix_babel import fix_babel_content
 
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'r', encoding='utf-8') as f:
