@@ -19,6 +19,7 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 ## Historique d'avancement
 
 
+- <a id="2026-07-18-18h"></a>[[2026-07-18 18:00]](dashboard.md#2026-07-18-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 18 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 - <a id="2026-07-18-03h"></a>[[2026-07-18 03:00]](dashboard.md#2026-07-18-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dylan Butson, Sujay Nair. Blueprint du Lemme 18 fixé. Statut : Planifié.
 - <a id="2026-07-17-18h"></a>[[2026-07-17 18:00]](dashboard.md#2026-07-17-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 17 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 - <a id="2026-07-17-14h"></a>[[2026-07-17 14:00]](dashboard.md#2026-07-17-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
