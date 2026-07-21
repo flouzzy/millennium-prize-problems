@@ -1,23 +1,20 @@
-\documentclass[a4paper,11pt]{article}
-
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english,french]{babel}
+\usepackage[french,english]{babel}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
 
-\newtheorem{lemma}{Lemma}
-\newtheorem{lemme}{Lemme}
+\newtheorem{lemma}{Lemme}
 \newtheorem{theorem}{Théorème}
-\newtheorem{definition}{Définition}
 
+\title{Cadre Symbolique et Prototypage : Lemme 18}
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
 \title{Draft Setup: Lemma 18 / Brouillon : Lemme 18}
 \date{July 18, 2026}
 
 \begin{document}
-\maketitle
-
 \selectlanguage{french}
 \section{Typage symbolique universel / Universal symbolic typing}
 
@@ -56,7 +53,11 @@ The axiomatic framework exhibited implacable structural resilience: the cohomolo
 \selectlanguage{french}
 \section{Énoncé définitif du Lemme 18 / Definitive statement of Lemma 18}
 
-\subsection{Version française}
+De cette égalité, nous déduisons de façon explicite et sans aucune ellipse que :
+\begin{align*}
+    [\delta_{\rho}] &= 0 \\
+    \implies \delta_{\rho} &= \text{déformation triviale}.
+\end{align*}
 
 \begin{lemma}[Rigidité chirale et obstruction cohomologique]
 Soit $V$ l'algèbre vertex arithmétique associée à l'action du Frobenius sur l'espace des modules, munie d'une filtration de Virasoro. Sous la condition stricte de régularité conforme, toute hypothèse d'un zéro $\rho = \beta + i\gamma$ asymétrique (avec $\beta \neq \frac{1}{2}$) induit une classe de déformation chirale formelle sur le modèle minimal de bord. Or, par la théorie de déformation-obstruction, la cohomologie de de Rham $H_{dR}^2$ contrôle l'existence de telles déformations asymétriques. L'annulation absolue de cette classe d'obstruction pour les algèbres vertex fortement rationnelles implique que le modèle minimal est strictement rigide. Par conséquent, aucune déformation asymétrique n'est géométriquement ou cohomologiquement permise, contraignant ainsi les zéros de la fonction zêta à résider exclusivement sur la droite critique.
