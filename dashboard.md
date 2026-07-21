@@ -11,7 +11,7 @@
 
 ### 2026-07-19-03h
 
-- [[#2026-07-19-03h|2026-07-19 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 19 fixé. Statut : Planifié.
+- [[#2026-07-19-03h|2026-07-19 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Kaustabh Mondal, Yorick Fuhrmann. Blueprint du Lemme 19 fixé. Statut : Planifié.
 
 ### 2026-07-18-03h
 
