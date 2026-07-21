@@ -1,23 +1,20 @@
-\documentclass[a4paper,11pt]{article}
-
+\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english,french]{babel}
+\usepackage[french,english]{babel}
 \usepackage{amsmath,amssymb,amsthm}
-\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
 
-\newtheorem{lemma}{Lemma}
-\newtheorem{lemme}{Lemme}
+\newtheorem{lemma}{Lemme}
 \newtheorem{theorem}{Théorème}
-\newtheorem{definition}{Définition}
 
+\title{Cadre Symbolique et Prototypage : Lemme 18}
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
 \title{Draft Setup: Lemma 18 / Brouillon : Lemme 18}
 \date{July 18, 2026}
 
 \begin{document}
-\maketitle
-
 \selectlanguage{french}
 \section{Typage symbolique universel / Universal symbolic typing}
 
@@ -57,7 +54,11 @@ The algebraic framework demonstrated great robustness due to the intrinsic rigid
 \selectlanguage{french}
 \section{Énoncé définitif du Lemme 18 / Definitive statement of Lemma 18}
 
-\subsection{Version française}
+De cette égalité, nous déduisons de façon explicite et sans aucune ellipse que :
+\begin{align*}
+    [\delta_{\rho}] &= 0 \\
+    \implies \delta_{\rho} &= \text{déformation triviale}.
+\end{align*}
 
 \begin{lemma}[Rigidité chirale et obstruction cohomologique]
 Soit $\mathcal{V}$ la quantification chirale associée à l'action du Frobenius sur l'espace arithmétique $X$. Sous la condition de régularité asymptotique et de croissance modérée, l'algèbre $\mathcal{V}$ se comporte comme un modèle minimal de Virasoro absolument rigide. Toute asymétrie spectrale, correspondant à l'hypothèse d'un zéro $\rho = \beta + i\gamma$ avec $\beta \neq \frac{1}{2}$, se traduit par une classe de déformation non triviale de $\mathcal{V}$. Or, la cohomologie de Rham $H_{dR}^\bullet(\mathcal{V})$ obstrue rigoureusement toute telle déformation pour ces modèles minimaux. Par conséquent, aucune déformation asymétrique n'est cohomologiquement admissible, contraignant géométriquement les zéros de la fonction zêta à résider sur la droite critique.
@@ -74,5 +75,9 @@ Let $\mathcal{V}$ be the chiral quantization associated with the Frobenius actio
 \begin{flushright}
 \textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
 \end{flushright}
+
+\begin{thebibliography}{9}
+\bibitem{ButsonNair2026} Butson, D., \& Nair, S. (2026). On the deformation theory of chiral quantizations. arXiv:2606.27341v1.
+\end{thebibliography}
 
 \end{document}
