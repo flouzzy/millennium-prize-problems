@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english, french]{babel}
+\usepackage{amsmath, amssymb, amsthm}
+
+\newtheorem{lemma}{Lemme}
+\newtheorem{definition}{Définition}
+
+\author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
+\title{Draft Setup - Lemma 19 : Gribov-Zwanziger Deformation}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\selectlanguage{french}
+\section*{Cadre Symbolique et Typage (FR)}
+
+Afin de garantir l'immunité du Lemme 19 face aux pathologies des espaces en dimension infinie et des singularités non archimédiennes (notamment les opérateurs non bornés sur des espaces non compacts), nous restreignons rigoureusement le cadre axiomatique. L'espace de base doit satisfaire une condition stricte de compacité topologique et l'opérateur de déformation doit être uniformément borné.
+
+\begin{itemize}
+    \item $K$ : Un corps local non archimédien (typiquement une extension finie de $\mathbb{Q}_p$).
+    \item $X$ : Un espace analytique non archimédien au sens de Berkovich sur $K$, supposé \textbf{strictement compact} pour éviter les fuites spectrales à l'infini.
+    \item $\Delta_{NA} : L^2(X) \to L^2(X)$ : L'opérateur laplacien non archimédien, défini sur un domaine dense $\mathcal{D}(\Delta_{NA}) \subset L^2(X)$.
+    \item $\mathcal{G}_\lambda$ : L'opérateur de déformation localisée de Gribov-Zwanziger, paramétré par $\lambda \in \mathbb{R}^+$. Nous imposons que $\mathcal{G}_\lambda$ soit un opérateur \textbf{borné} et \textbf{strictement mesurable}.
+    \item $\Delta(\lambda) = \Delta_{NA} + \mathcal{G}_\lambda$ : L'opérateur hamiltonien déformé.
+    \item $\mathrm{Sp}(\Delta(\lambda))$ : Le spectre de l'opérateur $\Delta(\lambda)$.
+    \item $\delta > 0$ : Le trou spectral (spectral gap), défini comme l'infimum du spectre strictement positif.
+\end{itemize}
+
+\begin{lemma}[Déformation de Gribov-Zwanziger et Trou Spectral]
+Soit $X$ un espace analytique non archimédien strictement compact sur un corps local $K$. Soit $\Delta_{NA}$ le laplacien non archimédien sur $L^2(X)$. Pour tout opérateur de déformation $\mathcal{G}_\lambda$ borné et strictement mesurable induisant le hamiltonien déformé $\Delta(\lambda) = \Delta_{NA} + \mathcal{G}_\lambda$, il existe un paramètre critique $\lambda_c > 0$ tel que pour tout $\lambda > \lambda_c$, le trou spectral de $\Delta(\lambda)$ est strictement minoré :
+\begin{equation*}
+    \inf \big( \mathrm{Sp}(\Delta(\lambda)) \setminus \{0\} \big) \geq \delta(\lambda) > 0.
+\end{equation*}
+Cette minoration stricte assure la séparation des modes de plus basse énergie, contrôlant ainsi les zéros associés au complexe cohomologique.
+\end{lemma}
+
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
+\end{flushright}
+
+\selectlanguage{english}
+\section*{Symbolic Framework and Typing (EN)}
+
+To ensure the immunity of Lemma 19 against pathologies in infinite-dimensional spaces and non-Archimedean singularities (notably unbounded operators on non-compact spaces), we rigorously restrict the axiomatic framework. The base space must satisfy a strict topological compactness condition, and the deformation operator must be uniformly bounded.
+
+\begin{itemize}
+    \item $K$: A non-Archimedean local field (typically a finite extension of $\mathbb{Q}_p$).
+    \item $X$: A non-Archimedean analytic space in the sense of Berkovich over $K$, assumed to be \textbf{strictly compact} to prevent spectral leakage to infinity.
+    \item $\Delta_{NA} : L^2(X) \to L^2(X)$: The non-Archimedean Laplacian operator, defined on a dense domain $\mathcal{D}(\Delta_{NA}) \subset L^2(X)$.
+    \item $\mathcal{G}_\lambda$: The localized Gribov-Zwanziger deformation operator, parameterized by $\lambda \in \mathbb{R}^+$. We require that $\mathcal{G}_\lambda$ is a \textbf{bounded} and \textbf{strictly measurable} operator.
+    \item $\Delta(\lambda) = \Delta_{NA} + \mathcal{G}_\lambda$: The deformed Hamiltonian operator.
+    \item $\mathrm{Sp}(\Delta(\lambda))$: The spectrum of the operator $\Delta(\lambda)$.
+    \item $\delta > 0$: The spectral gap, defined as the infimum of the strictly positive spectrum.
+\end{itemize}
+
+\begin{lemma}[Gribov-Zwanziger Deformation and Spectral Gap]
+Let $X$ be a strictly compact non-Archimedean analytic space over a local field $K$. Let $\Delta_{NA}$ be the non-Archimedean Laplacian on $L^2(X)$. For any bounded and strictly measurable deformation operator $\mathcal{G}_\lambda$ inducing the deformed Hamiltonian $\Delta(\lambda) = \Delta_{NA} + \mathcal{G}_\lambda$, there exists a critical parameter $\lambda_c > 0$ such that for all $\lambda > \lambda_c$, the spectral gap of $\Delta(\lambda)$ is strictly bounded below:
+\begin{equation*}
+    \inf \big( \mathrm{Sp}(\Delta(\lambda)) \setminus \{0\} \big) \geq \delta(\lambda) > 0.
+\end{equation*}
+This strict lower bound ensures the separation of the lowest energy modes, thereby controlling the zeros associated with the cohomological complex.
+\end{lemma}
+
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
+\end{flushright}
+
+\end{document}
