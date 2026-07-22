@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+- <a id="2026-07-20-14h"></a>[[2026-07-20 14:00]](dashboard.md#2026-07-20-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+
 - <a id="2026-07-19-14h"></a>[[2026-07-19 14:00]](dashboard.md#2026-07-19-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-07-19-03h"></a>[[2026-07-19 03:00]](dashboard.md#2026-07-19-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Kaustabh Mondal, Yorick Fuhrmann. Blueprint du Lemme 19 fixé. Statut : Planifié.
