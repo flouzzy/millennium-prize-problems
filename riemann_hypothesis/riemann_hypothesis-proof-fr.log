@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.22)  22 JUL 2026 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.23)  23 JUL 2026 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**riemann_hypothesis/riemann_hypothesis-proof-fr.tex
-(./riemann_hypothesis/riemann_hypothesis-proof-fr.tex
+**riemann_hypothesis-proof-fr.tex
+(./riemann_hypothesis-proof-fr.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -407,7 +407,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box54
 )
-(riemann_hypothesis/riemann_hypothesis-proof-fr.aux)
+(./riemann_hypothesis-proof-fr.aux)
 \openout1 = `riemann_hypothesis-proof-fr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -541,40 +541,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 337.
 
 [8] [9] [10] [11]
-
-LaTeX Warning: Citation `ray2026average' on page 12 undefined on input line 452
-.
-
-
-LaTeX Warning: Citation `deng2026stability' on page 12 undefined on input line
-452.
-
-
 Overfull \hbox (34.11993pt too wide) detected at line 456
 []
  []
 
-[12] [13] (riemann_hypothesis/riemann_hypothesis-proof-fr.aux)
+[12] [13] [14] [15] [16] (./riemann_hypothesis-proof-fr.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  )
 Here is how much of TeX's memory you used:
- 14037 strings out of 476153
- 223041 string characters out of 5794326
- 1935975 words of memory out of 5000000
- 35502 multiletter control sequences out of 15000+600000
- 661318 words of font info for 236 fonts, out of 8000000 for 9000
+ 14074 strings out of 476153
+ 223352 string characters out of 5794326
+ 1936975 words of memory out of 5000000
+ 35514 multiletter control sequences out of 15000+600000
+ 662253 words of font info for 244 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 83i,11n,93p,1294b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,11n,93p,1275b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></us
 r/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/pu
@@ -591,10 +575,9 @@ share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public
 /type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on riemann_hypothesis/riemann_hypothesis-proof-fr.pdf (13 pages,
- 443133 bytes).
+Output written on riemann_hypothesis-proof-fr.pdf (16 pages, 459783 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 59489 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 338 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 61577 words of extra memory for PDF output out of 61914 (max. 10000000)

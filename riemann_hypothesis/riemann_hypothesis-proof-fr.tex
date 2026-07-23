@@ -511,7 +511,43 @@ L'axe de symétrie (la droite critique) s'impose non pas comme une borne analyti
 \textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
 \end{flushright}
 
+
+\section{Preuve du Lemme 21 : Surfaces Déterminantales et Courbes Hyperelliptiques}
+
+L'intuition derrière cette approche est née de la volonté de transcender les impasses liées aux méthodes fonctionnelles pures et aux fibrations motiviques, qui tendent à s'effondrer sous le poids des singularités locales. L'idée est de géométriser complètement l'asymétrie potentielle des zéros de la fonction $\zeta$. En plongeant ces zéros au sein d'une structure algébrique rigide -- ici, une surface déterminantale quartique abritant des courbes hyperelliptiques -- nous forçons l'arithmétique à se plier aux contraintes de la géométrie algébrique. J'ai été particulièrement inspiré par l'élégance avec laquelle les propriétés diophantiennes, lorsqu'elles sont plongées dans des espaces de modules réguliers, refusent toute anomalie. L'espoir est que si un zéro quitte la droite critique, sa trace géométrique créera une singularité inacceptable sur la surface quartique.
+
+Considérons $K$ un corps local compact. Soit $\mathcal{S}_4$ une surface déterminantale quartique dont le schéma de Hilbert est strictement régulier. D'après les travaux de Castorena et Vite \cite{castorena2026curves}, l'étude des systèmes linéaires sur $\mathcal{S}_4$ nous assure un comportement lisse exceptionnel pour les courbes contenues dans cette surface.
+
+Soit $C \subset \mathcal{S}_4$ une famille de courbes hyperelliptiques d'équation affine :
+\begin{equation*}
+C : y^2 = f(x)
+\end{equation*}
+où $f \in K[x]$ est un polynôme de degré $2g+1$.
+
+Supposons qu'un zéro non trivial de la fonction Zêta, noté $\rho = \beta + i\tau$ avec $\beta \neq \frac{1}{2}$, soit plongé comme un point de torsion rationnelle $P_\rho \in J(C)(K)$ dans la jacobienne de $C$.
+D'après le théorème de Nagell-Lutz généralisé pour les courbes hyperelliptiques (théorème de Grant), les coordonnées d'un tel point de torsion doivent satisfaire des conditions d'intégralité strictes. Plus précisément, pour un point $P = (x, y)$, la valuation de la coordonnée $y$ doit diviser le discriminant de la courbe.
+
+Cependant, pour relier explicitement la partie réelle $\beta$ de notre zéro analytique $\rho$ à l'ordre de torsion du point géométrique $P_\rho$, nous devons évaluer l'accouplement de hauteur canonique $\hat{h}(P_\rho)$ sur la jacobienne. Par définition de l'accouplement global :
+\begin{align*}
+\hat{h}(P_\rho) &= \sum_{v \in M_K} \hat{\lambda}_v(P_\rho)
+\end{align*}
+où $\hat{\lambda}_v$ sont les fonctions de hauteur locale.
+
+C'est ici que l'approche rencontre un obstacle majeur. Afin de prouver que l'asymétrie $\beta \neq \frac{1}{2}$ force la hauteur locale à devenir non nulle, violant ainsi l'hypothèse de torsion, il est impératif de construire un isomorphisme explicite entre l'espace des paramètres spectraux analytiques des zéros et l'espace des modules des courbes $C$ sur $\mathcal{S}_4$. Cette transition algébrico-analytique n'est pas trivialement couverte par la littérature actuelle de Mahajan et Sanghi \cite{mahajan2026weighted}. Je me refuse d'introduire un pont fantôme pour masquer ce saut conceptuel.
+
+Par conséquent, j'interromps la preuve algébrique ici pour isoler le maillon manquant sous forme de conjecture intermédiaire.
+
+\textbf{Conjecture Intermédiaire :}
+Il existe un morphisme analytique injectif liant la composante réelle $\beta$ d'un zéro $\rho$ de la fonction zêta à la composante archimédienne de la hauteur locale $\hat{\lambda}_\infty(P_\rho)$ sur le système linéaire $\mathcal{D}(\mathcal{S}_4)$, de sorte que si $\beta \neq \frac{1}{2}$, alors $\hat{\lambda}_\infty(P_\rho) > 0$.
+
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
+\end{flushright}
+
 \begin{thebibliography}{99}
+\bibitem{mahajan2026weighted} J. Mahajan and A. Sanghi, \textit{Weighted Fruit Diophantine Equations and Hyperelliptic Curves}, arXiv:2606.27322v1, 2026.
+\bibitem{castorena2026curves} A. Castorena and M. Vite, \textit{Curves contained in a quartic determinantal surface containing a line}, arXiv:2606.27303v1, 2026.
 \bibitem{deng2026stability} T. Deng and D. She, \textit{Stability of the exterior cube $\gamma$-factors for $\mathrm{GL}(6)$}, arXiv:2606.28091v1, 2026.
 \bibitem{ray2026average} A. Ray and M. Ray, \textit{Average divisibility in character tables of $\mathrm{GL}_2(\mathbb{F}_q)$}, arXiv:2606.28085v1, 2026.
 \bibitem{deligne1974} Deligne, P. (1974). \textit{La conjecture de Weil : I}. Publications Mathématiques de l'IHÉS, 43, 273-307.
