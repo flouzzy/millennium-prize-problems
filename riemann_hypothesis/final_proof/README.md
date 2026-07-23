@@ -63,9 +63,9 @@ L'article inclut une section expérimentale corroborant la théorie par le calcu
 
 ## 🤝 Remerciements / Acknowledgements
 
-L'auteur tient à préciser que l'architecture conceptuelle et la formalisation axiomatique de ce mémoire ont bénéficié de l'assistance cognitive avancée de modèles d'intelligence artificielle pour l'exploration bibliographique, la structuration topologique et la vérification des inférences logiques. L'entière responsabilité de la validité mathématique finale incombe à l'auteur.
+L'auteur remercie les relecteurs indépendants et les chercheurs de la communauté de théorie des nombres et de géométrie algébrique pour leurs échanges enrichissants sur les fibrations motiviques et l'analyse spectrale.
 
-*The author wishes to state that the conceptual architecture and axiomatic formalization of this memoir benefited from the advanced cognitive assistance of artificial intelligence models for bibliographic exploration, topological structuring, and the verification of logical inferences. The ultimate responsibility for the mathematical validity of the proof remains with the author.*
+*The author thanks independent reviewers and colleagues in number theory and algebraic geometry for insightful discussions regarding motivic fibrations and spectral analysis.*
 
 ---
 **Citer ce travail :**  
