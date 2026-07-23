@@ -1,7 +1,9 @@
+import unittest
 from fix_babel import fix_babel_content
 
-def test_fix_babel_happy_path():
-    content = r"""\documentclass{article}
+class TestFixBabel(unittest.TestCase):
+    def test_fix_babel_happy_path(self):
+        content = r"""\documentclass{article}
 \addto\captionsfrench{
     \renewcommand{\abstractname}{OldResume}
     \renewcommand{\proofname}{OldDemo}
@@ -17,34 +19,31 @@ def test_fix_babel_happy_path():
 Test
 \end{document}"""
 
-    result = fix_babel_content(content)
+        result = fix_babel_content(content)
 
-    # The old ones had "OldResume" etc. Those should be gone.
-    assert "OldResume" not in result
-    assert "OldAbstract" not in result
+        # The old ones had "OldResume" etc. Those should be gone.
+        self.assertNotIn("OldResume", result)
+        self.assertNotIn("OldAbstract", result)
 
-    # We should have exactly the newly injected \setlocalecaption
-    assert r"\setlocalecaption{french}{abstract}{Résumé}" in result
-    assert r"\hypersetup{" in result
-    # Make sure new block is inserted exactly once before \hypersetup
-    assert result.count(r"\makeatletter") == 1
-    assert result.find(r"\makeatletter") < result.find(r"\hypersetup{")
+        # We should have exactly the newly injected \setlocalecaption
+        self.assertIn(r"\setlocalecaption{french}{abstract}{Résumé}", result)
+        self.assertIn(r"\hypersetup{", result)
+        # Make sure new block is inserted exactly once before \hypersetup
+        self.assertEqual(result.count(r"\makeatletter"), 1)
+        self.assertLess(result.find(r"\makeatletter"), result.find(r"\hypersetup{"))
 
-def test_fix_babel_nested_braces():
-    content = r"""
+    def test_fix_babel_nested_braces(self):
+        content = r"""
 \addto\captionsfrench{\renewcommand{\abstractname}{NestedResume}}
 \hypersetup{
 }
 """
-    result = fix_babel_content(content)
-    assert "NestedResume" not in result
-    # Check that there are no leftover braces from the nested block
-    # By ensuring the output doesn't contain leftover } without a match
-    # A simple check:
-    assert r"\renewcommand{\abstractname}{NestedResume}" not in result
+        result = fix_babel_content(content)
+        self.assertNotIn("NestedResume", result)
+        self.assertNotIn(r"\renewcommand{\abstractname}{NestedResume}", result)
 
-def test_fix_babel_multiple_occurrences():
-    content = r"""
+    def test_fix_babel_multiple_occurrences(self):
+        content = r"""
 \addto\captionsfrench{test_multiple_f1}
 \addto\captionsenglish{test_multiple_e1}
 some text
@@ -52,19 +51,23 @@ some text
 \hypersetup{
 }
 """
-    result = fix_babel_content(content)
-    assert "test_multiple_f1" not in result
-    assert "test_multiple_e1" not in result
-    assert "test_multiple_f2" not in result
-    assert "some text" in result
+        result = fix_babel_content(content)
+        self.assertNotIn("test_multiple_f1", result)
+        self.assertNotIn("test_multiple_e1", result)
+        self.assertNotIn("test_multiple_f2", result)
+        self.assertIn("some text", result)
 
-def test_fix_babel_missing_hypersetup():
-    content = r"""
+    def test_fix_babel_missing_hypersetup(self):
+        content = r"""
 \addto\captionsfrench{test_missing}
 just some other content
 """
-    result = fix_babel_content(content)
-    assert "test_missing" not in result
-    assert "just some other content" in result
-    # Because \hypersetup is missing, new_babel_fixes won't be added
-    assert r"\makeatletter" not in result
+        result = fix_babel_content(content)
+        self.assertNotIn("test_missing", result)
+        self.assertIn("just some other content", result)
+        # Because \hypersetup is missing, new_babel_fixes won't be added
+        self.assertNotIn(r"\makeatletter", result)
+
+if __name__ == '__main__':
+    unittest.main()
+
