@@ -28,3 +28,5 @@
 \contentsline {subsection}{\numberline {4.2}2. Precise Estimation of $\pi (x)$ and Schoenfeld Bound}{13}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}3. Gaps Between Consecutive Primes}{13}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}4. Cryptographic and Arithmetic Impact}{13}{subsection.4.4}%
+\babel@toc {french}{}\relax 
+\babel@toc {english}{}\relax 
