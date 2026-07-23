@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  18 JUN 2026 16:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.22)  22 JUL 2026 16:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -243,7 +243,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 Package: babel 2024/01/07 v24.1 The Babel package
 \babel@savecnt=\count278
 \U@D=\dimen151
-\l@unhyphenated=\language5
+\l@unhyphenated=\language7
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
@@ -253,15 +253,13 @@ Package babel Info: You haven't specified a language as a class or package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
 Language: nil 2024/01/07 v24.1 Nil language
-\l@nil=\language6
+\l@nil=\language8
 ))
 \everypar=\toks33
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex)
 Package babel Info: Importing data for french
 (babel)             from babel-fr.ini. Reported on input line 50.
-Package babel Info: Hyphen rules for 'french' set to \l@nil
-(babel)             (\language6). Reported on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex)
 (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
@@ -409,7 +407,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count292
 \l__pdf_internal_box=\box54
 )
-No file riemann_hypothesis-proof-fr.aux.
+(riemann_hypothesis/riemann_hypothesis-proof-fr.aux)
 \openout1 = `riemann_hypothesis-proof-fr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -446,6 +444,7 @@ LaTeX Info: Redefining \showhyphens on input line 69.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
@@ -522,16 +521,11 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 73.
-
-Underfull \hbox (badness 2591) in paragraph at lines 78--78
-[][]\T1/lmr/bx/n/14.4 (+20) R\xe9solution de l'hypoth\xe8se de Riemann via
- []
-
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 102.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 102.
-[1
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/
@@ -546,22 +540,39 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 337.
 
-[8] [9] [10] [11] [12] (riemann_hypothesis//riemann_hypothesis-proof-fr.aux)
+[8] [9] [10] [11]
+
+LaTeX Warning: Citation `ray2026average' on page 12 undefined on input line 452
+.
+
+
+LaTeX Warning: Citation `deng2026stability' on page 12 undefined on input line
+452.
+
+
+Overfull \hbox (34.11993pt too wide) detected at line 456
+[]
+ []
+
+[12] [13] (riemann_hypothesis/riemann_hypothesis-proof-fr.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 Here is how much of TeX's memory you used:
- 14005 strings out of 476182
- 222604 string characters out of 5795595
+ 14037 strings out of 476153
+ 223041 string characters out of 5794326
  1935975 words of memory out of 5000000
- 35493 multiletter control sequences out of 15000+600000
- 660167 words of font info for 223 fonts, out of 8000000 for 9000
+ 35502 multiletter control sequences out of 15000+600000
+ 661318 words of font info for 236 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  83i,11n,93p,1294b,591s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/ty
@@ -580,10 +591,10 @@ share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public
 /type1/public/lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on riemann_hypothesis//riemann_hypothesis-proof-fr.pdf (12 pages
-, 434344 bytes).
+Output written on riemann_hypothesis/riemann_hypothesis-proof-fr.pdf (13 pages,
+ 443133 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 500000)
- 59481 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 59489 words of extra memory for PDF output out of 61914 (max. 10000000)
