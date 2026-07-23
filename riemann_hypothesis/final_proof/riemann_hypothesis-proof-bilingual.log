@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  23 JUL 2026 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  23 JUL 2026 13:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,13 +530,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./riemann_hypothesis-proo
-f-bilingual.toc
-Overfull \hbox (11.05719pt too wide) in paragraph at lines 42--42
- [] [][][]\T1/cmr/bx/n/10.95 Lemme 14: Com-plé-tude de Borel Profinie et Équiv-
-ari-ance des Poids Symétriques[][] []  
- []
-
-)
+f-bilingual.toc)
 \tf@toc=\write4
 \openout4 = `riemann_hypothesis-proof-bilingual.toc'.
 
@@ -552,11 +546,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 93.
+(hyperref)                removing `math shift' on input line 91.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 93.
+(hyperref)                removing `math shift' on input line 91.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -576,13 +570,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 151.
+Overfull \hbox (24.90094pt too wide) in paragraph at lines 178--180
+\OML/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 v[]\OT1/cmr/m/n/10
+.95 (0)\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10.95 ) = 0$\T1/cmr/m/n/10.95 . How
+-ever, $\OML/cmm/m/it/10.95 v[]$ \T1/cmr/m/n/10.95 is a prim-i-tive non-zero cl
+ass, so by Hodge pos-i-tiv-ity, $\OML/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/
+cmm/m/it/10.95 v[]\OT1/cmr/m/n/10.95 (0)\OML/cmm/m/it/10.95 ; []\OT1/cmr/m/n/10
+.95 ) \OML/cmm/m/it/10.95 >
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -602,14 +597,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-Overfull \hbox (9.21825pt too wide) in paragraph at lines 224--226
-\T1/cmr/m/n/10.95 Thus, the quan-tity $\OML/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 
-(\OML/cmm/m/it/10.95 c[]; []\OT1/cmr/m/n/10.95 )$ \T1/cmr/m/n/10.95 is the Hodg
-e norm of the class, which is \T1/cmr/bx/n/10.95 strictly non-zero \T1/cmr/m/n/
-10.95 ($\OML/cmm/m/it/10.95 Q\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 c[]; []\OT
-1/cmr/m/n/10.95 ) \OML/cmm/m/it/10.95 >
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -619,6 +606,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 318.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 318.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -637,10 +632,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [9]
-Overfull \hbox (4.02646pt too wide) in paragraph at lines 331--332
-[][]\T1/cmr/bx/n/10.95 Lemme 1.3 \T1/cmr/m/n/10.95 (Chi-ral rigid-ity of the mo
--tivic Hall al-ge-bra)\T1/cmr/bx/n/10.95 . []\T1/cmr/m/it/10.95 Let $\OMS/cmsy/
-m/n/10.95 M$ \T1/cmr/m/it/10.95 be the mod-uli stack of Bridgeland-
+Overfull \hbox (51.6025pt too wide) in paragraph at lines 397--398
+[]\T1/cmr/m/n/10.95 Deng et She ont dé-mon-tré que pour tout car-ac-tère forte-
+ment ram-i-fié $\OML/cmm/m/it/10.95 ^^_$\T1/cmr/m/n/10.95 , $[][] \OML/cmm/m/it
+/10.95 W\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 y\OT1/cmr/m/n/10.95 )\OML/cmm/m
+/it/10.95 ^^_\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 y\OT1/cmr/m/n/10.95 ) =
+ []
+
+
+Overfull \hbox (6.41466pt too wide) in paragraph at lines 401--402
+\T1/cmr/m/it/10.95 des bornes de mo-ments am-pli-fiés avec la mul-ti-pli-ca-tio
+n de Ringel-Hall force le car-quois d'Auslander-
+ []
+
+
+Overfull \hbox (0.4712pt too wide) in paragraph at lines 417--418
+[][]\T1/cmr/bx/n/10.95 Lemme 2.13 \T1/cmr/m/n/10.95 (Lemme 13 : Fil-tre Arith-m
+é-tique par Développe-ment $\OML/cmm/m/it/10.95 P=Q$\T1/cmr/m/n/10.95 -adique)\
+T1/cmr/bx/n/10.95 . []\T1/cmr/m/it/10.95 Si le développe-
  []
 
 
@@ -652,6 +661,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10]
+Overfull \hbox (5.06837pt too wide) in paragraph at lines 453--454
+[]\T1/cmr/m/n/10.95 Un zéro asymétrique $\OML/cmm/m/it/10.95 ^^Z$ \T1/cmr/m/n/1
+0.95 définit un co-cy-cle fermé $\OML/cmm/m/it/10.95 ^^N[] \OT1/cmr/m/n/10.95 =
+ (\OML/cmm/m/it/10.95 ^^[ \OMS/cmsy/m/n/10.95 ^^@ \OT1/cmr/m/n/10.95 1\OML/cmm/
+m/it/10.95 =\OT1/cmr/m/n/10.95 2)\OMS/cmsy/m/n/10.95 O[]$ \T1/cmr/m/n/10.95 dan
+s $\OT1/cmr/m/n/10.95 H[](\OML/cmm/m/it/10.95 V; \OT1/cmr/m/n/10.95 
+[])$\T1/cmr/m/n/10.95 .
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -671,14 +689,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 437.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 437.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -687,379 +697,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[14]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[15]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 530.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 530.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17]
-Overfull \hbox (7.57465pt too wide) in paragraph at lines 586--587
-[]\T1/cmr/m/n/10.95 L'intérêt ma-jeur de cette con-struc-tion ré-side dans l'ap
-parition des \T1/cmr/m/it/10.95 cy-cles évanes-cents\T1/cmr/m/n/10.95 . Lorsqu'
-on
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 588.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 588.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[18]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[19]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[20]
-Overfull \hbox (3.8117pt too wide) in paragraph at lines 695--695
-[]\T1/cmr/bx/n/12 15. Cristalli-sa-tion de la Fi-bra-tion sous Con-trainte Mul-
-ti-plica-tive (Lemme
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[21]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[22]
-Overfull \hbox (17.9476pt too wide) in paragraph at lines 774--775
-\T1/cmr/m/n/10.95 l'impossibilité physique de dé-former une symétrie par-faite 
-sans en-gen-drer une ob-struc-tion topologique
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[23]
-Overfull \hbox (11.01543pt too wide) in paragraph at lines 803--806
-\T1/cmr/m/n/10.95 quois d'Auslander-Reiten $\OT1/cmr/m/n/10.95 ^^@[]$\T1/cmr/m/
-n/10.95 , in-ter-dis-ant toute mod-i-fi-ca-tion de son en-veloppe d'indécomposa
-bilité.
- []
-
-
-Overfull \hbox (17.87001pt too wide) in paragraph at lines 807--808
-[]\T1/cmr/m/n/10.95 Par con-séquent, l'hypothèse ab-surde doit être re-jetée, i
-m-posant la nul-lité de la classe d'obstruction
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[24]
-Overfull \hbox (7.24292pt too wide) in paragraph at lines 828--829
-\T1/cmr/m/n/10.95 de mod-ules $\OMS/cmsy/m/n/10.95 M$\T1/cmr/m/n/10.95 . Nous l
-a con-sid-érons comme une DG-catégorie sur $\U/msb/m/n/10.95 Q$\T1/cmr/m/n/10.9
-5 . La co-ho-molo-gie de Hochschild-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[25]
-Overfull \hbox (2.8951pt too wide) in paragraph at lines 867--870
-[]\T1/cmr/m/n/10.95 Supposons par l'absurde que $\OT1/cmr/m/n/10.95 [\OML/cmm/m
-/it/10.95 ^^R[]\OT1/cmr/m/n/10.95 ] = 0$\T1/cmr/m/n/10.95 . Par l'isomorphisme 
-de Hochschild-Mitchell,
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 872.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 872.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[26]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[27]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[28]
-Overfull \hbox (23.00473pt too wide) in paragraph at lines 958--959
-\T1/cmr/m/n/10.95 l'opérateur dif-féren-tiel asymp-to-tique. En ap-pli-quant la
- trans-for-ma-tion de jauge ma-tricielle, l'expansion
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[29]
-Overfull \hbox (2.57988pt too wide) in paragraph at lines 997--998
-\T1/cmr/m/n/10.95 Since the ge-o-met-ric ap-proach via the mo-tivic fi-bra-tion
- re-vealed its lim-its against non-Archimedean
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[30]
-Overfull \hbox (7.6099pt too wide) in paragraph at lines 1044--1044
-[]\T1/cmr/bx/n/12 20. Sys-tème de numéra-tion ma-triciel $\OML/cmm/m/it/12 P=Q$
-\T1/cmr/bx/n/12 -adique et fil-tra-tion géométrique
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1044.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1044.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[31]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[32]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1106.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1106.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[33]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[34]
-Overfull \hbox (10.86028pt too wide) in paragraph at lines 1189--1194
-\T1/cmr/m/n/10.95 Cette classe de co-ho-molo-gie agit comme une ob-struc-tion. 
-Con-sid-érons le fonc-teur d'hypercomplétion
- []
-
-
-Overfull \hbox (16.85136pt too wide) in paragraph at lines 1207--1209
-[]\T1/cmr/m/n/10.95 Toute dévi-a-tion in-duit une cas-sure de symétrie, provo-q
-uant un ef-fon-drement de l'hypercomplétion
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[35]
-Overfull \hbox (24.58522pt too wide) in paragraph at lines 1239--1244
-\T1/cmr/m/n/10.95 This co-ho-mol-ogy class acts as an ob-struc-tion. Con-sider 
-the hy-per-com-ple-tion func-tor $\OMS/cmsy/m/n/10.95 H \OT1/cmr/m/n/10.95 : []
-[](\OML/cmm/m/it/10.95 G\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 !
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[36]
-Overfull \hbox (6.17836pt too wide) in paragraph at lines 1278--1279
-[]\T1/cmr/m/n/10.95 D'après Zhang (2026), le de-gré générique de l'application 
-de Ver-schiebung s'exprime rigoureuse-
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[37]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[38]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[39]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[40]
-Underfull \hbox (badness 6032) in paragraph at lines 1421--1422
+Underfull \hbox (badness 5533) in paragraph at lines 549--550
 []\T1/cmr/m/n/10.95 Fuhrmann, Y. (2026). \T1/cmr/m/it/10.95 Profi-nite Borel co
 m-plete-ness and smooth Artin mo-tives\T1/cmr/m/n/10.95 .
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 1424--1425
-[]\T1/cmr/m/n/10.95 Butson, D., & Nair, S. (2026). \T1/cmr/m/it/10.95 On the de
--for-ma-tion the-ory of chi-ral quan-ti-za-tions\T1/cmr/m/n/10.95 .
- []
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 1433--1434
+Underfull \hbox (badness 1097) in paragraph at lines 561--562
 []\T1/cmr/m/n/10.95 Li, E. (2026). \T1/cmr/m/it/10.95 The Sy-low Di-vi-sor Con-
 di-tion: a Res-o-lu-tion of Erd®s Prob-lem 768\T1/cmr/m/n/10.95 .
  []
@@ -1072,23 +716,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[41] (./riemann_hypothesis-proof-bilingual.aux)
+[14] (./riemann_hypothesis-proof-bilingual.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `riemann_hypothesis-proof-bilingual.out' has 
 not changed.
-(rerunfilecheck)             Checksum: 946EB0CE6FFE27E677D152ECC4BFD9E7;15835.
+(rerunfilecheck)             Checksum: 3C63DDB09A3DFDC77EEEA983474990CF;7726.
  ) 
 Here is how much of TeX's memory you used:
- 13428 strings out of 476182
- 209289 string characters out of 5795595
- 1944975 words of memory out of 5000000
- 35002 multiletter control sequences out of 15000+600000
+ 13305 strings out of 476182
+ 207799 string characters out of 5795595
+ 1942975 words of memory out of 5000000
+ 34984 multiletter control sequences out of 15000+600000
  586068 words of font info for 113 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,12n,79p,1450b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1540b,715s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti0800.6
 00pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm080
 0.600pk> </home/charles/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx
@@ -1122,11 +766,11 @@ pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/symbols/msbm7.pfb>
-Output written on riemann_hypothesis-proof-bilingual.pdf (41 pages, 532654 byte
+Output written on riemann_hypothesis-proof-bilingual.pdf (14 pages, 394978 byte
 s).
 PDF statistics:
- 1264 PDF objects out of 1440 (max. 8388607)
- 661 compressed objects within 7 object streams
- 218 named destinations out of 1000 (max. 500000)
- 337 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 924 PDF objects out of 1000 (max. 8388607)
+ 385 compressed objects within 4 object streams
+ 113 named destinations out of 1000 (max. 500000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

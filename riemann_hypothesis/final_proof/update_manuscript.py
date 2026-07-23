@@ -1,4 +1,9 @@
-\documentclass[11pt,a4paper,twoside]{article}
+import os
+
+tex_path = "/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex"
+py_path = "/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/generate_bilingual_v2.py"
+
+tex_content = r"""\documentclass[11pt,a4paper,twoside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
@@ -565,3 +570,23 @@ The exact localization of zeros guarantees a deterministic and uniform distribut
 \end{thebibliography}
 
 \end{document}
+"""
+
+with open(tex_path, "w", encoding="utf-8") as f:
+    f.write(tex_content)
+
+py_code = f"""import os
+
+def generate_bilingual():
+    content = {repr(tex_content)}
+    target_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex")
+    with open(target_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
+generate_bilingual()
+"""
+
+with open(py_path, "w", encoding="utf-8") as f:
+    f.write(py_code)
+
+print("Updated LaTeX and Python generator successfully.")

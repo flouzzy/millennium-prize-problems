@@ -7,43 +7,24 @@
 \contentsline {subsection}{\numberline {1.2}2. The Weil Analogy and the Necessity of a Fibration}{3}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}3. Axiomatic Construction of the Category of Mixed Motives $\mathcal {M}(\mathbb {Z})$}{3}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}4. Engineering the Lefschetz Fibration}{4}{subsection.1.4}%
-\contentsline {subsection}{\numberline {1.5}4.1. Explicit Construction and Proof of Existence of the Model $\mathcal {X}$}{5}{subsection.1.5}%
-\contentsline {subsection}{\numberline {1.6}5. Picard-Lefschetz Theory and Monodromy Weight}{5}{subsection.1.6}%
-\contentsline {subsection}{\numberline {1.7}6. The Global Invariant Cycle Theorem and De Rham Cohomology}{6}{subsection.1.7}%
-\contentsline {subsection}{\numberline {1.8}7. The Amplitude Contradiction via Riemann-Hodge Relations}{6}{subsection.1.8}%
-\contentsline {subsection}{\numberline {1.9}8. Functoriality and Dirichlet Characters}{7}{subsection.1.9}%
-\contentsline {subsection}{\numberline {1.10}9. Arithmetic Epilogue}{8}{subsection.1.10}%
-\contentsline {subsection}{\numberline {1.11}15. Crystallization of the Fibration under Multiplicative Constraint (Lemma 7)}{8}{subsection.1.11}%
-\contentsline {subsection}{\numberline {1.12}16. Chiral rigidity of the motivic Hall algebra (Lemma 9)}{10}{subsection.1.12}%
-\contentsline {subsection}{\numberline {1.13}16.1. Construction of the Hochschild-Mitchell Transition Functor}{12}{subsection.1.13}%
-\contentsline {subsection}{\numberline {1.14}17. Mod $p$ reduction and Mellin vanishing (Lemma 10)}{13}{subsection.1.14}%
-\contentsline {subsection}{\numberline {1.15}18. Amplified moments and Motivic Hall algebra (Lemma 11)}{14}{subsection.1.15}%
+\contentsline {subsection}{\numberline {1.5}5. Picard-Lefschetz Theory and Monodromy Weight}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}6. The Global Invariant Cycle Theorem and De Rham Cohomology}{5}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}7. The Amplitude Contradiction via Riemann-Hodge Relations}{5}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}8. Functoriality and Dirichlet Characters}{6}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}9. Advanced Spectral Rigidity and Multiplicative Constraints}{6}{subsection.1.9}%
+\contentsline {section}{\numberline {2}Part II: Complete Proof (French Version)}{8}{section.2}%
 \babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {2}Partie II : Démonstration Intégrale (Version Française)}{16}{section.2}%
-\contentsline {subsection}{\numberline {2.1}1. Introduction et Postulat Épistémologique}{16}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}2. L'Analogie de Weil et la Nécessité d'une Fibration}{16}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}3. Construction Axiomatique de la Catégorie des Motifs Mixtes $\mathcal {M}(\mathbb {Z})$}{16}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}4. Ingénierie de la Fibration de Lefschetz}{18}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}4.1. Construction Explicite et Preuve d'Existence du Modèle $\mathcal {X}$}{18}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}5. Théorie de Picard-Lefschetz et Poids de la Monodromie}{18}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}6. Le Théorème de la Partie Fixe Globale et la Cohomologie de de Rham}{19}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}7. La Contradiction d'Amplitude par les Relations de Riemann-Hodge}{19}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}8. Fonctorialité et Caractères de Dirichlet}{21}{subsection.2.9}%
-\contentsline {subsection}{\numberline {2.10}9. Épilogue Arithmétique}{21}{subsection.2.10}%
-\contentsline {subsection}{\numberline {2.11}15. Cristallisation de la Fibration sous Contrainte Multiplicative (Lemme 7)}{21}{subsection.2.11}%
-\contentsline {subsection}{\numberline {2.12}16. Rigidité chirale de l'algèbre de Hall motivique (Lemme 9)}{23}{subsection.2.12}%
-\contentsline {subsection}{\numberline {2.13}16.1. Construction du Foncteur de Passage de Hochschild-Mitchell}{25}{subsection.2.13}%
-\contentsline {subsection}{\numberline {2.14}17. Réduction mod $p$ et évanouissement de Mellin (Lemme 10)}{26}{subsection.2.14}%
-\contentsline {subsection}{\numberline {2.15}18. Moments amplifiés et Algèbre de Hall motivique (Lemme 11)}{27}{subsection.2.15}%
-\contentsline {subsection}{\numberline {2.16}19. Finitude modulaire et Rationalité sur la Bande Critique (Lemme 12)}{29}{subsection.2.16}%
-\contentsline {subsection}{\numberline {2.17}19. Modular Finiteness and Rationality on the Critical Strip (Lemma 12)}{30}{subsection.2.17}%
-\contentsline {subsection}{\numberline {2.18}20. Système de numération matriciel $P/Q$-adique et filtration géométrique (Lemme 13)}{31}{subsection.2.18}%
-\contentsline {subsection}{\numberline {2.19}20. Matrix $P/Q$-adic Number System and Geometric Filtration (Lemma 13)}{33}{subsection.2.19}%
-\contentsline {section}{\numberline {3}Lemme 14: Complétude de Borel Profinie et Équivariance des Poids Symétriques}{34}{section.3}%
-\contentsline {section}{\numberline {4}Lemma 14: Profinite Borel Completeness and Equivariance of Symmetric Weights}{35}{section.4}%
-\contentsline {subsection}{\numberline {4.1}24. Rigidité spectrale par le degré de Verschiebung (Lemme 17)}{36}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}24. Spectral Rigidity via the Verschiebung Degree (Lemma 17)}{37}{subsection.4.2}%
+\contentsline {subsection}{\numberline {2.1}1. Introduction et Postulat Épistémologique}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}2. L'Analogie de Weil et la Nécessité d'une Fibration}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}3. Construction Axiomatique de la Catégorie des Motifs Mixtes $\mathcal {M}(\mathbb {Z})$}{8}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Applications Concrètes à la Théorie des Nombres Premiers}{12}{section.3}%
+\contentsline {subsection}{\numberline {3.1}1. Terme d'Erreur Optimal dans le Théorème des Nombres Premiers}{12}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}2. Estimation Fine de $\pi (x)$ et Borne de Schoenfeld}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}3. Écarts entre Nombres Premiers Consécutifs}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}4. Impact Cryptographique et Arithmétique}{12}{subsection.3.4}%
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {5}Lemma 18: Chiral Rigidity and Cohomological Obstruction of Spectral Asymmetry}{38}{section.5}%
-\babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {6}Lemme 18 : Rigidité Chirale et Obstruction Cohomologique de l'Asymétrie Spectrale}{40}{section.6}%
+\contentsline {section}{\numberline {4}Concrete Applications to Prime Number Theory}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}1. Optimal Error Term in the Prime Number Theorem}{13}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}2. Precise Estimation of $\pi (x)$ and Schoenfeld Bound}{13}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}3. Gaps Between Consecutive Primes}{13}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}4. Cryptographic and Arithmetic Impact}{13}{subsection.4.4}%
