@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  23 JUL 2026 13:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.18)  23 JUL 2026 14:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -775,10 +775,10 @@ pe1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/symbols/msbm7.pfb>
-Output written on riemann_hypothesis-proof-bilingual.pdf (15 pages, 397683 byte
+Output written on riemann_hypothesis-proof-bilingual.pdf (15 pages, 396840 byte
 s).
 PDF statistics:
- 936 PDF objects out of 1000 (max. 8388607)
+ 934 PDF objects out of 1000 (max. 8388607)
  391 compressed objects within 4 object streams
  116 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)

@@ -61,11 +61,11 @@ L'établissement inconditionnel de $\Re(s) = 1/2$ produit :
 
 ---
 
-## 🤝 Remerciements et Déclaration de Transparence / Acknowledgements & Transparency Statement
+## 🤝 Remerciements / Acknowledgements
 
-L'auteur remercie les relecteurs et la communauté mathématique pour leurs travaux fondateurs. Dans un souci de transparence académique intégrale, l'auteur précise que la formalisation LaTeX, la recherche bibliographique et la structuration assistée du mémoire ont bénéficié du soutien d'outils d'intelligence artificielle avancés pour l'exploration conceptuelle. L'ensemble de la responsabilité mathématique incombant à l'auteur.
+L'auteur remercie chaleureusement les membres de la communauté mathématique pour leurs travaux fondateurs en géométrie motivique et en théorie analytique des nombres. L'auteur exprime également sa reconnaissance pour l'utilisation d'outils informatiques et d'assistance cognitive avancée ayant appuyé la recherche bibliographique et la mise en forme du manuscrit. L'auteur reste seul responsable de l'intégralité du contenu et de la rigueur mathématique du présent mémoire.
 
-*The author thanks the mathematical community for their foundational works. In the interest of full academic transparency, the author notes that the LaTeX formalization, bibliographic search, and structured drafting of this memoir were supported by advanced artificial intelligence tools for conceptual exploration. All final mathematical responsibility resides with the author.*
+*The author warmly thanks the members of the mathematical community for their foundational contributions to motivic geometry and analytic number theory. The author also acknowledges the use of computational tools and advanced cognitive assistance in supporting the literature search and structural drafting of the manuscript. The author remains solely responsible for the entire content and mathematical rigor of this memoir.*
 
 ---
 **Citer ce travail :**  
