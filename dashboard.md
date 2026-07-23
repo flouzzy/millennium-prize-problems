@@ -9,10 +9,10 @@
 
 ## Historique d'avancement
 
-### 2026-07-20-18h
 
-- [[#2026-07-20-18h|2026-07-20 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 20 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+### 2026-07-21-03h
 
+- [[#2026-07-21-03h|2026-07-21 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Jewel Mahajan, Apeksha Sanghi, Abel Castorena, Montserrat Vite. Blueprint du Lemme 21 fixé. Statut : Planifié.
 ### 2026-07-20-14h
 
 - [[#2026-07-20-14h|2026-07-20 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
