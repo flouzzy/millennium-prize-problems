@@ -511,7 +511,43 @@ The axis of symmetry (the critical line) imposes itself not as an analytic bound
 \textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
 \end{flushright}
 
+
+\section{Proof of Lemma 21: Determinantal Surfaces and Hyperelliptic Curves}
+
+The intuition behind this approach was born from the desire to transcend the dead ends associated with purely functional methods and motivic fibrations, which tend to collapse under the weight of local singularities. The core idea is to completely geometrize the potential asymmetry of the zeros of the $\zeta$ function. By embedding these zeros within a rigid algebraic structure---here, a quartic determinantal surface harboring hyperelliptic curves---we force the arithmetic to yield to the strict constraints of algebraic geometry. I was particularly inspired by the elegance with which Diophantine properties, when embedded in regular moduli spaces, reject any anomaly. The hope is that if a zero departs from the critical line, its geometric trace will spawn an unacceptable singularity on the quartic surface.
+
+Let $K$ be a compact local field. Let $\mathcal{S}_4$ be a quartic determinantal surface whose Hilbert scheme is strictly regular. According to the work of Castorena and Vite \cite{castorena2026curves}, the study of linear systems on $\mathcal{S}_4$ assures an exceptionally smooth behavior for the curves contained within this surface.
+
+Let $C \subset \mathcal{S}_4$ be a family of hyperelliptic curves with affine equation:
+\begin{equation*}
+C : y^2 = f(x)
+\end{equation*}
+where $f \in K[x]$ is a polynomial of degree $2g+1$.
+
+Suppose that a non-trivial zero of the Zeta function, denoted $\rho = \beta + i\tau$ with $\beta \neq \frac{1}{2}$, is embedded as a point of rational torsion $P_\rho \in J(C)(K)$ in the Jacobian of $C$.
+According to the generalized Nagell-Lutz theorem for hyperelliptic curves (Grant's theorem), the coordinates of such a torsion point must satisfy strict integrality conditions. Specifically, for a point $P = (x, y)$, the valuation of the $y$-coordinate must divide the discriminant of the curve.
+
+However, to explicitly link the real part $\beta$ of our analytic zero $\rho$ to the torsion order of the geometric point $P_\rho$, we must evaluate the canonical height pairing $\hat{h}(P_\rho)$ on the Jacobian. By the definition of the global pairing:
+\begin{align*}
+\hat{h}(P_\rho) &= \sum_{v \in M_K} \hat{\lambda}_v(P_\rho)
+\end{align*}
+where $\hat{\lambda}_v$ are the local height functions.
+
+It is at this juncture that the approach encounters a major obstacle. In order to prove that the asymmetry $\beta \neq \frac{1}{2}$ forces the local height to become non-zero, thus violating the torsion hypothesis, it is imperative to construct an explicit isomorphism between the space of analytic spectral parameters of the zeros and the moduli space of the curves $C$ on $\mathcal{S}_4$. This algebraic-analytic transition is not trivially covered by the current literature of Mahajan and Sanghi \cite{mahajan2026weighted}. I refuse to introduce a ghost bridge to mask this conceptual leap.
+
+Consequently, I halt the algebraic proof here to isolate the missing link as an intermediate conjecture.
+
+\textbf{Intermediate Conjecture:}
+There exists an injective analytic morphism connecting the real component $\beta$ of a zeta zero $\rho$ to the Archimedean component of the local height $\hat{\lambda}_\infty(P_\rho)$ on the linear system $\mathcal{D}(\mathcal{S}_4)$, such that if $\beta \neq \frac{1}{2}$, then $\hat{\lambda}_\infty(P_\rho) > 0$.
+
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
+\end{flushright}
+
 \begin{thebibliography}{99}
+\bibitem{mahajan2026weighted} J. Mahajan and A. Sanghi, \textit{Weighted Fruit Diophantine Equations and Hyperelliptic Curves}, arXiv:2606.27322v1, 2026.
+\bibitem{castorena2026curves} A. Castorena and M. Vite, \textit{Curves contained in a quartic determinantal surface containing a line}, arXiv:2606.27303v1, 2026.
 \bibitem{deng2026stability} T. Deng and D. She, \textit{Stability of the exterior cube $\gamma$-factors for $\mathrm{GL}(6)$}, arXiv:2606.28091v1, 2026.
 \bibitem{ray2026average} A. Ray and M. Ray, \textit{Average divisibility in character tables of $\mathrm{GL}_2(\mathbb{F}_q)$}, arXiv:2606.28085v1, 2026.
 \bibitem{deligne1974} Deligne, P. (1974). \textit{La conjecture de Weil: I}. Publications Mathématiques de l'IHÉS, 43, 273-307.
