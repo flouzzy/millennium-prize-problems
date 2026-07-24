@@ -10,9 +10,9 @@
 ## Historique d'avancement
 
 
-### 2026-07-21-18h
+### 2026-07-22-03h
 
-- [[#2026-07-21-18h|2026-07-21 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 21 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- [[#2026-07-22-03h|2026-07-22 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 22 fixé. Statut : Planifié.
 
 ### 2026-07-21-14h
 
