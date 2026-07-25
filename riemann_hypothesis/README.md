@@ -74,6 +74,8 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 ## Historique des tentatives
 
 
+- <a id="2026-07-22-18h"></a>[[2026-07-22 18:00]](../dashboard.md#2026-07-22-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 22 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-07-22-14h"></a>[[2026-07-22 14:00]](../dashboard.md#2026-07-22-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-07-22-03h"></a>[[2026-07-22 03:00]](../dashboard.md#2026-07-22-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 22 fixé. Statut : Planifié.
