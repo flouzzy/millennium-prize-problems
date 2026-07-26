@@ -18,7 +18,6 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
-
 - <a id="2026-07-22-14h"></a>[[2026-07-22 14:00]](dashboard.md#2026-07-22-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-07-22-03h"></a>[[2026-07-22 03:00]](dashboard.md#2026-07-22-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 22 fixé. Statut : Planifié.

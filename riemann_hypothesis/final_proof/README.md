@@ -44,6 +44,7 @@ Sous réserve de ces deux axiomes, nous montrons par l'absurde que :
 ## 📊 Applications aux Nombres Premiers
 
 L'établissement inconditionnel de $\Re(s) = 1/2$ produit :
+
 * **Formule explicite de Chebyshev** : $\psi(x) = x + \mathcal{O}(\sqrt{x}\log^2 x)$
 * **Borne explicite de Schoenfeld** : $|\pi(x) - \mathrm{Li}(x)| < \frac{1}{8\pi} \sqrt{x} \log x$
 * **Écarts entre premiers consécutifs** : $p_{n+1} - p_n = \mathcal{O}(\sqrt{p_n} \log p_n)$
