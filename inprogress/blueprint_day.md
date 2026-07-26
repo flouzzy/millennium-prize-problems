@@ -1,4 +1,4 @@
-# Blueprint stratégique du jour : Lemme 22 - Connexion Quantique et Singularité Modulo p
+# Blueprint stratégique du jour : Lemme 23 - Polynômes de degré de Verschiebung et Semistabilité Potentielle
 
 ## Analyse d'Impasse et Red Teaming (FR)
 
@@ -14,8 +14,7 @@ Pour immuniser la preuve, la variété symplectique $(M, \omega)$ supportant la 
 
 Sous ce cadre restreint, toute singularité parasitaire (notamment celles de codimension 1 issues de dynamiques non bornées) est mathématiquement éliminée. La trajectoire admissible pour que la connexion admette une singularité régulière à l'infini devient unique et rigide. Toute asymétrie induit inévitablement une obstruction cohomologique détectée par $St^p$. L'axe de symétrie (la droite critique $\Re(s) = 1/2$) est ainsi intégralement protégé.
 
-Charles EDOU NZE \\
-\small Independent Researcher
+En combinant ces deux faits, nous pouvons abandonner l'argument erroné de la dimension fractionnaire. L'architecture de notre nouveau Lemma reposera sur l'obtention de la semi-stabilité potentielle (via Mondal) et l'application d'un contrôle de symétrie global à travers la théorie des motifs d'Artin lisses et la complétion profinie (via Fuhrmann).
 
 ## Impasse Analysis and Red Teaming (EN)
 
@@ -31,5 +30,16 @@ To immunize the proof, the symplectic manifold $(M, \omega)$ supporting the quan
 
 Under this restricted framework, any parasitic singularity (especially codimension 1 singularities arising from unbounded dynamics) is mathematically eliminated. The admissible trajectory for the connection to admit a regular singularity at infinity becomes unique and rigid. Any asymmetry inevitably induces a cohomological obstruction detected by $St^p$. The axis of symmetry (the critical line $\Re(s) = 1/2$) is thus fully protected.
 
-Charles EDOU NZE \\
-\small Independent Researcher
+To break through this complexity wall, we rely on the most recent advances from the arXiv ecosystem this morning:
+
+1. **Kaustabh Mondal (2026, arXiv:2606.26043v1)**, in "Potential semistability of Finite height Galois representations: Relative case", proves using analytic prismatic $F$-crystals that a finite height étale $\mathbb{Z}_p$-local system becomes semistable after pulling back along a finite étale cover.
+2. **Yorick Fuhrmann (2026, arXiv:2606.25943v1)**, in "Profinite Borel completeness and smooth Artin motives", connects smooth Artin motives to modules over the Bredon cohomology spectrum via profinite Borel completion.
+
+By combining these two facts, we can discard the flawed fractional dimension argument. The architecture of our new Lemma will rely on achieving potential semistability (via Mondal) and enforcing global symmetry control through the theory of smooth Artin motives and profinite completion (via Fuhrmann).
+
+## Paradigm Shift: Architecture of Lemma 23 (EN)
+
+Lemma 23 will prove that for the étale local system associated with the zeroes of the Zeta function, the potential semistability property induces a symmetric crystalline filtration. Using smooth Artin motives, governed by the étale fundamental group, will allow us to isolate the monodromy action. Rather than forcing a geometric contour with fractional dimensions, we will use the isomorphism in the category of Borel equivariant spectra to guarantee strict arithmetic symmetry.
+
+---
+Charles EDOU NZE \\ \small Independent Researcher
