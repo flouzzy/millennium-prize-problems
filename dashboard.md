@@ -11,16 +11,9 @@
 
 ### 2026-07-23-03h
 
-- [[#2026-07-23-03h|2026-07-23 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Kaustabh Mondal, Yorick Fuhrmann. Blueprint du Lemme 23 fixé. Statut : Planifié.
-
-### 2026-07-23-14h
-
-- [[#2026-07-23-14h|2026-07-23 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+- [[#2026-07-23-03h|2026-07-23 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Siqing Zhang, Kaustabh Mondal, Yorick Fuhrmann, Alberto Acosta Reche. Blueprint du Lemme 23 fixé. Statut : Planifié.
 
 
-### 2026-07-22-18h
-
-- [[#2026-07-22-18h|2026-07-22 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 22 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 ### 2026-07-22-14h
 
