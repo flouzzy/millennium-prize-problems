@@ -9,6 +9,11 @@
 
 ## Historique d'avancement
 
+### 2026-07-23-03h
+
+- [[#2026-07-23-03h|2026-07-23 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Siqing Zhang, Kaustabh Mondal, Yorick Fuhrmann, Alberto Acosta Reche. Blueprint du Lemme 23 fixé. Statut : Planifié.
+
+
 
 ### 2026-07-22-14h
 
