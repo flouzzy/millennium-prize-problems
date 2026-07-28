@@ -8,7 +8,7 @@
 \newtheorem{definition}{Définition}
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
-\title{Draft Setup - Lemma 23 : Théorème Géodésique de Chebotarev et Rigidité Zêta}
+\title{Draft Setup - Lemma 24 : Stabilité des facteurs $\gamma$ et Universalité Spectrale}
 \date{\today}
 
 \begin{document}
@@ -18,18 +18,18 @@
 \selectlanguage{french}
 \section*{Cadre Symbolique et Typage (FR)}
 
-Afin de garantir l'immunité du Lemme 23 face aux pathologies topologiques documentées dans nos impasses (où le passage par les revêtements étales finis brise asymptotiquement la symétrie de la distribution des zéros en générant des termes de reste divergents), nous restreignons rigoureusement le cadre axiomatique. Nous nous plaçons strictement sur des variétés arithmétiques munies d'une action de sous-groupes de congruence, utilisant la distribution des géodésiques fermées comme pont rigide vers la théorie spectrale.
+Afin de garantir l'immunité du Lemme 24 face aux pathologies de ramification sauvage documentées dans nos impasses (où l'approche géométrique globale par fibrations motiviques s'effondre), nous restreignons rigoureusement le cadre axiomatique. Nous remplaçons l'approche géométrique par l'étude locale des facteurs $\gamma$ de Langlands-Shahidi pour des groupes réductifs de rang supérieur.
 
 \begin{itemize}
-    \item $X_\Gamma = \Gamma \backslash \mathbb{H}$ : Une variété arithmétique (surface de Riemann) associée à un sous-groupe de congruence $\Gamma \subset \mathrm{SL}_2(\mathbb{Z})$.
-    \item $\pi_\Gamma(x)$ : La fonction de comptage des géodésiques fermées premières sur $X_\Gamma$ de longueur $\le \log x$.
-    \item $Z_S(s)$ : La fonction Zêta de Selberg, dont la distribution des zéros est contrainte par le spectre du laplacien sur $X_\Gamma$.
-    \item $\zeta(s)$ : La fonction Zêta de Riemann, liée par fonctorialité aux propriétés analytiques de $Z_S(s)$.
-    \item $E(x) = \mathcal{O}(x^{25/36 + \varepsilon})$ : Le terme d'erreur spectral (rigidité métrique) dans l'analogue géodésique du théorème de Chebotarev.
+    \item $\mathrm{GL}_6$ : Le groupe général linéaire sur un corps local de caractéristique nulle.
+    \item $\wedge^3$ : La représentation cube extérieur de $\mathrm{GL}_6$, agissant comme un pont rigide.
+    \item $\pi$ : Une représentation irréductible admissible générique de $\mathrm{GL}_6(F)$.
+    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Le facteur $\gamma$ local de Langlands-Shahidi associé.
+    \item $\chi$ : Un caractère fortement ramifié utilisé pour tester la stabilité asymptotique.
 \end{itemize}
 
-\begin{lemma}[Théorème Géodésique de Chebotarev et Rigidité Zêta]
-Soit $X_\Gamma = \Gamma \backslash \mathbb{H}$ une variété arithmétique associée à un sous-groupe de congruence $\Gamma \subset \mathrm{SL}_2(\mathbb{Z})$. Si la distribution asymptotique des géodésiques fermées premières sur $X_\Gamma$ satisfait le théorème de densité de Chebotarev géodésique avec un exposant d'erreur spectral d'au plus $25/36 + \varepsilon$, alors cette rigidité métrique contraint la distribution des zéros de la fonction Zêta de Selberg $Z_S(s)$. Par fonctorialité, cette localisation stricte empêche l'apparition de termes de reste exponentiellement divergents et force les zéros non triviaux de la fonction Zêta de Riemann $\zeta(s)$ à résider exclusivement sur la droite critique $\Re(s) = 1/2$.
+\begin{lemma}[Stabilité des facteurs $\gamma$ et Universalité Spectrale]
+Soit $\pi_1$ et $\pi_2$ deux représentations irréductibles admissibles génériques de $\mathrm{GL}_6(F)$ possédant le même caractère central. Sous une torsion par un caractère $\chi$ de conducteur suffisamment grand (forte ramification), les facteurs $\gamma$ locaux pour la représentation cube extérieur sont asymptotiquement stables : $\gamma(s, \pi_1 \otimes \chi, \wedge^3, \psi) = \gamma(s, \pi_2 \otimes \chi, \wedge^3, \psi)$. Cette stabilité locale stricte neutralise les perturbations de ramification sauvage, forçant par fonctorialité l'annulation des asymétries globales et confinant le spectre des fonctions L associées sur la droite critique.
 \end{lemma}
 
 \vspace{1cm}
@@ -40,18 +40,18 @@ Soit $X_\Gamma = \Gamma \backslash \mathbb{H}$ une variété arithmétique assoc
 \selectlanguage{english}
 \section*{Symbolic Framework and Typing (EN)}
 
-To ensure the immunity of Lemma 23 against the topological pathologies documented in our impasses (where passing through finite étale covers asymptotically breaks the symmetry of the zero distribution by generating divergent remainder terms), we rigorously restrict the axiomatic framework. We restrict our study to arithmetic manifolds equipped with an action of congruence subgroups, using the distribution of closed geodesics as a rigid bridge to spectral theory.
+To ensure the immunity of Lemma 24 against the wild ramification pathologies documented in our impasses (where the global geometric approach via motivic fibrations collapses), we rigorously restrict the axiomatic framework. We replace the geometric approach with the local study of Langlands-Shahidi $\gamma$-factors for higher rank reductive groups.
 
 \begin{itemize}
-    \item $X_\Gamma = \Gamma \backslash \mathbb{H}$: An arithmetic manifold (Riemann surface) associated with a congruence subgroup $\Gamma \subset \mathrm{SL}_2(\mathbb{Z})$.
-    \item $\pi_\Gamma(x)$: The prime closed geodesic counting function on $X_\Gamma$ of length $\le \log x$.
-    \item $Z_S(s)$: The Selberg Zeta function, whose zero distribution is constrained by the spectrum of the Laplacian on $X_\Gamma$.
-    \item $\zeta(s)$: The Riemann Zeta function, linked by functoriality to the analytic properties of $Z_S(s)$.
-    \item $E(x) = \mathcal{O}(x^{25/36 + \varepsilon})$: The spectral error term (metric rigidity) in the geodesic analogue of the Chebotarev density theorem.
+    \item $\mathrm{GL}_6$: The general linear group over a local field of characteristic zero.
+    \item $\wedge^3$: The exterior cube representation of $\mathrm{GL}_6$, acting as a rigid bridge.
+    \item $\pi$: An irreducible admissible generic representation of $\mathrm{GL}_6(F)$.
+    \item $\gamma(s, \pi, \wedge^3, \psi)$: The associated Langlands-Shahidi local $\gamma$-factor.
+    \item $\chi$: A highly ramified character used to test asymptotic stability.
 \end{itemize}
 
-\begin{lemma}[Chebotarev Geodesic Theorem and Zeta Rigidity]
-Let $X_\Gamma = \Gamma \backslash \mathbb{H}$ be an arithmetic manifold associated with a congruence subgroup $\Gamma \subset \mathrm{SL}_2(\mathbb{Z})$. If the asymptotic distribution of prime closed geodesics on $X_\Gamma$ satisfies the geodesic Chebotarev density theorem with a spectral error exponent of at most $25/36 + \varepsilon$, then this metric rigidity strictly constrains the zero distribution of the Selberg Zeta function $Z_S(s)$. By functoriality, this strict localization prevents the emergence of exponentially divergent remainder terms and forces the non-trivial zeros of the Riemann Zeta function $\zeta(s)$ to reside exclusively on the critical line $\Re(s) = 1/2$.
+\begin{lemma}[Stability of $\gamma$-factors and Spectral Universality]
+Let $\pi_1$ and $\pi_2$ be two irreducible admissible generic representations of $\mathrm{GL}_6(F)$ with the same central character. Under a twist by a character $\chi$ with a sufficiently large conductor (high ramification), the local $\gamma$-factors for the exterior cube representation are asymptotically stable: $\gamma(s, \pi_1 \otimes \chi, \wedge^3, \psi) = \gamma(s, \pi_2 \otimes \chi, \wedge^3, \psi)$. This strict local stability neutralizes wild ramification perturbations, functorially forcing the cancellation of global asymmetries and confining the spectrum of the associated L-functions to the critical line.
 \end{lemma}
 
 \vspace{1cm}
