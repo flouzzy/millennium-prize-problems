@@ -8,6 +8,10 @@
 - **Dossier cible :** `riemann_hypothesis/`
 
 ## Historique d'avancement
+### 2026-07-25-03h
+
+- [[#2026-07-25-03h|2026-07-25 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Juno Kwon, Rak-Kyeong Seong. Blueprint du Lemme 25 fixé. Statut : Planifié.
+
 ### 2026-07-24-18h
 
 - [[#2026-07-24-18h|2026-07-24 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 24 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
