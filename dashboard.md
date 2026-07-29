@@ -8,6 +8,10 @@
 - **Dossier cible :** `riemann_hypothesis/`
 
 ## Historique d'avancement
+
+### 2026-07-25-14h
+
+- [[#2026-07-25-14h|2026-07-25 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 ### 2026-07-25-03h
 
 - [[#2026-07-25-03h|2026-07-25 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Juno Kwon, Rak-Kyeong Seong. Blueprint du Lemme 25 fixé. Statut : Planifié.
