@@ -8,7 +8,7 @@
 \newtheorem{definition}{Définition}
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
-\title{Draft Setup - Lemma 24 : Stabilité des facteurs $\gamma$ et Universalité Spectrale}
+\title{Draft Setup - Lemma 25 : Cristallisation spectrale par Orbifold Abélien}
 \date{\today}
 
 \begin{document}
@@ -18,18 +18,18 @@
 \selectlanguage{french}
 \section*{Cadre Symbolique et Typage (FR)}
 
-Afin de garantir l'immunité du Lemme 24 face aux pathologies de ramification sauvage documentées dans nos impasses (où l'approche géométrique globale par fibrations motiviques s'effondre), nous restreignons rigoureusement le cadre axiomatique. Nous remplaçons l'approche géométrique par l'étude locale des facteurs $\gamma$ de Langlands-Shahidi pour des groupes réductifs de rang supérieur.
+Afin de garantir l'immunité du Lemme 25 face aux pathologies de ramification sauvage, aux espaces non archimédiens, et aux singularités de codimension 1, nous restreignons rigoureusement le cadre axiomatique. L'orbifolding doit être imposé sur une géométrie de Calabi-Yau stricte, avec une compacité garantie des fibres.
 
 \begin{itemize}
-    \item $\mathrm{GL}_6$ : Le groupe général linéaire sur un corps local de caractéristique nulle.
-    \item $\wedge^3$ : La représentation cube extérieur de $\mathrm{GL}_6$, agissant comme un pont rigide.
-    \item $\pi$ : Une représentation irréductible admissible générique de $\mathrm{GL}_6(F)$.
-    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Le facteur $\gamma$ local de Langlands-Shahidi associé.
-    \item $\chi$ : Un caractère fortement ramifié utilisé pour tester la stabilité asymptotique.
+    \item $X$ : Une variété de Calabi-Yau 4-fold modélisant l'espace des phases arithmétiques.
+    \item $\Gamma$ : Un groupe d'orbifold abélien agissant sur $X$.
+    \item $X/\Gamma$ : L'orbifold abélien dont la rigidité topologique contraint le spectre.
+    \item $\zeta_\Gamma(s)$ : La fonction Zêta motivique restreinte par l'action de $\Gamma$, forçant l'alignement critique.
+    \item $J, E$ : Termes chiraux de la théorie de jauge, exigeant la résolution des singularités sur $\Re(s) = 1/2$.
 \end{itemize}
 
-\begin{lemma}[Stabilité des facteurs $\gamma$ et Universalité Spectrale]
-Soit $\pi_1$ et $\pi_2$ deux représentations irréductibles admissibles génériques de $\mathrm{GL}_6(F)$ possédant le même caractère central. Sous une torsion par un caractère $\chi$ de conducteur suffisamment grand (forte ramification), les facteurs $\gamma$ locaux pour la représentation cube extérieur sont asymptotiquement stables : $\gamma(s, \pi_1 \otimes \chi, \wedge^3, \psi) = \gamma(s, \pi_2 \otimes \chi, \wedge^3, \psi)$. Cette stabilité locale stricte neutralise les perturbations de ramification sauvage, forçant par fonctorialité l'annulation des asymétries globales et confinant le spectre des fonctions L associées sur la droite critique.
+\begin{lemma}[Cristallisation spectrale par Orbifold Abélien]
+Soit $X$ une variété de Calabi-Yau 4-fold soumise à l'action d'un groupe d'orbifold abélien $\Gamma$. La topologie contrainte de l'orbifold $X/\Gamma$ impose une rigidité structurelle sur les cycles chiraux correspondants. Pour le modèle de "brane bricks" arithmétique associé, toute déviation spectrale hors de la droite critique $\Re(s) = 1/2$ induit des singularités non résolubles dans les termes $J$ et $E$. L'alignement parfait du spectre motivique $\zeta_\Gamma(s)$ est alors la condition nécessaire à la cohérence de l'espace de modules.
 \end{lemma}
 
 \vspace{1cm}
@@ -40,18 +40,18 @@ Soit $\pi_1$ et $\pi_2$ deux représentations irréductibles admissibles génér
 \selectlanguage{english}
 \section*{Symbolic Framework and Typing (EN)}
 
-To ensure the immunity of Lemma 24 against the wild ramification pathologies documented in our impasses (where the global geometric approach via motivic fibrations collapses), we rigorously restrict the axiomatic framework. We replace the geometric approach with the local study of Langlands-Shahidi $\gamma$-factors for higher rank reductive groups.
+To ensure the immunity of Lemma 25 against wild ramification pathologies, non-Archimedean spaces, and codimension 1 singularities, we rigorously restrict the axiomatic framework. The orbifolding must be imposed on a strict Calabi-Yau geometry, with guaranteed compactness of the fibers.
 
 \begin{itemize}
-    \item $\mathrm{GL}_6$: The general linear group over a local field of characteristic zero.
-    \item $\wedge^3$: The exterior cube representation of $\mathrm{GL}_6$, acting as a rigid bridge.
-    \item $\pi$: An irreducible admissible generic representation of $\mathrm{GL}_6(F)$.
-    \item $\gamma(s, \pi, \wedge^3, \psi)$: The associated Langlands-Shahidi local $\gamma$-factor.
-    \item $\chi$: A highly ramified character used to test asymptotic stability.
+    \item $X$: A Calabi-Yau 4-fold manifold modeling the arithmetic phase space.
+    \item $\Gamma$: An abelian orbifold group acting on $X$.
+    \item $X/\Gamma$: The abelian orbifold whose topological rigidity constrains the spectrum.
+    \item $\zeta_\Gamma(s)$: The motivic Zeta function restricted by the action of $\Gamma$, forcing critical alignment.
+    \item $J, E$: Chiral terms of the gauge theory, requiring the resolution of singularities on $\Re(s) = 1/2$.
 \end{itemize}
 
-\begin{lemma}[Stability of $\gamma$-factors and Spectral Universality]
-Let $\pi_1$ and $\pi_2$ be two irreducible admissible generic representations of $\mathrm{GL}_6(F)$ with the same central character. Under a twist by a character $\chi$ with a sufficiently large conductor (high ramification), the local $\gamma$-factors for the exterior cube representation are asymptotically stable: $\gamma(s, \pi_1 \otimes \chi, \wedge^3, \psi) = \gamma(s, \pi_2 \otimes \chi, \wedge^3, \psi)$. This strict local stability neutralizes wild ramification perturbations, functorially forcing the cancellation of global asymmetries and confining the spectrum of the associated L-functions to the critical line.
+\begin{lemma}[Spectral Crystallization via Abelian Orbifold]
+Let $X$ be a Calabi-Yau 4-fold manifold subject to the action of an abelian orbifold group $\Gamma$. The constrained topology of the orbifold $X/\Gamma$ imposes structural rigidity on the corresponding chiral cycles. For the associated arithmetic brane brick model, any spectral deviation off the critical line $\Re(s) = 1/2$ induces irresolvable singularities in the $J$ and $E$ terms. The perfect alignment of the motivic spectrum $\zeta_\Gamma(s)$ is thus the necessary condition for the consistency of the moduli space.
 \end{lemma}
 
 \vspace{1cm}
