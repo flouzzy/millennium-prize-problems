@@ -8,7 +8,7 @@
 \newtheorem{definition}{Définition}
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
-\title{Draft Setup - Lemma 25 : Cristallisation spectrale par Orbifold Abélien}
+\title{Draft Setup - Lemma 26 : Contrainte Diophantienne de l'Espace des Zéros}
 \date{\today}
 
 \begin{document}
@@ -18,18 +18,17 @@
 \selectlanguage{french}
 \section*{Cadre Symbolique et Typage (FR)}
 
-Afin de garantir l'immunité du Lemme 25 face aux pathologies de ramification sauvage, aux espaces non archimédiens, et aux singularités de codimension 1, nous restreignons rigoureusement le cadre axiomatique. L'orbifolding doit être imposé sur une géométrie de Calabi-Yau stricte, avec une compacité garantie des fibres.
+Afin de garantir l'immunité du Lemme 26 face aux topologies non contraintes permettant l'émergence de "ponts fantômes" et de problèmes de dimension fractionnaire, nous appliquons un carcan diophantien strict. Ce carcan inclut une condition de compacité géométrique assurant la rigidité inconditionnelle de la factorisation.
 
 \begin{itemize}
-    \item $X$ : Une variété de Calabi-Yau 4-fold modélisant l'espace des phases arithmétiques.
-    \item $\Gamma$ : Un groupe d'orbifold abélien agissant sur $X$.
-    \item $X/\Gamma$ : L'orbifold abélien dont la rigidité topologique contraint le spectre.
-    \item $\zeta_\Gamma(s)$ : La fonction Zêta motivique restreinte par l'action de $\Gamma$, forçant l'alignement critique.
-    \item $J, E$ : Termes chiraux de la théorie de jauge, exigeant la résolution des singularités sur $\Re(s) = 1/2$.
+    \item $s = \sigma + it$ : Un zéro non trivial de la fonction Zêta de Riemann, où $\sigma = \Re(s)$.
+    \item $\delta = |\sigma - 1/2|$ : La déviation fractionnaire du zéro par rapport à la droite critique.
+    \item $\mathcal{M}_{\text{arith}}$ : L'espace de modules des motifs arithmétiques, muni d'une topologie diophantienne stricte (condition de compacité).
+    \item $\mathcal{A}_{\text{Wiener}}$ : L'opérateur d'approximation rationnelle inconditionnelle (analogue à l'attaque de Wiener) générant des fractions continues.
 \end{itemize}
 
-\begin{lemma}[Cristallisation spectrale par Orbifold Abélien]
-Soit $X$ une variété de Calabi-Yau 4-fold soumise à l'action d'un groupe d'orbifold abélien $\Gamma$. La topologie contrainte de l'orbifold $X/\Gamma$ impose une rigidité structurelle sur les cycles chiraux correspondants. Pour le modèle de "brane bricks" arithmétique associé, toute déviation spectrale hors de la droite critique $\Re(s) = 1/2$ induit des singularités non résolubles dans les termes $J$ et $E$. L'alignement parfait du spectre motivique $\zeta_\Gamma(s)$ est alors la condition nécessaire à la cohérence de l'espace de modules.
+\begin{lemma}[Contrainte Diophantienne de l'Espace des Zéros]
+Soit $\mathcal{M}_{\text{arith}}$ l'espace de modules géométrique et analytique restreint par une condition de compacité stricte. Pour tout zéro non trivial $s$ présentant une déviation $\delta > 0$, l'application de la séquence d'approximations rationnelles inconditionnelles $\mathcal{A}_{\text{Wiener}}$ force la décomposition asymétrique du motif arithmétique sous-jacent. Or, la cohérence et la pureté de $\mathcal{M}_{\text{arith}}$ interdisent structurellement une telle asymétrie. Il en résulte inconditionnellement que $\delta$ doit être nul, confinant ainsi tout le spectre sur la droite critique.
 \end{lemma}
 
 \vspace{1cm}
@@ -40,18 +39,17 @@ Soit $X$ une variété de Calabi-Yau 4-fold soumise à l'action d'un groupe d'or
 \selectlanguage{english}
 \section*{Symbolic Framework and Typing (EN)}
 
-To ensure the immunity of Lemma 25 against wild ramification pathologies, non-Archimedean spaces, and codimension 1 singularities, we rigorously restrict the axiomatic framework. The orbifolding must be imposed on a strict Calabi-Yau geometry, with guaranteed compactness of the fibers.
+To ensure the immunity of Lemma 26 against unconstrained topologies that allow the emergence of "ghost bridges" and fractional dimension issues, we enforce a strict Diophantine constraint. This constraint includes a geometric compactness condition ensuring the unconditional rigidity of the factorization.
 
 \begin{itemize}
-    \item $X$: A Calabi-Yau 4-fold manifold modeling the arithmetic phase space.
-    \item $\Gamma$: An abelian orbifold group acting on $X$.
-    \item $X/\Gamma$: The abelian orbifold whose topological rigidity constrains the spectrum.
-    \item $\zeta_\Gamma(s)$: The motivic Zeta function restricted by the action of $\Gamma$, forcing critical alignment.
-    \item $J, E$: Chiral terms of the gauge theory, requiring the resolution of singularities on $\Re(s) = 1/2$.
+    \item $s = \sigma + it$: A non-trivial zero of the Riemann Zeta function, where $\sigma = \Re(s)$.
+    \item $\delta = |\sigma - 1/2|$: The fractional deviation of the zero from the critical line.
+    \item $\mathcal{M}_{\text{arith}}$: The moduli space of arithmetic motives, endowed with a strict Diophantine topology (compactness condition).
+    \item $\mathcal{A}_{\text{Wiener}}$: The unconditional rational approximation operator (analogous to Wiener's attack) generating continued fractions.
 \end{itemize}
 
-\begin{lemma}[Spectral Crystallization via Abelian Orbifold]
-Let $X$ be a Calabi-Yau 4-fold manifold subject to the action of an abelian orbifold group $\Gamma$. The constrained topology of the orbifold $X/\Gamma$ imposes structural rigidity on the corresponding chiral cycles. For the associated arithmetic brane brick model, any spectral deviation off the critical line $\Re(s) = 1/2$ induces irresolvable singularities in the $J$ and $E$ terms. The perfect alignment of the motivic spectrum $\zeta_\Gamma(s)$ is thus the necessary condition for the consistency of the moduli space.
+\begin{lemma}[Diophantine Constraint of the Space of Zeros]
+Let $\mathcal{M}_{\text{arith}}$ be the geometric and analytical moduli space restricted by a strict compactness condition. For any non-trivial zero $s$ exhibiting a deviation $\delta > 0$, the application of the sequence of unconditional rational approximations $\mathcal{A}_{\text{Wiener}}$ forces the asymmetric decomposition of the underlying arithmetic motive. However, the consistency and purity of $\mathcal{M}_{\text{arith}}$ structurally forbid such asymmetry. It unconditionally follows that $\delta$ must be exactly zero, thus confining the entire spectrum to the critical line.
 \end{lemma}
 
 \vspace{1cm}
