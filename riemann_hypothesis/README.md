@@ -2,7 +2,6 @@
 
 Dossier dédié à la résolution de l'Hypothèse de Riemann.
 
-
 ## Présentation
 
 L'Hypothèse de Riemann, formulée par le mathématicien Bernhard Riemann en 1859, est l'un des problèmes ouverts les plus célèbres en mathématiques (il fait partie des problèmes du prix du millénaire). Elle concerne la distribution des nombres premiers.
@@ -74,6 +73,7 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+- <a id="2026-07-27-03h"></a>[[2026-07-27 03:00]](../dashboard.md#2026-07-27-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yorick Fuhrmann, Alberto Acosta Reche. Blueprint du Lemme 27 fixé. Statut : Planifié.
 
 - <a id="2026-07-26-14h"></a>[[2026-07-26 14:00]](../dashboard.md#2026-07-26-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
@@ -83,7 +83,6 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 - <a id="2026-07-25-03h"></a>[[2026-07-25 03:00]](../dashboard.md#2026-07-25-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Juno Kwon, Rak-Kyeong Seong. Blueprint du Lemme 25 fixé. Statut : Planifié.
 - <a id="2026-07-24-18h"></a>[[2026-07-24 18:00]](../dashboard.md#2026-07-24-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 24 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 - <a id="2026-07-24-14h"></a>[[2026-07-24 14:00]](../dashboard.md#2026-07-24-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
-
 
 - <a id="2026-07-24-03h"></a>[[2026-07-24 03:00]](../dashboard.md#2026-07-24-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Taiwang Deng, Dongming She. Blueprint du Lemme 24 fixé. Statut : Planifié.
 
