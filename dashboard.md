@@ -9,9 +9,11 @@
 
 ## Historique d'avancement
 
-### 2026-07-27-03h
+### 2026-07-26-18h
 
-- [[#2026-07-27-03h|2026-07-27 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yorick Fuhrmann, Alberto Acosta Reche. Blueprint du Lemme 27 fixé. Statut : Planifié.
+- [[#2026-07-26-18h|2026-07-26 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 26 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
+
 
 ### 2026-07-26-14h
 
