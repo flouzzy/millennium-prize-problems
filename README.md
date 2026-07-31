@@ -18,6 +18,9 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+
+- <a id="2026-07-27-18h"></a>[[2026-07-27 18:00]](dashboard.md#2026-07-27-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 27 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-07-26-18h"></a>[[2026-07-26 18:00]](dashboard.md#2026-07-26-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 26 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 
