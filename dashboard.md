@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-07-28-03h
+
+- [[#2026-07-28-03h|2026-07-28 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Andrzej Dąbrowski, Salah Eddine Rihane, Gökhan Soydan, Paul M. Voutier, Yichuan Cao, Dakai Guo, Ruichen Qiu, Ruyong Feng, Xiao-Shan Gao. Blueprint du Lemme 28 fixé. Statut : Planifié.
+
 ### 2026-07-27-14h
 
 - [[#2026-07-27-14h|2026-07-27 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
