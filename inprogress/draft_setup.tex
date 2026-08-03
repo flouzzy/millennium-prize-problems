@@ -21,14 +21,15 @@
 Afin de garantir l'immunité du Lemme 27 face aux topologies non contraintes (comme les espaces non archimédiens, dimensions infinies, singularités de codimension 1 et opérateurs non bornés) qui permettraient l'émergence de "dimensions fractionnaires", nous appliquons une contrainte stricte issue de la complétude de Borel profinie. Ce cadre impose une condition de mesurabilité stricte garantissant la rigidité homotopique de l'espace classifiant.
 
 \begin{itemize}
-    \item $s = 1/2 + \delta + i\gamma$ : Un zéro potentiel de la fonction Zêta, où $\delta > 0$ représente l'asymétrie induite.
-    \item $\pi_1^{\mathrm{\acute{e}t}}(S)$ : Le groupe fondamental étale.
-    \item $\mathcal{M}_{\mathrm{Bredon}}$ : L'espace de modules sur le spectre de cohomologie de Bredon, assujetti à une condition de mesurabilité stricte, agissant comme obstruction.
-    \item $\mathcal{E}_{\mathrm{Chebotarev}}$ : L'opérateur d'équirépartition analytique issu des bornes de densité géodésique de Chebotarev.
+    \item $s \in \mathbb{C}$ : Un zéro potentiel de la fonction Zêta, posé sous la forme $s = 1/2 + \delta + i\gamma$, où $\delta > 0$ représente l'asymétrie induite supposée par l'hypothèse de Riemann fausse.
+    \item $\pi_1^{\mathrm{\acute{e}t}}(S)$ : Le groupe fondamental étale de la variété algébrique $S$.
+    \item $\mathcal{M}_{\mathrm{Bredon}}(\pi_1^{\mathrm{\acute{e}t}}(S))$ : L'espace de modules sur le spectre de cohomologie de Bredon pour le groupe $\pi_1^{\mathrm{\acute{e}t}}(S)$, assujetti à une condition de mesurabilité stricte, agissant comme obstruction cohomologique.
+    \item $\mathcal{E}_{\mathrm{Chebotarev}} : L^2(\Gamma \backslash G) \to \mathbb{R}$ : L'opérateur d'équirépartition analytique issu des bornes de densité géodésique de Chebotarev pour des classes de congruence dans $\mathrm{SL}_2(\mathbb{Z})$.
+    \item $\mathcal{F}_{\mathrm{mot}} : \mathrm{Sch}_{/\mathbb{Z}} \to \mathcal{M}_{\mathrm{Bredon}}$ : Fibration motivique restreinte reliant les schémas arithmétiques à la cohomologie de Bredon.
 \end{itemize}
 
 \begin{lemma}[Discrétisation Profinie des Poids Cohomologiques]
-Soit $\mathcal{M}_{\mathrm{Bredon}}$ l'espace de modules géométrique restreint par une condition de mesurabilité stricte. Pour tout zéro potentiel $s = 1/2 + \delta + i\gamma$ présentant une asymétrie $\delta > 0$, l'application de l'opérateur d'équirépartition $\mathcal{E}_{\mathrm{Chebotarev}}$ génère une obstruction cohomologique globale dans la structure homotopique rigide du spectre de Bredon de $\pi_1^{\mathrm{\acute{e}t}}(S)$. La complétude de Borel profinie interdisant l'existence de telles anomalies spectrales discrètes sous-mesurables, il en résulte que cette obstruction doit s'annuler, imposant inconditionnellement $\delta = 0$.
+Soit $\mathcal{M}_{\mathrm{Bredon}}(\pi_1^{\mathrm{\acute{e}t}}(S))$ l'espace de modules géométrique restreint par une condition de mesurabilité stricte (i.e. écartant les spectres non-standards). Pour tout zéro potentiel $s = 1/2 + \delta + i\gamma$ présentant une asymétrie $\delta > 0$, l'application de l'opérateur d'équirépartition $\mathcal{E}_{\mathrm{Chebotarev}}$ génère une obstruction cohomologique globale $\omega(\delta)$ dans la structure homotopique rigide du spectre de Bredon de $\pi_1^{\mathrm{\acute{e}t}}(S)$. La complétude de Borel profinie interdisant l'existence de telles anomalies spectrales discrètes sous-mesurables (puisque les "dimensions fractionnaires" sont exclues par rigidité homotopique), il en résulte que cette obstruction doit s'annuler globalement sur l'espace des modules, i.e. $\omega(\delta) = 0$, imposant inconditionnellement $\delta = 0$.
 \end{lemma}
 
 \vspace{1cm}
@@ -42,14 +43,15 @@ Soit $\mathcal{M}_{\mathrm{Bredon}}$ l'espace de modules géométrique restreint
 To ensure the immunity of Lemma 27 against unconstrained topologies (such as non-Archimedean spaces, infinite dimensions, codimension 1 singularities, and unbounded operators) that would allow the emergence of "fractional dimensions", we enforce a strict constraint derived from profinite Borel completeness. This framework imposes a strict measurability condition ensuring the homotopic rigidity of the classifying space.
 
 \begin{itemize}
-    \item $s = 1/2 + \delta + i\gamma$: A potential zero of the Zeta function, where $\delta > 0$ represents the induced asymmetry.
-    \item $\pi_1^{\mathrm{\acute{e}t}}(S)$: The étale fundamental group.
-    \item $\mathcal{M}_{\mathrm{Bredon}}$: The moduli space over the Bredon cohomology spectrum, subject to a strict measurability condition, acting as an obstruction.
-    \item $\mathcal{E}_{\mathrm{Chebotarev}}$: The analytical equidistribution operator derived from Chebotarev's geodesic density bounds.
+    \item $s \in \mathbb{C}$: A potential zero of the Zeta function, set as $s = 1/2 + \delta + i\gamma$, where $\delta > 0$ represents the induced asymmetry assuming the Riemann hypothesis is false.
+    \item $\pi_1^{\mathrm{\acute{e}t}}(S)$: The étale fundamental group of the algebraic variety $S$.
+    \item $\mathcal{M}_{\mathrm{Bredon}}(\pi_1^{\mathrm{\acute{e}t}}(S))$: The moduli space over the Bredon cohomology spectrum for the group $\pi_1^{\mathrm{\acute{e}t}}(S)$, subject to a strict measurability condition, acting as a cohomological obstruction.
+    \item $\mathcal{E}_{\mathrm{Chebotarev}} : L^2(\Gamma \backslash G) \to \mathbb{R}$: The analytical equidistribution operator derived from Chebotarev's geodesic density bounds for congruence classes in $\mathrm{SL}_2(\mathbb{Z})$.
+    \item $\mathcal{F}_{\mathrm{mot}} : \mathrm{Sch}_{/\mathbb{Z}} \to \mathcal{M}_{\mathrm{Bredon}}$: Restricted motivic fibration linking arithmetic schemes to Bredon cohomology.
 \end{itemize}
 
 \begin{lemma}[Profinite Discretization of Cohomological Weights]
-Let $\mathcal{M}_{\mathrm{Bredon}}$ be the geometric moduli space restricted by a strict measurability condition. For any potential zero $s = 1/2 + \delta + i\gamma$ exhibiting an asymmetry $\delta > 0$, the application of the equidistribution operator $\mathcal{E}_{\mathrm{Chebotarev}}$ generates a global cohomological obstruction within the rigid homotopic structure of the Bredon spectrum of $\pi_1^{\mathrm{\acute{e}t}}(S)$. Since profinite Borel completeness forbids the existence of such sub-measurable discrete spectral anomalies, it unconditionally follows that this obstruction must vanish, imposing $\delta = 0$.
+Let $\mathcal{M}_{\mathrm{Bredon}}(\pi_1^{\mathrm{\acute{e}t}}(S))$ be the geometric moduli space restricted by a strict measurability condition (i.e. discarding non-standard spectra). For any potential zero $s = 1/2 + \delta + i\gamma$ exhibiting an asymmetry $\delta > 0$, the application of the equidistribution operator $\mathcal{E}_{\mathrm{Chebotarev}}$ generates a global cohomological obstruction $\omega(\delta)$ within the rigid homotopic structure of the Bredon spectrum of $\pi_1^{\mathrm{\acute{e}t}}(S)$. Since profinite Borel completeness forbids the existence of such sub-measurable discrete spectral anomalies (as "fractional dimensions" are excluded by homotopic rigidity), it unconditionally follows that this obstruction must vanish globally over the moduli space, i.e. $\omega(\delta) = 0$, imposing $\delta = 0$.
 \end{lemma}
 
 \vspace{1cm}
