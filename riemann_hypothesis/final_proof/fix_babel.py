@@ -10,30 +10,11 @@ def fix_babel_content(content):
     # Using a loop or matching everything inside { until the closing }
     # but balancing braces in regex is hard. Let's just find and replace the block by simple string matching.
 
+    import re
     def remove_block(text, block_name):
-        while True:
-            start_idx = text.find(block_name)
-            if start_idx == -1:
-                break
-            brace_idx = text.find('{', start_idx)
-            if brace_idx == -1:
-                break
-            # Find matching closing brace
-            brace_count = 0
-            end_idx = -1
-            for i in range(brace_idx, len(text)):
-                if text[i] == '{':
-                    brace_count += 1
-                elif text[i] == '}':
-                    brace_count -= 1
-                    if brace_count == 0:
-                        end_idx = i
-                        break
-            if end_idx != -1:
-                text = text[:start_idx] + text[end_idx+1:]
-            else:
-                break
-        return text
+        escaped_block = re.escape(block_name)
+        pattern = escaped_block + r'\s*\{([^\{\}]|\{[^\{\}]*\})*\}'
+        return re.sub(pattern, '', text)
 
     content = remove_block(content, r'\addto\captionsfrench')
     content = remove_block(content, r'\addto\captionsenglish')
