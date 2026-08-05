@@ -1,7 +1,6 @@
 import os
-from utils import get_tex_path
 
-with open(get_tex_path(), 'r', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'r', encoding='utf-8') as f:
     content = f.read()
 
 # Ajout des paquets graphiques dans le préambule
@@ -188,6 +187,6 @@ Li's criterion states that the Riemann Hypothesis holds if and only if $\lambda_
 content = content.replace(r"\subsection{12. Épilogue Arithmétique Approfondi}", french_numerical + "\n" + r"\subsection{13. Épilogue Arithmétique Approfondi}")
 content = content.replace(r"\subsection{12. Deepened Arithmetic Epilogue}", english_numerical + "\n" + r"\subsection{13. Deepened Arithmetic Epilogue}")
 
-with open(get_tex_path(), 'w', encoding='utf-8') as f:
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'w', encoding='utf-8') as f:
     f.write(content)
 
