@@ -1,4 +1,5 @@
 import os
+from utils import get_tex_path
 import sys
 
 def fix_babel_content(content):
@@ -64,10 +65,10 @@ def fix_babel_content(content):
     return content
 
 if __name__ == '__main__':
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'r', encoding='utf-8') as f:
+    with open(get_tex_path(), 'r', encoding='utf-8') as f:
         content = f.read()
 
     content = fix_babel_content(content)
 
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex"), 'w', encoding='utf-8') as f:
+    with open(get_tex_path(), 'w', encoding='utf-8') as f:
         f.write(content)

@@ -1,4 +1,5 @@
 import os
+from utils import get_tex_path
 
 tex_path = "/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/riemann_hypothesis-proof-bilingual.tex"
 py_path = "/var/www/maths-proof/millennium-prize-problems/riemann_hypothesis/final_proof/generate_bilingual_v2.py"
@@ -587,10 +588,11 @@ with open(tex_path, "w", encoding="utf-8") as f:
     f.write(tex_content)
 
 py_code = f"""import os
+from utils import get_tex_path
 
 def generate_bilingual():
     content = {repr(tex_content)}
-    target_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_hypothesis-proof-bilingual.tex")
+    target_path = get_tex_path()
     with open(target_path, "w", encoding="utf-8") as f:
         f.write(content)
 

@@ -2,6 +2,7 @@ import unittest
 from unittest.mock import patch, mock_open
 import sys
 import os
+from utils import get_tex_path
 import importlib
 
 class TestGenerateBilingualV2(unittest.TestCase):
@@ -19,7 +20,7 @@ class TestGenerateBilingualV2(unittest.TestCase):
 
         # Verify open was called with correct arguments
         mock_file.assert_called_once_with(
-            os.path.join(os.path.dirname(os.path.abspath(__file__)), 'riemann_hypothesis-proof-bilingual.tex'),
+            get_tex_path(),
             'w',
             encoding='utf-8'
         )
