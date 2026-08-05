@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-07-29-18h
+### 2026-07-30-03h
 
-- [[#2026-07-29-18h|2026-07-29 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 28 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- [[#2026-07-30-03h|2026-07-30 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Andrzej Dąbrowski, Salah Eddine Rihane, Gökhan Soydan, Paul M. Voutier, Yichuan Cao, Dakai Guo, Ruichen Qiu, Ruyong Feng, Xiao-Shan Gao. Blueprint du Lemme 30 fixé. Statut : Planifié.
 
 ### 2026-07-29-14h
 
