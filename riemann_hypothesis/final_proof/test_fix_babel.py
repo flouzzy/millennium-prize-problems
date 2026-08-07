@@ -68,6 +68,17 @@ just some other content
         # Because \hypersetup is missing, new_babel_fixes won't be added
         self.assertNotIn(r"\makeatletter", result)
 
+
+    def test_fix_babel_missing_brace(self):
+        content = r"\addto\captionsfrench just some text without brace"
+        result = fix_babel_content(content)
+        self.assertEqual(content, result)
+
+    def test_fix_babel_unbalanced_brace(self):
+        content = r"\addto\captionsfrench{ unbalanced brace text"
+        result = fix_babel_content(content)
+        self.assertEqual(content, result)
+
 if __name__ == '__main__':
     unittest.main()
 
