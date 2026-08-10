@@ -11,7 +11,7 @@
 
 ### 2026-08-02-03h
 
-- [[#2026-08-02-03h|2026-08-02 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Eric Li, Shreya Sharma. Blueprint du Lemme 33 fixé. Statut : Planifié.
+- [[#2026-08-02-03h|2026-08-02 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Aayush Verma, Benjamin Durkan, Timothy Page. Blueprint du Lemme 33 fixé. Statut : Planifié.
 
 ### 2026-08-01-14h
 
