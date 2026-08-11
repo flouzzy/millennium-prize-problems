@@ -18,6 +18,8 @@ Consultez le [Tableau de bord](dashboard.md) pour le suivi de l'investigation ac
 
 ## Historique d'avancement
 
+
+- <a id="2026-08-03-03h"></a>[[2026-08-03 03:00]](dashboard.md#2026-08-03-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel, Taiwang Deng, Dongming She. Blueprint du Lemme 34 fixé. Statut : Planifié.
 - <a id="2026-08-02-14h"></a>[[2026-08-02 14:00]](dashboard.md#2026-08-02-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-08-02-03h"></a>[[2026-08-02 03:00]](dashboard.md#2026-08-02-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Alberto Acosta Reche. Blueprint du Lemme 33 fixé. Statut : Planifié.
