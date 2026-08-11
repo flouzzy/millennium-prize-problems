@@ -9,7 +9,7 @@ L'analyse des flux récents sur arXiv a mis en évidence des avancées notables 
 La pertinence conceptuelle de ces articles confirme qu'une déformation géométrique via des coefficients mod $p$ et la stabilité asymptotique des facteurs $\gamma$ offrent un cadre propice. En calculant la distance conceptuelle avec le répertoire `impasses/`, il est clair que cette orientation diverge suffisamment des approches purement analytiques, consolidant ainsi la trajectoire pour le Lemme 34.
 
 **Architecture logique du Lemme 34 :**
-Nous poserons un cadre motivique où la topologie de Grothendieck permet de filtrer les zéros de la fonction $\zeta(s)$. La rigidité motivique issue des facteurs $\gamma$ permettra de cerner la symétrie spectrale, écartant de facto les asymétries via une obstruction cohomologique stricte.
+Nous poserons un cadre motivique (tenant compte de cette remarque) où la topologie de Grothendieck permet de filtrer les zéros de la fonction $\zeta(s)$. La rigidité motivique issue des facteurs $\gamma$ permettra de cerner la symétrie spectrale, écartant de facto les asymétries via une obstruction cohomologique stricte.
 
 ---
 
