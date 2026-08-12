@@ -73,6 +73,8 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+- <a id="2026-08-02-18h"></a>[[2026-08-02 18:00]](../dashboard.md#2026-08-02-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 33 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 - <a id="2026-08-02-14h"></a>[[2026-08-02 14:00]](../dashboard.md#2026-08-02-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-08-02-03h"></a>[[2026-08-02 03:00]](../dashboard.md#2026-08-02-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Alberto Acosta Reche. Blueprint du Lemme 33 fixé. Statut : Planifié.
