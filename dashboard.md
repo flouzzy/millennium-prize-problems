@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-08-03-22h
+
+- [[#2026-08-03-22h|2026-08-03 22:00]] : [Certification & Verrouillage arXiv] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 33 certifié sans ellipse, abstract et références compilés avec succès. Statut : Impasse - Mutation requise.
+
 ### 2026-08-03-14h
 
 - [[#2026-08-03-14h|2026-08-03 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.

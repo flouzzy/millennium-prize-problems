@@ -73,6 +73,8 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+- <a id="2026-08-03-22h"></a>[[2026-08-03 22:00]](../dashboard.md#2026-08-03-22h) : [Certification & Verrouillage arXiv] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 33 certifié sans ellipse, abstract et références compilés avec succès. Statut : Impasse - Mutation requise.
+
 - <a id="2026-08-03-14h"></a>[[2026-08-03 14:00]](../dashboard.md#2026-08-03-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-08-02-14h"></a>[[2026-08-02 14:00]](../dashboard.md#2026-08-02-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
