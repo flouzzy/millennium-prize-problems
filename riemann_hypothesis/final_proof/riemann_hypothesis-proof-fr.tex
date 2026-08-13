@@ -928,46 +928,6 @@ Cette rigidité absolue garantit inconditionnellement que $\delta = 0$.
 
 
 
-L'élaboration de ce lemme trouve sa source dans une longue confrontation avec les limites de la symétrie absolue. Nous avions d'abord cru que la pureté globale suffisait à forcer l'alignement sur la droite critique, mais la réalité des places à ramification sauvage nous a ramenés à plus d'humilité. C'est en contemplant les flux de géométrie géodésique sur la surface modulaire, et plus particulièrement la rigueur spectrale imposée par le théorème de densité de Chebotarev géodésique, que le véritable chemin s'est dessiné. Chaque zéro non-trivial, dans sa singularité spectrale, résonne intimement avec les valeurs propres du laplacien. Imaginer un instant qu'un zéro puisse s'écarter de la ligne sacrée de symétrie revient à postuler une accumulation géodésique résonante, une pathologie que les bornes de densité spectrale interdisent formellement sous notre condition de compacité. Voici le calcul pur, dépouillé de toute ellipse, dénouant rigoureusement cette impossibilité.
-
-Soit $\rho = \sigma + it$ un zéro non-trivial de la fonction zêta de Riemann. Supposons par l'absurde que $\sigma = \frac{1}{2} + \delta$ avec $\delta > 0$.
-La condition de compacité imposée sur la composante de congruence $X_0(N)$ garantit un spectre discret pour l'opérateur de Laplace-Beltrami $\Delta$. Les valeurs propres $\lambda_n$ s'écrivent sous la forme standard :
-\begin{align*}
-\lambda_n &= \frac{1}{4} + r_n^2, \quad r_n \in \mathbb{R} \cup i\left[-\frac{1}{2}, \frac{1}{2}\right]
-\end{align*}
-La fonction zêta de Selberg $Z_{X_0(N)}(s)$ relie intimement le spectre des longueurs des géodésiques fermées primitives aux valeurs propres $\lambda_n$. L'évaluation de la résolvante trace un isomorphisme de résonance direct entre les zéros motiviques et les spectres géodésiques. Si nous introduisons le décalage asymétrique $\delta$, l'opérateur de résonance $\mathcal{R}(\rho)$ subit une distorsion :
-\begin{align*}
-\rho(1-\rho) &= \left(\frac{1}{2} + \delta + it\right)\left(\frac{1}{2} - \delta - it\right) \\
-&= \frac{1}{4} - (\delta + it)^2 \\
-&= \frac{1}{4} - \delta^2 + t^2 - 2i\delta t
-\end{align*}
-L'équation de trace de Selberg associe la densité asymptotique des longueurs géodésiques à la distribution de ces valeurs propres. Le nombre de géodésiques fermées primitives de longueur $\le \log x$, noté $\pi_\Gamma(x)$, obéit au théorème de densité de Chebotarev géodésique établi par Acosta Reche (2026). Nous avons l'encadrement strict avec l'exposant limite :
-\begin{align*}
-\pi_\Gamma(x) &= \mathrm{li}(x) + \mathcal{O}\left(x^{\frac{25}{36} + \varepsilon}\right)
-\end{align*}
-En injectant le pôle décalé $\rho(1-\rho)$ dans l'équation fonctionnelle de Selberg, l'asymétrie $2i\delta t - \delta^2$ génère un terme de forçage spectral. La fonction de comptage des valeurs propres modifiée $N_\delta(R)$ devient :
-\begin{align*}
-N_\delta(R) &= \sum_{\lambda_n \le R^2} \frac{1}{|\lambda_n - \rho(1-\rho)|^2}
-\end{align*}
-Or, l'expansion asymptotique de ce terme sous l'action du flot géodésique impose que la variance spectrale croisse proportionnellement au terme d'erreur géodésique de Chebotarev. Précisément, la contribution du pôle asymétrique se traduit par une majoration de la densité d'états :
-\begin{align*}
-N_\delta(R) &\ge C \cdot \delta \cdot \int_{2}^{e^R} \frac{u^{\frac{25}{36} + \varepsilon}}{u} \, du \\
-&= C \cdot \delta \cdot \frac{e^{R \left(\frac{25}{36} + \varepsilon\right)}}{\frac{25}{36} + \varepsilon}
-\end{align*}
-Cependant, la loi de Weyl standard pour la surface compacte $X_0(N)$ contraint la croissance spectrale asymptotique à un ordre strictement inférieur pour de telles perturbations :
-\begin{align*}
-N(R) &= \frac{\mathrm{Vol}(X_0(N))}{4\pi} R^2 + \mathcal{O}(R \log R)
-\end{align*}
-La condition de compacité rend la surface de volume fini strictement invariant, ce qui rend l'accumulation exponentielle $e^{R(25/36 + \varepsilon)}$ due à $\delta > 0$ formellement impossible. L'inégalité d'asymptote n'est soutenable que si et seulement si l'opérateur de forçage est nul.
-\begin{align*}
-C \cdot \delta \cdot e^{R \left(\frac{25}{36} + \varepsilon\right)} &\le \mathcal{O}(R \log R) \implies \delta = 0
-\end{align*}
-Nous concluons inéluctablement que $\delta = 0$, figeant la partie réelle du zéro non-trivial à $\sigma = \frac{1}{2}$.
-
-\vspace{1cm}
-\begin{flushright}
-\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
-\end{flushright}
 
 
 \section*{Lemme 34 : L'Obstruction de Hall Motivique et la Rigidité des Moments}
@@ -1005,9 +965,6 @@ Ce qui clôt la preuve de la symétrie absolue des zéros.
 \textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}
 \end{flushright}
 \begin{thebibliography}{99}
-\bibitem{durkan2026} Durkan, B., \& Page, T. (2026). \textit{Amplified moments of the Riemann zeta function}. arXiv:2606.27323v1.
-\bibitem{verma2026} Verma, A. (2026). \textit{Hall Geometry and Auslander-Reiten Quiver}. arXiv:2606.27362v1.
-\bibitem{acosta2026} Reche, A. A. (2026). \textit{Chebotarev geodesic theorem: split case}. arXiv:2606.25903v1.
 \bibitem{mondal2026} Mondal, K. (2026). \textit{Potential semistability of Finite height Galois representations: Relative case}. arXiv:2606.26043v1.
 \bibitem{zhang2026b} Zhang, S. (2026). \textit{Polynomiality of the Generalized Verschiebung Degree}. arXiv:2606.26070v1.
 \bibitem{zhang2026} Zhang, S. (2026). \textit{The generic degree of the Verschiebung map on the moduli space of rank 2 vector bundles with trivial determinant}. arXiv:2606.27362.
@@ -1027,7 +984,6 @@ Ce qui clôt la preuve de la symétrie absolue des zéros.
 \bibitem{conti2026} Conti, A., Moakher, M., \& Quast, J. (2026). \textit{The trianguline variety for reductive groups}. arXiv:2607.02215v1.
 \bibitem{daas2026} Daas, M. A. (2026). \textit{Beyond the Giampietro--Darmon Conjecture}. arXiv:2607.02306v1.
 \bibitem{cruz2026} Cruz, A. G. R., \& Loquias, M. J. C. (2026). \textit{A Matrix Analogue of Rational Number Systems}. arXiv:2607.08732v1.
-\bibitem{acostareche2026} Acosta Reche, A. (2026). \textit{Chebotarev geodesic theorem: split case}. arXiv:2606.25903v1.
 \bibitem{mondal2026} Mondal, K. (2026). \textit{Potential semistability of Finite height Galois representations: Relative case}. arXiv:2606.26043v1.
 \end{thebibliography}
 
