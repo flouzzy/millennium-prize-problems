@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-08-04-18h
+
+- [[#2026-08-04-18h|2026-08-04 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 35 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+
 ### 2026-08-03-22h
 
 - [[#2026-08-03-22h|2026-08-03 22:00]] : [Certification & Verrouillage arXiv] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 33 certifié sans ellipse, abstract et références compilés avec succès. Statut : Impasse - Mutation requise.
