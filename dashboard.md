@@ -135,6 +135,14 @@
 
 - [[#2026-07-22-03h|2026-07-22 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 22 fixé. Statut : Planifié.
 
+### 2026-08-14-16h
+
+- [[#2026-08-14-16h|2026-08-14 16:00]] : [Transition Formelle Lean 4 / Mathlib] - Migration vers le standard de preuve formelle certifiée par noyau (Lean 4 v4.32.0 + Mathlib4).
+  - Validation sans `sorry` des classes résiduelles d'Erdős-Straus (`ErdosStraus.lean`) et des bornes de base d'Erdős-Moser (`ErdosMoserBase.lean`).
+  - Déduplication et assainissement taxonomique intégral de `erdos-problems/`.
+  - Déploiement des Blueprints Formels déconstruisant les barrières fondamentales pour les 6 Problèmes du Millénaire (P vs NP, Navier-Stokes, Yang-Mills, BSD, Hodge, Riemann) et la Conjecture de Syracuse.
+  - Statut : Pipeline Formel Opérationnel.
+
 ### 2026-07-21-14h
 
 - [[#2026-07-21-14h|2026-07-21 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
