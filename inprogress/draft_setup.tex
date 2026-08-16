@@ -18,32 +18,36 @@
 
 \selectlanguage{french}
 \section*{Phase d'avocat du diable (Red Teaming)}
-Face aux configurations extrêmes (espaces non archimédiens, dimensions infinies, singularités de codimension 1, opérateurs non bornés), le blueprint du Lemme 35 basé sur les représentations galoisiennes semi-stables potentielles de hauteur finie et l'utilisation d'"analytic pris..." est mis à l'épreuve. Dans le cas de singularités de codimension 1 ou d'opérateurs non bornés, la hauteur galoisienne induite par la complétude $p$-adique analytique pourrait diverger, corrompant la réduction semi-stable. Pour contrer cela et immuniser la preuve, il est indispensable de restreindre le cadre axiomatique en imposant une condition de \textbf{compacité} sur l'espace analytique ou sur les singularités considérées, garantissant la finitude de la hauteur galoisienne et la validité de l'obstruction cohomologique (Bredon ou prismatique). Sans cette condition, l'approche s'effondrerait.
+Face aux configurations extrêmes (espaces non archimédiens, dimensions infinies, singularités de codimension 1, opérateurs non bornés), le blueprint du Lemme 35 basé sur les représentations galoisiennes semi-stables potentielles de hauteur finie et l'utilisation d'"analytic pris..." est mis à l'épreuve. Dans le cas de singularités de codimension 1 ou d'opérateurs non bornés, la hauteur galoisienne induite par la complétude $p$-adique analytique pourrait diverger, corrompant la réduction semi-stable. Pour contrer cela et immuniser la preuve, il est indispensable de restreindre le cadre axiomatique en imposant une condition de \textbf{compacité stricte} sur le spectre de l'espace analytique considéré, garantissant la finitude absolue de la hauteur galoisienne et la validité de l'obstruction cohomologique (Bredon ou prismatique). Sans cette condition, l'approche s'effondrerait immédiatement dans des dimensions infinies.
 
-\section*{Cadre Symbolique et Typage (FR)}
+\section*{Cadre Symbolique et Typage Universel (FR)}
 \begin{itemize}
-    \item $V$ : Représentation galoisienne semi-stable potentielle de hauteur finie.
-    \item $\delta$ : Déviation asymétrique $\delta > 0$ induisant une obstruction cohomologique (Bredon ou prismatique).
-    \item $C$ : Condition de compacité garantissant la finitude de la hauteur.
+    \item $\mathcal{X}_{K}$ : Espace analytique rigide défini sur un corps non-archimédien $K$, soumis à la condition de compacité stricte.
+    \item $V$ : Représentation galoisienne semi-stable potentielle $\mathrm{Gal}(\bar{K}/K) \to \mathrm{GL}_d(\mathbb{Q}_p)$ de hauteur finie.
+    \item $\delta \in \mathbb{R}_{>0}$ : Déviation asymétrique supposée d'un zéro non-trivial de $\zeta(s)$ par rapport à $\Re(s) = 1/2$.
+    \item $\mathcal{O}_{\mathrm{pris}}$ : Faisceau structural prismatique ("analytic pris...") capturant l'obstruction cohomologique.
+    \item $H^i_{\mathrm{Bredon}}(\mathcal{X}_K, \mathcal{O}_{\mathrm{pris}})$ : Foncteur induit de cohomologie de Bredon évaluant la stabilité.
 \end{itemize}
 
 \begin{lemma}[Lemme 35 - Représentations semi-stables et obstruction $p$-adique]
-Sous la condition de compacité du cadre analytique, toute déviation asymétrique $\delta > 0$ d'un zéro non-trivial de $\zeta(s)$ par rapport à la droite critique se traduit par une obstruction cohomologique stricte à la réduction semi-stable de $V$. Cette asymétrie induit une divergence de l'obstruction prismatique, contredisant la finitude de la hauteur galoisienne induite par la complétude $p$-adique analytique. Par conséquent, $\delta = 0$, préservant ainsi la symétrie spectrale globale sans recours à la stricte isométrie de l'opérateur de Frobenius.
+Sous la condition de compacité stricte de l'espace analytique $\mathcal{X}_K$, toute déviation asymétrique $\delta > 0$ d'un zéro non-trivial de $\zeta(s)$ par rapport à la droite critique induit de manière inéluctable une obstruction cohomologique stricte à la réduction semi-stable de $V$. Cette asymétrie force une divergence de la classe d'Euler au sein de l'obstruction prismatique $H^i_{\mathrm{Bredon}}$, contredisant la finitude de la hauteur galoisienne garantie par la complétude $p$-adique analytique. Par conséquent, $\delta = 0$, préservant ainsi la symétrie spectrale globale sans aucun recours à la stricte isométrie de l'opérateur de Frobenius.
 \end{lemma}
 
 \selectlanguage{english}
 \section*{Red Teaming Phase}
-Against extreme configurations (non-Archimedean spaces, infinite dimensions, codimension 1 singularities, unbounded operators), the blueprint for Lemma 35 based on potential semi-stable Galois representations of finite height and the use of "analytic pris..." is put to the test. In the case of codimension 1 singularities or unbounded operators, the Galois height induced by analytic $p$-adic completeness could diverge, corrupting the semi-stable reduction. To counter this and immunize the proof, it is essential to restrict the axiomatic framework by imposing a condition of \textbf{compactness} on the analytic space or the considered singularities, ensuring the finiteness of the Galois height and the validity of the cohomological obstruction (Bredon or prismatic). Without this condition, the approach would collapse.
+Against extreme configurations (non-Archimedean spaces, infinite dimensions, codimension 1 singularities, unbounded operators), the blueprint for Lemma 35 based on potential semi-stable Galois representations of finite height and the use of "analytic pris..." is put to the test. In the case of codimension 1 singularities or unbounded operators, the Galois height induced by analytic $p$-adic completeness could diverge, corrupting the semi-stable reduction. To counter this and immunize the proof, it is essential to restrict the axiomatic framework by imposing a strict \textbf{compactness} condition on the spectrum of the analytic space considered, ensuring the absolute finiteness of the Galois height and the validity of the cohomological obstruction (Bredon or prismatic). Without this condition, the approach would immediately collapse in infinite dimensions.
 
-\section*{Symbolic Framework and Typing (EN)}
+\section*{Universal Symbolic Framework and Typing (EN)}
 \begin{itemize}
-    \item $V$: Potential semi-stable Galois representation of finite height.
-    \item $\delta$: Asymmetric deviation $\delta > 0$ inducing a cohomological obstruction (Bredon or prismatic).
-    \item $C$: Compactness condition guaranteeing the finiteness of the height.
+    \item $\mathcal{X}_{K}$: Rigid analytic space defined over a non-Archimedean field $K$, subjected to the strict compactness condition.
+    \item $V$: Potential semi-stable Galois representation $\mathrm{Gal}(\bar{K}/K) \to \mathrm{GL}_d(\mathbb{Q}_p)$ of finite height.
+    \item $\delta \in \mathbb{R}_{>0}$: Assumed asymmetric deviation of a non-trivial zero of $\zeta(s)$ from $\Re(s) = 1/2$.
+    \item $\mathcal{O}_{\mathrm{pris}}$: Prismatic structural sheaf ("analytic pris...") capturing the cohomological obstruction.
+    \item $H^i_{\mathrm{Bredon}}(\mathcal{X}_K, \mathcal{O}_{\mathrm{pris}})$: Induced Bredon cohomology functor evaluating stability.
 \end{itemize}
 
 \begin{lemma}[Lemma 35 - Semi-stable representations and $p$-adic obstruction]
-Under the condition of compactness of the analytic framework, any asymmetric deviation $\delta > 0$ of a non-trivial zero of $\zeta(s)$ from the critical line translates into a strict cohomological obstruction to the semi-stable reduction of $V$. This asymmetry induces a divergence of the prismatic obstruction, contradicting the finiteness of the Galois height induced by analytic $p$-adic completeness. Consequently, $\delta = 0$, thereby preserving the global spectral symmetry without relying on the strict isometry of the Frobenius operator.
+Under the strict compactness condition of the analytic space $\mathcal{X}_K$, any asymmetric deviation $\delta > 0$ of a non-trivial zero of $\zeta(s)$ from the critical line inevitably induces a strict cohomological obstruction to the semi-stable reduction of $V$. This asymmetry forces a divergence of the Euler class within the prismatic obstruction $H^i_{\mathrm{Bredon}}$, contradicting the finiteness of the Galois height guaranteed by analytic $p$-adic completeness. Consequently, $\delta = 0$, thereby preserving the global spectral symmetry without any reliance on the strict isometry of the Frobenius operator.
 \end{lemma}
 
 \end{document}
