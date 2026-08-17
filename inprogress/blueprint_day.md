@@ -2,7 +2,7 @@
 ## 2026-08-05 - 03:00 - Session du Matin
 
 **Problème du Millénaire :** L'hypothèse de Riemann
-**Cible :** Lemme 35
+**Cible :** Lemme 34
 
 ### [FR] Note d'Orientation
 
