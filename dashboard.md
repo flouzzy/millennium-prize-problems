@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-08-04-18h
+### 2026-08-05-03h
 
-- [[#2026-08-04-18h|2026-08-04 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 34 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- [[#2026-08-05-03h|2026-08-05 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 34 fixé. Statut : Planifié.
 
 ### 2026-08-04-03h
 
