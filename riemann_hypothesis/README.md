@@ -73,6 +73,8 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+- <a id="2026-08-05-03h"></a>[[2026-08-05 03:00]](../dashboard.md#2026-08-05-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 35 fixé. Statut : Planifié.
+
 - <a id="2026-08-04-03h"></a>[[2026-08-04 03:00]](../dashboard.md#2026-08-04-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Eric Li, Shreya Sharma. Blueprint du Lemme 34 fixé. Statut : Planifié.
 - <a id="2026-08-03-22h"></a>[[2026-08-03 22:00]](../dashboard.md#2026-08-03-22h) : [Certification & Verrouillage arXiv] - Problème: L'hypothèse de Riemann - Tentative 01. Lemme 33 certifié sans ellipse, abstract et références compilés avec succès. Statut : Impasse - Mutation requise.
 
