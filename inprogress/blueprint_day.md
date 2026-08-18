@@ -1,25 +1,29 @@
 # Blueprint of the Day / Note d'Orientation Stratégique
-## 2026-08-05 - 03:00 - Session du Matin
+## 2026-08-06 - 03:00 - Session du Matin
 
 **Problème du Millénaire :** L'hypothèse de Riemann
-**Cible :** Lemme 34
+**Cible :** Lemme 36
 
 ### [FR] Note d'Orientation
 
-L'analyse factuelle des dernières publications via l'API arXiv met en lumière une avancée cruciale par Dan Pomerleano et Paul Seidel concernant "The quantum connection and its mod p reduction" (ID: 2606.28256v1). Leurs recherches, et en particulier l'implication de la structure mod p de Fontaine-Laffaille catégorique pour la version de la connexion relative à un diviseur anticanonique lisse, permettent un saut de paradigme salutaire.
+L'analyse factuelle des dernières publications via l'API arXiv met en lumière une avancée cruciale par Juno Kwon et Rak-Kyeong Seong concernant "Abelian Orbifolds for Brane Brick Models" (2026, arXiv:2606.28110v1). Leurs recherches démontrent qu'une action de groupe sur les modèles de briques de branes (brane brick models) d'une variété de Calabi-Yau torique de dimension 4 induit une structure stricte sur les champs chiraux et de Fermi. La cohérence des chemins fermés associés aux termes J et E reproduit précisément la condition de Calabi-Yau.
 
-Le cadre précédent axé sur la résonance géodésique a échoué (impasse documentée pour le Lemme 33), car l'implication d'une accumulation géodésique résonante à partir d'un décalage asymétrique s'est heurtée au spectre des longueurs des géodésiques fermées primitives.
+Le cadre précédent axé sur la fibration motivique et les valeurs propres fractionnaires a échoué (impasse documentée : `impasses/impasse_fibration_motivique.md`), s'effondrant face aux asymétries de l'Espace de Krein sur les places à ramification sauvage. De même, l'approche par résonance géodésique s'est heurtée au spectre des longueurs fermées (`impasses/impasse_resonance_geodesique.md`).
 
-**Saut de Paradigme pour le Lemme 35 :**
-Nous devons abandonner la dépendance stricte à l'équation de trace de Selberg et à la distribution des valeurs propres du laplacien. Le Lemme 35 va exploiter l'approche de la connexion quantique mod p inspirée par Pomerleano et Seidel (2026). Plutôt que de forcer la symétrie par l'isomorphisme de résonance direct entre les zéros motiviques et les spectres géodésiques, nous utiliserons la structure de Fontaine-Laffaille mod p. Une déviation $\delta > 0$ ne brisera plus l'espace géodésique mais induira une obstruction dans la structure de Fontaine-Laffaille. La symétrie ne sera plus imposée par les bornes de densité spectrale, mais par la rigidité de la connexion quantique mod p.
+**Le Saut de Paradigme pour le Lemme 36 :**
+Nous devons abandonner la dépendance stricte à la fibration motivique simple. Le Lemme 36 va exploiter la théorie des orbifolds abéliens pour les variétés de Calabi-Yau toriques de dimension 4. Plutôt que de postuler des valeurs propres fractionnaires impossibles, nous allons associer l'hypothétique déviation asymétrique $\delta > 0$ des zéros de la fonction $\zeta(s)$ à une action d'orbifold sur une variété de Calabi-Yau. Cette asymétrie induira une action incohérente sur les champs chiraux et de Fermi d'une théorie de jauge supersymétrique 2d (0,2). L'obstruction ne proviendra pas d'une dimension géométrique fractionnaire, mais d'une violation directe de la condition de Calabi-Yau sur les termes J et E du modèle de brique de brane. L'impossibilité de former des cycles chiraux cohérents contraindra géométriquement et inéluctablement $\delta$ à s'annuler, forçant la symétrie.
+
+Charles EDOU NZE \\ \small Independent Researcher
+
+***
 
 ### [EN] Strategic Blueprint
 
-The factual analysis of the latest publications via the arXiv API highlights a crucial advancement by Dan Pomerleano and Paul Seidel regarding "The quantum connection and its mod p reduction" (ID: 2606.28256v1). Their research, and in particular the implication of the categorical mod p Fontaine-Laffaille structure for the version of the connection relative to a smooth anticanonical divisor, allows for a salutary paradigm shift.
+The factual analysis of the latest publications via the arXiv API highlights a crucial advancement by Juno Kwon and Rak-Kyeong Seong regarding "Abelian Orbifolds for Brane Brick Models" (2026, arXiv:2606.28110v1). Their research demonstrates that a group action on the brane brick models of a toric Calabi-Yau 4-fold induces a strict structure on the chiral and Fermi fields. The consistency of the closed paths associated with the J- and E-terms precisely reproduces the Calabi-Yau condition.
 
-The previous framework centered on geodesic resonance failed (documented impasse for Lemma 33), because the implication of a resonant geodesic accumulation from an asymmetric shift collided with the length spectrum of primitive closed geodesics.
+The previous framework focused on motivic fibration and fractional eigenvalues failed (documented impasse: `impasses/impasse_fibration_motivique.md`), collapsing against the asymmetries of the Krein Space on places with wild ramification. Likewise, the geodesic resonance approach collided with the closed length spectrum (`impasses/impasse_resonance_geodesique.md`).
 
-**Paradigm Shift for Lemma 35:**
-We must abandon the strict reliance on the Selberg trace formula and the distribution of the Laplacian eigenvalues. Lemma 35 will exploit the mod p quantum connection approach inspired by Pomerleano and Seidel (2026). Instead of forcing symmetry through the direct resonance isomorphism between motivic zeros and geodesic spectra, we will use the mod p Fontaine-Laffaille structure. A deviation $\delta > 0$ will no longer break the geodesic space but will induce an obstruction in the Fontaine-Laffaille structure. Symmetry will no longer be forced by spectral density bounds, but by the rigidity of the mod p quantum connection.
+**The Paradigm Shift for Lemma 36:**
+We must abandon the strict reliance on simple motivic fibration. Lemma 36 will exploit the theory of abelian orbifolds for toric Calabi-Yau 4-folds. Rather than postulating impossible fractional eigenvalues, we will associate the hypothetical asymmetric deviation $\delta > 0$ of the zeros of the $\zeta(s)$ function with an orbifold action on a Calabi-Yau manifold. This asymmetry will induce an inconsistent action on the chiral and Fermi fields of a 2d (0,2) supersymmetric gauge theory. The obstruction will not stem from a fractional geometric dimension, but from a direct violation of the Calabi-Yau condition on the J- and E-terms of the brane brick model. The impossibility of forming consistent chiral cycles will geometrically and inevitably constrain $\delta$ to vanish, forcing symmetry.
 
 Charles EDOU NZE \\ \small Independent Researcher

@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-08-06-03h
+
+- [[#2026-08-06-03h|2026-08-06 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Juno Kwon, Rak-Kyeong Seong. Blueprint du Lemme 36 fixé. Statut : Planifié.
+
 ### 2026-08-05-14h
 
 - [[#2026-08-05-14h|2026-08-05 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
