@@ -73,6 +73,8 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+- <a id="2026-08-06-03h"></a>[[2026-08-06 03:00]](../dashboard.md#2026-08-06-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Juno Kwon, Rak-Kyeong Seong. Blueprint du Lemme 36 fixé. Statut : Planifié.
+
 - <a id="2026-08-05-14h"></a>[[2026-08-05 14:00]](../dashboard.md#2026-08-05-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 - <a id="2026-08-05-03h"></a>[[2026-08-05 03:00]](../dashboard.md#2026-08-05-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel. Blueprint du Lemme 35 fixé. Statut : Planifié.
