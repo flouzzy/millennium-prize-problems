@@ -73,7 +73,9 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
-- <a id="2026-08-07-14h"></a>[[2026-08-07 14:00]](../dashboard.md#2026-08-07-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+### 2026-08-07-18h
+
+- <a id="2026-08-07-18h"></a>[[2026-08-07 18:00]](../dashboard.md#2026-08-07-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 37 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 - <a id="2026-08-07-03h"></a>[[2026-08-07 03:00]](../dashboard.md#2026-08-07-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dylan Butson, Sujay Nair. Blueprint du Lemme 37 fixé. Statut : Planifié.
 
