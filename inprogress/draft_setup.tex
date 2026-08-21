@@ -1,42 +1,32 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{amsmath, amssymb, amsthm}
-\usepackage[french,english]{babel}
+\usepackage[english,french]{babel}
+\usepackage{amsmath, amsthm, amssymb}
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
+\title{Draft Setup: Lemme 38}
 
 \begin{document}
 
-\selectlanguage{french}
-\section*{Lemme 37 : Test de Résistance et Cadrage Symbolique}
+\maketitle
 
-Face à des configurations extrêmes telles que les espaces non archimédiens, les dimensions infinies, les singularités de codimension 1 et les opérateurs non bornés, l'approche opéradique de la quantification par déformation des algèbres de Poisson vertex survit au crash-test, mais nécessite une restriction rigoureuse.
+\section*{Cadre Symbolique et Typage (Symbolic Framework and Typing)}
 
-Afin d'immuniser l'approche contre ces failles, nous restreignons le cadre axiomatique en imposant explicitement une \textbf{condition de compacité} et une \textbf{mesurabilité stricte}.
-
-\subsection*{Typage Symbolique Universel}
 \begin{itemize}
-    \item $\delta > 0$ : la déviation asymétrique hypothétique des zéros de la fonction $\zeta(s)$.
-    \item Cohomologie de de Rham : contrôle de l'obstruction aux déformations chirales.
+    \item $G = \mathrm{GL}_6$ : Groupe linéaire général sur un corps local.
+    \item $E_6$ : Groupe de Lie exceptionnel, agissant comme groupe ambiant pour la symétrie sous-jacente.
+    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Facteur gamma local de Langlands-Shahidi pour la représentation cube extérieur $\wedge^3$ de $\mathrm{GL}_6$.
+    \item $\delta > 0$ : Déviation asymétrique hypothétique des zéros de la fonction $\zeta(s)$.
+    \item Condition de compacité stricte : Imposée sur les intégrales de Bessel asymptotiques pour filtrer les contributions non bornées aux places à ramification sauvage.
+    \item Mesurabilité stricte : Imposée sur la transformée de Mellin pour isoler le comportement asymptotique du facteur $\gamma$.
 \end{itemize}
 
-\subsection*{Énoncé définitif du Lemme 37}
-Sous la condition de compacité et la mesurabilité stricte, la théorie des déformations chirales induit une obstruction exacte dans la cohomologie de de Rham face à toute asymétrie $\delta > 0$. La cohérence de la quantification par déformation des algèbres de Poisson vertex interdit formellement la persistance de cette anomalie, contraignant inéluctablement $\delta$ à s'annuler.
+\section*{Énoncé du Lemme 38 (Statement of Lemma 38)}
 
-\selectlanguage{english}
-\section*{Lemma 37: Resistance Test and Symbolic Framing}
+\subsection*{[FR] Version Française}
+\textbf{Lemme 38.} Sous une condition de compacité stricte, toute déviation asymétrique $\delta > 0$ induit une singularité non compensable dans les transformées de Mellin hautement ramifiées associées aux intégrales de Bessel du sous-groupe de Levi de $E_6$. La mesurabilité stricte du développement asymptotique du facteur local $\gamma$ de Langlands-Shahidi pour la représentation $\wedge^3$ de $\mathrm{GL}_6$ force cette contribution asymétrique à s'annuler, imposant inéluctablement $\delta = 0$.
 
-When tested against extreme configurations such as non-Archimedean spaces, infinite dimensions, codimension 1 singularities, and unbounded operators, the operadic approach to the deformation quantization of vertex Poisson algebras survives the crash-test but requires a rigorous restriction.
-
-To immunize the approach against these vulnerabilities, we restrict the axiomatic framework by explicitly imposing a \textbf{compactness condition} and a \textbf{strict measurability}.
-
-\subsection*{Universal Symbolic Typing}
-\begin{itemize}
-    \item $\delta > 0$: the hypothetical asymmetric deviation of the zeros of the $\zeta(s)$ function.
-    \item de Rham cohomology: controlling the obstruction to chiral deformations.
-\end{itemize}
-
-\subsection*{Definitive Statement of Lemma 37}
-Under the compactness condition and strict measurability, the chiral deformation theory induces an exact obstruction in the de Rham cohomology against any asymmetry $\delta > 0$. The consistency of the deformation quantization of vertex Poisson algebras strictly forbids the persistence of such an anomaly, inevitably constraining $\delta$ to vanish.
+\subsection*{[EN] English Version}
+\textbf{Lemma 38.} Under a strict compactness condition, any asymmetric deviation $\delta > 0$ induces an uncompensable singularity in the highly ramified Mellin transforms associated with the partial Bessel integrals on the Levi subgroup of $E_6$. The strict measurability of the asymptotic expansion of the Langlands-Shahidi local $\gamma$-factor for the $\wedge^3$ representation of $\mathrm{GL}_6$ forces this asymmetric contribution to vanish, inevitably constraining $\delta = 0$.
 
 \end{document}
