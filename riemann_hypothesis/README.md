@@ -72,6 +72,7 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 - [Pré-publication sur Zenodo (DOI)](https://zenodo.org/records/21257454)
 
 ## Historique des tentatives
+- <a id="2026-08-08-18h"></a>[2026-08-08 18:00](../dashboard.md#2026-08-08-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 38 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 - <a id="2026-08-08-14h"></a>[[2026-08-08 14:00]](../dashboard.md#2026-08-08-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
