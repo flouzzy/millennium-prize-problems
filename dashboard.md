@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+
+### 2026-08-08-18h
+
+- [[#2026-08-08-18h|2026-08-08 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 38 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 ### 2026-08-08-14h
 
 - [[#2026-08-08-14h|2026-08-08 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
