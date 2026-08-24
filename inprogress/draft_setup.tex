@@ -4,7 +4,7 @@
 \usepackage{amsmath, amsthm, amssymb}
 
 \author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
-\title{Draft Setup: Lemme 38}
+\title{Draft Setup: Lemme 38 - Crash-Test Edition}
 
 \begin{document}
 
@@ -13,20 +13,22 @@
 \section*{Cadre Symbolique et Typage (Symbolic Framework and Typing)}
 
 \begin{itemize}
-    \item $G = \mathrm{GL}_6$ : Groupe linéaire général sur un corps local.
-    \item $E_6$ : Groupe de Lie exceptionnel, agissant comme groupe ambiant pour la symétrie sous-jacente.
-    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Facteur gamma local de Langlands-Shahidi pour la représentation cube extérieur $\wedge^3$ de $\mathrm{GL}_6$.
+    \item $G = \mathrm{GL}_6$ : Groupe linéaire général sur un corps local $F$, incluant explicitement le cas des corps non archimédiens (e.g., $F = \mathbb{Q}_p, \mathbb{F}_q((t))$).
+    \item $E_6$ : Groupe de Lie exceptionnel (ou groupe algébrique déployé sur $F$), servant de groupe ambiant pour l'orbite de symétrie sous-jacente.
+    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Facteur gamma local de Langlands-Shahidi pour la représentation cube extérieur $\wedge^3$ de $G$, où $\pi$ est une représentation admissible irréductible générique, potentiellement de dimension infinie.
     \item $\delta > 0$ : Déviation asymétrique hypothétique des zéros de la fonction $\zeta(s)$.
-    \item Condition de compacité stricte : Imposée sur les intégrales de Bessel asymptotiques pour filtrer les contributions non bornées aux places à ramification sauvage.
-    \item Mesurabilité stricte : Imposée sur la transformée de Mellin pour isoler le comportement asymptotique du facteur $\gamma$.
+    \item $\mathcal{O}$ : Opérateurs potentiellement non bornés émergeant du développement de l'intégrale de Bessel.
+    \item $S_{codim=1}$ : Variété de singularités de codimension 1 apparaissant dans la compactification, gérée par les limites asymptotiques.
+    \item \textbf{Condition de compacité stricte} : Imposée sur les supports des transformées de Mellin des fonctions de Schwartz-Bruhat pour filtrer les contributions divergentes liées aux opérateurs non bornés aux places à ramification sauvage.
+    \item \textbf{Mesurabilité stricte} : Imposée sur la transformée de Mellin et l'espace de Schwartz sur $G(F)$ pour régulariser les singularités de codimension 1 et isoler le comportement asymptotique du facteur $\gamma$.
 \end{itemize}
 
 \section*{Énoncé du Lemme 38 (Statement of Lemma 38)}
 
 \subsection*{[FR] Version Française}
-\textbf{Lemme 38.} Sous une condition de compacité stricte, toute déviation asymétrique $\delta > 0$ induit une singularité non compensable dans les transformées de Mellin hautement ramifiées associées aux intégrales de Bessel du sous-groupe de Levi de $E_6$. La mesurabilité stricte du développement asymptotique du facteur local $\gamma$ de Langlands-Shahidi pour la représentation $\wedge^3$ de $\mathrm{GL}_6$ force cette contribution asymétrique à s'annuler, imposant inéluctablement $\delta = 0$.
+\textbf{Lemme 38 (Robustesse Globale).} Sous l'hypothèse d'une condition de compacité stricte, toute déviation asymétrique $\delta > 0$ induit une singularité non compensable dans les transformées de Mellin hautement ramifiées associées aux intégrales de Bessel du sous-groupe de Levi de $E_6$. Même confrontée aux configurations extrêmes — telles que les espaces non archimédiens, l'action d'opérateurs non bornés ou l'émergence de singularités de codimension 1 dans les limites d'intégration — la mesurabilité stricte du développement asymptotique du facteur local $\gamma$ de Langlands-Shahidi pour la représentation $\wedge^3$ de $\mathrm{GL}_6$ garantit l'obstruction. Cette asymétrie violerait l'universalité locale; l'intégration sur le contour régularisé force donc cette contribution asymétrique à s'annuler, imposant inéluctablement $\delta = 0$.
 
 \subsection*{[EN] English Version}
-\textbf{Lemma 38.} Under a strict compactness condition, any asymmetric deviation $\delta > 0$ induces an uncompensable singularity in the highly ramified Mellin transforms associated with the partial Bessel integrals on the Levi subgroup of $E_6$. The strict measurability of the asymptotic expansion of the Langlands-Shahidi local $\gamma$-factor for the $\wedge^3$ representation of $\mathrm{GL}_6$ forces this asymmetric contribution to vanish, inevitably constraining $\delta = 0$.
+\textbf{Lemma 38 (Global Robustness).} Under the hypothesis of a strict compactness condition, any asymmetric deviation $\delta > 0$ induces an uncompensable singularity in the highly ramified Mellin transforms associated with the partial Bessel integrals on the Levi subgroup of $E_6$. Even when confronted with extreme configurations — such as non-Archimedean spaces, the action of unbounded operators, or the emergence of codimension 1 singularities within integration limits — the strict measurability of the asymptotic expansion of the Langlands-Shahidi local $\gamma$-factor for the $\wedge^3$ representation of $\mathrm{GL}_6$ guarantees an obstruction. This asymmetry would violate local universality; integration over the regularized contour thus forces this asymmetric contribution to vanish, inevitably constraining $\delta = 0$.
 
 \end{document}
