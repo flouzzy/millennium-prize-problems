@@ -23,11 +23,14 @@ theorem riemann_spectral_purity_real_part (p : ℝ) (hp : p > 1) (re_rho : ℝ)
   have h_pos : p > 0 := by linarith
   have h_sqrt : Real.sqrt p = p ^ (1 / 2 : ℝ) := Real.sqrt_eq_rpow p
   rw [h_sqrt] at h_norm
-  have h_one_ne : p ≠ 1 := by linarith
-  exact (Real.rpow_left_inj h_pos (by positivity) h_one_ne).mp h_norm
+  have h1 : Real.log (p ^ re_rho) = Real.log (p ^ (1 / 2 : ℝ)) := by rw [h_norm]
+  rw [Real.log_rpow h_pos, Real.log_rpow h_pos] at h1
+  have h_log_pos : Real.log p > 0 := Real.log_pos hp
+  have h_log_ne_zero : Real.log p ≠ 0 := ne_of_gt h_log_pos
+  exact mul_right_cancel₀ h_log_ne_zero h1
 
 /-- Multiplicative preservation of Weil purity under unramified Frobenius powers. -/
-theorem frobenius_power_purity (p : ℝ) (hp : p > 1) (re_rho : ℝ) (k : ℕ) (hk : k ≥ 1)
+theorem frobenius_power_purity (p : ℝ) (hp : p > 1) (re_rho : ℝ) (k : ℕ) (_hk : k ≥ 1)
     (h_base : p ^ re_rho = Real.sqrt p) :
     (p ^ (k : ℝ)) ^ re_rho = Real.sqrt (p ^ (k : ℝ)) := by
   have hp_pos : p > 0 := by linarith
