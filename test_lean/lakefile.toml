@@ -1,9 +1,19 @@
 name = "millennium_lean_pkg"
 version = "0.1.0"
-defaultTargets = ["millennium_lean_pkg"]
+defaultTargets = ["RiemannSpectralPurity", "PvsNPQuiverEntropy", "NavierStokesEnstrophy", "BSDSpecialValue", "HodgeRationalCycles", "YangMillsSpectralGap"]
 
 [[lean_lib]]
-name = "MillenniumLeanPkg"
+name = "RiemannSpectralPurity"
+[[lean_lib]]
+name = "PvsNPQuiverEntropy"
+[[lean_lib]]
+name = "NavierStokesEnstrophy"
+[[lean_lib]]
+name = "BSDSpecialValue"
+[[lean_lib]]
+name = "HodgeRationalCycles"
+[[lean_lib]]
+name = "YangMillsSpectralGap"
 
 [[require]]
 name = "mathlib"

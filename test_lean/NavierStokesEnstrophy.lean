@@ -1,7 +1,7 @@
+import Mathlib.Tactic
 import Mathlib.Analysis.SpecialFunctions.Exponential
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Nlinarith
 
 /-!
 # Millennium Problem #03: Navier-Stokes Existence & Smoothness
