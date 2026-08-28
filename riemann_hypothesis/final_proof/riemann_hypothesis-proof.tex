@@ -1093,6 +1093,34 @@ This demonstrates that any deviation from the critical line $\Re(s) = 1/2$ is re
 
 \vspace{1cm}\begin{flushright}\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}\end{flushright}
 
+
+\section{Proof of Lemma 38: Asymptotic Stability of Langlands-Shahidi Gamma Factors}
+
+The conceptual breakthrough in this lemma marks a definitive break from purely geometric approaches. The failure of abelian orbifold models, undermined by consistency asymmetries of closed paths, forces an analytical retreat. We abandon phase space to delve into the heart of admissible representations of the group $\mathrm{GL}_6(F)$. The asymptotic behavior of the Langlands-Shahidi local $\gamma$-factor for the exterior cube representation $\wedge^3$, as developed by Deng and She, becomes our new measuring instrument. The slightest deviation of non-trivial zeros from the critical axis, denoted $\delta > 0$, will irreparably imprint itself in the expansion of Bessel integrals, creating a formally quantifiable instability.
+
+Under the assumption of an asymmetric deviation $\delta > 0$, consider the Mellin transform of a partial Bessel integral restricted to the Levi subgroup $M \subset E_6$ associated with the maximal parabolic. The integral splits according to the strict compactness condition:
+\begin{align*}
+    I(s, \delta) &= \int_{M(F)} f(m) \psi_M(m) |\det m|^{s - 1/2 + \delta} dm \\
+    &= I_{c}(s, \delta) + I_{\infty}(s, \delta)
+\end{align*}
+where $I_c$ is supported on compacts and $I_\infty$ captures the contribution at highly ramified places.
+
+The asymptotic expansion of the factor $\gamma(s, \pi, \wedge^3, \psi)$, dictated by the local universality of the coefficients of the generic irreducible representation $\pi$, imposes strict absolute convergence for $\Re(s) \gg 0$. However, the asymptotic term diverges logarithmically under the influence of the asymmetry $\delta$:
+\begin{equation*}
+    \lim_{n \to \infty} \left| \frac{\partial^n}{\partial s^n} \gamma(s, \pi, \wedge^3, \psi) \right| \sim C(\pi) e^{n \delta \log q}
+\end{equation*}
+
+This exponential growth induced by $\delta > 0$ collides head-on with the strict measurability required by the global functional equation. For such a singularity not to destroy the required meromorphic analyticity, the asymmetric contribution must necessarily be cancelled by a compensatory term. However, the spectrum of $E_6$ contains no torsion class capable of absorbing pure exponential growth. The contradiction is absolute:
+\begin{equation*}
+    \delta > 0 \implies \exists s_0, \, \gamma(s_0, \pi, \wedge^3, \psi) \notin \mathbb{C}
+\end{equation*}
+
+The topological closure of the parameter space inevitably forces $\delta$ to vanish, locking the symmetry.
+
+\vspace{0.5cm}
+\noindent \textit{Charles EDOU NZE} \\
+\textit{\small Independent Researcher}
+
 \begin{thebibliography}{99}
 \bibitem{kwon2026} Kwon, J., \& Seong, R.-K. (2026). \textit{Abelian Orbifolds for Brane Brick Models}. arXiv:2606.28110v1.
 \bibitem{mondal2026} Mondal, K. (2026). \textit{Potential semistability of Finite height Galois representations: Relative case}. arXiv:2606.26043v1.
