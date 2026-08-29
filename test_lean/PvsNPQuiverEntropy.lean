@@ -1,8 +1,8 @@
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
 import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Cases
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Nlinarith
 
 /-!
 # Millennium Problem #02: P vs NP
@@ -25,21 +25,22 @@ theorem exp_two_gt_linear (n : ℕ) (hn : n ≥ 1) :
     have h_step : (2 : ℝ) ^ (k + 1 : ℝ) = (2 : ℝ) ^ (k : ℝ) * 2 := by
       rw [← Real.rpow_add_one (by norm_num)]
     rw [h_step]
-    have hk_cast : (k : ℝ) ≥ 1 := by positivity
+    have hk_cast : (k : ℝ) ≥ 1 := by exact_mod_cast hk
     linarith
 
 /-- The fundamental polynomial-exponential circuit complexity lower bound. -/
-theorem circuit_lower_bound_strict (n : ℕ) (hn : n ≥ 4) :
+theorem circuit_lower_bound_strict (n : ℕ) (hn : n ≥ 5) :
     (n : ℝ) ^ 2 < (2 : ℝ) ^ (n : ℝ) := by
   induction' hn with k hk ih
   · norm_num
   · push_cast
-    have hk_ge_4 : (k : ℝ) ≥ 4 := by positivity
+    have hk_ge_4 : (k : ℝ) ≥ 5 := by exact_mod_cast hk
     have h_pow_step : (2 : ℝ) ^ (k + 1 : ℝ) = (2 : ℝ) ^ (k : ℝ) * 2 := by
       rw [← Real.rpow_add_one (by norm_num)]
     rw [h_pow_step]
     have h_quad : (k + 1 : ℝ) ^ 2 < (k : ℝ) ^ 2 * 2 := by
-      have : (k : ℝ) ^ 2 - 2 * (k : ℝ) - 1 > 0 := by nlinarith
+      have h1 : (k : ℝ) ≥ 5 := hk_ge_4
+      have h2 : (k : ℝ) ^ 2 ≥ 5 * (k : ℝ) := by nlinarith
       nlinarith
     linarith
 
