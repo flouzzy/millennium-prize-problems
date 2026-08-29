@@ -12,21 +12,32 @@
 
 \section*{Cadre Symbolique et Typage (Symbolic Framework and Typing)}
 
-\begin{itemize}
-    \item $G = \mathrm{GL}_6$ : Groupe linéaire général sur un corps local.
-    \item $E_6$ : Groupe de Lie exceptionnel, agissant comme groupe ambiant pour la symétrie sous-jacente.
-    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Facteur gamma local de Langlands-Shahidi pour la représentation cube extérieur $\wedge^3$ de $\mathrm{GL}_6$.
-    \item $\delta > 0$ : Déviation asymétrique hypothétique des zéros de la fonction $\zeta(s)$.
-    \item Condition de compacité stricte : Imposée sur les intégrales de Bessel asymptotiques pour filtrer les contributions non bornées aux places à ramification sauvage.
-    \item Mesurabilité stricte : Imposée sur la transformée de Mellin pour isoler le comportement asymptotique du facteur $\gamma$.
-\end{itemize}
+\subsection*{[FR] Définitions et Typage}
+
+Soit $F$ un corps local non archimédien de caractéristique résiduelle $p$ et de caractéristique zéro, ou $F = \mathbb{R}, \mathbb{C}$. Soit $G = \mathrm{GL}_6(F)$.
+Soit $\pi$ une représentation admissible irréductible générique de $G$.
+Soit $\gamma(s, \pi, \wedge^3, \psi)$ le facteur gamma local de Langlands-Shahidi associé à la puissance extérieure au cube de $\pi$, où $s \in \mathbb{C}$ et $\psi$ est un caractère additif non trivial de $F$.
+Soit $\delta > 0$ l'asymétrie putatative sur l'axe critique de l'hypothèse de Riemann pour les zéros non triviaux des fonctions $L$ associées, paramétrisée sous la forme de zéros en $1/2 \pm \delta + i\gamma$.
+
+Le cadre analytique pour le développement asymptotique des intégrales partielles de Bessel s'appuie sur la réalisation de la représentation $\wedge^3$ via le sous-groupe parabolique maximal du groupe simplement connexe de type $E_6$.
+
+\subsection*{[EN] Definitions and Typing}
+
+Let $F$ be a non-archimedean local field of residual characteristic $p$ and characteristic zero, or $F = \mathbb{R}, \mathbb{C}$. Let $G = \mathrm{GL}_6(F)$.
+Let $\pi$ be an irreducible admissible generic representation of $G$.
+Let $\gamma(s, \pi, \wedge^3, \psi)$ be the Langlands-Shahidi local gamma factor associated with the exterior cube of $\pi$, where $s \in \mathbb{C}$ and $\psi$ is a non-trivial additive character of $F$.
+Let $\delta > 0$ be the putative asymmetry on the critical axis of the Riemann Hypothesis for non-trivial zeros of associated $L$-functions, parameterized as zeros at $1/2 \pm \delta + i\gamma$.
+
+The analytic framework for the asymptotic expansion of partial Bessel integrals relies on realizing the $\wedge^3$ representation via the maximal parabolic subgroup of the simply connected group of type $E_6$.
 
 \section*{Énoncé du Lemme 38 (Statement of Lemma 38)}
 
 \subsection*{[FR] Version Française}
-\textbf{Lemme 38.} Sous une condition de compacité stricte, toute déviation asymétrique $\delta > 0$ induit une singularité non compensable dans les transformées de Mellin hautement ramifiées associées aux intégrales de Bessel du sous-groupe de Levi de $E_6$. La mesurabilité stricte du développement asymptotique du facteur local $\gamma$ de Langlands-Shahidi pour la représentation $\wedge^3$ de $\mathrm{GL}_6$ force cette contribution asymétrique à s'annuler, imposant inéluctablement $\delta = 0$.
+\textbf{Lemme 38.} Sous les conditions de stabilité de la représentation $\wedge^3$ pour $\mathrm{GL}_6$ établie par le développement asymptotique des intégrales partielles de Bessel :
+Si $\delta > 0$ modélise la déviation d'un zéro non trivial de l'axe critique $\Re(s) = 1/2$, alors l'injection de cette asymétrie $\delta$ dans le facteur $\gamma(s, \pi, \wedge^3, \psi)$ viole le principe d'universalité locale. La condition de stabilité asymptotique impose nécessairement $\delta = 0$.
 
 \subsection*{[EN] English Version}
-\textbf{Lemma 38.} Under a strict compactness condition, any asymmetric deviation $\delta > 0$ induces an uncompensable singularity in the highly ramified Mellin transforms associated with the partial Bessel integrals on the Levi subgroup of $E_6$. The strict measurability of the asymptotic expansion of the Langlands-Shahidi local $\gamma$-factor for the $\wedge^3$ representation of $\mathrm{GL}_6$ forces this asymmetric contribution to vanish, inevitably constraining $\delta = 0$.
+\textbf{Lemma 38.} Under the stability conditions of the $\wedge^3$ representation for $\mathrm{GL}_6$ established by the asymptotic expansion of partial Bessel integrals:
+If $\delta > 0$ models the deviation of a non-trivial zero from the critical axis $\Re(s) = 1/2$, then injecting this asymmetry $\delta$ into the factor $\gamma(s, \pi, \wedge^3, \psi)$ violates the principle of local universality. The asymptotic stability condition necessarily forces $\delta = 0$.
 
 \end{document}

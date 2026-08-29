@@ -14,3 +14,7 @@ This repository provides formalizations, analytical proofs, and publication mono
 6. **#06 — Quantum Yang-Mills Theory**: Non-Abelian $SU(N)$ Gauge Field Axiomatics & Strict Mass Gap $\Delta > 0$.
 
 All core algebraic theorems and reductions are certified with **0 sorry** in the Lean 4 / Mathlib kernel under `test_lean/`.
+
+## Historique d'avancement
+
+- <a id="2026-08-09-14h"></a>[[2026-08-09 14:00]](dashboard.md#2026-08-09-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
