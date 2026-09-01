@@ -1093,7 +1093,42 @@ This demonstrates that any deviation from the critical line $\Re(s) = 1/2$ is re
 
 \vspace{1cm}\begin{flushright}\textit{Charles EDOU NZE, ingénieur informatique augmenté par l'IA - Mathématicien amateur}\end{flushright}
 
+
+\section{Proof of Lemma 38: Stability of the $\gamma$-Factor and Analytic Obstruction}
+
+This section aims to close the mental trajectory of the spectral analysis by exploiting an unexpected bridge between analytic number theory and the Langlands program. Having observed the collapse of purely geometric models against consistency asymmetries, we abandon the orbifold space here. Instead, we embed our hypothetical spectral asymmetry $\delta > 0$ within the fabric of Galois representations. Through a paradigm shift, this deviation $\delta$ becomes a parameter acting on the exterior cube representation $\wedge^3$ of the group $\mathrm{GL}_6$. Utilizing recent advances in the maximal parabolic realization of $E_6$, we trace this asymmetry down to the partial Bessel integrals.
+
+\begin{proof}[Proof (Lemma 38)]
+We consider the irreducible admissible generic representation $\pi$ of the group $\mathrm{GL}_6(F)$ over a local field $F$, coupled with its exterior cube representation $\wedge^3$. The hypothetical asymmetric deviation of the non-trivial zeros is encoded by the strictly positive parameter $\delta > 0$.
+
+According to the parabolic realization associated with the Levi subgroup of $E_6$ ~\cite{dengshe2026}, the local Langlands-Shahidi $\gamma$-factor admits an asymptotic expansion controlled by the partial Bessel integrals:
+\begin{align*}
+\gamma(s, \pi, \wedge^3, \psi) &= \lim_{n \to \infty} \int_{K_n} J_{\pi}(g, \delta) \cdot \theta(g)^{-s} \, dg
+\end{align*}
+where $J_{\pi}(g, \delta)$ represents the intertwining operator perturbed by the asymmetry $\delta$.
+
+Under our strict compactness hypothesis, applying the Mellin transform over wildly ramified places isolates the anomaly of the asymptotic expansion:
+\begin{align*}
+\mathcal{M}_\delta(s) &= \int_{\mathbb{R}^+} \gamma(t, \pi, \wedge^3, \psi) \cdot t^{s - 1} \, dt
+\end{align*}
+
+However, to link the non-compactness of this integral to the strict positivity of $\delta$, we must demonstrate that any asymmetric perturbation of $J_{\pi}$ induces a non-integrable singularity. Yet, current literature on Langlands-Shahidi stability does not provide a strict lower bound explicitly linking wild ramification to $\delta > 0$ without assuming motivic purity, which itself is subject to the Krein space obstruction (as previously shown).
+
+We therefore encounter a transition that is impossible to rigorously justify with established theorems: the extraction of an inevitable polar divergence from the perturbed asymptotic expansion. The proof must stop here.
+
+\textbf{Intermediate Conjecture 38.1:} For any deviation $\delta > 0$, the unipotent Bessel integral of the $\wedge^3$ representation of $\mathrm{GL}_6$ develops a polar divergence under the asymmetric Mellin transform $\mathcal{M}_\delta(s)$, imposing a strict non-measurability on the critical strip.
+
+This missing sub-step must be resolved before one can inevitably conclude that $\delta = 0$.
+\end{proof}
+
+\vspace{1cm}
+\begin{flushright}
+\textit{Charles EDOU NZE \\ \small Independent Researcher}
+\end{flushright}
+
+
 \begin{thebibliography}{99}
+\bibitem{dengshe2026} Deng, T., \& She, D. (2026). \textit{Stability of the exterior cube $\gamma$-factors for $\mathrm{GL}(6)$}. arXiv:2606.28091v1.
 \bibitem{kwon2026} Kwon, J., \& Seong, R.-K. (2026). \textit{Abelian Orbifolds for Brane Brick Models}. arXiv:2606.28110v1.
 \bibitem{mondal2026} Mondal, K. (2026). \textit{Potential semistability of Finite height Galois representations: Relative case}. arXiv:2606.26043v1.
 \bibitem{zhang2026b} Zhang, S. (2026). \textit{Polynomiality of the Generalized Verschiebung Degree}. arXiv:2606.26070v1.
