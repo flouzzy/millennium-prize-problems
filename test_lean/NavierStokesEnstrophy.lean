@@ -1,7 +1,6 @@
 import Mathlib.Analysis.SpecialFunctions.Exponential
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Nlinarith
 
 /-!
 # Millennium Problem #03: Navier-Stokes Existence & Smoothness
@@ -20,13 +19,14 @@ theorem navier_stokes_energy_decay (E₀ ν : ℝ) (hE : E₀ > 0) (hν : ν > 0
     let E_t := E₀ * Real.exp (-2 * ν * t)
     E_t ≤ E₀ ∧ E_t > 0 := by
   dsimp
-  have h_exp_neg : -2 * ν * t ≤ 0 := by nlinarith
+  have h1 : -2 * ν ≤ 0 := by linarith
+  have h_exp_neg : -2 * ν * t ≤ 0 := mul_nonpos_of_nonpos_of_nonneg h1 ht
   have h_exp_le_one : Real.exp (-2 * ν * t) ≤ 1 := by
     rw [Real.exp_le_one_iff]
     exact h_exp_neg
   have h_exp_pos : Real.exp (-2 * ν * t) > 0 := Real.exp_pos _
   refine ⟨?_, ?_⟩
-  · nlinarith
+  · exact mul_le_of_le_one_right (le_of_lt hE) h_exp_le_one
   · positivity
 
 /-- The total enstrophy integrated over all time remains strictly bounded by initial kinetic energy. -/
