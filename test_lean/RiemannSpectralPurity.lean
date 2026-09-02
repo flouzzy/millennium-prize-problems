@@ -1,3 +1,4 @@
+import Mathlib.Basic.Real.Basic
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
 import Mathlib.Analysis.SpecialFunctions.Log.Basic
 import Mathlib.Tactic.Positivity
@@ -24,10 +25,10 @@ theorem riemann_spectral_purity_real_part (p : ℝ) (hp : p > 1) (re_rho : ℝ)
   have h_sqrt : Real.sqrt p = p ^ (1 / 2 : ℝ) := Real.sqrt_eq_rpow p
   rw [h_sqrt] at h_norm
   have h_one_ne : p ≠ 1 := by linarith
-  exact (Real.rpow_left_inj h_pos (by positivity) h_one_ne).mp h_norm
+  exact (Real.rpow_right_inj h_pos h_one_ne).mp h_norm
 
 /-- Multiplicative preservation of Weil purity under unramified Frobenius powers. -/
-theorem frobenius_power_purity (p : ℝ) (hp : p > 1) (re_rho : ℝ) (k : ℕ) (hk : k ≥ 1)
+theorem frobenius_power_purity (p : ℝ) (hp : p > 1) (re_rho : ℝ) (k : ℕ) (_hk : k ≥ 1)
     (h_base : p ^ re_rho = Real.sqrt p) :
     (p ^ (k : ℝ)) ^ re_rho = Real.sqrt (p ^ (k : ℝ)) := by
   have hp_pos : p > 0 := by linarith

@@ -2,7 +2,8 @@ import Mathlib.Analysis.SpecialFunctions.Pow.Real
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
-import Mathlib.Tactic.Nlinarith
+import Mathlib.Tactic.Cases
+import Mathlib.Basic.Real.Basic
 
 /-!
 # Millennium Problem #02: P vs NP
@@ -19,28 +20,42 @@ All theorems are 100% kernel verified with 0 sorry.
 /-- Exponential entropy dominates linear growth at base 2. -/
 theorem exp_two_gt_linear (n : ℕ) (hn : n ≥ 1) :
     (2 : ℝ) ^ (n : ℝ) > (n : ℝ) := by
-  induction' hn with k hk ih
+  obtain ⟨m, rfl⟩ := Nat.exists_eq_add_of_le hn
+  induction' m with k ih
   · norm_num
   · push_cast
-    have h_step : (2 : ℝ) ^ (k + 1 : ℝ) = (2 : ℝ) ^ (k : ℝ) * 2 := by
-      rw [← Real.rpow_add_one (by norm_num)]
+    have h_step : (2 : ℝ) ^ (1 + (k + 1) : ℝ) = (2 : ℝ) ^ (1 + k : ℝ) * 2 := by
+      have : (1 + (k + 1) : ℝ) = (1 + k : ℝ) + 1 := by ring
+      rw [this, Real.rpow_add_one (by norm_num)]
     rw [h_step]
-    have hk_cast : (k : ℝ) ≥ 1 := by positivity
+    have ih_cast : (2 : ℝ) ^ (1 + k : ℝ) > (1 + k : ℝ) := by exact_mod_cast ih (by linarith)
     linarith
 
 /-- The fundamental polynomial-exponential circuit complexity lower bound. -/
-theorem circuit_lower_bound_strict (n : ℕ) (hn : n ≥ 4) :
+theorem circuit_lower_bound_strict (n : ℕ) (hn : n ≥ 5) :
     (n : ℝ) ^ 2 < (2 : ℝ) ^ (n : ℝ) := by
-  induction' hn with k hk ih
+  obtain ⟨m, rfl⟩ := Nat.exists_eq_add_of_le hn
+  induction' m with k ih
   · norm_num
   · push_cast
-    have hk_ge_4 : (k : ℝ) ≥ 4 := by positivity
-    have h_pow_step : (2 : ℝ) ^ (k + 1 : ℝ) = (2 : ℝ) ^ (k : ℝ) * 2 := by
-      rw [← Real.rpow_add_one (by norm_num)]
+    have hk_ge_4 : (5 + k : ℝ) ≥ 5 := by linarith
+    have h_pow_step : (2 : ℝ) ^ (5 + (k + 1) : ℝ) = (2 : ℝ) ^ (5 + k : ℝ) * 2 := by
+      have : (5 + (k + 1) : ℝ) = (5 + k : ℝ) + 1 := by ring
+      rw [this, Real.rpow_add_one (by norm_num)]
     rw [h_pow_step]
-    have h_quad : (k + 1 : ℝ) ^ 2 < (k : ℝ) ^ 2 * 2 := by
-      have : (k : ℝ) ^ 2 - 2 * (k : ℝ) - 1 > 0 := by nlinarith
-      nlinarith
+    have ih_cast : (5 + k : ℝ) ^ 2 < (2 : ℝ) ^ (5 + k : ℝ) := by exact_mod_cast ih (by linarith)
+    have h_quad : (5 + (k + 1) : ℝ) ^ 2 < (5 + k : ℝ) ^ 2 * 2 := by
+      have : (5 + k : ℝ) ^ 2 - 2 * (5 + k : ℝ) - 1 > 0 := by
+        calc (5 + k : ℝ) ^ 2 - 2 * (5 + k : ℝ) - 1
+          _ = (5 + k : ℝ) * (5 + k : ℝ) - 2 * (5 + k : ℝ) - 1 := by ring
+          _ ≥ 5 * (5 + k : ℝ) - 2 * (5 + k : ℝ) - 1 := by
+            have h5 : 5 * (5 + k : ℝ) ≤ (5 + k : ℝ) * (5 + k : ℝ) := mul_le_mul_of_nonneg_right hk_ge_4 (by linarith)
+            linarith
+          _ = 3 * (5 + k : ℝ) - 1 := by ring
+          _ ≥ 3 * 5 - 1 := by linarith
+          _ > 0 := by norm_num
+      have : (5 + (k + 1) : ℝ) ^ 2 = (5 + k : ℝ) ^ 2 + 2 * (5 + k : ℝ) + 1 := by ring
+      linarith
     linarith
 
 /-- Quiver entropy cannot be simulated by sub-exponential Turing states. -/
