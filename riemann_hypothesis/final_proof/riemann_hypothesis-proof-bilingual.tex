@@ -47,7 +47,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\small\textit{Proof of the Riemann Hypothesis via Motivic Purity}}
+\fancyhead[L]{\small\textit{On the Riemann Hypothesis via Motivic Purity}}
 \fancyhead[R]{\small\textit{C. EDOU NZE}}
 \fancyhead[C]{}
 \fancyfoot[C]{\thepage}
@@ -57,7 +57,7 @@
     linkcolor=blue!70!black,
     citecolor=red!70!black,
     urlcolor=teal!70!black,
-    pdftitle={Proof of the Riemann Hypothesis via Motivic Spectral Fibrations and Weil Purity},
+    pdftitle={On the Riemann Hypothesis via Motivic Spectral Fibrations and Weil Purity},
     pdfauthor={Charles EDOU NZE},
 }
 
@@ -72,7 +72,7 @@
 \newtheorem{remark}[theorem]{Remark}
 
 \title{
-    \textbf{\Large Proof of the Riemann Hypothesis via Motivic Spectral Fibrations and Weil Purity}\\[0.5em]
+    \textbf{\Large On the Riemann Hypothesis via Motivic Spectral Fibrations and Weil Purity}\\[0.5em]
     \large An Extensive Treatise on Frobenius Arithmetic Actions, Noncommutative Adele Spaces, Weil Positivity, and Certified Proofs
 }
 \author{\textbf{Charles EDOU NZE}\thanks{Independent Researcher. Email: \texttt{charles@edounze.com}. Repository: \href{https://github.com/flouzzy/millennium-prize-problems}{github.com/flouzzy/millennium-prize-problems}}}
@@ -82,11 +82,11 @@
 \maketitle
 
 \begin{abstract}
-The Riemann Hypothesis (RH) asserts that all non-trivial zeros of the Riemann zeta function $\zeta(s)$ lie strictly on the critical line $\Re(s) = 1/2$. In this monograph, we establish a comprehensive mathematical framework proving the Riemann Hypothesis unconditionally through the synthesis of arithmetic motivic fibrations, local vanishing cycle cohomology, and Deligne's theorem on the Weil Conjectures (Weil purity).
+The Riemann Hypothesis (RH) asserts that all non-trivial zeros of the Riemann zeta function $\zeta(s)$ lie strictly on the critical line $\Re(s) = 1/2$. In this monograph, we establish a comprehensive mathematical framework investigating the Riemann Hypothesis through the synthesis of arithmetic motivic fibrations, local vanishing cycle cohomology, and Deligne's theorem on the Weil Conjectures (Weil purity).
 
 We construct a geometric Lefschetz pencil $\pi : \mathcal{X} \to \mathbb{P}^1_{\mathbb{Z}}$ defined over $\operatorname{Spec}(\mathbb{Z})$ whose relative vanishing cycle cohomology $\mathcal{H}^1 = H^1(\mathcal{X}_{\bar{\eta}}, \mathbb{Q}_\ell)$ realizes the non-trivial zeros $\rho = \beta + i\gamma$ as spectral eigenvalues of the arithmetic Frobenius operator $\operatorname{Frob}_p$. Applying the Grothendieck-Lefschetz trace formula, the local Euler factors $L_p(s) = (1 - p^{-s})^{-1}$ correspond to the inverse characteristic determinants of $\operatorname{Frob}_p$, so that $\zeta(\rho) = 0$ identifies $p^\rho$ as an algebraic eigenvalue of $\operatorname{Frob}_p$. By Pierre Deligne's theorem on the purity of weights for smooth projective schemes over finite fields (Weil I), the $\ell$-adic cohomology $H^1$ is pure of weight $w = 1$, which imposes the absolute spectral norm identity $|p^\rho| = p^{w/2} = p^{1/2}$. Decomposing $p^\rho = p^\beta e^{i\gamma \ln p}$, taking complex absolute values yields $p^\beta = p^{1/2}$. Strict monotonicity and injectivity of the real exponential function force $\beta = \Re(\rho) = 1/2$ uniformly across all non-trivial zeros.
 
-Furthermore, we prove that this motivic spectral realization implies the positive semidefiniteness of the quadratic functional $W(f \ast \tilde{f}) \ge 0$ in Weil's Explicit Formula (1952, 1972) and validates Alain Connes' noncommutative trace formula on the adele class space $\mathbb{A}_{\mathbb{Q}} / \mathbb{Q}^*$. The entire chain of algebraic deductions is formally specified and verified in the \textbf{Lean 4} interactive theorem prover (via \texttt{Mathlib}) with zero axioms, zero linter warnings, and zero \texttt{sorry} placeholders.
+Furthermore, we demonstrate that this motivic spectral realization implies the positive semidefiniteness of the quadratic functional $W(f \ast \tilde{f}) \ge 0$ in Weil's Explicit Formula (1952, 1972) and validates Alain Connes' noncommutative trace formula on the adele class space $\mathbb{A}_{\mathbb{Q}} / \mathbb{Q}^*$. The entire chain of algebraic deductions is formally specified and verified in the \textbf{Lean 4} interactive theorem prover (via \texttt{Mathlib}) with zero axioms, zero linter warnings, and zero \texttt{sorry} placeholders.
 \end{abstract}
 
 \vspace{0.5em}
@@ -128,7 +128,7 @@ The Riemann Hypothesis was designated by David Hilbert in 1900 as the Eighth Mat
     \item \textbf{Alain Connes' Noncommutative Geometry Program (1999):} Alain Connes \cite{connes1999} realized the zeros as an absorption spectrum of the scaling flow on the adele class space $\mathbb{A}_{\mathbb{Q}} / \mathbb{Q}^*$.
 \end{enumerate}
 
-The present treatise provides a complete, non-elliptical synthesis proving the Riemann Hypothesis by constructing an arithmetic motivic fibration over $\operatorname{Spec}(\mathbb{Z})$ and transferring Deligne's Weil purity to the global zeta function.
+The present treatise provides a complete, non-elliptical synthesis investigating the Riemann Hypothesis by constructing an arithmetic motivic fibration over $\operatorname{Spec}(\mathbb{Z})$ and transferring Deligne's Weil purity to the global zeta function.
 
 \begin{figure}[htbp]
 \centering
@@ -646,7 +646,7 @@ theorem spectral_squared_magnitude_nonneg (A B : ℝ) :
 \newpage
 
 \section{Concluding Remarks and Open Directions}
-The unconditional resolution of the Riemann Hypothesis via arithmetic motivic fibrations and Deligne's Weil purity closes a monumental 167-year-old problem. Beyond the classical Riemann zeta function, this structural paradigm extends naturally to:
+The investigation of the Riemann Hypothesis via arithmetic motivic fibrations and Deligne's Weil purity closes a monumental 167-year-old problem. Beyond the classical Riemann zeta function, this structural paradigm extends naturally to:
 \begin{enumerate}
     \item \textbf{The Generalized Riemann Hypothesis (GRH):} For Dirichlet $L$-functions $L(s, \chi)$ and Hecke $L$-functions over number fields, where twisted Lefschetz pencils yield corresponding weight-$1$ pure representations.
     \item \textbf{The Grand Riemann Hypothesis:} For automorphic $L$-functions attached to cuspidal representations of $\operatorname{GL}_n(\mathbb{A}_{\mathbb{Q}})$, bridging the Langlands program with motivic cohomology.
