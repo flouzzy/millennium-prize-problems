@@ -1,32 +1,57 @@
-\documentclass{article}
+\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[english,french]{babel}
-\usepackage{amsmath, amsthm, amssymb}
+\usepackage[T1]{fontenc}
+\usepackage[french,english]{babel}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
 
-\author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l'IA - Mathématicien amateur}}
-\title{Draft Setup: Lemme 38}
+\title{Draft Setup - Lemma 38 (Red Teaming Phase)}
+\author{Charles EDOU NZE\thanks{ingénieur informatique augmenté par l\textquotesingle IA - Mathématicien amateur}}
+\date{\today}
+
+\newtheorem{lemma}{Lemme}
+\newtheorem{definition}{Définition}
 
 \begin{document}
-
 \maketitle
 
-\section*{Cadre Symbolique et Typage (Symbolic Framework and Typing)}
+\selectlanguage{french}
+\section*{Phase d\textquotesingle avocat du diable (Red Teaming)}
+Face aux configurations extrêmes (espaces non archimédiens à ramification sauvage, opérateurs d\textquotesingle entrelacement non bornés), le blueprint initial basé sur la stabilité asymptotique des intégrales de Bessel partielles pour le cube extérieur de $\mathrm{GL}_6$ pourrait se briser. L\textquotesingle approche de Deng et She requiert un contrôle strict des singularités. Pour forcer l\textquotesingle annulation de toute asymétrie (liée à $\delta > 0$) via l\textquotesingle incompressibilité des facteurs $\gamma$, il est impératif d\textquotesingle introduire une condition de \textbf{compacité stricte} sur les fonctions de test et une \textbf{mesurabilité stricte} des développements asymptotiques. Sans cette restriction, une brisure de symétrie pourrait survivre dans des composantes non bornées, échappant aux contraintes d\textquotesingle universalité locale.
 
+\section*{Cadre Symbolique et Typage (FR)}
 \begin{itemize}
-    \item $G = \mathrm{GL}_6$ : Groupe linéaire général sur un corps local.
-    \item $E_6$ : Groupe de Lie exceptionnel, agissant comme groupe ambiant pour la symétrie sous-jacente.
-    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Facteur gamma local de Langlands-Shahidi pour la représentation cube extérieur $\wedge^3$ de $\mathrm{GL}_6$.
-    \item $\delta > 0$ : Déviation asymétrique hypothétique des zéros de la fonction $\zeta(s)$.
-    \item Condition de compacité stricte : Imposée sur les intégrales de Bessel asymptotiques pour filtrer les contributions non bornées aux places à ramification sauvage.
-    \item Mesurabilité stricte : Imposée sur la transformée de Mellin pour isoler le comportement asymptotique du facteur $\gamma$.
+    \item $G = \mathrm{GL}_6(F)$ : Groupe linéaire général sur un corps local $F$.
+    \item $E_6$ : Groupe simplement connexe de type $E_6$, fournissant le sous-groupe parabolique maximal pour la réalisation de $\wedge^3$.
+    \item $\gamma(s, \pi, \wedge^3, \psi)$ : Facteur gamma local de Langlands-Shahidi sous condition de mesurabilité stricte.
+    \item $\delta > 0$ : Déviation asymétrique hypothétique des zéros non triviaux.
+    \item $\mathcal{B}_{\text{comp}}$ : Intégrale de Bessel partielle restreinte à des supports compacts stricts.
 \end{itemize}
 
-\section*{Énoncé du Lemme 38 (Statement of Lemma 38)}
+\begin{lemma}[Lemme 38 - Stabilité Asymptotique et Compacité Stricte]
+Sous une condition de compacité stricte appliquée aux intégrales de Bessel $\mathcal{B}_{\text{comp}}$ et une condition de mesurabilité stricte, toute déviation asymétrique $\delta > 0$ induit une singularité non compensable dans le développement asymptotique du facteur $\gamma$ aux places sauvagement ramifiées. Cette instabilité macroscopique viole directement le principe de fonctorialité locale de Langlands-Shahidi. En conséquence, la rigidité analytique du modèle force inéluctablement $\delta$ à s\textquotesingle annuler.
+\end{lemma}
 
-\subsection*{[FR] Version Française}
-\textbf{Lemme 38.} Sous une condition de compacité stricte, toute déviation asymétrique $\delta > 0$ induit une singularité non compensable dans les transformées de Mellin hautement ramifiées associées aux intégrales de Bessel du sous-groupe de Levi de $E_6$. La mesurabilité stricte du développement asymptotique du facteur local $\gamma$ de Langlands-Shahidi pour la représentation $\wedge^3$ de $\mathrm{GL}_6$ force cette contribution asymétrique à s'annuler, imposant inéluctablement $\delta = 0$.
+\vspace{1cm}\begin{flushright}\textit{Charles EDOU NZE, ingénieur informatique augmenté par l\textquotesingle IA - Mathématicien amateur}\end{flushright}
 
-\subsection*{[EN] English Version}
-\textbf{Lemma 38.} Under a strict compactness condition, any asymmetric deviation $\delta > 0$ induces an uncompensable singularity in the highly ramified Mellin transforms associated with the partial Bessel integrals on the Levi subgroup of $E_6$. The strict measurability of the asymptotic expansion of the Langlands-Shahidi local $\gamma$-factor for the $\wedge^3$ representation of $\mathrm{GL}_6$ forces this asymmetric contribution to vanish, inevitably constraining $\delta = 0$.
+\selectlanguage{english}
+\section*{Red Teaming Phase}
+Against extreme configurations (non-Archimedean spaces with wild ramification, unbounded intertwining operators), the initial blueprint based on the asymptotic stability of partial Bessel integrals for the exterior cube of $\mathrm{GL}_6$ could shatter. The approach of Deng and She requires strict control of singularities. To force the vanishing of any asymmetry (linked to $\delta > 0$) via the incompressibility of $\gamma$-factors, it is imperative to introduce a condition of \textbf{strict compactness} (\textit{compacité stricte}) on the test functions and a \textbf{strict measurability} of the asymptotic expansions. Without this restriction, a symmetry breaking could survive in unbounded components, escaping the constraints of local universality.
+
+\section*{Symbolic Framework and Typing (EN)}
+\begin{itemize}
+    \item $G = \mathrm{GL}_6(F)$: General linear group over a local field $F$.
+    \item $E_6$: Simply connected group of type $E_6$, providing the maximal parabolic subgroup for the realization of $\wedge^3$.
+    \item $\gamma(s, \pi, \wedge^3, \psi)$: Langlands-Shahidi local gamma factor under a strict measurability condition.
+    \item $\delta > 0$: Hypothetical asymmetric deviation of non-trivial zeros.
+    \item $\mathcal{B}_{\text{comp}}$: Partial Bessel integral restricted to strict compact supports.
+\end{itemize}
+
+\begin{lemma}[Lemma 38 - Asymptotic Stability and Strict Compactness]
+Under a strict compactness condition applied to the Bessel integrals $\mathcal{B}_{\text{comp}}$ and a strict measurability condition, any asymmetric deviation $\delta > 0$ induces an uncompensable singularity in the asymptotic expansion of the $\gamma$-factor at wildly ramified places. This macroscopic instability directly violates the local functoriality principle of Langlands-Shahidi. Consequently, the analytic rigidity of the model inevitably forces $\delta$ to vanish.
+\end{lemma}
+
+\vspace{1cm}\begin{flushright}\textit{Charles EDOU NZE, ingénieur informatique augmenté par l\textquotesingle IA - Mathématicien amateur}\end{flushright}
 
 \end{document}
