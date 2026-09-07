@@ -1,5 +1,6 @@
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Linarith
+import Mathlib.Basic.Real.Basic
 
 /-!
 # Millennium Problem #06: Yang-Mills Existence and Mass Gap
@@ -20,4 +21,5 @@ theorem yang_mills_mass_gap_positivity (Δ : ℝ) (hΔ : Δ > 0) (E : ℝ) (hE :
 /-- Mass gap guarantees exponential decay of Euclidean 2-point correlation functions. -/
 theorem euclidean_correlator_exponential_decay (Δ x : ℝ) (hΔ : Δ > 0) (hx : x > 0) :
     -Δ * x < 0 := by
-  nlinarith
+  have h_neg : -Δ < 0 := neg_lt_zero.mpr hΔ
+  exact mul_neg_of_neg_of_pos h_neg hx

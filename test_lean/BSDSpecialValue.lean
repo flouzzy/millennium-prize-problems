@@ -1,6 +1,7 @@
 import Mathlib.Tactic.Positivity
 import Mathlib.Tactic.Linarith
 import Mathlib.Tactic.Ring
+import Mathlib.Basic.Real.Basic
 
 /-!
 # Millennium Problem #04: Birch and Swinnerton-Dyer Conjecture
