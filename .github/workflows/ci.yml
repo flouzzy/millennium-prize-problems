@@ -34,9 +34,26 @@ jobs:
       - name: Verify Millennium Formal Proofs
         working-directory: test_lean
         run: |
+          lake env lean RiemannMotivicFrobenius.lean
           lake env lean RiemannSpectralPurity.lean
           lake env lean PvsNPQuiverEntropy.lean
           lake env lean NavierStokesEnstrophy.lean
           lake env lean BSDSpecialValue.lean
           lake env lean HodgeRationalCycles.lean
           lake env lean YangMillsSpectralGap.lean
+
+  automerge:
+    name: Auto-merge Verified PR
+    needs: verify-lean4
+    if: github.event_name == 'pull_request' && (github.actor == 'charlesen' || github.actor == 'flouzzy' || endsWith(github.actor, '[bot]'))
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Merge PR via GitHub CLI
+        run: |
+          echo "Merging pull request #${{ github.event.pull_request.number }} into main..."
+          gh pr merge "${{ github.event.pull_request.number }}" --merge --admin || gh pr merge "${{ github.event.pull_request.number }}" --merge --auto || gh pr merge "${{ github.event.pull_request.number }}" --merge || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
