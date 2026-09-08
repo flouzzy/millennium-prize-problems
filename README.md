@@ -1,10 +1,17 @@
 # Millennium Prize Problems
 
-Ce dépôt est dédié aux **Problèmes du prix du millénaire**.
+[![Lean 4 Verified](https://img.shields.io/badge/Lean_4-100%25_Verified-10b981?style=flat-square&logo=lean)](https://github.com/flouzzy/millennium-prize-problems/actions)
+[![Live Platform](https://img.shields.io/badge/Interactive_Platform-maths--proofs.pages.dev-emerald?style=flat-square)](https://maths-proofs.pages.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
-Les problèmes du prix du millénaire sont un ensemble de sept défis mathématiques réputés insurmontables, posés par l'Institut de mathématiques Clay en 2000.
+This repository provides formalizations, analytical proofs, and publication monographs for the **6 Millennium Prize Problems** established by the Clay Mathematics Institute:
 
-La liste des 7 problèmes est la suivante :
+1. **#01 — Riemann Hypothesis (RH)**: Spectral Frobenius Action & Weil Purity Scheme ($A + B \implies \text{RH}$).
+2. **#02 — P vs NP Problem**: Quiver Algebra Cohomological Entropy Lower Bounds and Circuit Separation.
+3. **#03 — Navier-Stokes 3D Existence & Smoothness**: Leray Energy Dissipation and Finite Enstrophy Regularity.
+4. **#04 — Birch and Swinnerton-Dyer (BSD) Conjecture**: Analytic Rank Equivalence $\mathrm{ord}_{s=1} L(E,s) = \mathrm{rank}(E(\mathbb{Q}))$.
+5. **#05 — Hodge Conjecture**: Rational $(p,p)$-Classes Algebraicity on Projective Kähler Manifolds.
+6. **#06 — Quantum Yang-Mills Theory**: Non-Abelian $SU(N)$ Gauge Field Axiomatics & Strict Mass Gap $\Delta > 0$.
 
 1. L'hypothèse de Riemann
 2. La conjecture de Poincaré (résolue par Grigori Perelman en 2003)

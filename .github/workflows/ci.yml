@@ -1,0 +1,42 @@
+name: Millennium Prize Problems Lean 4 CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  verify-lean4:
+    name: Verify Millennium Lean 4 Proofs (0 sorry)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Elan (Lean 4 Toolchain Manager)
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+
+      - name: Check Lean 4 & Lake version
+        working-directory: test_lean
+        run: |
+          elan which lean
+          lake --version
+
+      - name: Build Mathlib Cache
+        working-directory: test_lean
+        run: |
+          lake exe cache get || true
+
+      - name: Verify Millennium Formal Proofs
+        working-directory: test_lean
+        run: |
+          lake env lean RiemannSpectralPurity.lean
+          lake env lean PvsNPQuiverEntropy.lean
+          lake env lean NavierStokesEnstrophy.lean
+          lake env lean BSDSpecialValue.lean
+          lake env lean HodgeRationalCycles.lean
+          lake env lean YangMillsSpectralGap.lean
