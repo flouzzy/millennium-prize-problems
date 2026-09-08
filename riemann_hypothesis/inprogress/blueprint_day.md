@@ -1,17 +1,17 @@
 # Blueprint of the Day / Note d'Orientation Stratégique
-## 2026-08-07 - 03:00 - Session du Matin
+## 2026-09-08 - 03:00 - Session du Matin
 
 **Problème du Millénaire :** L'hypothèse de Riemann
-**Cible :** Lemme 37
+**Cible :** Lemme 38
 
 ### [FR] Note d'Orientation
 
-L'analyse factuelle des dernières publications via l'API arXiv met en lumière une avancée cruciale par Dylan Butson et Sujay Nair concernant "On the deformation theory of chiral quantizations" (2026, arXiv:2606.27341v1). Leurs recherches offrent une approche opéradique pour la quantification par déformation d'algèbres de Poisson vertex, fournissant une théorie déformation-obstruction contrôlée par la cohomologie de de Rham pour les quantifications chirales de variétés symplectiques affines.
+L'analyse factuelle des dernières publications via l'API arXiv met en lumière une avancée cruciale par Benjamin Durkan et Timothy Page concernant "Amplified moments of the Riemann zeta function" (2026, arXiv:2606.27323v1). Leurs recherches établissent des formules asymptotiques pour les moments amplifiés en deux morceaux de la fonction zêta de Riemann, fournissant des bornes inférieures effectives inconditionnelles pour plusieurs moments joints, en accord avec les conjectures de Keating-Wei et Keating-Snaith.
 
-Le cadre précédent axé sur la fibration motivique et les valeurs propres fractionnaires a échoué (impasse documentée : `impasses/impasse_fibration_motivique.md`), s'effondrant face aux asymétries de l'Espace de Krein sur les places à ramification sauvage. De même, l'approche par résonance géodésique s'est heurtée au spectre des longueurs fermées (`impasses/impasse_resonance_geodesique.md`).
+Le cadre précédent axé sur la théorie de la quantification chirale et l'anomalie de Butson et Nair (Lemme 37) s'est avéré insuffisant pour imposer une obstruction purement analytique (impasse documentée : `impasses/impasse_fibration_motivique.md`), la cohomologie de de Rham ne contraignant pas suffisamment les moments fractionnaires des spectres.
 
-**Le Saut de Paradigme pour le Lemme 37 :**
-Nous devons abandonner la dépendance stricte à la fibration motivique simple. Le Lemme 37 va exploiter la théorie de la quantification chirale et des algèbres de Poisson vertex de Butson et Nair. Plutôt que de postuler des valeurs propres fractionnaires impossibles, nous allons associer l'hypothétique déviation asymétrique $\delta > 0$ des zéros de la fonction $\zeta(s)$ à une obstruction explicite dans la quantification par déformation de l'espace des adèles perçu comme une variété symplectique affine. L'asymétrie $\delta > 0$ induirait une anomalie chirale, c'est-à-dire une déformation non triviale. L'obstruction ne proviendra pas d'une dimension géométrique fractionnaire, mais d'une rigidité cohomologique : la cohomologie de de Rham de l'espace des lacets (arc spaces) contraindra le module asymétrique à disparaître, forçant inéluctablement $\delta$ à s'annuler et assurant la symétrie absolue des zéros.
+**Le Saut de Paradigme pour le Lemme 38 :**
+Nous devons abandonner la théorie opéradique et la quantification par déformation. Le Lemme 38 va s'ancrer fermement dans l'amplification des moments et la théorie des matrices aléatoires proposée par Durkan et Page. Plutôt que de rechercher une symétrie via une rigidité cohomologique, nous allons démontrer que toute déviation asymétrique $\delta > 0$ forcerait une explosion inconditionnelle dans les bornes inférieures des moments joints de zêta, violant directement les asymptotiques établies. L'amplification ciblée des polynômes de Dirichlet agira comme une lentille grossissante sur la bande critique : l'asymétrie $\delta > 0$ rendrait les moments d'ordre supérieur incompatibles avec l'ordre de grandeur attendu $\mathcal{O}(T (\log T)^{k^2})$. L'opérateur d'équirépartition contraindra inéluctablement $\delta$ à s'annuler, figeant la symétrie de manière purement analytique.
 
 Charles EDOU NZE \\ \small Independent Researcher
 
@@ -19,11 +19,11 @@ Charles EDOU NZE \\ \small Independent Researcher
 
 ### [EN] Strategic Blueprint
 
-The factual analysis of the latest publications via the arXiv API highlights a crucial advancement by Dylan Butson and Sujay Nair regarding "On the deformation theory of chiral quantizations" (2026, arXiv:2606.27341v1). Their research provides an operadic approach to the deformation quantization of vertex Poisson algebras, establishing an order-by-order deformation-obstruction theory controlled by de Rham cohomology for chiral quantizations of affine symplectic varieties.
+The factual analysis of the latest publications via the arXiv API highlights a crucial advancement by Benjamin Durkan and Timothy Page regarding "Amplified moments of the Riemann zeta function" (2026, arXiv:2606.27323v1). Their research establishes asymptotic formulae for two-piece amplified second and fourth moments of the Riemann zeta function, providing unconditional effective lower bounds for several joint moments of zeta, consistent with the Keating--Wei and Keating--Snaith conjectures.
 
-The previous framework focused on motivic fibration and fractional eigenvalues failed (documented impasse: `impasses/impasse_fibration_motivique.md`), collapsing against the asymmetries of the Krein Space on places with wild ramification. Likewise, the geodesic resonance approach collided with the closed length spectrum (`impasses/impasse_resonance_geodesique.md`).
+The previous framework focused on chiral quantization theory and the Butson-Nair anomaly (Lemma 37) proved insufficient to impose a purely analytic obstruction (documented impasse: `impasses/impasse_fibration_motivique.md`), as the de Rham cohomology did not sufficiently constrain the fractional moments of the spectra.
 
-**The Paradigm Shift for Lemma 37:**
-We must abandon the strict reliance on simple motivic fibration. Lemma 37 will exploit the theory of chiral quantization and vertex Poisson algebras by Butson and Nair. Rather than postulating impossible fractional eigenvalues, we will associate the hypothetical asymmetric deviation $\delta > 0$ of the zeros of the $\zeta(s)$ function with an explicit obstruction in the deformation quantization of the adele space viewed as an affine symplectic variety. The asymmetry $\delta > 0$ would induce a chiral anomaly, i.e., a non-trivial deformation. The obstruction will not stem from a fractional geometric dimension, but from a cohomological rigidity: the de Rham cohomology of the arc spaces will constrain the asymmetric module to vanish, inevitably forcing $\delta$ to vanish and ensuring the absolute symmetry of the zeros.
+**The Paradigm Shift for Lemma 38:**
+We must abandon operadic theory and deformation quantization. Lemma 38 will anchor itself firmly in the amplification of moments and random matrix theory proposed by Durkan and Page. Rather than seeking symmetry via cohomological rigidity, we will demonstrate that any asymmetric deviation $\delta > 0$ would force an unconditional blow-up in the lower bounds of the joint moments of zeta, directly violating the established asymptotics. The targeted amplification of Dirichlet polynomials will act as a magnifying lens on the critical strip: the asymmetry $\delta > 0$ would render higher-order moments incompatible with the expected magnitude $\mathcal{O}(T (\log T)^{k^2})$. The equidistribution operator will inevitably constrain $\delta$ to vanish, freezing the symmetry in a purely analytic manner.
 
 Charles EDOU NZE \\ \small Independent Researcher
