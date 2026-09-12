@@ -29,7 +29,6 @@ jobs:
       - name: Build Mathlib Cache
         working-directory: test_lean
         run: |
-          cp .lake/packages/mathlib/lean-toolchain ./lean-toolchain || true
           lake exe cache get || true
 
       - name: Verify Millennium Formal Proofs
