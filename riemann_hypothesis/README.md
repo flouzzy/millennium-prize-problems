@@ -72,6 +72,9 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 - [Pré-publication sur Zenodo (DOI)](https://zenodo.org/records/21257454)
 
 ## Historique des tentatives
+### 2026-09-13-18h
+
+- [[#2026-09-13-18h|2026-09-13 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 39 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 ### 2026-09-11-14h
 
 ### 2026-09-12-03h
