@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-09-13-03h
+
+- [[#2026-09-13-03h|2026-09-13 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Eric Li. Blueprint du Lemme 40 fixé. Statut : Planifié.
+
 ### 2026-09-12-03h
 
 - [[#2026-09-12-03h|2026-09-12 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Benjamin Durkan, Timothy Page. Blueprint du Lemme 39 fixé. Statut : Planifié.
