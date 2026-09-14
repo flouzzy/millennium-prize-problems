@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-09-13-14h
+### 2026-09-14-03h
 
-- [[#2026-09-13-14h|2026-09-13 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+- [[#2026-09-14-03h|2026-09-14 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Jewel Mahajan, Apeksha Sanghi. Blueprint du Lemme 40 fixé. Statut : Planifié.
 
 ### 2026-09-12-03h
 
