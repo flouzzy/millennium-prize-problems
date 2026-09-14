@@ -72,6 +72,10 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 - [Pré-publication sur Zenodo (DOI)](https://zenodo.org/records/21257454)
 
 ## Historique des tentatives
+
+### 2026-09-14-03h
+
+- <a id="2026-09-14-03h"></a>[[2026-09-14 03:00]](../dashboard.md#2026-09-14-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Jewel Mahajan, Apeksha Sanghi. Blueprint du Lemme 40 fixé. Statut : Planifié.
 ### 2026-09-11-14h
 
 ### 2026-09-12-03h
