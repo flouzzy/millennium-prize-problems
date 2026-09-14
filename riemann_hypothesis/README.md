@@ -72,10 +72,9 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 - [Pré-publication sur Zenodo (DOI)](https://zenodo.org/records/21257454)
 
 ## Historique des tentatives
-### 2026-09-13-03h
+### 2026-09-13-18h
 
-- <a id="2026-09-13-03h"></a>[[2026-09-13 03:00]](../dashboard.md#2026-09-13-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Eric Li. Blueprint du Lemme 40 fixé. Statut : Planifié.
-
+- [[#2026-09-13-18h|2026-09-13 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 39 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 ### 2026-09-11-14h
 
 ### 2026-09-12-03h
