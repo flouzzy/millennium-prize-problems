@@ -73,6 +73,10 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+### 2026-09-18-14h
+
+- <a id="2026-09-18-14h"></a>[[2026-09-18 14:00]](../dashboard.md#2026-09-18-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+
 ### 2026-09-16-14h
 
 - <a id="2026-09-16-14h"></a>[[2026-09-16 14:00]](../dashboard.md#2026-09-16-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
