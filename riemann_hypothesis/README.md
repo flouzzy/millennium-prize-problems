@@ -73,9 +73,9 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
-### 2026-09-18-03h
+### 2026-09-17-03h
 
-- <a id="2026-09-18-03h"></a>[[2026-09-18 03:00]](../dashboard.md#2026-09-18-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Marco Desogus. Blueprint du Lemme 43 fixé. Statut : Planifié.
+- <a id="2026-09-17-03h"></a>[[2026-09-17 03:00]](../dashboard.md#2026-09-17-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yorick Fuhrmann, Alberto Acosta Reche. Blueprint du Lemme 43 fixé. Statut : Planifié.
 
 ### 2026-09-16-14h
 
