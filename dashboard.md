@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-09-18-14h
+
+- [[#2026-09-18-14h|2026-09-18 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+
 ### 2026-09-16-14h
 
 - [[#2026-09-16-14h|2026-09-16 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.

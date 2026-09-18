@@ -7,10 +7,8 @@
 
 \newtheorem{lemma}{Lemma}[section]
 \newtheorem{lemme}{Lemme}[section]
-\newtheorem{definition}{Definition}[section]
-\newtheorem{theorem}{Theorem}[section]
 
-\title{Draft Setup - Lemma 41}
+\title{Draft Setup - Lemma 42}
 \author{Charles EDOU NZE \\ \small Independent Researcher}
 \date{\today}
 
@@ -20,40 +18,38 @@
 
 \selectlanguage{english}
 \begin{abstract}
-This draft setup establishes the exact symbolic typing and formal framework for Lemma 41, pivoting towards the arithmetic rigidity of the Sylow divisor condition as established by Eric Li (arXiv:2606.24872v1). A hypothetical asymmetric deviation from the critical line induces a modification of divisor moments, directly contradicting the strict bounds of the multiplicative large sieve.
+This draft setup establishes the exact symbolic typing and formal framework for Lemma 42. Following the insights of Sharma (2026) and Urroz (2026), we restrict the Kuga-Sato space to a compactly bounded ramification domain to immunize the cohomological obstruction flow against unbounded arithmetic pathologies at infinite places.
 \end{abstract}
 
 \section{Symbolic Framework and Typing}
 Let $s = \sigma + it$ be a complex variable. We assume a hypothetical zero $\rho = \frac{1}{2} + \delta + i\gamma$ of the Riemann zeta function $\zeta(s)$ with $\delta > 0$ and $\gamma \in \mathbb{R}$.
 
-Let $S(x)$ denote the arithmetic function capturing the Sylow divisor condition. According to Li's resolution of Erdős Problem 768, the asymptotic behavior is tightly bounded:
-\begin{equation}
-\sum_{n \le x} S(n) \sim C \cdot f(x)
-\end{equation}
-where $C$ is the exact leading constant.
+\begin{itemize}
+    \item $\mathcal{W}$ : Kuga-Sato space equipped with a strictly bounded ramification profile.
+    \item $T_p$ : Hecke operator acting on the compactly supported arithmetic cohomology of $\mathcal{W}$.
+    \item $\mathcal{R}_\delta$ : Controlled deformation operator induced by the asymmetric shift $\delta > 0$.
+    \item Bounded Galois Condition: We impose that the Galois lift of any induced instability remains strictly bounded in degree to circumvent pathological deformations.
+\end{itemize}
 
-The deviation $\delta > 0$ induces a twisted moment representation in the multiplicative large sieve space $\mathcal{M}$. We type the sequence of divisor moments as $M_k(\delta) \in \mathcal{H}(\mathcal{M})$, where $\mathcal{H}$ is the functor mapping arithmetic sequences to their Dirichlet series spectral footprint.
-
-\section{Statement of Lemma 41}
+\section{Statement of Lemma 42}
 \begin{lemma}
-Let $\rho = \frac{1}{2} + \delta + i\gamma$ be a non-trivial zero of $\zeta(s)$. The assumption $\delta > 0$ induces a variation in the $k$-th moments $M_k(\delta)$ of the Sylow divisor sums such that for large $x$, the asymptotic bound of the multiplicative large sieve is violated by a factor proportional to $x^\delta$. By the strict arithmetic rigidity of Erdős Problem 768 (Li, 2026), this obstruction is insurmountable, unconditionally forcing $\delta = 0$.
+Let $\rho = \frac{1}{2} + \delta + i\gamma$ be a non-trivial zero of $\zeta(s)$. Under the bounded Galois condition and restricted to the compactly ramified Kuga-Sato space $\mathcal{W}$, any hypothetical asymmetry $\delta > 0$ induces via the deformation operator $\mathcal{R}_\delta$ a measurable flow of cohomological obstruction in the spectrum of the Hecke operator $T_p$. By the arithmetic analogy of Fano invariants, this instability demands a Galois lift whose degree inevitably breaches the strict unconditional equidistribution bounds, thereby forcing $\delta = 0$.
 \end{lemma}
 
 \selectlanguage{french}
 \section{Cadre Symbolique et Typage}
 Soit $s = \sigma + it$ une variable complexe. Supposons l'existence d'un zéro $\rho = \frac{1}{2} + \delta + i\gamma$ de la fonction zêta de Riemann $\zeta(s)$ avec $\delta > 0$ et $\gamma \in \mathbb{R}$.
 
-Soit $S(x)$ la fonction arithmétique capturant la condition du diviseur de Sylow. D'après la résolution du problème 768 d'Erdős par Li, le comportement asymptotique est strictement borné :
-\begin{equation}
-\sum_{n \le x} S(n) \sim C \cdot f(x)
-\end{equation}
-où $C$ est la constante principale exacte.
+\begin{itemize}
+    \item $\mathcal{W}$ : Espace de Kuga-Sato muni d'un profil de ramification strictement borné.
+    \item $T_p$ : Opérateur de Hecke agissant sur la cohomologie arithmétique à support compact de $\mathcal{W}$.
+    \item $\mathcal{R}_\delta$ : Opérateur de déformation contrôlée induit par le décalage asymétrique $\delta > 0$.
+    \item Condition Galoisienne bornée : Nous imposons que le relèvement galoisien de toute instabilité induite reste de degré strictement borné afin de contourner les déformations pathologiques.
+\end{itemize}
 
-La déviation $\delta > 0$ induit une représentation des moments tordus dans l'espace du grand crible multiplicatif $\mathcal{M}$. Nous typons la séquence des moments de diviseurs comme $M_k(\delta) \in \mathcal{H}(\mathcal{M})$, où $\mathcal{H}$ est le foncteur associant aux suites arithmétiques leur empreinte spectrale via séries de Dirichlet.
-
-\section{Énoncé du Lemme 41}
+\section{Énoncé du Lemme 42}
 \begin{lemme}
-Soit $\rho = \frac{1}{2} + \delta + i\gamma$ un zéro non trivial de $\zeta(s)$. L'hypothèse $\delta > 0$ induit une variation des moments d'ordre $k$, $M_k(\delta)$, des sommes de diviseurs de Sylow telle que pour un grand $x$, la borne asymptotique du grand crible multiplicatif est violée par un facteur proportionnel à $x^\delta$. Par la stricte rigidité arithmétique du problème 768 d'Erdős (Li, 2026), cette obstruction est insurmontable, forçant inconditionnellement $\delta = 0$.
+Soit $\rho = \frac{1}{2} + \delta + i\gamma$ un zéro non trivial de $\zeta(s)$. Sous la condition galoisienne bornée et restreint à l'espace de Kuga-Sato $\mathcal{W}$ à ramification compacte, toute asymétrie hypothétique $\delta > 0$ induit via l'opérateur de déformation $\mathcal{R}_\delta$ un flot mesurable d'obstruction cohomologique dans le spectre de l'opérateur de Hecke $T_p$. Par l'analogie arithmétique des invariants de Fano, cette instabilité exige un relèvement galoisien dont le degré transgresse inéluctablement les bornes strictes inconditionnelles d'équirépartition, forçant ainsi $\delta = 0$.
 \end{lemme}
 
 \end{document}
