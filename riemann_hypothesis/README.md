@@ -73,9 +73,9 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
-### 2026-09-19-14h
+### 2026-09-20-03h
 
-- [[#2026-09-19-14h|2026-09-19 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+- <a id="2026-09-20-03h"></a>[[2026-09-20 03:00]](../dashboard.md#2026-09-20-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Marco Desogus. Blueprint du Lemme 44 fixé. Statut : Planifié.
 
 ### 2026-09-17-03h
 
