@@ -2,92 +2,101 @@
 <feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
   <id>https://arxiv.org/api/qFMCXSpUjMnVFYGMlqDXvm5MSN4</id>
   <title>arXiv Query: search_query=cat:math.NT OR cat:math.AG&amp;id_list=&amp;start=0&amp;max_results=5</title>
-  <updated>2026-09-18T01:32:08Z</updated>
+  <updated>2026-09-21T01:24:22Z</updated>
   <link href="https://arxiv.org/api/query?search_query=cat:math.NT+OR+cat:math.AG&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
   <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
-  <opensearch:totalResults>104195</opensearch:totalResults>
+  <opensearch:totalResults>104242</opensearch:totalResults>
   <opensearch:startIndex>0</opensearch:startIndex>
   <entry>
-    <id>http://arxiv.org/abs/2609.20367v1</id>
-    <title>The Three Gates: A Rooted-Operator Approach to Weil Positivity</title>
-    <updated>2026-09-17T13:25:52Z</updated>
-    <link href="https://arxiv.org/abs/2609.20367v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2609.20367v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>We present a localized rooted-operator argument for Weil positivity in the real odd logarithmic channel, retaining the polar rank-one term throughout. Gate I establishes a strict cellular/shell sign theorem with rigorous interval-arithmetic bounds. Gate II combines the Mellin unit-cell decomposition, divisor partial-isometry squares, affine translations, full-form Cauchy--Carleman transport, coherent multi-source shorting, the augmented scalar root, and Schur geometry in the true metric. Gate III uses compression, closure, and the restricted odd Weil criterion. A central point in Gate II is to place the inherited parent response in the same post-old-core/common-cut primal form in which the arithmetic mismatch and folded scalar debit are charged. If $P^{\rm ex}_{k,m}$ is the surviving inherited pivot and $a_m$ the inherited coordinate of the Schur minimizer, then $P^{\rm ex}_{k,m}a_m=ω^{\rm ex}_{k,m}$, so the inherited source-coupling contribution is the negative metric energy of that response. The aligned forcing is retained explicitly, and an outward-rounded finite computation together with the analytic tail gives $g^{M+}_k=\frac12+\log k-\frac{439}{250\log 2}\sum_m V_{k,m}-\frac52 W_k&gt;0$ for $k\ge7$. The simultaneous common-cut theorem keeps the parent-ground and transverse budgets separate before the common infimum, while the fold identity leaves a non-negative remainder. Starting from the rigorously certified endpoint $Y=7$, Schur induction yields positivity at the integer endpoints, zero-extension gives non-negativity at every finite support radius, and closure together with the restricted odd Weil criterion yields the Riemann hypothesis. Short fantasy interludes provide only an expository map and may be omitted without changing any definition, lemma, theorem, or proof.</summary>
+    <id>http://arxiv.org/abs/2609.21807v1</id>
+    <title>Orlov's rationality conjecture for surfaces</title>
+    <updated>2026-09-18T14:18:48Z</updated>
+    <link href="https://arxiv.org/abs/2609.21807v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.21807v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We prove that a smooth projective surface over $\mathbb{C}$ admitting a full exceptional collection of line bundles is rational.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-18T14:18:48Z</published>
+    <arxiv:comment>Comments are welcome</arxiv:comment>
+    <arxiv:primary_category term="math.AG"/>
+    <author>
+      <name>Xun Lin</name>
+    </author>
+    <author>
+      <name>Shizhuo Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.21779v1</id>
+    <title>Non-existence of sets with few special directions</title>
+    <updated>2026-09-18T13:52:53Z</updated>
+    <link href="https://arxiv.org/abs/2609.21779v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.21779v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $p$ be an odd prime and let $S\subseteq\mathbb{F}_p^2$ have cardinality divisible by $p$. We prove that, for all sufficiently large primes $p$, no such set has exactly four special directions, and obtain a conditional extension to larger numbers of special directions under an affine-independence assumption on the corresponding projection functions. A separate second-moment argument shows more generally that, for every fixed $k\ge4$, no subset of $\mathbb{F}_p^2$ has exactly $k$ special directions once $p$ is sufficiently large. In fact, the result holds uniformly for $k$ up to a positive constant times $\sqrt p/\log p$. In contrast, for multisets every prescribed collection of at most $p$ directions can occur as the set of special directions of a $\{0,1,2\}$-valued multiset on $\mathbb{F}_p^2$.</summary>
     <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-09-17T13:25:52Z</published>
-    <arxiv:comment>67 pages. Supplementary computational material: https://doi.org/10.5281/zenodo.22799713</arxiv:comment>
+    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-18T13:52:53Z</published>
+    <arxiv:comment>26 pages</arxiv:comment>
     <arxiv:primary_category term="math.NT"/>
     <author>
-      <name>Marco Desogus</name>
+      <name>Luca Ghidelli</name>
     </author>
-  </entry>
-  <entry>
-    <id>http://arxiv.org/abs/2609.20361v1</id>
-    <title>An exponential Lojasiewicz inequality for semi-Pfaffian sets</title>
-    <updated>2026-09-17T13:22:39Z</updated>
-    <link href="https://arxiv.org/abs/2609.20361v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2609.20361v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>We prove a generalization of the version, due to A. Gabrielov, of the Łojasiewicz inequality for not necessarily restricted semi-Pfaffian sets. Unlike the most variants of the Łojasiewicz inequality, it describes the rate of growth of a Pfaffian function on a semi-Pfaffian set $X$ not only in a neighbourhood of its zero set in the domain of $X$ but also in a neighbourhood of zeroes on the boundary of the domain. Gabrielov's version is essentially one-dimensional, we generalize it to a multidimensional case.</summary>
-    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.CA" scheme="http://arxiv.org/schemas/atom"/>
-    <category term="math.LO" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-09-17T13:22:39Z</published>
-    <arxiv:comment>8 pages</arxiv:comment>
-    <arxiv:primary_category term="math.AG"/>
     <author>
-      <name>Nicolai Vorobjov</name>
+      <name>Gergely Kiss</name>
+    </author>
+    <author>
+      <name>Gábor Somlai</name>
     </author>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2609.20354v1</id>
-    <title>A complete classification of permutation binomials of the form $X^r(X^{q-1}+a)$ over finite fields</title>
-    <updated>2026-09-17T13:18:18Z</updated>
-    <link href="https://arxiv.org/abs/2609.20354v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2609.20354v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>We classify, for every prime power $q$ and every $e\geqslant2$, the permutation binomials $X^r(X^{q-1}+a)$ over $\mathbb F_{q^e}$. Writing $\ell_j(q)=(q^j-1)/(q-1)$, such a binomial is a permutation if and only if $\gcd(r,q-1)=1$, $(-a)^{\ell_e(q)}\ne1$, and $r\ell_h(q)\equiv1\pmod{\ell_e(q)}$ for some $1\leqslant h&lt;e$ coprime to $e$. This proves a conjecture of Masuda, Rubio, and Santiago: every permutation binomial of this form arises from $(X^{q^h}+aX)\circ X^r$ for a suitable $h$. We also determine the exact number of distinct permutation functions represented by this family. As a further consequence, we completely classify the broader family $X^r(X^{d(q-1)}+a)$ in the coprime-index case $\gcd(d,\ell_e(q))=1$. The new ingredient in the main classification is the necessity argument: selected Hermite power sums are organized so that Lucas' theorem turns their coefficients into digit conditions; a Farey-guided local argument then forces successive base-$q$ digits, and cyclic rotations yield the inverse congruence. In characteristic $2$, a mod-$4$ lift to an auxiliary ring retains endpoint information lost modulo $2$.</summary>
-    <category term="math.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <id>http://arxiv.org/abs/2609.21771v1</id>
+    <title>An equivariant version of Gabber's lemma</title>
+    <updated>2026-09-18T13:40:31Z</updated>
+    <link href="https://arxiv.org/abs/2609.21771v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.21771v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $G$ be a finite abelian group, and let $k$ be an infinite perfect field containing a primitive root of unity of order the exponent of $G$. We prove that the $G$-equivariant version of Gabber's presentation lemma proposed by Bachmann holds over $k$ if and only if $G$ is cyclic of $p$-power order, for some prime $p$.</summary>
+    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-09-17T13:18:18Z</published>
-    <arxiv:comment>19 pages</arxiv:comment>
-    <arxiv:primary_category term="math.CO"/>
+    <category term="math.RT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-18T13:40:31Z</published>
+    <arxiv:primary_category term="math.AG"/>
     <author>
-      <name>Xiang Fan</name>
+      <name>Filippo Belfiori</name>
     </author>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2609.20149v1</id>
-    <title>A Survey on Pham-Brieskorn Varieties</title>
-    <updated>2026-09-17T12:39:21Z</updated>
-    <link href="https://arxiv.org/abs/2609.20149v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2609.20149v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>This is a survey on Pham-Brieskorn varieties and their various properties, targeted for graduate students.</summary>
+    <id>http://arxiv.org/abs/2609.21720v1</id>
+    <title>On intrinsic homological mirror symmetry for toric degenerations</title>
+    <updated>2026-09-18T12:55:22Z</updated>
+    <link href="https://arxiv.org/abs/2609.21720v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.21720v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper studies the Floer-theoretic aspects of homological mirror symmetry inspired by proposals of Perutz and Siebert and the Gross--Siebert intrinsic mirror symmetry program. Given a maximally unipotent degeneration of smooth projective Calabi--Yau manifolds over the punctured disk, we construct a ring using the fixed point Floer cohomology groups of the iterates of the monodromy of the degeneration equipped with the pair of pants product. Under the assumption that this ring is commutative, we can consider a candidate mirror family defined by the relative Proj construction. Further assuming that a smooth fiber $X_t$ contains a so-called tropical Lagrangian section, we construct a fully faithful embedding from the derived category of perfect complexes on our candidate mirror family into the Fukaya category of $X_t$. We verify both of these assumptions for certain Batyrev--Borisov toric degenerations, as well as some toric degenerations of Calabi--Yau threefolds coming from the Gross--Siebert reconstruction algorithm. These two geometric hypotheses are both phrased to support the general study of mirror symmetry for maximally unipotent degenerations of Calabi--Yau manifolds, largely reducing the symplectic inputs for proving homological mirror symmetry to the problem of constructing tropical Lagrangian sections.</summary>
+    <category term="math.SG" scheme="http://arxiv.org/schemas/atom"/>
     <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-09-17T12:39:21Z</published>
-    <arxiv:primary_category term="math.AG"/>
+    <published>2026-09-18T12:55:22Z</published>
+    <arxiv:comment>v1: 89 pages, no figures</arxiv:comment>
+    <arxiv:primary_category term="math.SG"/>
     <author>
-      <name>Michael Chitayat</name>
+      <name>Shaoyun Bai</name>
+    </author>
+    <author>
+      <name>Sebastian Haney</name>
     </author>
   </entry>
   <entry>
-    <id>http://arxiv.org/abs/2609.20119v1</id>
-    <title>On Logarithmic Poisson and De Rham Cohomology Groups of a Class of Inhomogeneous Divisors</title>
-    <updated>2026-09-17T12:17:35Z</updated>
-    <link href="https://arxiv.org/abs/2609.20119v1" rel="alternate" type="text/html"/>
-    <link href="https://arxiv.org/pdf/2609.20119v1" rel="related" type="application/pdf" title="pdf"/>
-    <summary>We study logarithmic Poisson and de Rham cohomologies associated with a class of inhomogeneous free divisors in the affine plane. These divisors arise as inhomogeneous deformations of reduced normal crossing divisors and admit explicit bases for their modules of logarithmic vector fields in the sense of Saito. Using these bases, we construct the corresponding logarithmic Poisson structures and describe explicitly the induced Koszul bracket on logarithmic differential 1-forms within the framework of Lie-Rinehart algebras. We then determine the logarithmic Poisson cochain complex and compute its cohomology for the class under consideration. Furthermore, by means of the logarithmic Spencer complex, we identify the corresponding logarithmic de Rham complex and compute its cohomology. These computations provide explicit cohomological invariants for the class of inhomogeneous divisors considered and show how logarithmic Poisson and de Rham theories extend the corresponding constructions for reduced normal crossing divisors. In addition, we establish an explicit comparison between the logarithmic cohomological theories: they are naturally isomorphic in any degree $k \neq 1$, whereas in degree 1 the logarithmic de Rham cohomology group is a split one-dimensional extension of the logarithmic Poisson cohomology group.</summary>
-    <category term="math.AG" scheme="http://arxiv.org/schemas/atom"/>
-    <published>2026-09-17T12:17:35Z</published>
-    <arxiv:comment>Moving beyond the normal-crossing setting, we study logarithmic Poisson and logarithmic de Rham cohomologies for a class of inhomogeneous divisors in the affine plane. We compute these cohomologies explicitly and establish a formal deformation framework connecting the inhomogeneous and normal-crossing cases</arxiv:comment>
-    <arxiv:primary_category term="math.AG"/>
+    <id>http://arxiv.org/abs/2609.21695v1</id>
+    <title>Higher Labute-Serre duality and Lyndon words</title>
+    <updated>2026-09-18T12:29:29Z</updated>
+    <link href="https://arxiv.org/abs/2609.21695v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2609.21695v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $S$ be a free profinite group on a finite ordered basis $X$, and let $S^{(n,p)}$, $n=1,2,\ldots,$ denote its lower $p$-central filtration. There is a natural duality between $S^{(n,p)}/S^{(n+1,p)}$ and $H^2(S/S^{(n,p)},\mathbb{F}_p)$. These $\mathbb{F}_p$-linear spaces admit natural bases indexed by Lyndon words of length $\leq n$ in the alphabet $X$. These bases are known to be unitriangularly dual. We prove that they are much closer to being fully dual, by showing that the pairing between two basis elements vanishes unless the corresponding Lyndon words are permutations of one another. We further show that the value of the pairing is essentially independent of $n$.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-09-18T12:29:29Z</published>
+    <arxiv:primary_category term="math.NT"/>
     <author>
-      <name>Kamtila Kari</name>
+      <name>Ido Efrat</name>
     </author>
     <author>
-      <name>Dongho Joseph</name>
-    </author>
-    <author>
-      <name>Diekouam Fotso Luc Emery</name>
+      <name>Levav Ferber Tas</name>
     </author>
   </entry>
 </feed>
