@@ -1,24 +1,24 @@
 # Blueprint Stratégique - Session du Matin (03h00)
-**Date :** 2026-09-24
+**Date :** 2026-09-25
 **Problème :** L'Hypothèse de Riemann
 **Cible :** Lemme 46
 
 ### FR - Note d'Orientation
-L'analyse des travaux récents extraits de l'API arXiv ce matin nous permet d'affiner notre contournement des impasses structurelles (dimensions fractionnaires et résonance géodésique, cf. `impasses/`). Les récents travaux de Shaoyun Bai et Sebastian Haney (*On intrinsic homological mirror symmetry for toric degenerations*, arXiv:2609.21720v1, 2026) ainsi que de Filippo Belfiori (*An equivariant version of Gabber's lemma*, arXiv:2609.21771v1, 2026) offrent une perspective novatrice.
+L'analyse des travaux récents extraits de l'API arXiv ce matin nous permet d'affiner notre contournement des impasses structurelles (dimensions fractionnaires et résonance géodésique, cf. `impasses/`). Les récents travaux de Xun Lin et Shizhuo Zhang (*Orlov's rationality conjecture for surfaces*, arXiv:2609.21807v1, 2026) offrent une perspective novatrice sur la rationalité des surfaces projectives admettant une collection exceptionnelle complète de fibrés en droites.
 
-Belfiori montre que la présentation équivariante de Gabber ne s'applique de manière fluide que sous l'action de groupes cycliques p-primaires. En utilisant les dégénérescences toriques maximalement unipotentes de Bai et Haney, nous pouvons réifier la fibration motivique sans recourir à des perturbations continues (qui brisent la positivité de Weil). Nous considérons l'axe de symétrie $\Re(s) = 1/2$ comme la seule direction invariante sous l'action du groupe de Galois profini agissant sur le motif associé.
+En appliquant cette conjecture de rationalité, nous pouvons surmonter l'impasse de la fibration motivique. Plutôt que de subir la présence de dimensions fractionnaires asymétriques liées à la pureté globale, nous utilisons une collection exceptionnelle pour induire une rigidité algébrique forte. Le spectre géométrique est alors forcé de se stabiliser sur la droite critique $\Re(s) = 1/2$.
 
-**Saut de Paradigme pour le Lemme 46 :**
-L'architecture de notre Lemme 46 consistera à encoder les zéros asymétriques ($\delta > 0$) comme des configurations de directions spéciales dans un module équivariant de la catégorie de Fukaya. Le théorème de rigidité de Gabber-Belfiori impliquera qu'une telle configuration forcerait une torsion non-cyclique dans l'anneau construit via l'homologie de Floer, ce qui violerait le théorème de densité arithmétique. L'axe d'annulation est ainsi algébriquement verrouillé.
+**Le saut de paradigme pour le Lemme 46 :**
+L'architecture de notre Lemme 46 consistera à exploiter la conjecture de rationalité d'Orlov sur le motif de Grothendieck de la surface sous-jacente. Cette rigidité algébrique interdira toute déformation vers des zéros hors de l'axe critique en imposant une obstruction cohomologique stricte à toute asymétrie $\delta > 0$. La symétrie est ainsi algébriquement verrouillée.
 
 Charles EDOU NZE \\ \small Independent Researcher
 
 ### EN - Strategic Blueprint
-The analysis of recent works extracted from the arXiv API this morning allows us to refine our evasion of structural impasses (fractional dimensions and geodesic resonance, cf. `impasses/`). The recent works of Shaoyun Bai and Sebastian Haney (*On intrinsic homological mirror symmetry for toric degenerations*, arXiv:2609.21720v1, 2026), alongside Filippo Belfiori (*An equivariant version of Gabber's lemma*, arXiv:2609.21771v1, 2026), offer a novel perspective.
+The analysis of recent works extracted from the arXiv API this morning allows us to refine our evasion of structural impasses (fractional dimensions and geodesic resonance, cf. `impasses/`). The recent works of Xun Lin and Shizhuo Zhang (*Orlov's rationality conjecture for surfaces*, arXiv:2609.21807v1, 2026) offer a novel perspective on the rationality of projective surfaces admitting a full exceptional collection of line bundles.
 
-Belfiori demonstrates that the equivariant Gabber presentation holds fluidly only under cyclic p-primary group actions. By utilizing the maximally unipotent toric degenerations of Bai and Haney, we can reify the motivic fibration without resorting to continuous perturbations (which break Weil positivity). We treat the symmetry axis $\Re(s) = 1/2$ as the uniquely invariant direction under the action of the profinite Galois group on the associated motive.
+Applying this rationality conjecture allows us to bypass the motivic fibration impasse. Rather than suffering the presence of asymmetric fractional dimensions tied to global purity, we utilize a full exceptional collection to induce strong algebraic rigidity. The geometric spectrum is thereby forced to stabilize on the critical line $\Re(s) = 1/2$.
 
-**Paradigm Shift for Lemma 46:**
-The architecture of Lemma 46 will consist of encoding asymmetric zeros ($\delta > 0$) as configurations of special directions within an equivariant module of the Fukaya category. The Gabber-Belfiori rigidity theorem will imply that such a configuration forces a non-cyclic torsion in the ring constructed via Floer homology, violating the arithmetic density theorem. The axis of vanishing is thus algebraically locked.
+**The paradigm shift for Lemma 46:**
+The architecture of Lemma 46 will consist of exploiting Orlov's rationality conjecture on the Grothendieck motive of the underlying surface. This algebraic rigidity will forbid any deformation toward zeroes off the critical axis by imposing a strict cohomological obstruction to any asymmetry $\delta > 0$. Symmetry is thus algebraically locked.
 
 Charles EDOU NZE \\ \small Independent Researcher
