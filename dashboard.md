@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-09-23-18h
+### 2026-09-24-03h
 
-- [[#2026-09-23-18h|2026-09-23 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 45 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- [[#2026-09-24-03h|2026-09-24 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Shaoyun Bai, Sebastian Haney, Filippo Belfiori. Blueprint du Lemme 46 fixé. Statut : Planifié.
 
 ### 2026-09-23-14h
 

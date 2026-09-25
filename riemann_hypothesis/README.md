@@ -73,9 +73,9 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
-### 2026-09-23-18h
+### 2026-09-24-03h
 
-- <a id="2026-09-23-18h"></a>[[2026-09-23 18:00]](../dashboard.md#2026-09-23-18h) : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 45 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- <a id="2026-09-24-03h"></a>[[2026-09-24 03:00]](../dashboard.md#2026-09-24-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Shaoyun Bai, Sebastian Haney, Filippo Belfiori. Blueprint du Lemme 46 fixé. Statut : Planifié.
 
 ### 2026-09-23-14h
 
