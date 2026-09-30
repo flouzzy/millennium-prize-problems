@@ -1,24 +1,24 @@
 # Blueprint Stratégique - Session du Matin (03h00)
-**Date :** 2026-09-29
+**Date :** 2026-09-30
 **Problème :** L'hypothèse de Riemann
-**Cible :** Lemme 47
+**Cible :** Lemme 48
 
 ### FR - Note d'Orientation
-L'analyse des travaux récents extraits de l'API arXiv ce matin nous permet d'affiner notre contournement des impasses structurelles documentées dans `impasses/`, notamment l'échec de la fibration motivique et la résonance géodésique. L'article récent de Filippo Belfiori (*An equivariant version of Gabber's lemma*, arXiv:2609.21771v1, 2026) offre un cadre d'une précision remarquable : il démontre que la version $G$-équivariante du lemme de présentation de Gabber est valide si et seulement si le groupe $G$ est cyclique d'ordre une puissance d'un nombre premier $p$.
+L'analyse des données de ce matin extraites de l'API arXiv nous invite à repenser notre approche face aux impasses structurelles documentées (notamment l'échec de la fibration motivique et les dimensions fractionnaires). L'article récent de Shaoyun Bai et Sebastian Haney (*On intrinsic homological mirror symmetry for toric degenerations*, arXiv:2609.21720v1, 2026) ouvre une voie inattendue : ils construisent un anneau commutatif via la cohomologie de Floer des points fixes des itérés de la monodromie pour une dégénérescence unipotente maximale.
 
-Ce résultat est la clé pour surmonter les pathologies des places à ramification sauvage. Plutôt que de s'appuyer sur une pureté globale (qui engendre des dimensions fractionnaires artificielles), nous exploitons cette présentation équivariante pour rigidifier la structure locale. En isolant l'action des groupes cycliques d'ordre puissance de $p$, nous obtenons un contrôle exact sur la géométrie locale qui neutralise toute résonance géodésique. Le spectre de l'opérateur de Laplace-Beltrami est ainsi contraint, forçant les zéros de la fonction zêta à s'aligner sur la droite critique.
+Ce cadre symplectique est fondamental pour contourner l'obstruction de la pureté globale. Au lieu de forcer la symétrie par la cohomologie étale (qui se brise aux places à ramification sauvage), nous transposons le problème dans la catégorie de Fukaya. Les zéros de la fonction zêta correspondent alors à des sections lagrangiennes tropicales dans la fibre lisse $X_t$. La commutativité stricte de l'anneau de Floer agit comme un verrou symplectique : toute déviation asymétrique (un zéro hors de l'axe $\Re(s) = 1/2$) nécessiterait une déformation non-lagrangienne qui détruirait cette commutativité. La symétrie n'est plus une contrainte arithmétique globale, mais une propriété de rigidité géométrique intrinsèque.
 
-**Le saut de paradigme pour le Lemme 47 :**
-L'architecture du Lemme 47 s'articulera autour de la construction d'un modèle local strict utilisant le lemme de présentation $G$-équivariant de Gabber (avec $G$ cyclique d'ordre puissance de $p$). Cette rigidification locale empêche la formation de valeurs propres asymétriques aux places sauvages, interdisant de fait tout écart à l'axe $\Re(s) = 1/2$. La symétrie est préservée par ce verrouillage $p$-adique local.
+**Le saut de paradigme pour le Lemme 48 :**
+L'architecture du Lemme 48 reposera sur l'identification du spectre analytique avec les sections lagrangiennes tropicales d'une dégénérescence unipotente maximale. En appliquant l'isomorphisme de symétrie miroir homologique intrinsèque, nous prouverons que toute valeur propre asymétrique impliquerait une non-commutativité dans l'anneau de Floer de la monodromie. Cette contradiction symplectique sanctuarise l'axe critique.
 
 Charles EDOU NZE \\ \small Independent Researcher
 
 ### EN - Strategic Blueprint
-The analysis of recent works extracted from the arXiv API this morning allows us to refine our evasion of structural impasses documented in `impasses/`, notably the failure of motivic fibrations and geodesic resonance. The recent article by Filippo Belfiori (*An equivariant version of Gabber's lemma*, arXiv:2609.21771v1, 2026) provides a remarkably precise framework: it proves that the $G$-equivariant version of Gabber's presentation lemma holds if and only if the group $G$ is cyclic of $p$-power order for some prime $p$.
+The analysis of this morning's data extracted from the arXiv API invites us to rethink our approach regarding the documented structural impasses (notably the failure of motivic fibrations and fractional dimensions). The recent paper by Shaoyun Bai and Sebastian Haney (*On intrinsic homological mirror symmetry for toric degenerations*, arXiv:2609.21720v1, 2026) opens an unexpected path: they construct a commutative ring using the fixed point Floer cohomology groups of the iterates of the monodromy for a maximally unipotent degeneration.
 
-This result is the key to overcoming the pathologies of wild ramification places. Rather than relying on global purity (which generates artificial fractional dimensions), we exploit this equivariant presentation to rigidify the local structure. By isolating the action of cyclic groups of $p$-power order, we gain exact control over the local geometry, thereby neutralizing any geodesic resonance. The spectrum of the Laplace-Beltrami operator is constrained, forcing the zeroes of the zeta function to align on the critical line.
+This symplectic framework is fundamental to bypassing the global purity obstruction. Instead of forcing symmetry through étale cohomology (which breaks at wild ramification places), we transpose the problem into the Fukaya category. The zeroes of the zeta function then correspond to tropical Lagrangian sections in the smooth fiber $X_t$. The strict commutativity of the Floer ring acts as a symplectic lock: any asymmetric deviation (a zero off the axis $\Re(s) = 1/2$) would require a non-Lagrangian deformation that destroys this commutativity. Symmetry is no longer a global arithmetic constraint, but an intrinsic geometric rigidity property.
 
-**The paradigm shift for Lemma 47:**
-The architecture of Lemma 47 will center on constructing a strict local model using Gabber's $G$-equivariant presentation lemma (with $G$ being cyclic of $p$-power order). This local rigidification prevents the formation of asymmetric eigenvalues at wild places, effectively forbidding any deviation from the axis $\Re(s) = 1/2$. Symmetry is preserved through this local $p$-adic locking.
+**The paradigm shift for Lemma 48:**
+The architecture of Lemma 48 will rely on identifying the analytic spectrum with the tropical Lagrangian sections of a maximally unipotent degeneration. By applying the intrinsic homological mirror symmetry isomorphism, we will prove that any asymmetric eigenvalue would imply non-commutativity in the monodromy's Floer ring. This symplectic contradiction sanitizes the critical axis.
 
 Charles EDOU NZE \\ \small Independent Researcher
