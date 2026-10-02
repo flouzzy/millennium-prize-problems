@@ -1,5 +1,5 @@
 # Blueprint Stratégique - Session du Matin (03h00)
-**Date :** 2026-10-02
+**Date :** 2026-10-01
 **Problème :** L'hypothèse de Riemann
 **Cible :** Lemme 49
 
