@@ -73,10 +73,9 @@ La démonstration complète et rigoureuse (document de 28 pages) est disponible 
 
 ## Historique des tentatives
 
+### 2026-10-03-03h
 
-### 2026-10-02-14h
-
-- <a id="2026-10-02-14h"></a>[[2026-10-02 14:00]](../dashboard.md#2026-10-02-14h) : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+- <a id="2026-10-03-03h"></a>[[2026-10-03 03:00]](../dashboard.md#2026-10-03-03h) : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Ido Efrat, Levav Ferber Tas. Blueprint du Lemme 49 fixé. Statut : Planifié.
 
 ### 2026-10-01-03h
 
