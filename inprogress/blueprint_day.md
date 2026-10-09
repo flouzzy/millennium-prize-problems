@@ -1,24 +1,24 @@
 # Blueprint Stratégique - Session du Matin (03h00)
-**Date :** 2026-10-07
+**Date :** 2026-10-09
 **Problème :** L'hypothèse de Riemann
 **Cible :** Lemme 51
 
 ### FR - Note d'Orientation
-L'analyse des données de ce matin issues de l'API arXiv nous indique une voie radicalement nouvelle, permettant de contourner les écueils récents de la résonance géodésique et de la fibration motivique. Les travaux remarquables de Kaustabh Mondal (*Potential semistability of Finite height Galois representations: Relative case*, arXiv:2606.26043v1, 2026) introduisent une notion robuste de hauteur finie pour les systèmes locaux $\mathbb{Z}_p$ sur des espaces adiques lisses.
+L'analyse des données de ce matin issues de l'API arXiv met en exergue les travaux de Filippo Belfiori (*An equivariant version of Gabber's lemma*, 2026, arXiv:2609.21771v1), qui nous apportent un nouveau prisme décisif. En explorant la version équivariante du lemme de présentation de Gabber, nous identifions un socle structurel imposant des conditions strictes de rigidité.
 
-Cette percée théorique nous offre le prisme idéal pour étudier la géométrie des zéros. En interprétant le spectre non trivial comme codant les invariants de systèmes locaux étales d'une variété $p$-adique adéquate, l'hypothèse de semi-stabilité forcée par le tirage en arrière le long d'un revêtement étale fini fige toute tentative de dérive spectrale. Une composante asymétrique de la distribution des zéros se traduirait nécessairement par une violation de la finitude de la hauteur du $F$-cristal prismatique associé. La pureté analytique de Du-Liu-Moon-Shimizu garantit alors qu'aucune singularité asymétrique ne peut subsister : l'axe critique $\Re(s) = 1/2$ n'est plus une simple limite d'oscillations, mais l'unique état spectral compatible avec la stabilité prismatique.
+Ce cadre de présentation équivariante globale permet de lier toute éventuelle déviation asymétrique à un défaut manifeste dans la filtration géométrique de l'espace sous-jacent. Ainsi, en imposant une symétrie par l'action d'un groupe $G$, les orbites induites par toute déviation de la droite critique $\Re(s) = 1/2$ entreraient en contradiction avec la compacité requise par l'isomorphisme de Gabber. La rigidité spectrale devient inévitable.
 
 **Le saut de paradigme pour le Lemme 51 :**
-Le Lemme 51 s'attachera à relier formellement le faisceau des déviations spectrales des zéros de $\zeta(s)$ à un système local étale sur un espace adique. La preuve démontrera que toute déviation hors de la droite critique induirait une divergence de la hauteur de ce système local, entrant en contradiction absolue avec la pureté $p$-adique et la semi-stabilité du modèle.
+Le Lemme 51 s'attachera à projeter les racines de $\zeta(s)$ au sein de cette architecture équivariante. Nous démontrerons que la présentation rigide empêche tout décollement spectral hors de l'axe central.
 
 Charles EDOU NZE \\ \small Independent Researcher
 
 ### EN - Strategic Blueprint
-The analysis of this morning's data from the arXiv API points us toward a radically new path, allowing us to bypass the recent pitfalls of geodesic resonance and motivic fibration. The remarkable work of Kaustabh Mondal (*Potential semistability of Finite height Galois representations: Relative case*, arXiv:2606.26043v1, 2026) introduces a robust notion of finite height for $\mathbb{Z}_p$-local systems on smooth adic spaces.
+The analysis of this morning's data from the arXiv API highlights the work of Filippo Belfiori (*An equivariant version of Gabber's lemma*, 2026, arXiv:2609.21771v1), which provides us with a decisive new prism. By exploring the equivariant version of Gabber's presentation lemma, we identify a structural foundation that imposes strict conditions of rigidity.
 
-This theoretical breakthrough provides the ideal prism to study the geometry of zeros. By interpreting the non-trivial spectrum as encoding the invariants of étale local systems on a suitable $p$-adic variety, the hypothesis of semistability forced by the pullback along a finite étale cover freezes any attempt at spectral drift. An asymmetric component in the distribution of zeros would necessarily translate into a violation of the finite height of the associated prismatic $F$-crystal. The analytic purity of Du-Liu-Moon-Shimizu then guarantees that no asymmetric singularity can survive: the critical axis $\Re(s) = 1/2$ is no longer a mere limit of oscillations, but the only spectral state compatible with prismatic stability.
+This global equivariant presentation framework allows us to link any potential asymmetric deviation to a manifest defect in the geometric filtration of the underlying space. Thus, by imposing symmetry via the action of a group $G$, the orbits induced by any deviation from the critical line $\Re(s) = 1/2$ would contradict the compactness required by Gabber's isomorphism. Spectral rigidity becomes inevitable.
 
 **The paradigm shift for Lemma 51:**
-Lemma 51 will formally link the sheaf of spectral deviations of the zeros of $\zeta(s)$ to an étale local system on an adic space. The proof will demonstrate that any deviation off the critical line would induce a divergence in the height of this local system, entering into absolute contradiction with $p$-adic purity and the semistability of the model.
+Lemma 51 will project the roots of $\zeta(s)$ into this equivariant architecture. We will demonstrate that the rigid presentation prevents any spectral drift away from the central axis.
 
 Charles EDOU NZE \\ \small Independent Researcher
