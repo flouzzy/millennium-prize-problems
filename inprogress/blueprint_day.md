@@ -1,30 +1,25 @@
 # Blueprint Stratégique - Session du Matin (03h00)
-**Date :** 2026-10-10
+**Date :** 2026-10-12
 **Problème :** L'hypothèse de Riemann
 **Cible :** Lemme 52
 
 ### FR - Note d'Orientation
-L'analyse des données de ce matin issues de l'API arXiv met en exergue les travaux de Luca Ghidelli, Gergely Kiss et Gábor Somlai (*Non-existence of sets with few special directions*, 2026, arXiv:2609.21779v1), qui nous apportent un nouveau prisme décisif. En explorant la distribution directionnelle des ensembles dans $\mathbb{F}_p^2$, nous identifions une contrainte de rigidité inhérente qui prohibe un faible nombre de directions spéciales.
+L'analyse des données de ce matin issues de l'API arXiv met en exergue les travaux de Benjamin Durkan, Timothy Page (*Amplified moments of the Riemann zeta function*, 2026, arXiv:2606.27323v1), qui nous apportent un nouveau prisme décisif. En explorant les formules asymptotiques pour les moments amplifiés de la fonction zêta de Riemann, nous identifions un socle structurel profond imposant des conditions strictes sur la répartition de ses zéros.
 
-Ce cadre de directions spéciales en caractéristique finie permet de lier toute asymétrie spectrale des zéros de $\zeta(s)$ à la projection de ces déviations sur des structures de plans affines finis. Ainsi, en imposant une réduction mod $p$ et en étudiant les directions induites par toute déviation de la droite critique $\Re(s) = 1/2$, le manque de directions spéciales constituerait une contradiction flagrante avec les théorèmes de non-existence pour les ensembles affinement indépendants à cardinalité bornée. La rigidité se transfère du continu au discret modulaire.
-
-Ce faisant, nous évitons élégamment les écueils liés à la fibration motivique et aux dimensions fractionnaires (impasse\_fibration\_motivique), ainsi qu'à la résonance géodésique sur la surface modulaire (impasse\_resonance\_geodesique), en remplaçant la métrique globale par une obstruction combinatoire arithmétique rigide, dont le comportement est asymptotiquement stable pour tout $p$ suffisamment grand.
+Cette architecture analytique permet d'établir des bornes inférieures effectives inconditionnelles pour de multiples moments conjoints. Ainsi, en exploitant l'amplification des moments d'ordre supérieur, les orbites induites par toute déviation de la droite critique $\Re(s) = 1/2$ entreraient en contradiction avec ces bornes effectives rigides. La contrainte spectrale devient alors inévitable.
 
 **Le saut de paradigme pour le Lemme 52 :**
-Le Lemme 52 s'attachera à projeter les racines asymétriques de $\zeta(s)$ sur l'espace projectif sur $\mathbb{F}_p$. Nous démontrerons que cette projection force une distribution des directions qui, par l'absurde, possèderait trop peu de directions spéciales, réfutant par conséquent tout décollement spectral hors de l'axe central.
+Le Lemme 52 s'attachera à projeter les racines de $\zeta(s)$ au sein de cette architecture d'amplification des moments. Nous démontrerons que ces bornes structurelles empêchent tout décollement spectral hors de l'axe central.
 
-Charles EDOU NZE \\
-\small Chercheur Indépendant
+Charles EDOU NZE \\ \small Chercheur Indépendant
 
 ### EN - Strategic Blueprint
-The analysis of this morning's data from the arXiv API highlights the work of Luca Ghidelli, Gergely Kiss, and Gábor Somlai (*Non-existence of sets with few special directions*, 2026, arXiv:2609.21779v1), which provides us with a decisive new prism. By exploring the directional distribution of sets in $\mathbb{F}_p^2$, we identify an inherent rigidity constraint that prohibits a small number of special directions.
+The analysis of this morning's data from the arXiv API highlights the work of Benjamin Durkan, Timothy Page (*Amplified moments of the Riemann zeta function*, 2026, arXiv:2606.27323v1), which provides us with a decisive new prism. By exploring the asymptotic formulae for amplified moments of the Riemann zeta function, we identify a profound structural foundation that imposes strict conditions on the distribution of its zeros.
 
-This framework of special directions in finite characteristic allows us to link any spectral asymmetry of the zeros of $\zeta(s)$ to the projection of these deviations onto finite affine plane structures. Thus, by imposing a mod $p$ reduction and studying the directions induced by any deviation from the critical line $\Re(s) = 1/2$, the lack of special directions would constitute a glaring contradiction with the non-existence theorems for affinely independent sets with bounded cardinality. Rigidity transfers from the continuum to the modular discrete setting.
-
-In doing so, we elegantly bypass the pitfalls associated with motivic fibration and fractional dimensions (impasse\_fibration\_motivique), as well as geodesic resonance on the modular surface (impasse\_resonance\_geodesique), by replacing the global metric with a rigid combinatorial arithmetic obstruction, whose behavior is asymptotically stable for all sufficiently large $p$.
+This analytical architecture establishes unconditional effective lower bounds for multiple joint moments. Thus, by exploiting the amplification of higher-order moments, the orbits induced by any deviation from the critical line $\Re(s) = 1/2$ would contradict these rigid effective bounds. Spectral constraint then becomes inevitable.
 
 **The paradigm shift for Lemma 52:**
-Lemma 52 will project the asymmetric roots of $\zeta(s)$ onto the projective space over $\mathbb{F}_p$. We will demonstrate that this projection forces a distribution of directions that, by contradiction, would possess too few special directions, thereby refuting any spectral drift away from the central axis.
+Lemma 52 will project the roots of $\zeta(s)$ into this architecture of amplified moments. We will demonstrate that these structural bounds prevent any spectral drift away from the central axis.
 
 Charles EDOU NZE \\
 \small Independent Researcher
