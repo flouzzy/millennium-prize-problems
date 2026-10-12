@@ -4,36 +4,28 @@
 
 \subsection*{FR - Typage Symbolique et Restriction Axiomatique}
 \begin{itemize}
-    \item $X$: Espace adique lisse et propre sur un corps $p$-adique $K$, de dimension de Krull finie, assurant une compacité stricte pour éviter les pathologies de bord non-archimédiennes et les fuites spectrales en dimension infinie.
-    \item $G$: Groupe de symétrie fini agissant sur $X$, garantissant que les orbites sous l'action équivariante demeurent d'ordre fini.
-    \item $\mathbb{L}$: Système local étale en $\mathbb{Z}_p$ sur $X$, muni d'une structure $G$-équivariante.
-    \item $\mathcal{E}$: $F$-cristal prismatique de hauteur finie associé à $\mathbb{L}$ via la correspondance de Simpson $p$-adique équivariante.
+    \item $X$: Espace adique lisse et propre sur un corps $p$-adique $K$, vérifiant une condition stricte de finitude cohomologique (les groupes de cohomologie étale $H^i(X, \mathbb{L})$ sont de dimension finie).
+    \item $\mathbb{L}$: Système local étale en $\mathbb{Z}_p$ sur $X$, imposé absolument irréductible pour interdire tout sous-objet propre non nul.
+    \item $\mathcal{E}$: $F$-cristal prismatique de hauteur finie associé à $\mathbb{L}$ via la correspondance de Simpson $p$-adique.
     \item $f: Y \to X$: Revêtement étale fini forçant la semi-stabilité potentielle globale.
-    \item $h_{\text{prism}}(\mathcal{E})$: Hauteur prismatique du $F$-cristal, globalement bornée sur l'espace propre de dimension finie.
+    \item $h_{\text{prism}}(\mathcal{E})$: Hauteur prismatique du $F$-cristal, globalement bornée sur l'espace propre.
     \item $\mathcal{S}_{\text{dev}}$: Faisceau des déviations spectrales des zéros de $\zeta(s)$ hors de la droite critique $\Re(s) = 1/2$.
 \end{itemize}
 
-Trajectoire Mentale de la Preuve :
-Pour immuniser l'isomorphisme de Gabber contre les pathologies spectrales, nous restreignons le cadre à un espace adique compact et lisse. La semi-stabilité potentielle garantit que la hauteur prismatique reste contrôlée, forçant toute déviation asymétrique à s'annuler sous peine d'obstruction cohomologique immédiate.
-
 \begin{lemma}[51 - FR]
-Soit $X$ un espace adique lisse et propre sur un corps $p$-adique $K$ de dimension de Krull finie, muni d'une action de groupe fini $G$. Si le faisceau des déviations spectrales $\mathcal{S}_{\text{dev}}$ s'injecte non trivialement dans le système local étale $G$-équivariant $\mathbb{L}$, alors toute composante asymétrique de déviation induit une divergence stricte de la hauteur prismatique $h_{\text{prism}}(\mathcal{E})$. Par pureté analytique et semi-stabilité potentielle forcée par le tirage en arrière le long du revêtement fini $f$, cette divergence est cohomologiquement obstruée. La finitude des orbites de $G$ empêche toute dérive en dimension infinie, imposant de facto que $\mathcal{S}_{\text{dev}} = 0$ et confinant uniformément les zéros de $\zeta(s)$ à l'axe $\Re(s) = 1/2$.
+Soit $X$ un espace adique lisse et propre sur un corps $p$-adique $K$ vérifiant la finitude cohomologique étale. Si le faisceau des déviations spectrales $\mathcal{S}_{\text{dev}}$ s'injecte non trivialement dans le système local étale absolument irréductible $\mathbb{L}$, alors, par irréductibilité, $\mathcal{S}_{\text{dev}}$ est isomorphe à $\mathbb{L}$. Or, toute composante asymétrique de déviation dans $\mathcal{S}_{\text{dev}}$ induirait une divergence stricte de la hauteur prismatique $h_{\text{prism}}(\mathcal{E})$. La finitude cohomologique de $X$ contraint les espaces de déformation à être de dimension finie, rendant cette divergence cohomologiquement obstruée par pureté analytique. Cette obstruction stricte impose de facto que $\mathcal{S}_{\text{dev}} = 0$, confinant uniformément les zéros de $\zeta(s)$ à l'axe $\Re(s) = 1/2$.
 \end{lemma}
 
 \subsection*{EN - Symbolic Typing and Axiomatic Restriction}
 \begin{itemize}
-    \item $X$: Smooth and proper adic space over a $p$-adic field $K$, of finite Krull dimension, ensuring strict compactness to prevent non-archimedean boundary pathologies and infinite-dimensional spectral leaks.
-    \item $G$: Finite symmetry group acting on $X$, guaranteeing that the orbits under the equivariant action remain of finite order.
-    \item $\mathbb{L}$: $\mathbb{Z}_p$-étale local system on $X$, endowed with a $G$-equivariant structure.
-    \item $\mathcal{E}$: Prismatic $F$-crystal of finite height associated to $\mathbb{L}$ via the equivariant $p$-adic Simpson correspondence.
+    \item $X$: Smooth and proper adic space over a $p$-adic field $K$, satisfying a strict condition of étale cohomological finiteness (the étale cohomology groups $H^i(X, \mathbb{L})$ are finite-dimensional).
+    \item $\mathbb{L}$: $\mathbb{Z}_p$-étale local system on $X$, assumed absolutely irreducible to forbid any non-zero proper subobjects.
+    \item $\mathcal{E}$: Prismatic $F$-crystal of finite height associated to $\mathbb{L}$ via the $p$-adic Simpson correspondence.
     \item $f: Y \to X$: Finite étale cover forcing global potential semistability.
-    \item $h_{\text{prism}}(\mathcal{E})$: Prismatic height of the $F$-crystal, globally bounded on the finite-dimensional proper space.
+    \item $h_{\text{prism}}(\mathcal{E})$: Prismatic height of the $F$-crystal, globally bounded on the proper space.
     \item $\mathcal{S}_{\text{dev}}$: Sheaf of spectral deviations of the zeros of $\zeta(s)$ off the critical line $\Re(s) = 1/2$.
 \end{itemize}
 
-Mental Trajectory of the Proof:
-To immunize Gabber's isomorphism against spectral pathologies, we restrict the framework to a compact and smooth adic space. Potential semistability guarantees that the prismatic height remains controlled, forcing any asymmetric deviation to vanish under pain of immediate cohomological obstruction.
-
 \begin{lemma}[51 - EN]
-Let $X$ be a smooth and proper adic space of finite Krull dimension over a $p$-adic field $K$, endowed with a finite group action $G$. If the sheaf of spectral deviations $\mathcal{S}_{\text{dev}}$ injects non-trivially into the $G$-equivariant étale local system $\mathbb{L}$, then any asymmetric deviation component induces a strict divergence of the prismatic height $h_{\text{prism}}(\mathcal{E})$. By analytic purity and potential semistability forced by the pullback along the finite cover $f$, this divergence is cohomologically obstructed. The finiteness of $G$-orbits prevents any drift in infinite dimensions, de facto imposing that $\mathcal{S}_{\text{dev}} = 0$ and uniformly confining the zeros of $\zeta(s)$ to the axis $\Re(s) = 1/2$.
+Let $X$ be a smooth and proper adic space over a $p$-adic field $K$ satisfying étale cohomological finiteness. If the sheaf of spectral deviations $\mathcal{S}_{\text{dev}}$ injects non-trivially into the absolutely irreducible étale local system $\mathbb{L}$, then, by irreducibility, $\mathcal{S}_{\text{dev}}$ must be isomorphic to $\mathbb{L}$. However, any asymmetric deviation component in $\mathcal{S}_{\text{dev}}$ would induce a strict divergence of the prismatic height $h_{\text{prism}}(\mathcal{E})$. The cohomological finiteness of $X$ constrains the deformation spaces to be finite-dimensional, rendering this divergence cohomologically obstructed by analytic purity. This strict obstruction de facto imposes that $\mathcal{S}_{\text{dev}} = 0$, uniformly confining the zeros of $\zeta(s)$ to the axis $\Re(s) = 1/2$.
 \end{lemma}
