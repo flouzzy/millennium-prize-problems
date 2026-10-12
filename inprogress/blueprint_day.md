@@ -21,4 +21,5 @@ This analytical architecture establishes unconditional effective lower bounds fo
 **The paradigm shift for Lemma 52:**
 Lemma 52 will project the roots of $\zeta(s)$ into this architecture of amplified moments. We will demonstrate that these structural bounds prevent any spectral drift away from the central axis.
 
-Charles EDOU NZE \\ \small Independent Researcher
+Charles EDOU NZE \\
+\small Independent Researcher
