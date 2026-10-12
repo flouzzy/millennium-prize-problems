@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-10-12-03h
+### 2026-10-11-03h
 
-- [[#2026-10-12-03h|2026-10-12 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Benjamin Durkan, Timothy Page. Blueprint du Lemme 52 fixé. Statut : Planifié.
+- [[#2026-10-11-03h|2026-10-11 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Ido Efrat, Levav Ferber Tas. Blueprint du Lemme 52 fixé. Statut : Planifié.
 
 ### 2026-10-09-03h
 
