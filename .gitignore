@@ -23,7 +23,3 @@ __pycache__/
 .DS_Store
 *.swp
 *.pdf
-*.aux
-*.log
-*.pdf
-*.toc
