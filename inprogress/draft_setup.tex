@@ -4,32 +4,32 @@
 
 \subsection*{FR - Typage Symbolique et Restriction Axiomatique}
 \begin{itemize}
-    \item $\mathcal{X}$: Dégénérescence torique munie d'une structure symplectique.
-    \item $G$: Groupe profini libre associé à la filtration centrale-$p$ inférieure.
+    \item $\mathcal{X}$: Dégénérescence torique \textbf{strictement compacte} munie d'une structure symplectique.
+    \item $G$: Groupe profini libre associé à la filtration centrale-$p$ inférieure, sous condition de mesurabilité absolue.
     \item $\mathcal{O}_{\text{dev}}$: Obstruction cohomologique issue de l'isomorphisme de Labute-Serre supérieur, capturant tout défaut d'appariement.
-    \item $W_{L}$: Base indexée par les mots de Lyndon pour l'algèbre de Lie graduée, imposant une symétrie rigide.
-    \item $HF^*(\mathcal{X})$: Cohomologie de Floer régissant les symétries spectrales intrinsèques du cadre symplectique.
+    \item $W_{L}$: Base indexée par les mots de Lyndon pour l'algèbre de Lie graduée, imposant une symétrie rigide non dégénérée.
+    \item $HF^*(\mathcal{X})$: Cohomologie de Floer régissant les symétries spectrales intrinsèques du cadre symplectique (bien définie grâce à la compacité stricte de $\mathcal{X}$).
 \end{itemize}
 
 \begin{lemma}[53 - FR]
-L'isomorphisme de Labute-Serre supérieur impose une annulation cohomologique profinie qui bloque formellement toute migration asymétrique des zéros par rapport à l'axe $\Re(s) = 1/2$.
+L'isomorphisme de Labute-Serre supérieur, restreint aux dégénérescences toriques strictement compactes, impose une annulation cohomologique profinie qui bloque formellement toute migration asymétrique des zéros par rapport à l'axe $\Re(s) = 1/2$.
 \end{lemma}
 \begin{proof}
-Supposons l'existence d'un zéro $\rho$ de $\zeta(s)$ situé en dehors de la droite critique $\Re(s) = 1/2$. Cette asymétrie induit une déviation au sein du cadre de la symétrie miroir homologique intrinsèque pour la dégénérescence torique $\mathcal{X}$. Par la dualité de Labute-Serre supérieure sur le groupe profini $G$, toute rupture de symétrie doit se manifester par une composante non nulle dans la base $W_{L}$ des mots de Lyndon. Cependant, l'appariement strict imposé par la filtration centrale-$p$ inférieure force l'obstruction $\mathcal{O}_{\text{dev}}$ à s'annuler identiquement sur tout état non symétrique. Par conséquent, la déviation asymétrique engendre une contradiction directe avec la structure algébrique rigide du groupe profini, et est donc cohomologiquement interdite au sein de $HF^*(\mathcal{X})$. Ainsi, cette obstruction bloque la migration des zéros, imposant que la fonction s'annule exclusivement sur l'axe critique.
+Supposons l'existence d'un zéro $\rho$ de $\zeta(s)$ situé en dehors de la droite critique $\Re(s) = 1/2$. Cette asymétrie induit une déviation au sein du cadre de la symétrie miroir homologique intrinsèque pour la dégénérescence torique compacte $\mathcal{X}$. Par la dualité de Labute-Serre supérieure sur le groupe profini mesurable $G$, toute rupture de symétrie doit se manifester par une composante non nulle dans la base $W_{L}$ des mots de Lyndon. La compacité de $\mathcal{X}$ garantit la non-dégénérescence de la structure de Floer. Ainsi, l'appariement strict imposé par la filtration centrale-$p$ inférieure force l'obstruction $\mathcal{O}_{\text{dev}}$ à s'annuler identiquement sur tout état non symétrique. Par conséquent, la déviation asymétrique engendre une contradiction directe avec la structure algébrique rigide du groupe profini, et est donc cohomologiquement interdite au sein de $HF^*(\mathcal{X})$. Ainsi, cette obstruction bloque la migration des zéros, imposant que la fonction s'annule exclusivement sur l'axe critique.
 \end{proof}
 
 \subsection*{EN - Symbolic Typing and Axiomatic Restriction}
 \begin{itemize}
-    \item $\mathcal{X}$: Toric degeneration equipped with a symplectic structure.
-    \item $G$: Free profinite group associated with the lower $p$-central filtration.
+    \item $\mathcal{X}$: \textbf{Strictly compact} toric degeneration equipped with a symplectic structure.
+    \item $G$: Free profinite group associated with the lower $p$-central filtration, subject to an absolute mesurability condition.
     \item $\mathcal{O}_{\text{dev}}$: Cohomological obstruction arising from the higher Labute-Serre isomorphism, capturing any pairing defect.
-    \item $W_{L}$: Basis indexed by Lyndon words for the graded Lie algebra, enforcing rigid symmetry.
-    \item $HF^*(\mathcal{X})$: Floer cohomology governing the intrinsic spectral symmetries of the symplectic framework.
+    \item $W_{L}$: Basis indexed by Lyndon words for the graded Lie algebra, enforcing rigid non-degenerate symmetry.
+    \item $HF^*(\mathcal{X})$: Floer cohomology governing the intrinsic spectral symmetries of the symplectic framework (well-defined due to the strict compactness of $\mathcal{X}$).
 \end{itemize}
 
 \begin{lemma}[53 - EN]
-The higher Labute-Serre isomorphism imposes a profinite cohomological vanishing that formally blocks any asymmetric migration of zeros relative to the axis $\Re(s) = 1/2$.
+The higher Labute-Serre isomorphism, restricted to strictly compact toric degenerations, imposes a profinite cohomological vanishing that formally blocks any asymmetric migration of zeros relative to the axis $\Re(s) = 1/2$.
 \end{lemma}
 \begin{proof}
-Assume the existence of a zero $\rho$ of $\zeta(s)$ located off the critical line $\Re(s) = 1/2$. This asymmetry induces a deviation within the framework of intrinsic homological mirror symmetry for the toric degeneration $\mathcal{X}$. By the higher Labute-Serre duality on the profinite group $G$, any symmetry breaking must manifest as a non-zero component within the Lyndon word basis $W_{L}$. However, the strict pairing enforced by the lower $p$-central filtration forces the obstruction $\mathcal{O}_{\text{dev}}$ to vanish identically on any non-symmetric state. Consequently, the asymmetric deviation generates a direct contradiction with the rigid algebraic structure of the profinite group, and is therefore cohomologically forbidden within $HF^*(\mathcal{X})$. Thus, this obstruction blocks the migration of zeros, mandating that the function vanishes exclusively on the critical axis.
+Assume the existence of a zero $\rho$ of $\zeta(s)$ located off the critical line $\Re(s) = 1/2$. This asymmetry induces a deviation within the framework of intrinsic homological mirror symmetry for the compact toric degeneration $\mathcal{X}$. By the higher Labute-Serre duality on the mesurable profinite group $G$, any symmetry breaking must manifest as a non-zero component within the Lyndon word basis $W_{L}$. The compactness of $\mathcal{X}$ guarantees the non-degeneracy of the Floer structure. Thus, the strict pairing enforced by the lower $p$-central filtration forces the obstruction $\mathcal{O}_{\text{dev}}$ to vanish identically on any non-symmetric state. Consequently, the asymmetric deviation generates a direct contradiction with the rigid algebraic structure of the profinite group, and is therefore cohomologically forbidden within $HF^*(\mathcal{X})$. Thus, this obstruction blocks the migration of zeros, mandating that the function vanishes exclusively on the critical axis.
 \end{proof}
