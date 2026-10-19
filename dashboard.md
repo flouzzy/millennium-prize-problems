@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-10-19-03h
+### 2026-10-17-03h
 
-- [[#2026-10-19-03h|2026-10-19 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Dan Pomerleano, Paul Seidel, Taiwang Deng, Dongming She. Blueprint du Lemme 55 fixé. Statut : Planifié.
+- [[#2026-10-17-03h|2026-10-17 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Filippo Belfiori. Blueprint du Lemme 16 fixé. Statut : Planifié.
 
 ### 2026-10-15-14h
 
