@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-10-17-03h
+### 2026-10-16-14h
 
-- [[#2026-10-17-03h|2026-10-17 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Filippo Belfiori. Blueprint du Lemme 16 fixé. Statut : Planifié.
+- [[#2026-10-16-14h|2026-10-16 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 ### 2026-10-15-14h
 
