@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-06-19-07h
+### 2026-10-20-14h
 
-- [[#2026-06-19-07h|2026-06-19 07:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Xun Lin, Shizhuo Zhang, Luca Ghidelli, Gergely Kiss, Gábor Somlai, Filippo Belfiori, Shaoyun Bai, Sebastian Haney, Ido Efrat, Levav Ferber Tas. Blueprint du Lemme 56 fixé. Statut : Planifié.
+- [[#2026-10-20-14h|2026-10-20 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
 ### 2026-10-20-03h
 
