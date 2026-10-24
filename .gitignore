@@ -30,3 +30,4 @@ test_wrapper.*
 *.aux
 *.log
 *.pdf
+test_wrapper.*
