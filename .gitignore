@@ -8,25 +8,17 @@
 *.fdb_latexmk
 texput.log
 scratch/
-
 # Python cache
 __pycache__/
 *.pyc
-
 # Lean / Lake build artifacts
 .lake/
 *.olean
 *.ilean
 *.c
-
 # OS & Temp
 .DS_Store
 *.swp
 *.pdf
 test_wrapper.*
 test_draft.*
-test_wrapper.*
-test_wrapper.*
-*.aux
-*.log
-*.pdf
