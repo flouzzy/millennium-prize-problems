@@ -28,3 +28,6 @@ test_wrapper.*
 *.log
 *.pdf
 test_wrapper.*
+inprogress/*.aux
+inprogress/*.log
+inprogress/*.toc
