@@ -27,7 +27,8 @@ test_wrapper.*
 *.aux
 *.log
 *.pdf
-test_wrapper.*
-inprogress/*.aux
-inprogress/*.log
-inprogress/*.toc
+test_draft.*
+*.aux
+*.log
+*.pdf
+*.toc
