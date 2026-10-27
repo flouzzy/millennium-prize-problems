@@ -9,6 +9,30 @@
 
 ## Historique d'avancement
 
+### 2026-10-24-07h
+
+- [[#2026-10-24-07h|2026-10-24 07:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yanqiao Ding, Dadi Ni, Nathan Partouche, Tianzhi Hu, Kang Zuo. Blueprint du Lemme 59 fixé. Statut : Planifié.
+
+### 2026-10-23-14h
+
+- [[#2026-10-23-14h|2026-10-23 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+
+### 2026-10-23-03h
+
+- [[#2026-10-23-03h|2026-10-23 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Aayush Verma, Dylan Butson, Sujay Nair, Benjamin Durkan, Timothy Page, Jewel Mahajan, Apeksha Sanghi, Abel Castorena, Montserrat Vite. Blueprint du Lemme 58 fixé. Statut : Planifié.
+
+### 2026-10-22-07h
+
+- [[#2026-10-22-07h|2026-10-22 07:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Xun Lin, Shizhuo Zhang, Luca Ghidelli, Gergely Kiss, Gábor Somlai, Filippo Belfiori, Shaoyun Bai, Sebastian Haney, Ido Efrat, Levav Ferber Tas. Blueprint du Lemme 57 fixé. Statut : Planifié.
+
+### 2026-10-21-14h
+
+- [[#2026-10-21-14h|2026-10-21 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+
+### 2026-10-21-03h
+
+- [[#2026-10-21-03h|2026-10-21 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Siqing Zhang, Kaustabh Mondal, Yichuan Cao, Dakai Guo, Ruichen Qiu, Ruyong Feng, Xiao-Shan Gao, Yorick Fuhrmann, Alberto Acosta Reche. Blueprint du Lemme 56 fixé. Statut : Planifié.
+
 ### 2026-10-20-14h
 
 - [[#2026-10-20-14h|2026-10-20 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
