@@ -9,6 +9,10 @@
 
 ## Historique d'avancement
 
+### 2026-10-24-07h
+
+- [[#2026-10-24-07h|2026-10-24 07:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yanqiao Ding, Dadi Ni, Nathan Partouche, Tianzhi Hu, Kang Zuo. Blueprint du Lemme 59 fixé. Statut : Planifié.
+
 ### 2026-10-23-14h
 
 - [[#2026-10-23-14h|2026-10-23 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
