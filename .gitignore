@@ -30,3 +30,8 @@ test_wrapper.*
 *.aux
 *.log
 *.pdf
+test_draft.*
+*.aux
+*.log
+*.pdf
+*.toc
