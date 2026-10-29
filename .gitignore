@@ -32,3 +32,4 @@ test_draft.*
 *.log
 *.pdf
 *.toc
+test_wrapper.*
