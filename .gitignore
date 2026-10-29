@@ -33,3 +33,7 @@ test_draft.*
 *.pdf
 *.toc
 test_wrapper.*
+inprogress/draft_setup_standalone.aux
+inprogress/draft_setup_standalone.log
+inprogress/draft_setup_standalone.pdf
+inprogress/draft_setup_standalone.out
