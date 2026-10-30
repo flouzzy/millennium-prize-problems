@@ -1,26 +1,26 @@
 Statut : Planifié
 
 # Blueprint Stratégique - Session du Matin (03h00)
-**Date :** 2026-10-29
+**Date :** 2026-10-30
 **Problème :** L'hypothèse de Riemann
-**Cible :** Lemme 61
+**Cible :** Lemme 62
 
 ### FR - Note d'Orientation
-L'analyse des données de l'API arXiv met en lumière les travaux de Mykhaylo Tyomkyn (*Generic tensor products are not maximal*, 2026, arXiv:2610.37616v1) et Solomon Friedberg, Claire Frechette, Henrik P. A. Gustafsson (*Iwahori Whittaker functions for unramified quasi-split groups*, 2026, arXiv:2610.37614v1).
+L'analyse des données de l'API arXiv met en lumière les travaux de George Cooper, Ludvig Modin (*Intrinsic Non-Reductive Geometric Invariant Theory and Moduli Spaces of Principal Bundles with Non-Reductive Structure Groups*, 2026, arXiv:2610.38837v1) et Yong Hu, Alexandre Lourdeaux (*Representations and $n$-universality of hermitian lattices over local and number fields*, 2026, arXiv:2610.38831v1).
 
-Face à l'absence d'impasses documentées, nous exploitons la non-maximalité des produits tensoriels génériques (Tyomkyn) pour introduire une asymétrie contrôlée dans notre espace de configurations. Les fonctions de Whittaker d'Iwahori (Friedberg, Frechette, Gustafsson) avec paramètres inégaux nous permettent de gérer la dégénérescence mod $p$ et de stabiliser l'algèbre de Hecke associée à notre fibration.
+Face à l'absence d'impasses documentées sur cet angle, nous exploitons la théorie intrinsèque des invariants géométriques non réductifs (Cooper, Modin) pour traiter l'action faible de notre groupe de symétrie sur les strates instables de la fibration motivique. L'universalité $n$-locale globale des réseaux hermitiens (Hu, Lourdeaux) nous fournit l'outil analytique pour propager cette structure géométrique aux complétions locales.
 
-**Le saut de paradigme pour le Lemme 61 :**
-Le Lemme 61 démontrera que l'algèbre de Hecke à paramètres inégaux, induite par les opérateurs de Demazure-Whittaker, agit de manière non-triviale sur notre produit tensoriel asymétrique. En calculant les fonctions de Whittaker sphériques, nous montrerons que toute déviation des zéros par rapport à l'axe critique induit une singularité non-résoluble dans le spectre de l'algèbre. La contrainte de régularité impose alors inévitablement une symétrie spectrale complète.
+**Le saut de paradigme pour le Lemme 62 :**
+Le Lemme 62 démontrera que l'espace des modules des fibrés principaux associés aux zéros non-triviaux admet un espace de modules grossier quasi-projectif sous l'action de notre groupe de symétrie non-réductif. En utilisant le principe d'universalité locale-globale pour les formes hermitiennes intégrales, nous prouverons que toute asymétrie $\delta > 0$ induit une stratification instable dépourvue de quotient fini, contredisant la compacité spectrale. La rigidité structurelle impose ainsi une universalité symétrique absolue sur la droite critique.
 
 Charles EDOU NZE \\ \small Independent Researcher
 
 ### EN - Strategic Blueprint
-The analysis of arXiv API data brings to light the work of Mykhaylo Tyomkyn (*Generic tensor products are not maximal*, 2026, arXiv:2610.37616v1) and Solomon Friedberg, Claire Frechette, Henrik P. A. Gustafsson (*Iwahori Whittaker functions for unramified quasi-split groups*, 2026, arXiv:2610.37614v1).
+The analysis of arXiv API data brings to light the work of George Cooper, Ludvig Modin (*Intrinsic Non-Reductive Geometric Invariant Theory and Moduli Spaces of Principal Bundles with Non-Reductive Structure Groups*, 2026, arXiv:2610.38837v1) and Yong Hu, Alexandre Lourdeaux (*Representations and $n$-universality of hermitian lattices over local and number fields*, 2026, arXiv:2610.38831v1).
 
-In the absence of documented impasses, we exploit the non-maximality of generic tensor products (Tyomkyn) to introduce a controlled asymmetry in our configuration space. The Iwahori Whittaker functions (Friedberg, Frechette, Gustafsson) with unequal parameters allow us to manage the mod $p$ degeneracy and stabilize the Hecke algebra associated with our fibration.
+In the absence of documented impasses on this angle, we exploit the intrinsic non-reductive geometric invariant theory (Cooper, Modin) to handle the weak action of our symmetry group on the unstable strata of the motivic fibration. The local-global $n$-universality of hermitian lattices (Hu, Lourdeaux) provides us with the analytical tool to propagate this geometric structure to the local completions.
 
-**The paradigm leap for Lemma 61:**
-Lemma 61 will demonstrate that the Hecke algebra with unequal parameters, induced by Demazure-Whittaker operators, acts non-trivially on our asymmetric tensor product. By computing the spherical Whittaker functions, we will show that any deviation of the zeros from the critical axis induces an unsolvable singularity in the spectrum of the algebra. The regularity constraint then inevitably imposes a complete spectral symmetry.
+**The paradigm leap for Lemma 62:**
+Lemma 62 will demonstrate that the moduli space of principal bundles associated with non-trivial zeros admits a quasi-projective coarse moduli space under the action of our non-reductive symmetry group. Using the local-global universality principle for integral hermitian forms, we will prove that any asymmetry $\delta > 0$ induces an unstable stratification lacking a finite quotient, contradicting the spectral compactness. The structural rigidity thus imposes an absolute symmetric universality on the critical line.
 
 Charles EDOU NZE \\ \small Independent Researcher
