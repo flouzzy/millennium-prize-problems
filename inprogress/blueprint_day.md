@@ -1,5 +1,3 @@
-Statut : Planifié
-
 # Blueprint Stratégique - Session du Matin (03h00)
 **Date :** 2026-11-02
 **Problème :** L'hypothèse de Riemann
