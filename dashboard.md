@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-10-31-03h
+### 2026-10-30-03h
 
-- [[#2026-10-31-03h|2026-10-31 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Juan Omar Gómez, Sam K. Miller, Sándor J Kovács, Behrouz Taji. Blueprint du Lemme 62 fixé. Statut : Planifié.
+- [[#2026-10-30-03h|2026-10-30 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Antonio Pio Contrò, Dariusz Buraczewski, Alexander Iksanov. Blueprint du Lemme 62 fixé. Statut : Planifié.
 
 ### 2026-10-29-14h
 
