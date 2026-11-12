@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/n2xMvVNE+Co3Xz5QcSzc2VK43DE</id>
+  <title>arXiv Query: search_query=cat:math.NT&amp;id_list=&amp;start=0&amp;max_results=5</title>
+  <updated>2026-11-12T01:30:46Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=cat:math.NT&amp;start=0&amp;max_results=5&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>5</opensearch:itemsPerPage>
+  <opensearch:totalResults>52396</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2611.14517v1</id>
+    <title>The closure of the nonreal roots of bounded-height polynomials is connected exactly at pronic heights</title>
+    <updated>2026-11-10T18:58:59Z</updated>
+    <link href="https://arxiv.org/abs/2611.14517v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.14517v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let C_h be the closure of the nonreal roots of integer polynomials with coefficients of modulus at most h. With the nonzero real roots included, the closure is connected at every height; without them, connectedness becomes arithmetic. We prove that C_h is connected exactly when h=q(q-1) is a pronic number 2, 6, 12, 20, ..., and has at least five components otherwise. At height two this confirms a twenty-year-old numerical observation of Shmerkin and Solomyak on double zeros of power series: apart from 1/2 they form the interval $[1/ρ,1)=C_2\cap(0,1)$, with $ρ$ the tribonacci constant. Disconnection is almost always infinite. For (p-1)^2&lt;h&lt;=p^2-3, $h\neq p(p-1)$, infinitely many components with nonempty interior accumulate at $\pm p$ and $\pm 1/p$, and when h&lt;p(p-1) these four points are themselves components. Next to each square q^2&gt;=16, at least two of the three heights q^2-2, q^2-1, q^2 have infinitely many components accumulating at a common point of (1/(q+1),1/q). Explicit series give infinitely many components at every nonpronic height below 167 other than 1, 3, 4, 9, 25, 63 and 81, and in general at most sqrt(X)+1 nonpronic heights h&lt;=X can have finitely many components, although C_h is a Peano compactum at every height. The proofs compare values and derivatives of all admissible power series near a real double zero; the comparison sets are open and closed in the whole core, so components separated near the axis cannot reconnect elsewhere. On the real axis, the double zeros at heights 1, 3, 4, 7 form sets with infinitely many components; at height one this proves a conjecture of Shmerkin and Solomyak and one of Solomyak on the connectedness locus for pairs of affine maps.</summary>
+    <category term="math.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T18:58:59Z</published>
+    <arxiv:comment>45 pages, 8 figures, with a 35-page supplement (80 pages in all). Computational companion: Zenodo, doi:10.5281/zenodo.24117729</arxiv:comment>
+    <arxiv:primary_category term="math.CV"/>
+    <author>
+      <name>Bernat Espigule</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.14502v1</id>
+    <title>Zeros of Katz's p-adic Eisenstein series E2</title>
+    <updated>2026-11-10T18:51:53Z</updated>
+    <link href="https://arxiv.org/abs/2611.14502v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.14502v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For every prime $p\geq5$, the zeros of Katz's $p$-adic Eisenstein series $E_2$ on elliptic curves with good ordinary reduction have exactly $\lfloor p/12\rfloor+1$ distinct $j$-invariants. We prove that all these invariants lie in finite unramified extensions of $\mathbf{Q}_p$. Their reductions are given by a classical formula involving the supersingular polynomial, and each nonelliptic residue class contains a unique simple zero. For the Legendre family, hypergeometric congruences determine the polynomial of the lifted invariants modulo every power of $p$. We also study isogenies between the zeros. Each $p$-power isogeny class contains at most one zero $j$-invariant, and any two distinct isogenous zero invariants are algebraic over $\mathbf{Q}$. At a fixed cyclic degree, the nonelliptic isogenies give points in a finite divisor over $\mathbf{Q}$ on the corresponding modular curve. Its degree bounds their number and their fields of definition, and excludes several small degrees. The only zeros with complex multiplication have $j=0$ or $1728$. Whether a non-CM zero can have an algebraic $j$-invariant remains open.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T18:51:53Z</published>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Abdellah Sebbar</name>
+    </author>
+    <author>
+      <name>Khalil Besrour</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.14486v1</id>
+    <title>The distribution of small gaps between zeros of the Riemann zeta function</title>
+    <updated>2026-11-10T18:46:37Z</updated>
+    <link href="https://arxiv.org/abs/2611.14486v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.14486v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Let $0&lt;γ_1\leq γ_2\leq \cdots$ be the ordinates of the non-trivial zeros $ρ_n$ of the Riemann zeta function in the upper half-plane, counted with multiplicity. Selberg proved unconditionally that there exists $λ_0&lt;1$ such that a positive proportion of the zeros $ρ_n$ satisfy $γ_{n+1}-γ_n\leq 2πλ_0/\log γ_n$. Simonič, Trudgian and Turnage-Butterbaugh were the first to obtain an explicit value in Selberg's theorem, showing that $λ_0=1- 10^{-3\cdot 10^{13}}$ is admissible. This was considerably improved by Zhao who showed that $λ_0= 1-2.36\cdot 10^{-6}$ is admissible. In this paper, we use a different approach, based on an unconditional variant of Montgomery's pair correlation method, to obtain a substantial improvement of these results, showing unconditionally that $λ_0=0.7892&lt;4/5$ is admissible.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T18:46:37Z</published>
+    <arxiv:comment>11 pages</arxiv:comment>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Youness Lamzouri</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.14481v1</id>
+    <title>Divisor Folding and Finite-Group Trace Obstructions</title>
+    <updated>2026-11-10T18:44:38Z</updated>
+    <link href="https://arxiv.org/abs/2611.14481v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.14481v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>For a symmetric integer frequency set of size $n$ with Fourier floor $K$, we study a positive trace weighted by the reciprocal of the regularized Fourier multiplier. If restriction to frequencies divisible by $p$ leaves $n/p+O(K^2)$ frequencies, then for $n\ge K^4$ and $p\ll n/K^3$ the original trace differs by $O(n)$ from $p$ times the core trace at the inherited regularization. The transfer reaches cores of size $\asymp K^3$ and preserves vanishing triple density with diverging normalized triple count. We construct exactly regular finite abelian spectra at these scales for which the linear core trace bound fails by a power. The examples use unions of classical semiprimitive cyclotomic classes and also give obstructions in both reflection parities in odd characteristic. Finally, we bound the overlap of lifts of a core by its smallest positive Fourier height and the symmetry of the lifts. These bounds exclude balanced lifts of the binary examples in a range of cyclic extensions and quantify the asymmetry required in odd prime split extensions.</summary>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T18:44:38Z</published>
+    <arxiv:primary_category term="math.NT"/>
+    <author>
+      <name>Abhishek Shankar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.14468v1</id>
+    <title>Bayesian inverse problems and epidemic-threshold uncertainty for a heterogeneous SIS reaction-diffusion model</title>
+    <updated>2026-11-10T18:32:19Z</updated>
+    <link href="https://arxiv.org/abs/2611.14468v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2611.14468v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study Bayesian inference of persistence from early observations of a heterogeneous susceptible--infected--susceptible (SIS) reaction--diffusion model with standard incidence. We show that the leading prevalence dynamics depend on the unknown coefficients only through the difference between the transmission and recovery rates and the infected diffusivity. The same pair determines the principal eigenvalue whose sign governs persistence, so early prevalence can inform the threshold even when the individual rates remain uncertain. We prove global weak well-posedness and quantitative parameter stability for the SIS system and use the resulting observation-map estimates to establish Bayesian well-posedness. For an initial infection of size $\varepsilon$, we derive a uniform second-order expansion that describes how the separate rates enter prevalence. Incidence depends explicitly on transmission at leading order. When the noise standard deviation is proportional to $\varepsilon$, we prove $O(\varepsilon)$ convergence in Hellinger distance of the nonlinear posteriors to their low-prevalence limits for both prevalence alone and joint prevalence and incidence data. We bound the principal eigenvalue using the growth rate of the infected $L^2$ norm between two times. This rate gives a lower bound for the full nonlinear system, and the upper bound separates spatial transients from nonlinear saturation. Uniform spectral estimates and bounds on infection size and measurement error give sufficient conditions for persistence and extinction. We also bound the error in posterior persistence probabilities under forward and eigenvalue approximation, accounting for posterior mass near the threshold. Numerical examples illustrate threshold inference and the predicted \(O(\varepsilon)\) convergence of the nonlinear posteriors to their low-prevalence limits in Hellinger distance.</summary>
+    <category term="math.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.NT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="math.ST" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-11-10T18:32:19Z</published>
+    <arxiv:primary_category term="math.AP"/>
+    <author>
+      <name>Duc-Lam Duong</name>
+    </author>
+  </entry>
+</feed>
