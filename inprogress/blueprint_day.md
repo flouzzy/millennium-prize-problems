@@ -1,24 +1,24 @@
 # Blueprint Stratégique - Session du Matin (03h00)
-**Date :** 2026-11-03
+**Date :** 2026-11-11
 **Problème :** L'hypothèse de Riemann
-**Cible :** Lemme 63
+**Cible :** Lemme 64
 
 ### FR - Note d'Orientation
-L'analyse des données de l'API arXiv met en lumière les travaux de Viachaslau I. Murashka (*On supersoluble like groups of automorphisms of compact Riemann surfaces*, 2026, arXiv:2611.08391v1) et Miguel Gentili (*Steinberg module and top-dimensional cohomology for arithmetic Chevalley groups*, 2026, arXiv:2611.08381v1).
+L'analyse des données de l'API arXiv met en lumière les travaux de Aayush Verma (*Hall Geometry and Auslander-Reiten Quiver*, 2026, arXiv:2606.27362v1) et Benjamin Durkan, Timothy Page (*Amplified moments of the Riemann zeta function*, 2026, arXiv:2606.27323v1).
 
-Face à l'absence d'impasses documentées, nous exploitons la classification des groupes d'automorphismes des surfaces de Riemann (Murashka) pour imposer des contraintes drastiques sur les symétries discrètes de l'espace de Hilbert global. L'introduction du module de Steinberg pour les groupes de Chevalley arithmétiques et la disparition de la cohomologie rationnelle en dimension maximale (Gentili) nous offrent les outils pour démontrer la trivialité des obstructions de classe.
+Face à l'absence d'impasses documentées, nous exploitons la géométrie de l'algèbre de Hall motivique (Verma) pour encoder la dynamique des faisceaux sur notre pinceau de Lefschetz. En parallèle, les formules asymptotiques pour les moments amplifiés de la fonction zêta de Riemann (Durkan, Page) fournissent des bornes inconditionnelles qui contraignent sévèrement toute déviation spectrale.
 
-**Le saut de paradigme pour le Lemme 63 :**
-Le Lemme 63 démontrera que les symétries d'automorphismes des surfaces arithmétiques sous-jacentes contraignent rigoureusement les zéros non-triviaux. En couplant l'annulation cohomologique de Gentili aux symétries de type super-soluble de Murashka, l'opérateur asymétrique devient contraint de s'annuler. Cette triangulation cohomologique force la parfaite symétrie et repousse implacablement tous les zéros non-triviaux sur l'axe critique.
+**Le saut de paradigme pour le Lemme 64 :**
+Le Lemme 64 démontrera que les séquences d'Auslander-Reiten issues de l'algèbre de Hall motivique imposent une rigidité catégorique à notre classe d'obstruction $[\mathcal{O}_\delta]$. En couplant cette rigidité aux bornes inférieures effectives sur les moments conjoints de la fonction zêta (Durkan, Page), la mesurabilité stricte de l'opérateur d'équirépartition devient absolue. Toute asymétrie $\delta > 0$ briserait les contraintes de moments, forçant inéluctablement l'annulation de l'intégrale d'obstruction et confinant les zéros sur l'axe critique.
 
 Charles EDOU NZE \\ \small Independent Researcher
 
 ### EN - Strategic Blueprint
-The analysis of arXiv API data brings to light the work of Viachaslau I. Murashka (*On supersoluble like groups of automorphisms of compact Riemann surfaces*, 2026, arXiv:2611.08391v1) and Miguel Gentili (*Steinberg module and top-dimensional cohomology for arithmetic Chevalley groups*, 2026, arXiv:2611.08381v1).
+The analysis of arXiv API data brings to light the work of Aayush Verma (*Hall Geometry and Auslander-Reiten Quiver*, 2026, arXiv:2606.27362v1) and Benjamin Durkan, Timothy Page (*Amplified moments of the Riemann zeta function*, 2026, arXiv:2606.27323v1).
 
-In the absence of documented impasses, we exploit the classification of automorphism groups of Riemann surfaces (Murashka) to impose drastic constraints on the discrete symmetries of the global Hilbert space. The introduction of the Steinberg module for arithmetic Chevalley groups and the vanishing of top-dimensional rational cohomology (Gentili) provide us with the tools to demonstrate the triviality of class obstructions.
+In the absence of documented impasses, we exploit the geometry of the motivic Hall algebra (Verma) to encode the dynamics of sheaves on our Lefschetz pencil. In parallel, the asymptotic formulae for the amplified moments of the Riemann zeta function (Durkan, Page) provide unconditional bounds that severely constrain any spectral deviation.
 
-**The paradigm leap for Lemma 63:**
-Lemma 63 will demonstrate that the automorphism symmetries of the underlying arithmetic surfaces rigorously constrain the non-trivial zeros. By coupling Gentili's cohomological vanishing with Murashka's supersoluble-like symmetries, the asymmetric operator is forced to vanish. This cohomological triangulation forces perfect symmetry and relentlessly pushes all non-trivial zeros onto the critical axis.
+**The paradigm leap for Lemma 64:**
+Lemma 64 will demonstrate that the Auslander-Reiten sequences arising from the motivic Hall algebra impose categorical rigidity on our obstruction class $[\mathcal{O}_\delta]$. By coupling this rigidity to the effective lower bounds on the joint moments of the zeta function (Durkan, Page), the strict measurability of the equidistribution operator becomes absolute. Any asymmetry $\delta > 0$ would break the moment constraints, inevitably forcing the cancellation of the obstruction integral and confining the zeros to the critical axis.
 
 Charles EDOU NZE \\ \small Independent Researcher

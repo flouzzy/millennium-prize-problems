@@ -9,7 +9,7 @@ Pour prémunir la fibration motivique et l'espace de configurations asymétrique
     \item $\text{Aut}(X)$: Groupe d'automorphismes d'une surface de Riemann compacte, soumis à des contraintes de type super-soluble strict.
     \item $M_{St}$: Module de Steinberg pour les groupes de Chevalley arithmétiques.
     \item $\delta$: Obstruction asymétrique spectrale ($\delta > 0$).
-    \item $\Omega$: Opérateur de symétrie spectrale, restreint aux opérateurs bornés.
+    \item $\Omega$: Opérateur de symétrie spectrale, strictement restreint aux automorphismes super-solubles.
 \end{itemize}
 
 \begin{lemma}[63 - FR]\label{lemma:63_fr}
@@ -19,10 +19,12 @@ Soit $\mathcal{M}_{B}$ un produit tensoriel asymétrique de modules de Hodge-Lef
 L'introduction d'une asymétrie $\delta > 0$ brise la polarisation locale de la fibration. Le red-teaming révèle une vulnérabilité aux pathologies telles que les configurations en dimension infinie, les opérateurs non bornés et les singularités de codimension 1. L'imposition de compacité stricte et de mesurabilité sur $\mathcal{M}_{B}$ prévient ces divergences. L'annulation cohomologique rationnelle de l'espace en dimension maximale force les groupes d'automorphismes super-solubles à agir trivialement sur l'opérateur de classe. L'action conjointe de ces symétries discrètes démontre que l'opérateur asymétrique devient strictement nul. Cette régularisation unique pour $\delta = 0$ fige l'opérateur $\Omega$ dans une symétrie parfaite et interdit toute déviation de l'axe critique.
 \end{proof}
 
-\vspace{1em}
-\begin{flushright}
-Charles EDOU NZE \\ \small Independent Researcher
-\end{flushright}
+% [EN] Typing and Statement
+\section*{Formal Framework (EN)}
+Let $\mathcal{H}_{\text{glob}}$ be the global Hilbert space induced by the Rosati trace pairing.
+Let $D$ be the self-adjoint differentiation operator acting on $\mathcal{H}_{\text{glob}}$, whose resolvent $(D - \lambda I)^{-1}$ is assumed to be strictly compact.
+Let $X = \mathbb{P}^1 \setminus S$ be a punctured projective line, subject to a tame ramification condition at the exceptional divisors $S$.
+Let $\mathcal{W}$ be the family of Weil operators associated with the Anderson generating function restricted to $X$.
 
 \subsection*{EN - Symbolic Typing and Axiomatic Restriction}
 \begin{itemize}
@@ -32,7 +34,7 @@ Charles EDOU NZE \\ \small Independent Researcher
     \item $\text{Aut}(X)$: Automorphism group of a compact Riemann surface, subjected to strict supersoluble-like constraints.
     \item $M_{St}$: Steinberg module for arithmetic Chevalley groups.
     \item $\delta$: Spectral asymmetric obstruction ($\delta > 0$).
-    \item $\Omega$: Spectral symmetry operator, restricted to bounded operators.
+    \item $\Omega$: Spectral symmetry operator, strictly restricted to supersoluble automorphisms.
 \end{itemize}
 
 \begin{lemma}[63 - EN]\label{lemma:63_en}
