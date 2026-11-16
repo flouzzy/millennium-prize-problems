@@ -9,7 +9,11 @@
 
 ## Historique d'avancement
 
-### 2026-11-02-14h
+### 2026-11-04-03h
+
+- [[#2026-11-04-03h|2026-11-04 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Asher Auel, Philip Engel, Kiran S. Kedlaya, Sair Shaikh, Byeol Han, Soheyla Feyzbakhsh, Aliaksandra Novik, Angela Ortega. Blueprint du Lemme 64 fixé. Statut : Planifié.
+
+### 2026-11-03-03h
 
 - [[#2026-11-02-14h|2026-11-02 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
 
