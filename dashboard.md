@@ -9,9 +9,10 @@
 
 ## Historique d'avancement
 
-### 2026-11-03-18h
+### 2026-11-10-03h
 
-- [[#2026-11-03-18h|2026-11-03 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 61 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
+- [[#2026-11-10-03h|2026-11-10 03:00]] : [Orientation stratégique] - Problème: L'hypothèse de Riemann. Veille factuelle via l'API arXiv effectuée. Intégration des travaux récents de Yifeng Liu, Wonwoong Lee. Blueprint du Lemme 64 fixé. Statut : Planifié.
+
 ### 2026-11-03-03h
 
 - [[#2026-11-02-14h|2026-11-02 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
