@@ -9,9 +9,9 @@
 
 ## Historique d'avancement
 
-### 2026-11-03-14h
+### 2026-11-03-18h
 
-- [[#2026-11-03-14h|2026-11-03 14:00]] : [Red Teaming & Prototypage] - Problème: L'hypothèse de Riemann. Résistance du blueprint validée face aux contre-exemples classiques. Cadre symbolique figé dans draft_setup.tex. Statut : Prêt.
+- [[#2026-11-03-18h|2026-11-03 18:00]] : [Extension arXiv TeX] - Problème: L'hypothèse de Riemann. Lemme 63 rédigé de manière linéaire avant la bibliographie. Statut : En cours de consolidation.
 
 ### 2026-11-03-03h
 
